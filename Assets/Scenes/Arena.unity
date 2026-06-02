@@ -1845,12 +1845,22 @@ MonoBehaviour:
   markerPrefab: {fileID: 1153535982936960892, guid: 1401faf8d4c65004f91f04bb722ebf7e, type: 3}
   leftIntention:
     champID: 
+    scheduledAt: 0
     timeStamp: 0
+    rolledDelay: 0
+    baseTimeStamp: 0
+    speedRating: 0
     actionTimeMultiplier: 1
   rightIntention:
     champID: 
+    scheduledAt: 0
     timeStamp: 0
+    rolledDelay: 0
+    baseTimeStamp: 0
+    speedRating: 0
     actionTimeMultiplier: 1
+  actionTimeoutSeconds: 20
+  debugTimeline: 1
 --- !u!1 &762747499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3430,6 +3440,17 @@ MonoBehaviour:
   spawnY: 1
   matchDurationSeconds: 60
   debugDamageRange: {x: 40, y: 80}
+  paintDebugs: 0
+  debugTimeline: 0
+  debugChampion: 0
+  debugMovement: 0
+  debugActionFlow: 0
+  debugDamage: 0
+  debugCharges: 0
+  simulationSeed: 12345
+  randomizeSimulationSeed: 0
+  simulationRuns: 1
+  logSimulationEvents: 0
 --- !u!1 &1560550670
 GameObject:
   m_ObjectHideFlags: 0
