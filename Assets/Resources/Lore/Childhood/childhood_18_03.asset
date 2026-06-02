@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_18_03
   stage: 1
-  title: Hungry Hidden Valley
-  storyFragment: '{name}''s childhood turned around a hidden valley that distrusted
-    outsiders, a rough education that made hunger that made every choice sharper
-    feel natural.'
+  title: Hermit Village
+  storyFragment: 'As a child, {name} lived through a hermit village, learning caution, secrecy, and suspicion of outsiders.'
   modifiers:
   - type: 0
     stat: 3

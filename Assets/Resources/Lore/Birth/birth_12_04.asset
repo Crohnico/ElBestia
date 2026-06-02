@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_12_04
   stage: 0
-  title: Bright Prison Town
-  storyFragment: '{name} entered the world in a prison town built around locked gates,
-    surrounded by people who measured children through a bright belief that tomorrow
-    could be stolen back.'
+  title: Chain Yard Family
+  storyFragment: '{name} was born in a chain yard family, where locks, guards, and suspicion were part of the local weather.'
   modifiers:
   - type: 0
     stat: 2

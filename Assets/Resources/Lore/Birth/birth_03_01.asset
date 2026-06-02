@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_03_01
   stage: 0
-  title: Quiet Mountain Clan
-  storyFragment: In a mountain clan of stubborn walkers, {name}'s birth was not considered
-    special until rumors of quiet restraint began to follow it.
+  title: Goat Trail Hamlet
+  storyFragment: '{name} was born in a goat trail hamlet, where balance, lungs, and stubborn legs mattered before formal schooling.'
   modifiers:
   - type: 0
     stat: 3

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_05_06
   stage: 2
-  title: Patient Arena Debut
-  storyFragment: Among the people of a first arena circuit with more blood than applause,
-    {name} learned a trade, a stance, and the value of patience that waited longer
-    than fear.
+  title: Sand Ring Debut
+  storyFragment: 'As a young adult, {name} worked through a sand ring debut, discovering that pain becomes easier to bear when a crowd gives it a price. They enter the dojo to turn a first taste of applause into real prize money.'
   modifiers:
   - type: 2
     stat: 0

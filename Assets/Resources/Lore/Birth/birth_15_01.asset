@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_15_01
   stage: 0
-  title: Quiet Street Clinic
-  storyFragment: In a street clinic where pain was ordinary, {name}'s birth was not
-    considered special until rumors of quiet restraint began to follow it.
+  title: Midwife Alley Birth
+  storyFragment: '{name} was born in a midwife alley birth, where blood, bandages, and unpaid favors were never far away.'
   modifiers:
   - type: 0
     stat: 0

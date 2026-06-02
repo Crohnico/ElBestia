@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_12_04
   stage: 1
-  title: Bright Rooftop Games
-  storyFragment: The people of rooftops where children ran above adult trouble remember
-    a young {name} as someone shaped less by play than by a bright belief that tomorrow
-    could be stolen back.
+  title: Laundry Line Jumps
+  storyFragment: 'As a child, {name} lived through the laundry line jumps, learning balance above danger and confidence after every fall.'
   modifiers:
   - type: 0
     stat: 2

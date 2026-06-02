@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_19_03
   stage: 1
-  title: Hungry Training Hall
-  storyFragment: Years in a training hall where children swept before they struck
-    gave {name} habits that looked strange to outsiders and useful to anyone who
-    understood hunger that made every choice sharper.
+  title: Weapon Rack Work
+  storyFragment: 'As a child, {name} lived through a weapon rack work, learning stances, bruises, repetition, and formal violence.'
   modifiers:
   - type: 4
     stat: 0

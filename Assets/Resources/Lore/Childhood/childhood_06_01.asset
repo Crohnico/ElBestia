@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_06_01
   stage: 1
-  title: Quiet Mine Tunnels
-  storyFragment: By twelve, {name} had drifted into mine tunnels where daylight became
-    a rumor, a life where quiet restraint mattered more than comfort.
+  title: Silver Mine Tunnels
+  storyFragment: 'As a child, {name} lived through the silver mine tunnels, learning breath control, endurance, and courage in cramped darkness.'
   modifiers:
   - type: 2
     stat: 0

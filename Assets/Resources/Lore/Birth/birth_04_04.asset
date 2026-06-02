@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_04_04
   stage: 0
-  title: Bright River House
-  storyFragment: Before anyone called {name} a fighter, life in a river house that
-    lived by floods and ferries had already taught the family the meaning of a bright
-    belief that tomorrow could be stolen back.
+  title: Reed Village
+  storyFragment: '{name} was born in a reed village, where floods, ferries, and rope work taught respect for timing.'
   modifiers:
   - type: 0
     stat: 4

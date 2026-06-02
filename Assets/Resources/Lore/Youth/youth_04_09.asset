@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_04_09
   stage: 2
-  title: Proud Dock Labor
-  storyFragment: The work at dock labor among ropes, crates, and cheap fights did
-    not make {name} gentle; it made pride too stubborn to die quietly easier to justify.
+  title: Night Wharf Work
+  storyFragment: 'As a young adult, {name} worked through a night wharf work, hardening the body through ropes, crates, cargo, and cheap fights. They enter the dojo to escape dock wages before the docks break them.'
   modifiers:
   - type: 0
     stat: 4

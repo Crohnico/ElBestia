@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_10_01
   stage: 1
-  title: Quiet Market Runner
-  storyFragment: The people of market alleys where every errand became a race remember
-    a young {name} as someone shaped less by play than by quiet restraint.
+  title: Courier Child
+  storyFragment: 'As a child, {name} lived through a courier child, learning speed through crowds and how to read danger while moving.'
   modifiers:
   - type: 2
     stat: 0

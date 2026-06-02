@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_00_06
   stage: 0
-  title: Patient Sword Family
-  storyFragment: '{name} was born in a family of sword tutors, and patience that
-    waited longer than fear shaped ordinary life there.'
+  title: Village Militia Family
+  storyFragment: '{name} was born into a village militia family, where weapons, footwork, and bruised pride were part of ordinary family life.'
   modifiers:
   - type: 4
     stat: 0

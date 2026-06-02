@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_10_02
   stage: 2
-  title: Lucky Blacksmith Helper
-  storyFragment: When {name} came of age, a blacksmith's shop where strength was
-    expected offered food, coin, and enough danger to give uncomfortable luck direction.
+  title: Bellows Worker
+  storyFragment: 'As a young adult, {name} worked through a bellows worker, hardening hands through heat, rhythm, metal, and repeated impact. They enter the dojo to repay the forge that fed them.'
   modifiers:
   - type: 0
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_05_06
   stage: 1
-  title: Patient Kitchen Yard
-  storyFragment: The safest corner of {name}'s youth was a kitchen yard full of heat,
-    scraps, and shouted orders, though even there patience that waited longer than
-    fear kept knocking.
+  title: Inn Kitchen Work
+  storyFragment: 'As a child, {name} lived through an inn kitchen work, learning timing, heat, patience, and how to watch fighters while pretending to work.'
   modifiers:
   - type: 2
     stat: 0

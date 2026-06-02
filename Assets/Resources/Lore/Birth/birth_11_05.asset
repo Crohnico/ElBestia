@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_11_05
   stage: 0
-  title: Cruel Noble House
-  storyFragment: In a noble house full of manners and hidden knives, {name}'s birth
-    was not considered special until rumors of cruelty learned as protection began
-    to follow it.
+  title: Manor Nursery
+  storyFragment: '{name} was born into a manor nursery, where manners, inheritance, and hidden rivalries carried their own kind of danger.'
   modifiers:
   - type: 0
     stat: 1

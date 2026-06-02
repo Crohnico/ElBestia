@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_15_04
   stage: 0
-  title: Bright Street Clinic
-  storyFragment: '{name} entered the world in a street clinic where pain was ordinary,
-    surrounded by people who measured children through a bright belief that tomorrow
-    could be stolen back.'
+  title: Battlefield Clinic Family
+  storyFragment: '{name} was born in a battlefield clinic family, where blood, bandages, and unpaid favors were never far away.'
   modifiers:
   - type: 2
     stat: 0

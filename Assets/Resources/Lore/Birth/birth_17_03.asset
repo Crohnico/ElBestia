@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_17_03
   stage: 0
-  title: Hungry Monk Refuge
-  storyFragment: '{name} was born under the customs of a monk refuge where silence
-    was a rule, where even a cradle could carry hunger that made every choice sharper.'
+  title: Mountain Hermitage
+  storyFragment: '{name} was born in a mountain hermitage, where silence, breath, and repeated chores were treated as survival tools.'
   modifiers:
   - type: 0
     stat: 2

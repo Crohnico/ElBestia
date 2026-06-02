@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_18_02
   stage: 0
-  title: Lucky Sailor Blood
-  storyFragment: '{name} was born in a sailor family with salt in every story, and
-    uncomfortable luck shaped ordinary life there.'
+  title: River Barge Family
+  storyFragment: '{name} was born into a river barge family, where ropes, tides, and returning alive mattered more than stories about courage.'
   modifiers:
   - type: 0
     stat: 3

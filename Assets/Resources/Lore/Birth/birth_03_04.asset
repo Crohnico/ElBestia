@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_03_04
   stage: 0
-  title: Bright Mountain Clan
-  storyFragment: '{name} entered the world in a mountain clan of stubborn walkers,
-    surrounded by people who measured children through a bright belief that tomorrow
-    could be stolen back.'
+  title: High Pass Camp
+  storyFragment: '{name} was born in a high pass camp, where balance, lungs, and stubborn legs mattered before formal schooling.'
   modifiers:
   - type: 2
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_04_05
   stage: 1
-  title: Cruel Stable Work
-  storyFragment: When other children learned games, {name} learned the rules of the
-    stables behind a trading road and the cost of cruelty learned as protection.
+  title: Courier Horse Yard
+  storyFragment: 'As a child, {name} lived through a courier horse yard, building strength and balance around animals, carts, mud, and long roads.'
   modifiers:
   - type: 0
     stat: 4

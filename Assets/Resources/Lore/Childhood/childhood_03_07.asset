@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_03_07
   stage: 1
-  title: Restless Street Gang
-  storyFragment: The safest corner of {name}'s youth was a street gang that rewarded
-    quick hands, though even there restlessness that kept looking for a door kept
-    knocking.
+  title: Canal Smuggler Kids
+  storyFragment: 'As a child, {name} lived through the canal smuggler kids, learning shortcuts, loyalty, dirty angles, and the price of fear.'
   modifiers:
   - type: 4
     stat: 0

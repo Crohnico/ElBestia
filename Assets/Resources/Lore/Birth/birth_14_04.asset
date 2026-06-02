@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_14_04
   stage: 0
-  title: Bright Woodcutters
-  storyFragment: '{name} entered the world in a family of woodcutters who trusted
-    axes before promises, surrounded by people who measured children through a bright
-    belief that tomorrow could be stolen back.'
+  title: Pine Ridge Family
+  storyFragment: '{name} was born into a pine ridge family, where axes fed the family and falling timber punished carelessness.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_03_01
   stage: 2
-  title: Quiet Plumber Work
-  storyFragment: In plumber work in narrow streets and flooded cellars, {name} learned
-    that a future could be bought with bruises, discipline, and quiet restraint.
+  title: Sewer Crew
+  storyFragment: 'As a young adult, {name} worked through a sewer crew, learning angles, pressure, balance, and ugly work beneath the streets. They enter the dojo to buy a life above the cellars.'
   modifiers:
   - type: 0
     stat: 3

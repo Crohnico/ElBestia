@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_15_06
   stage: 2
-  title: Patient Duelist Circle
-  storyFragment: The work at a duelist circle where pride had witnesses did not make
-    {name} gentle; it made patience that waited longer than fear easier to justify.
+  title: Duel Instructor Job
+  storyFragment: 'As a young adult, {name} worked through a duel instructor job, learning distance, witnesses, pride, and the price of public mistakes. They enter the dojo to make their name public.'
   modifiers:
   - type: 0
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_02_04
   stage: 1
-  title: Bright Good School
-  storyFragment: When other children learned games, {name} learned the rules of a
-    strict but generous school and the cost of a bright belief that tomorrow could
-    be stolen back.
+  title: Village Classroom
+  storyFragment: 'As a child, {name} lived through a village classroom, learning letters, rivalry, discipline, and how rules can be used as weapons.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_07_03
   stage: 2
-  title: Hungry Bandit Season
-  storyFragment: When {name} came of age, a bandit season where trust was expensive
-    offered food, coin, and enough danger to give hunger that made every choice sharper
-    direction.
+  title: Caravan Robber Years
+  storyFragment: 'As a young adult, {name} worked through the caravan robber years, learning ambushes, bad roads, guilt, and the cost of trusting desperate people. They enter the dojo to buy distance from old crimes.'
   modifiers:
   - type: 4
     stat: 0

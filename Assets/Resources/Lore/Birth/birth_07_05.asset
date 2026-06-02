@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_07_05
   stage: 0
-  title: Cruel Temple Step
-  storyFragment: Before anyone called {name} a fighter, life in the steps of a severe
-    hill temple had already taught the family the meaning of cruelty learned as protection.
+  title: Incense Hall Family
+  storyFragment: '{name} was born in an incense hall family, where bells, chores, and ritual discipline marked the first memories.'
   modifiers:
   - type: 0
     stat: 2

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_14_04
   stage: 1
-  title: Bright Burned Hamlet
-  storyFragment: As a child, {name} spent long years around a burned hamlet that
-    never stopped counting losses, learning to turn a bright belief that tomorrow
-    could be stolen back into a survival tool.
+  title: Ruined Mill Shelter
+  storyFragment: 'As a child, {name} lived through a ruined mill shelter, learning salvage, grief, and how quickly ordinary life can vanish.'
   modifiers:
   - type: 4
     stat: 0

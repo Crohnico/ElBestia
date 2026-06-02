@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_19_09
   stage: 1
-  title: Proud Training Hall
-  storyFragment: As a child, {name} spent long years around a training hall where
-    children swept before they struck, learning to turn pride too stubborn to die
-    quietly into a survival tool.
+  title: Instructor Shadowing
+  storyFragment: 'As a child, {name} lived through an instructor shadowing, learning stances, bruises, repetition, and formal violence.'
   modifiers:
   - type: 0
     stat: 4

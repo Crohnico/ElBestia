@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_02_02
   stage: 1
-  title: Lucky Good School
-  storyFragment: When other children learned games, {name} learned the rules of a
-    strict but generous school and the cost of uncomfortable luck.
+  title: Temple School
+  storyFragment: 'As a child, {name} lived through a temple school, learning letters, rivalry, discipline, and how rules can be used as weapons.'
   modifiers:
   - type: 0
     stat: 2

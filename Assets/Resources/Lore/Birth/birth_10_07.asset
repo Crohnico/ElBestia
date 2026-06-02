@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_10_07
   stage: 0
-  title: Restless Nomad Caravan
-  storyFragment: '{name} was born in a nomad caravan that never slept under the same
-    roof twice, and restlessness that kept looking for a door shaped ordinary life
-    there.'
+  title: Bannerless Caravan
+  storyFragment: '{name} was born around a bannerless caravan, where packing quickly and reading roads mattered more than owning walls.'
   modifiers:
   - type: 0
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_00_06
   stage: 1
-  title: Patient Orphanage
-  storyFragment: The people of an overcrowded orphanage remember a young {name} as
-    someone shaped less by play than by patience that waited longer than fear.
+  title: Guild Foster Home
+  storyFragment: 'As a child, {name} lived through a guild foster home, learning to compete for space, food, attention, and the right to be remembered.'
   modifiers:
   - type: 4
     stat: 0

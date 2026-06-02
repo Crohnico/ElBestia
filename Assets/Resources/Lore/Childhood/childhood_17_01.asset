@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_17_01
   stage: 1
-  title: Quiet Circus Tent
-  storyFragment: '{name}''s childhood turned around a circus tent full of tricks
-    and bruises, a rough education that made quiet restraint feel natural.'
+  title: Acrobat Ropes
+  storyFragment: 'As a child, {name} lived through the acrobat ropes, learning masks, timing, falls, applause, and public courage.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_13_00
   stage: 1
-  title: Hard Old Hospital
-  storyFragment: The people of an old hospital that smelled of herbs and fear remember
-    a young {name} as someone shaped less by play than by hard endurance.
+  title: Old Hospital
+  storyFragment: 'As a child, {name} lived through an old hospital, learning pain, recovery, herbs, and the fragile mechanics of bodies.'
   modifiers:
   - type: 0
     stat: 3

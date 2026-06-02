@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_16_08
   stage: 2
-  title: Broken Scholar Job
-  storyFragment: In a scholar's job copying maps and wounds alike, {name} learned
-    that a future could be bought with bruises, discipline, and broken trust and
-    careful habits.
+  title: Engineering Scribe
+  storyFragment: 'As a young adult, {name} worked through an engineering scribe, copying maps, wounds, and combat notes until patterns became weapons. They enter the dojo to test theory against pain.'
   modifiers:
   - type: 0
     stat: 1

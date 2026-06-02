@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_13_06
   stage: 0
-  title: Patient Storm Coast
-  storyFragment: Before anyone called {name} a fighter, life in a storm coast that
-    taught children to fear the sky had already taught the family the meaning of
-    patience that waited longer than fear.
+  title: Rescue Boat Family
+  storyFragment: '{name} was born in a rescue boat family, where wind, waves, and rescue bells taught people to move before panic.'
   modifiers:
   - type: 2
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_18_00
   stage: 1
-  title: Hard Hidden Valley
-  storyFragment: '{name}''s childhood turned around a hidden valley that distrusted
-    outsiders, a rough education that made hard endurance feel natural.'
+  title: Hidden Valley
+  storyFragment: 'As a child, {name} lived through a hidden valley, learning caution, secrecy, and suspicion of outsiders.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_02_00
   stage: 1
-  title: Hard Good School
-  storyFragment: By twelve, {name} had drifted into a strict but generous school,
-    a life where hard endurance mattered more than comfort.
+  title: Charity School
+  storyFragment: 'As a child, {name} lived through a charity school, learning letters, rivalry, discipline, and how rules can be used as weapons.'
   modifiers:
   - type: 4
     stat: 0

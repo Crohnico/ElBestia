@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_13_02
   stage: 0
-  title: Lucky Storm Coast
-  storyFragment: '{name} entered the world in a storm coast that taught children
-    to fear the sky, surrounded by people who measured children through uncomfortable
-    luck.'
+  title: Shipwreck Cove Birth
+  storyFragment: '{name} was born in a shipwreck cove birth, where wind, waves, and rescue bells taught people to move before panic.'
   modifiers:
   - type: 2
     stat: 0

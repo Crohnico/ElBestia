@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_12_08
   stage: 1
-  title: Broken Rooftop Games
-  storyFragment: As a child, {name} spent long years around rooftops where children
-    ran above adult trouble, learning to turn broken trust and careful habits into
-    a survival tool.
+  title: Roof Garden Hideouts
+  storyFragment: 'As a child, {name} lived through the roof garden hideouts, learning balance above danger and confidence after every fall.'
   modifiers:
   - type: 0
     stat: 2

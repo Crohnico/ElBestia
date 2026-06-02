@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_16_03
   stage: 0
-  title: Hungry Arena District
-  storyFragment: The household that raised {name} belonged to an arena district that
-    cheered before it pitied, and its oldest inheritance was hunger that made every
-    choice sharper.
+  title: Pit Gate Household
+  storyFragment: '{name} was born in a pit gate household, where crowds cheered pain before they learned the names of fighters.'
   modifiers:
   - type: 2
     stat: 0

@@ -15,14 +15,14 @@ MonoBehaviour:
   perkId: bleed_legend
   displayName: Red River
   rarity: 4
-  description: After each action, apply 5 Bleed stacks on enemy.
+  description: After each action, apply 3 Bleed stacks on enemy.
   effectType: 5
   combatStat: 0
   stat: 0
   weapon: 0
   element: 0
   charge: 17
-  flatValue: 5
+  flatValue: 3
   multiplier: 1
   chance: 0
   isUnique: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_13_07
   stage: 0
-  title: Restless Storm Coast
-  storyFragment: '{name} was born in a storm coast that taught children to fear the
-    sky, and restlessness that kept looking for a door shaped ordinary life there.'
+  title: Tide Cave Birth
+  storyFragment: '{name} was born in a tide cave birth, where wind, waves, and rescue bells taught people to move before panic.'
   modifiers:
   - type: 0
     stat: 3

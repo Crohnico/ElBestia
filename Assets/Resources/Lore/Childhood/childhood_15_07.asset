@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_15_07
   stage: 1
-  title: Restless Winter Road
-  storyFragment: Years in a winter road with no patience for weakness gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood restlessness
-    that kept looking for a door.
+  title: White Road March
+  storyFragment: 'As a child, {name} lived through a white road march, learning cold endurance and the cost of stopping too soon.'
   modifiers:
   - type: 4
     stat: 0

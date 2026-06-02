@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
   perkId: caltrops_rhythm
   displayName: Caltrop Rhythm
-  rarity: 1
+  rarity: 2
   description: After each action, apply 2 Caltrops stacks on enemy.
   effectType: 5
   combatStat: 0

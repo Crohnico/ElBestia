@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_02_01
   stage: 0
-  title: Quiet Desert Birth
-  storyFragment: '{name} was born in a settlement pressed against the desert, and
-    quiet restraint shaped ordinary life there.'
+  title: Dune Camp
+  storyFragment: '{name} was born in a dune camp, where water, shade, and distance shaped every decision.'
   modifiers:
   - type: 2
     stat: 0

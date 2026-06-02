@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_17_07
   stage: 2
-  title: Restless Street Performer
-  storyFragment: At adulthood, {name} entered street performance, applause, and thrown
-    bottles, trading old fears for work, violence, and restlessness that kept looking
-    for a door.
+  title: Market Stage Work
+  storyFragment: 'As a young adult, {name} worked through a market stage work, turning timing, balance, masks, and public risk into survival. They enter the dojo to trade applause for prize money.'
   modifiers:
   - type: 0
     stat: 2

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_00_03
   stage: 0
-  title: Hungry Sword Family
-  storyFragment: '{name} was born in a family of sword tutors, and hunger that made
-    every choice sharper shaped ordinary life there.'
+  title: Spear Guard Family
+  storyFragment: '{name} was born into a spear guard family, where weapons, footwork, and bruised pride were part of ordinary family life.'
   modifiers:
   - type: 2
     stat: 0

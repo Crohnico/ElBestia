@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_15_08
   stage: 1
-  title: Broken Winter Road
-  storyFragment: Years in a winter road with no patience for weakness gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood broken
-    trust and careful habits.
+  title: Cold Inn Yard
+  storyFragment: 'As a child, {name} lived through a cold inn yard, learning cold endurance and the cost of stopping too soon.'
   modifiers:
   - type: 2
     stat: 0

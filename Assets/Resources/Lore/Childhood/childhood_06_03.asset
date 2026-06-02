@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_06_03
   stage: 1
-  title: Hungry Mine Tunnels
-  storyFragment: The safest corner of {name}'s youth was mine tunnels where daylight
-    became a rumor, though even there hunger that made every choice sharper kept
-    knocking.
+  title: Crystal Mine Tunnels
+  storyFragment: 'As a child, {name} lived through the crystal mine tunnels, learning breath control, endurance, and courage in cramped darkness.'
   modifiers:
   - type: 0
     stat: 1

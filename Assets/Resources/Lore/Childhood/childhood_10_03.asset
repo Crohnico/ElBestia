@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_10_03
   stage: 1
-  title: Hungry Market Runner
-  storyFragment: As a child, {name} spent long years around market alleys where every
-    errand became a race, learning to turn hunger that made every choice sharper
-    into a survival tool.
+  title: Fish Market Runs
+  storyFragment: 'As a child, {name} lived through the fish market runs, learning speed through crowds and how to read danger while moving.'
   modifiers:
   - type: 0
     stat: 0

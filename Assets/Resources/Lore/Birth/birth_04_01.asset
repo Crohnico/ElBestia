@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_04_01
   stage: 0
-  title: Quiet River House
-  storyFragment: '{name} was born under the customs of a river house that lived by
-    floods and ferries, where even a cradle could carry quiet restraint.'
+  title: Ferry Keeper Family
+  storyFragment: '{name} was born in a ferry keeper family, where floods, ferries, and rope work taught respect for timing.'
   modifiers:
   - type: 0
     stat: 4

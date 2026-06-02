@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_00_09
   stage: 1
-  title: Proud Orphanage
-  storyFragment: When other children learned games, {name} learned the rules of an
-    overcrowded orphanage and the cost of pride too stubborn to die quietly.
+  title: Street Foundling Years
+  storyFragment: 'As a child, {name} lived through the street foundling years, learning to compete for space, food, attention, and the right to be remembered.'
   modifiers:
   - type: 0
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_09_08
   stage: 0
-  title: Broken Forge Quarter
-  storyFragment: Before anyone called {name} a fighter, life in a forge quarter blackened
-    by smoke and debt had already taught the family the meaning of broken trust and
-    careful habits.
+  title: Horseshoe Shop Family
+  storyFragment: '{name} was born in a horseshoe shop family, where heat, hammer rhythm, and metalwork filled the streets.'
   modifiers:
   - type: 0
     stat: 4

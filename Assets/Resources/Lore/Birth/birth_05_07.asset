@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_05_07
   stage: 0
-  title: Restless Dojo Lineage
-  storyFragment: Before anyone called {name} a fighter, life in an old dojo lineage
-    with more pride than money had already taught the family the meaning of restlessness
-    that kept looking for a door.
+  title: Old Master Household
+  storyFragment: '{name} was born into an old master household, where old forms and old debts were treated as inheritance.'
   modifiers:
   - type: 0
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_17_00
   stage: 1
-  title: Hard Circus Tent
-  storyFragment: Childhood pulled {name} through a circus tent full of tricks and
-    bruises; the lesson that stayed was hard endurance.
+  title: Circus Tent
+  storyFragment: 'As a child, {name} lived through a circus tent, learning masks, timing, falls, applause, and public courage.'
   modifiers:
   - type: 0
     stat: 2

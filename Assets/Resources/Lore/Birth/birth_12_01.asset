@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_12_01
   stage: 0
-  title: Quiet Prison Town
-  storyFragment: In a prison town built around locked gates, {name}'s birth was not
-    considered special until rumors of quiet restraint began to follow it.
+  title: Jailer Family
+  storyFragment: '{name} was born in a jailer family, where locks, guards, and suspicion were part of the local weather.'
   modifiers:
   - type: 0
     stat: 2

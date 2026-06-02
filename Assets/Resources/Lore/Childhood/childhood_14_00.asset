@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_14_00
   stage: 1
-  title: Hard Burned Hamlet
-  storyFragment: '{name}''s childhood turned around a burned hamlet that never stopped
-    counting losses, a rough education that made hard endurance feel natural.'
+  title: Burned Hamlet
+  storyFragment: 'As a child, {name} lived through a burned hamlet, learning salvage, grief, and how quickly ordinary life can vanish.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_00_05
   stage: 0
-  title: Cruel Sword Family
-  storyFragment: '{name} was born under the customs of a family of sword tutors,
-    where even a cradle could carry cruelty learned as protection.'
+  title: Temple Blade Family
+  storyFragment: '{name} was born into a temple blade family, where weapons, footwork, and bruised pride were part of ordinary family life.'
   modifiers:
   - type: 0
     stat: 0

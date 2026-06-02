@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_19_04
   stage: 0
-  title: Bright Border Farm
-  storyFragment: '{name} was born under the customs of a border farm where raids
-    were part of the seasons, where even a cradle could carry a bright belief that
-    tomorrow could be stolen back.'
+  title: Goat Pen Household
+  storyFragment: '{name} was born in a goat pen household, where harvests, fences, raids, and militia drills shared the same seasons.'
   modifiers:
   - type: 2
     stat: 0

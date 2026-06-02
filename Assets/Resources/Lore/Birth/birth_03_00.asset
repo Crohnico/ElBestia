@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_03_00
   stage: 0
-  title: Hard Mountain Clan
-  storyFragment: '{name} was born in a mountain clan of stubborn walkers, and hard
-    endurance shaped ordinary life there.'
+  title: Mountain Clan
+  storyFragment: '{name} was born in a mountain clan, where balance, lungs, and stubborn legs mattered before formal schooling.'
   modifiers:
   - type: 2
     stat: 0

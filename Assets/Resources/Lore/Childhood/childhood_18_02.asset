@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_18_02
   stage: 1
-  title: Lucky Hidden Valley
-  storyFragment: Childhood pulled {name} through a hidden valley that distrusted
-    outsiders; the lesson that stayed was uncomfortable luck.
+  title: Secret Orchard
+  storyFragment: 'As a child, {name} lived through a secret orchard, learning caution, secrecy, and suspicion of outsiders.'
   modifiers:
   - type: 0
     stat: 3

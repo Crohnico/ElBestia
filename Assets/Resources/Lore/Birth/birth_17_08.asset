@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_17_08
   stage: 0
-  title: Broken Monk Refuge
-  storyFragment: Before anyone called {name} a fighter, life in a monk refuge where
-    silence was a rule had already taught the family the meaning of broken trust
-    and careful habits.
+  title: Cave Shrine Birth
+  storyFragment: '{name} was born in a cave shrine birth, where silence, breath, and repeated chores were treated as survival tools.'
   modifiers:
   - type: 0
     stat: 2

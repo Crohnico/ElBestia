@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_07_06
   stage: 1
-  title: Patient Library Dust
-  storyFragment: The people of dusty library rooms watched by tired scholars remember
-    a young {name} as someone shaped less by play than by patience that waited longer
-    than fear.
+  title: Tax Archive
+  storyFragment: 'As a child, {name} lived through a tax archive, learning memory, patterns, and the habit of studying before acting.'
   modifiers:
   - type: 0
     stat: 2

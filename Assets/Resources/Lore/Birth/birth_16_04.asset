@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_16_04
   stage: 0
-  title: Bright Arena District
-  storyFragment: The name {name} first appeared in the records of an arena district
-    that cheered before it pitied, beside a note about a bright belief that tomorrow
-    could be stolen back.
+  title: Beast Pen Birth
+  storyFragment: '{name} was born in a beast pen birth, where crowds cheered pain before they learned the names of fighters.'
   modifiers:
   - type: 0
     stat: 1

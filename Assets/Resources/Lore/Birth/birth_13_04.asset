@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_13_04
   stage: 0
-  title: Bright Storm Coast
-  storyFragment: In a storm coast that taught children to fear the sky, {name}'s
-    birth was not considered special until rumors of a bright belief that tomorrow
-    could be stolen back began to follow it.
+  title: Rain Barrel Hamlet
+  storyFragment: '{name} was born in a rain barrel hamlet, where wind, waves, and rescue bells taught people to move before panic.'
   modifiers:
   - type: 0
     stat: 3

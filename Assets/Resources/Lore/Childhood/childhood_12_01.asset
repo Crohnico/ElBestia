@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_12_01
   stage: 1
-  title: Quiet Rooftop Games
-  storyFragment: '{name}''s childhood turned around rooftops where children ran above
-    adult trouble, a rough education that made quiet restraint feel natural.'
+  title: Chimney Climbing
+  storyFragment: 'As a child, {name} lived through a chimney climbing, learning balance above danger and confidence after every fall.'
   modifiers:
   - type: 0
     stat: 2

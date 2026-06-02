@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_05_04
   stage: 1
-  title: Bright Kitchen Yard
-  storyFragment: By twelve, {name} had drifted into a kitchen yard full of heat,
-    scraps, and shouted orders, a life where a bright belief that tomorrow could
-    be stolen back mattered more than comfort.
+  title: Market Cook Stall
+  storyFragment: 'As a child, {name} lived through a market cook stall, learning timing, heat, patience, and how to watch fighters while pretending to work.'
   modifiers:
   - type: 0
     stat: 0

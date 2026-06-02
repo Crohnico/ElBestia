@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_07_08
   stage: 1
-  title: Broken Library Dust
-  storyFragment: The people of dusty library rooms watched by tired scholars remember
-    a young {name} as someone shaped less by play than by broken trust and careful
-    habits.
+  title: Bookbinder Table
+  storyFragment: 'As a child, {name} lived through a bookbinder table, learning memory, patterns, and the habit of studying before acting.'
   modifiers:
   - type: 2
     stat: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   perkId: poison_doom
   displayName: Plague Doom
   rarity: 4
-  description: 'The arena slowly becomes Venom. Effect: apply 5 Poison stacks after
+  description: 'The arena slowly becomes Venom. Effect: apply 3 Poison stacks after
     each action.'
   effectType: 5
   combatStat: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   weapon: 0
   element: 4
   charge: 1
-  flatValue: 5
+  flatValue: 3
   multiplier: 1
   chance: 0
   isUnique: 0

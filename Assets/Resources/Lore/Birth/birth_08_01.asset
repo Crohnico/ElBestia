@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_08_01
   stage: 0
-  title: Quiet Fishing Village
-  storyFragment: Before anyone called {name} a fighter, life in a humble fishing
-    village where hunger arrived with the tide had already taught the family the
-    meaning of quiet restraint.
+  title: Pearl Diver Family
+  storyFragment: '{name} was born in a pearl diver family, where nets, boats, and empty mornings taught patience.'
   modifiers:
   - type: 0
     stat: 3

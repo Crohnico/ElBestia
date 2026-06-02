@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_04_06
   stage: 1
-  title: Patient Stable Work
-  storyFragment: The safest corner of {name}'s youth was the stables behind a trading
-    road, though even there patience that waited longer than fear kept knocking.
+  title: Warhorse Grooming
+  storyFragment: 'As a child, {name} lived through a warhorse grooming, building strength and balance around animals, carts, mud, and long roads.'
   modifiers:
   - type: 4
     stat: 0

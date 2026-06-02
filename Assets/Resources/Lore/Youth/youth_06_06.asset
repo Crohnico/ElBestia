@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_06_06
   stage: 2
-  title: Patient Monastery Trial
-  storyFragment: The work at a monastery trial designed to break vanity did not make
-    {name} gentle; it made patience that waited longer than fear easier to justify.
+  title: Candle Vigil Trial
+  storyFragment: 'As a young adult, {name} worked through a candle vigil trial, stripping vanity away through fasting, chores, forms, and punishment. They enter the dojo to test discipline against bloodier truths.'
   modifiers:
   - type: 0
     stat: 1

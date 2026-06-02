@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_14_08
   stage: 0
-  title: Broken Woodcutters
-  storyFragment: Before anyone called {name} a fighter, life in a family of woodcutters
-    who trusted axes before promises had already taught the family the meaning of
-    broken trust and careful habits.
+  title: Bark Gatherer Family
+  storyFragment: '{name} was born into a bark gatherer family, where axes fed the family and falling timber punished carelessness.'
   modifiers:
   - type: 4
     stat: 0

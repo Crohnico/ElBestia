@@ -15,14 +15,14 @@ MonoBehaviour:
   perkId: life_touched
   displayName: Life Touched
   rarity: 0
-  description: 'A little more meat on the frame. Effect: +10 Life.'
+  description: 'A little more meat on the frame. Effect: +50 Life.'
   effectType: 2
   combatStat: 5
   stat: 0
   weapon: 0
   element: 0
   charge: 0
-  flatValue: 10
+  flatValue: 50
   multiplier: 1
   chance: 0
   isUnique: 0

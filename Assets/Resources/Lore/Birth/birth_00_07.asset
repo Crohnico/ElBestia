@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_00_07
   stage: 0
-  title: Restless Sword Family
-  storyFragment: Before anyone called {name} a fighter, life in a family of sword
-    tutors had already taught the family the meaning of restlessness that kept looking
-    for a door.
+  title: Mercenary Parentage
+  storyFragment: '{name} was born into a mercenary parentage, where weapons, footwork, and bruised pride were part of ordinary family life.'
   modifiers:
   - type: 2
     stat: 0

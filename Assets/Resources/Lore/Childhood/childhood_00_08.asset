@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_00_08
   stage: 1
-  title: Broken Orphanage
-  storyFragment: The people of an overcrowded orphanage remember a young {name} as
-    someone shaped less by play than by broken trust and careful habits.
+  title: Poorhouse Dormitory
+  storyFragment: 'As a child, {name} lived through a poorhouse dormitory, learning to compete for space, food, attention, and the right to be remembered.'
   modifiers:
   - type: 0
     stat: 0

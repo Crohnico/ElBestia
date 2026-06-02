@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_17_08
   stage: 1
-  title: Broken Circus Tent
-  storyFragment: The safest corner of {name}'s youth was a circus tent full of tricks
-    and bruises, though even there broken trust and careful habits kept knocking.
+  title: Traveling Stage
+  storyFragment: 'As a child, {name} lived through a traveling stage, learning masks, timing, falls, applause, and public courage.'
   modifiers:
   - type: 0
     stat: 2

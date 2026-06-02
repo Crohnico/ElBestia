@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_15_00
   stage: 1
-  title: Hard Winter Road
-  storyFragment: Years in a winter road with no patience for weakness gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood hard
-    endurance.
+  title: Winter Road
+  storyFragment: 'As a child, {name} lived through a winter road, learning cold endurance and the cost of stopping too soon.'
   modifiers:
   - type: 2
     stat: 0

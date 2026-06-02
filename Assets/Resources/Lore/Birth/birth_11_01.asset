@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_11_01
   stage: 0
-  title: Quiet Noble House
-  storyFragment: The household that raised {name} belonged to a noble house full
-    of manners and hidden knives, and its oldest inheritance was quiet restraint.
+  title: Minor Noble Family
+  storyFragment: '{name} was born into a minor noble family, where manners, inheritance, and hidden rivalries carried their own kind of danger.'
   modifiers:
   - type: 0
     stat: 1

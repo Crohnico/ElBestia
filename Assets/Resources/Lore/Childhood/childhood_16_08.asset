@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_16_08
   stage: 1
-  title: Broken Debt House
-  storyFragment: The people of a debt house where promises had teeth remember a young
-    {name} as someone shaped less by play than by broken trust and careful habits.
+  title: Auction Yard Childhood
+  storyFragment: 'As a child, {name} lived through an auction yard childhood, learning what freedom costs and why promises can become chains.'
   modifiers:
   - type: 0
     stat: 1

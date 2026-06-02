@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_09_03
   stage: 0
-  title: Hungry Forge Quarter
-  storyFragment: '{name} was born under the customs of a forge quarter blackened
-    by smoke and debt, where even a cradle could carry hunger that made every choice
-    sharper.'
+  title: Charcoal Burner Family
+  storyFragment: '{name} was born in a charcoal burner family, where heat, hammer rhythm, and metalwork filled the streets.'
   modifiers:
   - type: 0
     stat: 4

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_04_07
   stage: 1
-  title: Restless Stable Work
-  storyFragment: As a child, {name} spent long years around the stables behind a
-    trading road, learning to turn restlessness that kept looking for a door into
-    a survival tool.
+  title: Market Stable Work
+  storyFragment: 'As a child, {name} lived through a market stable work, building strength and balance around animals, carts, mud, and long roads.'
   modifiers:
   - type: 2
     stat: 0

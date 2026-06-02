@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_01_08
   stage: 0
-  title: Broken Poor Family
-  storyFragment: The name {name} first appeared in the records of a poor household
-    that counted every meal, beside a note about broken trust and careful habits.
+  title: Dockside Household
+  storyFragment: '{name} was born into a dockside household, where food, debt, and shelter were problems children learned to understand too early.'
   modifiers:
   - type: 0
     stat: 1

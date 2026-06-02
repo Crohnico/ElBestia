@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_14_05
   stage: 0
-  title: Cruel Woodcutters
-  storyFragment: The household that raised {name} belonged to a family of woodcutters
-    who trusted axes before promises, and its oldest inheritance was cruelty learned
-    as protection.
+  title: River Log Driver Family
+  storyFragment: '{name} was born into a river log driver family, where axes fed the family and falling timber punished carelessness.'
   modifiers:
   - type: 2
     stat: 0

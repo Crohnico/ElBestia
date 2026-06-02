@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_09_03
   stage: 2
-  title: Hungry Courier Route
-  storyFragment: Youth ended when {name} joined a courier route where speed meant
-    dinner, where duty sharpened hunger that made every choice sharper into a practical
-    weapon.
+  title: Battlefield Courier
+  storyFragment: 'As a young adult, {name} worked through a battlefield courier, learning speed, timing, breath, and how to keep moving while chased. They enter the dojo to turn speed into fame instead of errands.'
   modifiers:
   - type: 0
     stat: 4

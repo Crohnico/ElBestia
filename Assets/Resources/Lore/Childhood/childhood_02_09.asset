@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_02_09
   stage: 1
-  title: Proud Good School
-  storyFragment: Childhood pulled {name} through a strict but generous school; the
-    lesson that stayed was pride too stubborn to die quietly.
+  title: Dojo Scholarship
+  storyFragment: 'As a child, {name} lived through a dojo scholarship, learning letters, rivalry, discipline, and how rules can be used as weapons.'
   modifiers:
   - type: 2
     stat: 0

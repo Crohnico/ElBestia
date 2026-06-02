@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_16_01
   stage: 0
-  title: Quiet Arena District
-  storyFragment: The first stories about {name} came from an arena district that
-    cheered before it pitied, remembered locally for quiet restraint.
+  title: Gladiator Barracks Birth
+  storyFragment: '{name} was born in a gladiator barracks birth, where crowds cheered pain before they learned the names of fighters.'
   modifiers:
   - type: 0
     stat: 1

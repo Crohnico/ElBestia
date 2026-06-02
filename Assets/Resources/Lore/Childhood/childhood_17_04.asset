@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_17_04
   stage: 1
-  title: Bright Circus Tent
-  storyFragment: The people of a circus tent full of tricks and bruises remember
-    a young {name} as someone shaped less by play than by a bright belief that tomorrow
-    could be stolen back.
+  title: Juggler Cart
+  storyFragment: 'As a child, {name} lived through a juggler cart, learning masks, timing, falls, applause, and public courage.'
   modifiers:
   - type: 0
     stat: 2

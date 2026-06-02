@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_00_04
   stage: 1
-  title: Bright Orphanage
-  storyFragment: The safest corner of {name}'s youth was an overcrowded orphanage,
-    though even there a bright belief that tomorrow could be stolen back kept knocking.
+  title: Foundling Home
+  storyFragment: 'As a child, {name} lived through a foundling home, learning to compete for space, food, attention, and the right to be remembered.'
   modifiers:
   - type: 0
     stat: 0

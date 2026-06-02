@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_17_07
   stage: 0
-  title: Restless Monk Refuge
-  storyFragment: '{name} was born in a monk refuge where silence was a rule, and
-    restlessness that kept looking for a door shaped ordinary life there.'
+  title: Monk Farm Family
+  storyFragment: '{name} was born in a monk farm family, where silence, breath, and repeated chores were treated as survival tools.'
   modifiers:
   - type: 0
     stat: 2

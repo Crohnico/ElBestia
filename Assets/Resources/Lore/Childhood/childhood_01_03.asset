@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_01_03
   stage: 1
-  title: Hungry Wild Child
-  storyFragment: As a child, {name} spent long years around the wild edges beyond
-    the village, learning to turn hunger that made every choice sharper into a survival
-    tool.
+  title: Riverbank Survival
+  storyFragment: 'As a child, {name} lived through a riverbank survival, learning from weather, hunger, hiding places, and mistakes nobody corrected.'
   modifiers:
   - type: 0
     stat: 1

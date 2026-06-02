@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_18_08
   stage: 1
-  title: Broken Hidden Valley
-  storyFragment: The people of a hidden valley that distrusted outsiders remember
-    a young {name} as someone shaped less by play than by broken trust and careful
-    habits.
+  title: Goat Valley Childhood
+  storyFragment: 'As a child, {name} lived through a goat valley childhood, learning caution, secrecy, and suspicion of outsiders.'
   modifiers:
   - type: 4
     stat: 0

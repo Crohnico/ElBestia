@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_15_04
   stage: 1
-  title: Bright Winter Road
-  storyFragment: When other children learned games, {name} learned the rules of a
-    winter road with no patience for weakness and the cost of a bright belief that
-    tomorrow could be stolen back.
+  title: Sled Runner Years
+  storyFragment: 'As a child, {name} lived through the sled runner years, learning cold endurance and the cost of stopping too soon.'
   modifiers:
   - type: 2
     stat: 0

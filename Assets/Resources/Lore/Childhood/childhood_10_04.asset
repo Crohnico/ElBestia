@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_10_04
   stage: 1
-  title: Bright Market Runner
-  storyFragment: '{name}''s childhood turned around market alleys where every errand
-    became a race, a rough education that made a bright belief that tomorrow could
-    be stolen back feel natural.'
+  title: Auction House Runner
+  storyFragment: 'As a child, {name} lived through an auction house runner, learning speed through crowds and how to read danger while moving.'
   modifiers:
   - type: 4
     stat: 0

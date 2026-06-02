@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_03_03
   stage: 0
-  title: Hungry Mountain Clan
-  storyFragment: '{name} was born in a mountain clan of stubborn walkers, and hunger
-    that made every choice sharper shaped ordinary life there.'
+  title: Avalanche Shelter
+  storyFragment: '{name} was born in an avalanche shelter, where balance, lungs, and stubborn legs mattered before formal schooling.'
   modifiers:
   - type: 4
     stat: 0

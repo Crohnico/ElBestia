@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_17_09
   stage: 0
-  title: Proud Monk Refuge
-  storyFragment: In a monk refuge where silence was a rule, {name}'s birth was not
-    considered special until rumors of pride too stubborn to die quietly began to
-    follow it.
+  title: Disciples' Dormitory
+  storyFragment: '{name} was born in a disciples'' dormitory, where silence, breath, and repeated chores were treated as survival tools.'
   modifiers:
   - type: 4
     stat: 0

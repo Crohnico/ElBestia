@@ -15,9 +15,9 @@ MonoBehaviour:
   nameGenerator: {fileID: 0}
   level: 1
   totalBaseStatPoints: 50
-  seed: 2103468701
-  championId: Q1EMH6-7EU8S2-3ZUB4G-HK2GQA
-  championName: Duarte Cryptthorn
+  seed: 1345452753
+  championId: XCFT8M-MKAS5Y-UWDH73-4CXBIT
+  championName: Rafael Sunmonger
   playerNickname: 
   appearance:
     sex: 1
@@ -28,40 +28,50 @@ MonoBehaviour:
     legs: -1
     feet: -1
   lore:
-    birth: {fileID: 11400000, guid: e0adc22129d524940a615121f73ebd57, type: 2}
-    childhood: {fileID: 11400000, guid: f7ec061bf1b92eb479e11646a7279924, type: 2}
-    youth: {fileID: 11400000, guid: eaf943dc969f26a4ea0e7be2c7ba96e6, type: 2}
-    story: Duarte Cryptthorn entered the world in a forge quarter blackened by smoke
-      and debt, surrounded by people who measured children through quiet restraint.
-      Years in dusty library rooms watched by tired scholars gave Duarte Cryptthorn
-      habits that looked strange to outsiders and useful to anyone who understood
-      restlessness that kept looking for a door. In a bandit season where trust was
-      expensive, Duarte Cryptthorn learned that a future could be bought with bruises,
-      discipline, and cruelty learned as protection.
+    birth: {fileID: 11400000, guid: f09a6ff47f5afc34e9e446fd05e4044d, type: 2}
+    childhood: {fileID: 11400000, guid: 3aaa61a2c1ca296488b34582045622ab, type: 2}
+    youth: {fileID: 11400000, guid: 3e9bd97f48ab7914fbc7dbcd54c84027, type: 2}
+    storyCombinationKey: 902191
+    storyCombinationId: birth_02_02__childhood_11_00__youth_19_01
+    story: Rafael Sunmonger was born in a salt flat camp, where water, shade, and distance shaped every decision. As a child, Rafael Sunmonger lived through a butcher block, learning anatomy, steady hands, and why blood should not freeze the mind. As a young adult, Rafael Sunmonger worked through a mat sweeper job, sweeping floors, correcting stances, and stealing lessons from the edge of the mat. They enter the dojo to stand on the mat as a fighter.
   baseStats:
-    life: 199
-    energy: 50
-    strength: 12
-    agility: 9
-    constitution: 11
-    intelligence: 5
-    endurance: 13
-    dodge: 4
-    block: 7
+    life: 214
+    energy: 62
+    strength: 10
+    agility: 11
+    constitution: 14
+    intelligence: 7
+    endurance: 8
+    dodge: 5
+    block: 4
     critical: 4
     hit: 4
-    recovery: 5
-    speed: 14
+    recovery: 6
+    speed: 17
     experienceGain: 0
     fatalInjuryResistance: 0
     injurySeverityReduction: 0
-    fireResistance: 4
-    waterResistance: 4
-    electricityResistance: 3
-    poisonResistance: 4
-    earthResistance: 6
-    airResistance: 4
-    woodResistance: 4
+    fireResistance: 3
+    waterResistance: 3
+    electricityResistance: 4
+    poisonResistance: 3
+    earthResistance: 5
+    airResistance: 5
+    woodResistance: 3
+    fireDamage: 0
+    waterDamage: 0
+    electricityDamage: 0
+    poisonDamage: 0
+    earthDamage: 0
+    airDamage: 0
+    woodDamage: 0
+    fireDamageMultiplier: 1
+    waterDamageMultiplier: 1
+    electricityDamageMultiplier: 1
+    poisonDamageMultiplier: 1
+    earthDamageMultiplier: 1
+    airDamageMultiplier: 1
+    woodDamageMultiplier: 1
     fistsProficiency: 0
     swordProficiency: 0
     axeProficiency: 0
@@ -69,58 +79,72 @@ MonoBehaviour:
     staffProficiency: 0
     bowProficiency: 0
   stats:
-    life: 255
-    energy: 50
-    strength: 12
-    agility: 9
-    constitution: 16
-    intelligence: 5
-    endurance: 15
-    dodge: 6
-    block: 8
+    life: 250
+    energy: 62
+    strength: 10
+    agility: 11
+    constitution: 17
+    intelligence: 7
+    endurance: 10
+    dodge: 7
+    block: 5
     critical: 4
     hit: 4
     recovery: 7
-    speed: 16
+    speed: 18
     experienceGain: 0
     fatalInjuryResistance: 0
     injurySeverityReduction: 0
-    fireResistance: 12
-    waterResistance: 6
-    electricityResistance: 4
-    poisonResistance: 9
-    earthResistance: 7
-    airResistance: 5
-    woodResistance: 5
+    fireResistance: 5
+    waterResistance: 5
+    electricityResistance: 5
+    poisonResistance: 4
+    earthResistance: 6
+    airResistance: 6
+    woodResistance: 4
+    fireDamage: 0
+    waterDamage: 5
+    electricityDamage: 0
+    poisonDamage: 0
+    earthDamage: 0
+    airDamage: 0
+    woodDamage: 0
+    fireDamageMultiplier: 1
+    waterDamageMultiplier: 1
+    electricityDamageMultiplier: 1
+    poisonDamageMultiplier: 1
+    earthDamageMultiplier: 1
+    airDamageMultiplier: 1
+    woodDamageMultiplier: 1
     fistsProficiency: 0
-    swordProficiency: 4
-    axeProficiency: 0
+    swordProficiency: 3
+    axeProficiency: 4
     spearProficiency: 0
     staffProficiency: 0
-    bowProficiency: 0
+    bowProficiency: 3
   growth:
     strength: 0
     agility: 0
-    constitution: 1
+    constitution: 0
     intelligence: 0
     endurance: 0
   currentExperience: 0
   experienceToNextLevel: 114
-  equippedWeapon: 1
+  equippedWeapon: 3
   perks:
-  - {fileID: 11400000, guid: d9b7f928bdbb025478a85b1bbe111a33, type: 2}
-  - {fileID: 11400000, guid: 3f592c95256082b469e05a57255f1291, type: 2}
+  - {fileID: 11400000, guid: 4aee2ff499df8814ea560cc05455f698, type: 2}
+  - {fileID: 11400000, guid: 6451a48cb76f47441b0f32349e0a5bfe, type: 2}
   baseSkill:
-    skillName: Base Punch
-    skillNameId: skill_name.base.punch
-    description: 'The user throws a simple punch.
+    skillName: Base Axe Cleave
+    skillNameId: skill_name.base.axe_cleave
+    description: 'The user swings the axe in a simple heavy blow.
 
-      - Cooldown: 0s
+      - Cooldown:
+      0s
 
-      -
-      Damage: 8
+      - Damage: 14
 
-      - Effects: action: Enemy: DoDamage x8'
+      - Effects: action: Enemy: DoDamage x14'
     isBaseSkill: 1
     quality: 0
     level: 1
@@ -128,7 +152,7 @@ MonoBehaviour:
     element: 0
     energyCost: 0
     range: 1
-    weapons: 01000000
+    weapons: 03000000
     statScaling:
     - stat: 0
       scaling: 0
@@ -138,35 +162,39 @@ MonoBehaviour:
     - target: 1
       action: 0
       charge: 0
-      amount: 8
+      amount: 14
     postCast: []
-    iconSeed: 1738305876
+    iconSeed: 1594766594
   skills:
-  - skillName: Thunder Strike of Shocking
-    skillNameId: skill_name.thunder_strike.shocking
-    description: 'The user executes a bare-knuckle strike.
+  - skillName: Empowered Wind Cleave
+    skillNameId: skill_name.empowered.wind_cleave
+    description: 'The user steadies their stance and empowers the next blow before
+      executes a heavy axe cleave.
 
       - Cooldown: 4,2s
 
-      -
-      Effects: pre: Enemy: ApplyCharges Shock x2'
+      - Effects: pre:
+      Self: IncreaseDamage x2'
     isBaseSkill: 0
     quality: 0
     level: 1
     cooldownSeconds: 4.2
-    element: 2
-    energyCost: 16
-    range: 1.1
-    weapons: 01000000
+    element: 6
+    energyCost: 10
+    range: 1.6
+    weapons: 03000000
     statScaling:
-    - stat: 4
+    - stat: 3
       scaling: 0
       usesGradeScaling: 1
+    - stat: 0
+      scaling: 6
+      usesGradeScaling: 1
     preCast:
-    - target: 1
-      action: 4
-      charge: 4
+    - target: 0
+      action: 1
+      charge: 0
       amount: 2
     cast: []
     postCast: []
-    iconSeed: 1493048303
+    iconSeed: 1450608505

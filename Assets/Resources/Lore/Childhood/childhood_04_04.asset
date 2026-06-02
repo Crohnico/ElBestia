@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_04_04
   stage: 1
-  title: Bright Stable Work
-  storyFragment: The people of the stables behind a trading road remember a young
-    {name} as someone shaped less by play than by a bright belief that tomorrow could
-    be stolen back.
+  title: Mule Train Work
+  storyFragment: 'As a child, {name} lived through a mule train work, building strength and balance around animals, carts, mud, and long roads.'
   modifiers:
   - type: 0
     stat: 4

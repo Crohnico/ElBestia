@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_04_01
   stage: 1
-  title: Quiet Stable Work
-  storyFragment: '{name}''s childhood turned around the stables behind a trading
-    road, a rough education that made quiet restraint feel natural.'
+  title: Noble Stables
+  storyFragment: 'As a child, {name} lived through the noble stables, building strength and balance around animals, carts, mud, and long roads.'
   modifiers:
   - type: 0
     stat: 4

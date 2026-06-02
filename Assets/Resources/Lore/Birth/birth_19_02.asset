@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_19_02
   stage: 0
-  title: Lucky Border Farm
-  storyFragment: Before anyone called {name} a fighter, life in a border farm where
-    raids were part of the seasons had already taught the family the meaning of uncomfortable
-    luck.
+  title: Militia Farmstead
+  storyFragment: '{name} was born in a militia farmstead, where harvests, fences, raids, and militia drills shared the same seasons.'
   modifiers:
   - type: 0
     stat: 4

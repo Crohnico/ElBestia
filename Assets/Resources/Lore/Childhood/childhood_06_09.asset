@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_06_09
   stage: 1
-  title: Proud Mine Tunnels
-  storyFragment: Years in mine tunnels where daylight became a rumor gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood pride
-    too stubborn to die quietly.
+  title: Mine Mule Work
+  storyFragment: 'As a child, {name} lived through a mine mule work, learning breath control, endurance, and courage in cramped darkness.'
   modifiers:
   - type: 2
     stat: 0

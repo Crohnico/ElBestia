@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_09_05
   stage: 0
-  title: Cruel Forge Quarter
-  storyFragment: The household that raised {name} belonged to a forge quarter blackened
-    by smoke and debt, and its oldest inheritance was cruelty learned as protection.
+  title: Bellows Room Birth
+  storyFragment: '{name} was born in a bellows room birth, where heat, hammer rhythm, and metalwork filled the streets.'
   modifiers:
   - type: 4
     stat: 0

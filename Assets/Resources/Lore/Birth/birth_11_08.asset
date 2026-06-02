@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_11_08
   stage: 0
-  title: Broken Noble House
-  storyFragment: The name {name} first appeared in the records of a noble house full
-    of manners and hidden knives, beside a note about broken trust and careful habits.
+  title: Silk Merchant Dynasty
+  storyFragment: '{name} was born into a silk merchant dynasty, where manners, inheritance, and hidden rivalries carried their own kind of danger.'
   modifiers:
   - type: 2
     stat: 0

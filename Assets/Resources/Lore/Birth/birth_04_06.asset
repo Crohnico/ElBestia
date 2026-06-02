@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_04_06
   stage: 0
-  title: Patient River House
-  storyFragment: In a river house that lived by floods and ferries, {name}'s birth
-    was not considered special until rumors of patience that waited longer than fear
-    began to follow it.
+  title: Watermill Household
+  storyFragment: '{name} was born in a watermill household, where floods, ferries, and rope work taught respect for timing.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_07_01
   stage: 1
-  title: Quiet Library Dust
-  storyFragment: Childhood pulled {name} through dusty library rooms watched by tired
-    scholars; the lesson that stayed was quiet restraint.
+  title: Noble Archive
+  storyFragment: 'As a child, {name} lived through a noble archive, learning memory, patterns, and the habit of studying before acting.'
   modifiers:
   - type: 0
     stat: 2

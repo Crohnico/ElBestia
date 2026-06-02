@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_09_02
   stage: 0
-  title: Lucky Forge Quarter
-  storyFragment: '{name} entered the world in a forge quarter blackened by smoke
-    and debt, surrounded by people who measured children through uncomfortable luck.'
+  title: Foundry Row Birth
+  storyFragment: '{name} was born in a foundry row birth, where heat, hammer rhythm, and metalwork filled the streets.'
   modifiers:
   - type: 2
     stat: 0

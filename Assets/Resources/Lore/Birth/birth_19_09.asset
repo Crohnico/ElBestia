@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_19_09
   stage: 0
-  title: Proud Border Farm
-  storyFragment: The household that raised {name} belonged to a border farm where
-    raids were part of the seasons, and its oldest inheritance was pride too stubborn
-    to die quietly.
+  title: Checkpoint Farmhouse
+  storyFragment: '{name} was born in a checkpoint farmhouse, where harvests, fences, raids, and militia drills shared the same seasons.'
   modifiers:
   - type: 0
     stat: 4

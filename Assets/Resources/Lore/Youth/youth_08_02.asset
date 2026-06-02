@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_08_02
   stage: 2
-  title: Lucky Merchant Guard
-  storyFragment: The next chapter took {name} to a merchant guard escorting caravans
-    through bad roads, a place that rewarded uncomfortable luck as long as it could
-    win fights.
+  title: Market House Guard
+  storyFragment: 'As a young adult, {name} worked through a market house guard, turning caravan routes and roadside fights into a working education. They enter the dojo to earn more than a season of escort work.'
   modifiers:
   - type: 4
     stat: 0

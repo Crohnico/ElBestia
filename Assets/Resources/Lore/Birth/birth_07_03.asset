@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_07_03
   stage: 0
-  title: Hungry Temple Step
-  storyFragment: The household that raised {name} belonged to the steps of a severe
-    hill temple, and its oldest inheritance was hunger that made every choice sharper.
+  title: Pilgrim Shelter
+  storyFragment: '{name} was born in a pilgrim shelter, where bells, chores, and ritual discipline marked the first memories.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_10_03
   stage: 2
-  title: Hungry Blacksmith Helper
-  storyFragment: Youth ended when {name} joined a blacksmith's shop where strength
-    was expected, where duty sharpened hunger that made every choice sharper into
-    a practical weapon.
+  title: Horseshoe Forge
+  storyFragment: 'As a young adult, {name} worked through a horseshoe forge, hardening hands through heat, rhythm, metal, and repeated impact. They enter the dojo to repay the forge that fed them.'
   modifiers:
   - type: 0
     stat: 0

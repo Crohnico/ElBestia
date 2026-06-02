@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_05_04
   stage: 2
-  title: Bright Arena Debut
-  storyFragment: The next chapter took {name} to a first arena circuit with more
-    blood than applause, a place that rewarded a bright belief that tomorrow could
-    be stolen back as long as it could win fights.
+  title: Prize Fight Circuit
+  storyFragment: 'As a young adult, {name} worked through a prize fight circuit, discovering that pain becomes easier to bear when a crowd gives it a price. They enter the dojo to turn a first taste of applause into real prize money.'
   modifiers:
   - type: 0
     stat: 0

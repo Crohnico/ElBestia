@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_02_07
   stage: 1
-  title: Restless Good School
-  storyFragment: By twelve, {name} had drifted into a strict but generous school,
-    a life where restlessness that kept looking for a door mattered more than comfort.
+  title: Military Academy Prep
+  storyFragment: 'As a child, {name} lived through a military academy prep, learning letters, rivalry, discipline, and how rules can be used as weapons.'
   modifiers:
   - type: 0
     stat: 2

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_08_05
   stage: 1
-  title: Cruel Fisher Nets
-  storyFragment: The people of fisher nets, cold mornings, and torn palms remember
-    a young {name} as someone shaped less by play than by cruelty learned as protection.
+  title: Boat Repair Yard
+  storyFragment: 'As a child, {name} lived through a boat repair yard, learning balance, cold patience, and hand strength before sunrise.'
   modifiers:
   - type: 0
     stat: 3

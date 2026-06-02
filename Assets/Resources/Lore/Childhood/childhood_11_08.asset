@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_11_08
   stage: 1
-  title: Broken Butcher Block
-  storyFragment: When other children learned games, {name} learned the rules of a
-    butcher's block where blood was just work and the cost of broken trust and careful
-    habits.
+  title: Knife Cleaning Chores
+  storyFragment: 'As a child, {name} lived through the knife cleaning chores, learning anatomy, steady hands, and why blood should not freeze the mind.'
   modifiers:
   - type: 2
     stat: 0

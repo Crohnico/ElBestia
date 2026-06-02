@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_13_06
   stage: 1
-  title: Patient Old Hospital
-  storyFragment: '{name}''s childhood turned around an old hospital that smelled
-    of herbs and fear, a rough education that made patience that waited longer than
-    fear feel natural.'
+  title: Recovery Hall
+  storyFragment: 'As a child, {name} lived through a recovery hall, learning pain, recovery, herbs, and the fragile mechanics of bodies.'
   modifiers:
   - type: 2
     stat: 0

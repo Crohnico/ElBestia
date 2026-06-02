@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_03_09
   stage: 0
-  title: Proud Mountain Clan
-  storyFragment: The first stories about {name} came from a mountain clan of stubborn
-    walkers, remembered locally for pride too stubborn to die quietly.
+  title: Snowline Household
+  storyFragment: '{name} was born in a snowline household, where balance, lungs, and stubborn legs mattered before formal schooling.'
   modifiers:
   - type: 0
     stat: 3

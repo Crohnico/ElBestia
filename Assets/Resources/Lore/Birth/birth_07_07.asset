@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_07_07
   stage: 0
-  title: Restless Temple Step
-  storyFragment: '{name} was born under the customs of the steps of a severe hill
-    temple, where even a cradle could carry restlessness that kept looking for a
-    door.'
+  title: River Temple Birth
+  storyFragment: '{name} was born in a river temple birth, where bells, chores, and ritual discipline marked the first memories.'
   modifiers:
   - type: 4
     stat: 0

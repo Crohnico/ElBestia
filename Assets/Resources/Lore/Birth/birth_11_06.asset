@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_11_06
   stage: 0
-  title: Patient Noble House
-  storyFragment: The first stories about {name} came from a noble house full of manners
-    and hidden knives, remembered locally for patience that waited longer than fear.
+  title: House Guard Family
+  storyFragment: '{name} was born into a house guard family, where manners, inheritance, and hidden rivalries carried their own kind of danger.'
   modifiers:
   - type: 0
     stat: 1

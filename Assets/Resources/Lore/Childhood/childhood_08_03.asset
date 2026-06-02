@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_08_03
   stage: 1
-  title: Hungry Fisher Nets
-  storyFragment: By twelve, {name} had drifted into fisher nets, cold mornings, and
-    torn palms, a life where hunger that made every choice sharper mattered more
-    than comfort.
+  title: Harpoon Practice
+  storyFragment: 'As a child, {name} lived through a harpoon practice, learning balance, cold patience, and hand strength before sunrise.'
   modifiers:
   - type: 2
     stat: 0

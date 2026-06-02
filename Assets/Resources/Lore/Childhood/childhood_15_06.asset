@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_15_06
   stage: 1
-  title: Patient Winter Road
-  storyFragment: Years in a winter road with no patience for weakness gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood patience
-    that waited longer than fear.
+  title: Mountain Winter Shelter
+  storyFragment: 'As a child, {name} lived through a mountain winter shelter, learning cold endurance and the cost of stopping too soon.'
   modifiers:
   - type: 0
     stat: 0

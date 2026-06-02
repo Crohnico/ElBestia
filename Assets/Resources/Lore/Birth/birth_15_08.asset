@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_15_08
   stage: 0
-  title: Broken Street Clinic
-  storyFragment: '{name} was born in a street clinic where pain was ordinary, and
-    broken trust and careful habits shaped ordinary life there.'
+  title: Canal Sickroom
+  storyFragment: '{name} was born in a canal sickroom, where blood, bandages, and unpaid favors were never far away.'
   modifiers:
   - type: 2
     stat: 0

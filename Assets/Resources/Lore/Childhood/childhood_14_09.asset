@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_14_09
   stage: 1
-  title: Proud Burned Hamlet
-  storyFragment: The safest corner of {name}'s youth was a burned hamlet that never
-    stopped counting losses, though even there pride too stubborn to die quietly
-    kept knocking.
+  title: Evacuation Road Years
+  storyFragment: 'As a child, {name} lived through the evacuation road years, learning salvage, grief, and how quickly ordinary life can vanish.'
   modifiers:
   - type: 2
     stat: 0

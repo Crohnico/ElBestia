@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_08_03
   stage: 0
-  title: Hungry Fishing Village
-  storyFragment: The name {name} first appeared in the records of a humble fishing
-    village where hunger arrived with the tide, beside a note about hunger that made
-    every choice sharper.
+  title: Harpooner Family
+  storyFragment: '{name} was born in a harpooner family, where nets, boats, and empty mornings taught patience.'
   modifiers:
   - type: 2
     stat: 0

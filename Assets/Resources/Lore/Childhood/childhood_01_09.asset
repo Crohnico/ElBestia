@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_01_09
   stage: 1
-  title: Proud Wild Child
-  storyFragment: Years in the wild edges beyond the village gave {name} habits that
-    looked strange to outsiders and useful to anyone who understood pride too stubborn
-    to die quietly.
+  title: Wild Road Childhood
+  storyFragment: 'As a child, {name} lived through a wild road childhood, learning from weather, hunger, hiding places, and mistakes nobody corrected.'
   modifiers:
   - type: 4
     stat: 0

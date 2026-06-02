@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_19_07
   stage: 0
-  title: Restless Border Farm
-  storyFragment: The first stories about {name} came from a border farm where raids
-    were part of the seasons, remembered locally for restlessness that kept looking
-    for a door.
+  title: Truce Road Farm
+  storyFragment: '{name} was born in a truce road farm, where harvests, fences, raids, and militia drills shared the same seasons.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_14_06
   stage: 2
-  title: Patient Quarry Crew
-  storyFragment: In a quarry crew that turned stone into punishment, {name} learned
-    that a future could be bought with bruises, discipline, and patience that waited
-    longer than fear.
+  title: Lime Kiln Shift
+  storyFragment: 'As a young adult, {name} worked through a lime kiln shift, turning stone dust, repetition, and impact into stubborn strength. They enter the dojo to escape the quarry with tournament coin.'
   modifiers:
   - type: 0
     stat: 4

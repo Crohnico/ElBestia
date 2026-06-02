@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_15_08
   stage: 2
-  title: Broken Duelist Circle
-  storyFragment: The work at a duelist circle where pride had witnesses did not make
-    {name} gentle; it made broken trust and careful habits easier to justify.
+  title: Honor Bout Circuit
+  storyFragment: 'As a young adult, {name} worked through a honor bout circuit, learning distance, witnesses, pride, and the price of public mistakes. They enter the dojo to make their name public.'
   modifiers:
   - type: 2
     stat: 0

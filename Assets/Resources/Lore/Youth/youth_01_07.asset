@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_01_07
   stage: 2
-  title: Restless Teacher Years
-  storyFragment: By the end of youth, {name} had passed through years spent teaching
-    slower hands and carried restlessness that kept looking for a door like a second
-    name.
+  title: Children's Form Teacher
+  storyFragment: 'As a young adult, {name} worked through a children''s form teacher, turning correction, repetition, and bruised students into a sharper understanding of technique. They enter the dojo to prove their lessons survive opponents who hit back.'
   modifiers:
   - type: 0
     stat: 1

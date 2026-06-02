@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_17_00
   stage: 0
-  title: Hard Monk Refuge
-  storyFragment: '{name} was born under the customs of a monk refuge where silence
-    was a rule, where even a cradle could carry hard endurance.'
+  title: Monk Refuge
+  storyFragment: '{name} was born in a monk refuge, where silence, breath, and repeated chores were treated as survival tools.'
   modifiers:
   - type: 0
     stat: 2

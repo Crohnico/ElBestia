@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_06_07
   stage: 0
-  title: Restless Mercenary Camp
-  storyFragment: '{name} was born under the customs of a mercenary camp where lullabies
-    sounded like marching songs, where even a cradle could carry restlessness that
-    kept looking for a door.'
+  title: Banner Company Birth
+  storyFragment: '{name} was born around a banner company birth, where paid violence, marching boots, and camp discipline surrounded the cradle.'
   modifiers:
   - type: 0
     stat: 1

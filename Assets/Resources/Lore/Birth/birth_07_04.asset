@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_07_04
   stage: 0
-  title: Bright Temple Step
-  storyFragment: The first stories about {name} came from the steps of a severe hill
-    temple, remembered locally for a bright belief that tomorrow could be stolen
-    back.
+  title: Monk Gate Foundling
+  storyFragment: '{name} was born in a monk gate foundling, where bells, chores, and ritual discipline marked the first memories.'
   modifiers:
   - type: 2
     stat: 0

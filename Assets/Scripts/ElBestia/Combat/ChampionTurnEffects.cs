@@ -53,7 +53,7 @@ namespace ElBestia.Combat
                 else
                 {
                     ChampionBehaviour source = charge.source != null ? charge.source : owner;
-                    int damage = source.Damage.CalculateOutgoingAmount(source.Damage.GetIntelligence() * 2 * charge.amount);
+                    int damage = source.Damage.CalculateOutgoingAmount(source.Damage.GetIntelligence() * charge.amount);
                     source.Damage.DealDamageTo(owner, damage, ChargeEffectCatalog.GetDamageElement(charge.charge), false, false);
                 }
 

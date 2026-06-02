@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_10_02
   stage: 1
-  title: Lucky Market Runner
-  storyFragment: The people of market alleys where every errand became a race remember
-    a young {name} as someone shaped less by play than by uncomfortable luck.
+  title: Spice Stall Errands
+  storyFragment: 'As a child, {name} lived through the spice stall errands, learning speed through crowds and how to read danger while moving.'
   modifiers:
   - type: 0
     stat: 0

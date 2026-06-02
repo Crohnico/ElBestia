@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_18_01
   stage: 1
-  title: Quiet Hidden Valley
-  storyFragment: The safest corner of {name}'s youth was a hidden valley that distrusted
-    outsiders, though even there quiet restraint kept knocking.
+  title: Mountain Valley Farm
+  storyFragment: 'As a child, {name} lived through a mountain valley farm, learning caution, secrecy, and suspicion of outsiders.'
   modifiers:
   - type: 2
     stat: 0

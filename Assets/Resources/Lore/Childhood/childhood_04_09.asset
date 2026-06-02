@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_04_09
   stage: 1
-  title: Proud Stable Work
-  storyFragment: The people of the stables behind a trading road remember a young
-    {name} as someone shaped less by play than by pride too stubborn to die quietly.
+  title: Border Post Stables
+  storyFragment: 'As a child, {name} lived through the border post stables, building strength and balance around animals, carts, mud, and long roads.'
   modifiers:
   - type: 0
     stat: 4

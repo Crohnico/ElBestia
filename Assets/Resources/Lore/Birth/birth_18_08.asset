@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_18_08
   stage: 0
-  title: Broken Sailor Blood
-  storyFragment: '{name} entered the world in a sailor family with salt in every
-    story, surrounded by people who measured children through broken trust and careful
-    habits.'
+  title: Rope Maker Family
+  storyFragment: '{name} was born into a rope maker family, where ropes, tides, and returning alive mattered more than stories about courage.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_04_08
   stage: 0
-  title: Broken River House
-  storyFragment: In a river house that lived by floods and ferries, {name}'s birth
-    was not considered special until rumors of broken trust and careful habits began
-    to follow it.
+  title: River Shrine Family
+  storyFragment: '{name} was born in a river shrine family, where floods, ferries, and rope work taught respect for timing.'
   modifiers:
   - type: 0
     stat: 4

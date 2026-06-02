@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_03_06
   stage: 0
-  title: Patient Mountain Clan
-  storyFragment: '{name} was born in a mountain clan of stubborn walkers, and patience
-    that waited longer than fear shaped ordinary life there.'
+  title: Shepherd Ridge
+  storyFragment: '{name} was born in a shepherd ridge, where balance, lungs, and stubborn legs mattered before formal schooling.'
   modifiers:
   - type: 0
     stat: 3

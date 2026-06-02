@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_13_08
   stage: 1
-  title: Broken Old Hospital
-  storyFragment: '{name}''s childhood turned around an old hospital that smelled
-    of herbs and fear, a rough education that made broken trust and careful habits
-    feel natural.'
+  title: Medicine Shelf Work
+  storyFragment: 'As a child, {name} lived through a medicine shelf work, learning pain, recovery, herbs, and the fragile mechanics of bodies.'
   modifiers:
   - type: 0
     stat: 3

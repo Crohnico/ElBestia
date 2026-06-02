@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_00_02
   stage: 0
-  title: Lucky Sword Family
-  storyFragment: '{name} entered the world in a family of sword tutors, surrounded
-    by people who measured children through uncomfortable luck.'
+  title: Dojo Owner Family
+  storyFragment: '{name} was born into a dojo owner family, where weapons, footwork, and bruised pride were part of ordinary family life.'
   modifiers:
   - type: 4
     stat: 0

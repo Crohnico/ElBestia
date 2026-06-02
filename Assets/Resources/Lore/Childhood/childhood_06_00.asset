@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_06_00
   stage: 1
-  title: Hard Mine Tunnels
-  storyFragment: The safest corner of {name}'s youth was mine tunnels where daylight
-    became a rumor, though even there hard endurance kept knocking.
+  title: Coal Mine Tunnels
+  storyFragment: 'As a child, {name} lived through the coal mine tunnels, learning breath control, endurance, and courage in cramped darkness.'
   modifiers:
   - type: 4
     stat: 0

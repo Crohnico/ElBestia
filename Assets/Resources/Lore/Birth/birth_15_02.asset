@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_15_02
   stage: 0
-  title: Lucky Street Clinic
-  storyFragment: '{name} entered the world in a street clinic where pain was ordinary,
-    surrounded by people who measured children through uncomfortable luck.'
+  title: Herbalist Backroom
+  storyFragment: '{name} was born in a herbalist backroom, where blood, bandages, and unpaid favors were never far away.'
   modifiers:
   - type: 0
     stat: 0

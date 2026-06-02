@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_02_06
   stage: 1
-  title: Patient Good School
-  storyFragment: Years in a strict but generous school gave {name} habits that looked
-    strange to outsiders and useful to anyone who understood patience that waited
-    longer than fear.
+  title: Scribe School
+  storyFragment: 'As a child, {name} lived through a scribe school, learning letters, rivalry, discipline, and how rules can be used as weapons.'
   modifiers:
   - type: 0
     stat: 2

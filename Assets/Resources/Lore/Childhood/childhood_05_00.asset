@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_05_00
   stage: 1
-  title: Hard Kitchen Yard
-  storyFragment: Childhood pulled {name} through a kitchen yard full of heat, scraps,
-    and shouted orders; the lesson that stayed was hard endurance.
+  title: Monastery Kitchen
+  storyFragment: 'As a child, {name} lived through a monastery kitchen, learning timing, heat, patience, and how to watch fighters while pretending to work.'
   modifiers:
   - type: 0
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_11_04
   stage: 1
-  title: Bright Butcher Block
-  storyFragment: By twelve, {name} had drifted into a butcher's block where blood
-    was just work, a life where a bright belief that tomorrow could be stolen back
-    mattered more than comfort.
+  title: Meat Market Helper
+  storyFragment: 'As a child, {name} lived through a meat market helper, learning anatomy, steady hands, and why blood should not freeze the mind.'
   modifiers:
   - type: 2
     stat: 0

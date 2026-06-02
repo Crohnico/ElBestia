@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_10_06
   stage: 2
-  title: Patient Blacksmith Helper
-  storyFragment: By the end of youth, {name} had passed through a blacksmith's shop
-    where strength was expected and carried patience that waited longer than fear
-    like a second name.
+  title: Anvil Striker Job
+  storyFragment: 'As a young adult, {name} worked through an anvil striker job, hardening hands through heat, rhythm, metal, and repeated impact. They enter the dojo to repay the forge that fed them.'
   modifiers:
   - type: 0
     stat: 0

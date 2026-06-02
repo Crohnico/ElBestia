@@ -87,7 +87,18 @@ namespace ElBestia.Generation
 
         private static bool IsDeprecatedDefaultPerk(PerkSO perk)
         {
-            switch (perk.PerkId)
+            string perkId = perk.PerkId;
+            if (string.IsNullOrEmpty(perkId))
+            {
+                return false;
+            }
+
+            if (IsDeprecatedActionDotPerk(perkId))
+            {
+                return true;
+            }
+
+            switch (perkId)
             {
                 case "haste_rhythm":
                 case "haste_engine":
@@ -101,6 +112,23 @@ namespace ElBestia.Generation
                 default:
                     return false;
             }
+        }
+
+        private static bool IsDeprecatedActionDotPerk(string perkId)
+        {
+            if ((perkId.StartsWith("burn_") || perkId.StartsWith("poison_") || perkId.StartsWith("bleed_"))
+                && (perkId.EndsWith("_engine") || perkId.EndsWith("_crown")))
+            {
+                return true;
+            }
+
+            return perkId == "fire_brand"
+                || perkId == "water_brand"
+                || perkId == "electricity_brand"
+                || perkId == "poison_brand"
+                || perkId == "earth_brand"
+                || perkId == "air_brand"
+                || perkId == "wood_brand";
         }
     }
 }

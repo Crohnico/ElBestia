@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_09_09
   stage: 0
-  title: Proud Forge Quarter
-  storyFragment: In a forge quarter blackened by smoke and debt, {name}'s birth was
-    not considered special until rumors of pride too stubborn to die quietly began
-    to follow it.
+  title: Steam Workshop Birth
+  storyFragment: '{name} was born in a steam workshop birth, where heat, hammer rhythm, and metalwork filled the streets.'
   modifiers:
   - type: 4
     stat: 0

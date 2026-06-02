@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_08_08
   stage: 1
-  title: Broken Fisher Nets
-  storyFragment: Years in fisher nets, cold mornings, and torn palms gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood broken
-    trust and careful habits.
+  title: Lagoon Traps
+  storyFragment: 'As a child, {name} lived through the lagoon traps, learning balance, cold patience, and hand strength before sunrise.'
   modifiers:
   - type: 0
     stat: 3

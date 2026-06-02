@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_10_08
   stage: 0
-  title: Broken Nomad Caravan
-  storyFragment: Before anyone called {name} a fighter, life in a nomad caravan that
-    never slept under the same roof twice had already taught the family the meaning
-    of broken trust and careful habits.
+  title: Desert Cart Family
+  storyFragment: '{name} was born around a desert cart family, where packing quickly and reading roads mattered more than owning walls.'
   modifiers:
   - type: 4
     stat: 0

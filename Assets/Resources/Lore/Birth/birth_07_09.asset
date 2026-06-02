@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_07_09
   stage: 0
-  title: Proud Temple Step
-  storyFragment: In the steps of a severe hill temple, {name}'s birth was not considered
-    special until rumors of pride too stubborn to die quietly began to follow it.
+  title: Sanctuary Courtyard
+  storyFragment: '{name} was born in a sanctuary courtyard, where bells, chores, and ritual discipline marked the first memories.'
   modifiers:
   - type: 0
     stat: 2

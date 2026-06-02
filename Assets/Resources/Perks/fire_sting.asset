@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
   perkId: fire_sting
   displayName: Cinder Sting
-  rarity: 1
+  rarity: 2
   description: 'Every action leaves a trace of Cinder. Effect: apply 1 Burn stack
     after each action.'
   effectType: 5

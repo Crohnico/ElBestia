@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_07_00
   stage: 0
-  title: Hard Temple Step
-  storyFragment: The household that raised {name} belonged to the steps of a severe
-    hill temple, and its oldest inheritance was hard endurance.
+  title: Temple Steps
+  storyFragment: '{name} was born on the temple steps, where bells, chores, and ritual discipline marked the first memories.'
   modifiers:
   - type: 2
     stat: 0

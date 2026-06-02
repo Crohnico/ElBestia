@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_03_08
   stage: 1
-  title: Broken Street Gang
-  storyFragment: When other children learned games, {name} learned the rules of a
-    street gang that rewarded quick hands and the cost of broken trust and careful
-    habits.
+  title: Dice Den Runners
+  storyFragment: 'As a child, {name} lived through the dice den runners, learning shortcuts, loyalty, dirty angles, and the price of fear.'
   modifiers:
   - type: 2
     stat: 0

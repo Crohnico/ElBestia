@@ -15,15 +15,15 @@ MonoBehaviour:
   perkId: fire_sentence
   displayName: Cinder Sentence
   rarity: 3
-  description: 'A small curse rides every movement. Effect: apply 3 Burn stacks after
-    each action.'
+  description: 'The element keeps working after the strike. Effect: apply 2 Burn
+    stacks after each action.'
   effectType: 5
   combatStat: 0
   stat: 0
   weapon: 0
   element: 3
   charge: 2
-  flatValue: 3
+  flatValue: 2
   multiplier: 1
   chance: 0
   isUnique: 0

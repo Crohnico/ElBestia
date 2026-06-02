@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_09_03
   stage: 1
-  title: Hungry Temple Bells
-  storyFragment: Years in temple bells and endless chores gave {name} habits that
-    looked strange to outsiders and useful to anyone who understood hunger that made
-    every choice sharper.
+  title: Incense Hall Work
+  storyFragment: 'As a child, {name} lived through an incense hall work, learning ritual calm, chores, fasting, and the value of repetition.'
   modifiers:
   - type: 0
     stat: 4

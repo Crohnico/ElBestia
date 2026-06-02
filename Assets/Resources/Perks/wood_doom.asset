@@ -15,7 +15,7 @@ MonoBehaviour:
   perkId: wood_doom
   displayName: Root Doom
   rarity: 4
-  description: 'The arena slowly becomes Splinter. Effect: apply 5 Splinter stacks
+  description: 'The arena slowly becomes Splinter. Effect: apply 3 Splinter stacks
     after each action.'
   effectType: 5
   combatStat: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   weapon: 0
   element: 7
   charge: 5
-  flatValue: 5
+  flatValue: 3
   multiplier: 1
   chance: 0
   isUnique: 0

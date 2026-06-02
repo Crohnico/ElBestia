@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_16_00
   stage: 0
-  title: Hard Arena District
-  storyFragment: The household that raised {name} belonged to an arena district that
-    cheered before it pitied, and its oldest inheritance was hard endurance.
+  title: Arena District
+  storyFragment: '{name} was born in an arena district, where crowds cheered pain before they learned the names of fighters.'
   modifiers:
   - type: 0
     stat: 1

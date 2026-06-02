@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_03_09
   stage: 2
-  title: Proud Plumber Work
-  storyFragment: When {name} came of age, plumber work in narrow streets and flooded
-    cellars offered food, coin, and enough danger to give pride too stubborn to die
-    quietly direction.
+  title: Street Valve Crew
+  storyFragment: 'As a young adult, {name} worked through a street valve crew, learning angles, pressure, balance, and ugly work beneath the streets. They enter the dojo to buy a life above the cellars.'
   modifiers:
   - type: 0
     stat: 3

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_10_02
   stage: 0
-  title: Lucky Nomad Caravan
-  storyFragment: In a nomad caravan that never slept under the same roof twice, {name}'s
-    birth was not considered special until rumors of uncomfortable luck began to
-    follow it.
+  title: Wagon Circle Birth
+  storyFragment: '{name} was born around a wagon circle birth, where packing quickly and reading roads mattered more than owning walls.'
   modifiers:
   - type: 0
     stat: 0

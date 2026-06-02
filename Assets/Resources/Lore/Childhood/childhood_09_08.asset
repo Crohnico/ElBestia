@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_09_08
   stage: 1
-  title: Broken Temple Bells
-  storyFragment: By twelve, {name} had drifted into temple bells and endless chores,
-    a life where broken trust and careful habits mattered more than comfort.
+  title: Meditation Hall Chores
+  storyFragment: 'As a child, {name} lived through the meditation hall chores, learning ritual calm, chores, fasting, and the value of repetition.'
   modifiers:
   - type: 0
     stat: 4

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
   perkId: caltrops_aftertouch
   displayName: Caltrop Aftertouch
-  rarity: 0
+  rarity: 1
   description: After each action, apply 1 Caltrops stack on enemy.
   effectType: 5
   combatStat: 0

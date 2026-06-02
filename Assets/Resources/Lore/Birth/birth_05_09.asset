@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_05_09
   stage: 0
-  title: Proud Dojo Lineage
-  storyFragment: The first stories about {name} came from an old dojo lineage with
-    more pride than money, remembered locally for pride too stubborn to die quietly.
+  title: Dojo Servant Family
+  storyFragment: '{name} was born into a dojo servant family, where old forms and old debts were treated as inheritance.'
   modifiers:
   - type: 4
     stat: 0

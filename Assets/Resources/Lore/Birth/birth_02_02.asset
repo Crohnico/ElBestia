@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_02_02
   stage: 0
-  title: Lucky Desert Birth
-  storyFragment: '{name} was born in a settlement pressed against the desert, and
-    uncomfortable luck shaped ordinary life there.'
+  title: Salt Flat Camp
+  storyFragment: '{name} was born in a salt flat camp, where water, shade, and distance shaped every decision.'
   modifiers:
   - type: 0
     stat: 2

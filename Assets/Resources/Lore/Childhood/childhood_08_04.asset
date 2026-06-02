@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_08_04
   stage: 1
-  title: Bright Fisher Nets
-  storyFragment: When other children learned games, {name} learned the rules of fisher
-    nets, cold mornings, and torn palms and the cost of a bright belief that tomorrow
-    could be stolen back.
+  title: Tide Pool Gathering
+  storyFragment: 'As a child, {name} lived through a tide pool gathering, learning balance, cold patience, and hand strength before sunrise.'
   modifiers:
   - type: 0
     stat: 3

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_11_03
   stage: 1
-  title: Hungry Butcher Block
-  storyFragment: When other children learned games, {name} learned the rules of a
-    butcher's block where blood was just work and the cost of hunger that made every
-    choice sharper.
+  title: Fish Cutting Table
+  storyFragment: 'As a child, {name} lived through a fish cutting table, learning anatomy, steady hands, and why blood should not freeze the mind.'
   modifiers:
   - type: 4
     stat: 0

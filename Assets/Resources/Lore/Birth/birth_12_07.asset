@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_12_07
   stage: 0
-  title: Restless Prison Town
-  storyFragment: Before anyone called {name} a fighter, life in a prison town built
-    around locked gates had already taught the family the meaning of restlessness
-    that kept looking for a door.
+  title: Prison Kitchen Family
+  storyFragment: '{name} was born in a prison kitchen family, where locks, guards, and suspicion were part of the local weather.'
   modifiers:
   - type: 2
     stat: 0

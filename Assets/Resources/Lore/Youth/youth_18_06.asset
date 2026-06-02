@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_18_06
   stage: 2
-  title: Patient Bodyguard Work
-  storyFragment: The next chapter took {name} to bodyguard work for people worth
-    less than their enemies claimed, a place that rewarded patience that waited longer
-    than fear as long as it could win fights.
+  title: Caravan VIP Guard
+  storyFragment: 'As a young adult, {name} worked through a caravan vip guard, reading doorways, hands, threats, and the cowardice of richer people. They enter the dojo to stop bleeding for someone else''s purse.'
   modifiers:
   - type: 0
     stat: 3

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_06_03
   stage: 0
-  title: Hungry Mercenary Camp
-  storyFragment: '{name} was born in a mercenary camp where lullabies sounded like
-    marching songs, and hunger that made every choice sharper shaped ordinary life
-    there.'
+  title: Siege Camp Family
+  storyFragment: '{name} was born around a siege camp family, where paid violence, marching boots, and camp discipline surrounded the cradle.'
   modifiers:
   - type: 0
     stat: 1

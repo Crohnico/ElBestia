@@ -15,7 +15,7 @@ MonoBehaviour:
   perkId: earth_doom
   displayName: Grave Doom
   rarity: 4
-  description: 'The arena slowly becomes Crush. Effect: apply 5 Crush stacks after
+  description: 'The arena slowly becomes Crush. Effect: apply 3 Crush stacks after
     each action.'
   effectType: 5
   combatStat: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   weapon: 0
   element: 5
   charge: 6
-  flatValue: 5
+  flatValue: 3
   multiplier: 1
   chance: 0
   isUnique: 0

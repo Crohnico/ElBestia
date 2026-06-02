@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_14_01
   stage: 1
-  title: Quiet Burned Hamlet
-  storyFragment: As a child, {name} spent long years around a burned hamlet that
-    never stopped counting losses, learning to turn quiet restraint into a survival
-    tool.
+  title: Ash Field Childhood
+  storyFragment: 'As a child, {name} lived through an ash field childhood, learning salvage, grief, and how quickly ordinary life can vanish.'
   modifiers:
   - type: 2
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_16_07
   stage: 1
-  title: Restless Debt House
-  storyFragment: '{name}''s childhood turned around a debt house where promises had
-    teeth, a rough education that made restlessness that kept looking for a door
-    feel natural.'
+  title: Loan Office Runner
+  storyFragment: 'As a child, {name} lived through a loan office runner, learning what freedom costs and why promises can become chains.'
   modifiers:
   - type: 2
     stat: 0

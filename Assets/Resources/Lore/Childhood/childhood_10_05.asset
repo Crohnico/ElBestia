@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_10_05
   stage: 1
-  title: Cruel Market Runner
-  storyFragment: Childhood pulled {name} through market alleys where every errand
-    became a race; the lesson that stayed was cruelty learned as protection.
+  title: Debt Message Runner
+  storyFragment: 'As a child, {name} lived through a debt message runner, learning speed through crowds and how to read danger while moving.'
   modifiers:
   - type: 2
     stat: 0

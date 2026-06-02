@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_05_04
   stage: 0
-  title: Bright Dojo Lineage
-  storyFragment: In an old dojo lineage with more pride than money, {name}'s birth
-    was not considered special until rumors of a bright belief that tomorrow could
-    be stolen back began to follow it.
+  title: Temple Dojo Line
+  storyFragment: '{name} was born into a temple dojo line, where old forms and old debts were treated as inheritance.'
   modifiers:
   - type: 0
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_06_00
   stage: 0
-  title: Hard Mercenary Camp
-  storyFragment: '{name} was born in a mercenary camp where lullabies sounded like
-    marching songs, and hard endurance shaped ordinary life there.'
+  title: Mercenary Camp
+  storyFragment: '{name} was born around a mercenary camp, where paid violence, marching boots, and camp discipline surrounded the cradle.'
   modifiers:
   - type: 4
     stat: 0

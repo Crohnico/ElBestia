@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_06_02
   stage: 0
-  title: Lucky Mercenary Camp
-  storyFragment: In a mercenary camp where lullabies sounded like marching songs,
-    {name}'s birth was not considered special until rumors of uncomfortable luck
-    began to follow it.
+  title: Campaign Wagon Birth
+  storyFragment: '{name} was born around a campaign wagon birth, where paid violence, marching boots, and camp discipline surrounded the cradle.'
   modifiers:
   - type: 0
     stat: 1

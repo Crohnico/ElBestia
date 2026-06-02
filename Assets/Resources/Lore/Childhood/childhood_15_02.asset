@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_15_02
   stage: 1
-  title: Lucky Winter Road
-  storyFragment: When other children learned games, {name} learned the rules of a
-    winter road with no patience for weakness and the cost of uncomfortable luck.
+  title: Frozen Pass Crossing
+  storyFragment: 'As a child, {name} lived through a frozen pass crossing, learning cold endurance and the cost of stopping too soon.'
   modifiers:
   - type: 0
     stat: 0

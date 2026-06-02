@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_14_07
   stage: 0
-  title: Restless Woodcutters
-  storyFragment: '{name} was born in a family of woodcutters who trusted axes before
-    promises, and restlessness that kept looking for a door shaped ordinary life
-    there.'
+  title: Hunting Lodge Birth
+  storyFragment: '{name} was born into a hunting lodge birth, where axes fed the family and falling timber punished carelessness.'
   modifiers:
   - type: 0
     stat: 4

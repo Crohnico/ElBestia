@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_18_05
   stage: 1
-  title: Cruel Hidden Valley
-  storyFragment: '{name}''s childhood turned around a hidden valley that distrusted
-    outsiders, a rough education that made cruelty learned as protection feel natural.'
+  title: Cave Garden Childhood
+  storyFragment: 'As a child, {name} lived through a cave garden childhood, learning caution, secrecy, and suspicion of outsiders.'
   modifiers:
   - type: 2
     stat: 0

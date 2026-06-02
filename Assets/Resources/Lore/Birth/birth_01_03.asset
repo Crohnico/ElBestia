@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_01_03
   stage: 0
-  title: Hungry Poor Family
-  storyFragment: The first stories about {name} came from a poor household that counted
-    every meal, remembered locally for hunger that made every choice sharper.
+  title: Ragpicker Family
+  storyFragment: '{name} was born into a ragpicker family, where food, debt, and shelter were problems children learned to understand too early.'
   modifiers:
   - type: 0
     stat: 1

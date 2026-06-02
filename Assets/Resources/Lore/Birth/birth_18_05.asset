@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_18_05
   stage: 0
-  title: Cruel Sailor Blood
-  storyFragment: The name {name} first appeared in the records of a sailor family
-    with salt in every story, beside a note about cruelty learned as protection.
+  title: Shipwright Family
+  storyFragment: '{name} was born into a shipwright family, where ropes, tides, and returning alive mattered more than stories about courage.'
   modifiers:
   - type: 2
     stat: 0

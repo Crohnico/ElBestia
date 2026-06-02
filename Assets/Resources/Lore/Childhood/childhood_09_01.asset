@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_09_01
   stage: 1
-  title: Quiet Temple Bells
-  storyFragment: Childhood pulled {name} through temple bells and endless chores;
-    the lesson that stayed was quiet restraint.
+  title: Shrine Sweeping
+  storyFragment: 'As a child, {name} lived through a shrine sweeping, learning ritual calm, chores, fasting, and the value of repetition.'
   modifiers:
   - type: 4
     stat: 0

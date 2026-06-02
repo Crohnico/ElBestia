@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_19_07
   stage: 1
-  title: Restless Training Hall
-  storyFragment: The people of a training hall where children swept before they struck
-    remember a young {name} as someone shaped less by play than by restlessness that
-    kept looking for a door.
+  title: Grappling Yard
+  storyFragment: 'As a child, {name} lived through a grappling yard, learning stances, bruises, repetition, and formal violence.'
   modifiers:
   - type: 4
     stat: 0

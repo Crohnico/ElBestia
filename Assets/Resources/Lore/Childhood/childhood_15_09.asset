@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_15_09
   stage: 1
-  title: Proud Winter Road
-  storyFragment: Childhood pulled {name} through a winter road with no patience for
-    weakness; the lesson that stayed was pride too stubborn to die quietly.
+  title: Blizzard Refuge Years
+  storyFragment: 'As a child, {name} lived through the blizzard refuge years, learning cold endurance and the cost of stopping too soon.'
   modifiers:
   - type: 0
     stat: 0

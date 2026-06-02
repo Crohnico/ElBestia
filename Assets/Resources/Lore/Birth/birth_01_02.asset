@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_01_02
   stage: 0
-  title: Lucky Poor Family
-  storyFragment: The household that raised {name} belonged to a poor household that
-    counted every meal, and its oldest inheritance was uncomfortable luck.
+  title: Soup Kitchen Family
+  storyFragment: '{name} was born into a soup kitchen family, where food, debt, and shelter were problems children learned to understand too early.'
   modifiers:
   - type: 2
     stat: 0

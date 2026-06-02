@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_04_00
   stage: 1
-  title: Hard Stable Work
-  storyFragment: The safest corner of {name}'s youth was the stables behind a trading
-    road, though even there hard endurance kept knocking.
+  title: Trade Road Stables
+  storyFragment: 'As a child, {name} lived through the trade road stables, building strength and balance around animals, carts, mud, and long roads.'
   modifiers:
   - type: 0
     stat: 4

@@ -8,6 +8,8 @@ namespace ElBestia.Lore
         public ChampionLoreEntrySO birth;
         public ChampionLoreEntrySO childhood;
         public ChampionLoreEntrySO youth;
+        public int storyCombinationKey;
+        public string storyCombinationId;
         public string story;
     }
 }

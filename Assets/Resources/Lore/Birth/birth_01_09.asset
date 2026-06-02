@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_01_09
   stage: 0
-  title: Proud Poor Family
-  storyFragment: Before anyone called {name} a fighter, life in a poor household
-    that counted every meal had already taught the family the meaning of pride too
-    stubborn to die quietly.
+  title: Famine Alley Family
+  storyFragment: '{name} was born into a famine alley family, where food, debt, and shelter were problems children learned to understand too early.'
   modifiers:
   - type: 4
     stat: 0

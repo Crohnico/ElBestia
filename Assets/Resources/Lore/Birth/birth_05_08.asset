@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_05_08
   stage: 0
-  title: Broken Dojo Lineage
-  storyFragment: '{name} was born in an old dojo lineage with more pride than money,
-    and broken trust and careful habits shaped ordinary life there.'
+  title: Rival School Family
+  storyFragment: '{name} was born into a rival school family, where old forms and old debts were treated as inheritance.'
   modifiers:
   - type: 0
     stat: 0

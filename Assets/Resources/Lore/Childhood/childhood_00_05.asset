@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_00_05
   stage: 1
-  title: Cruel Orphanage
-  storyFragment: '{name}''s childhood turned around an overcrowded orphanage, a rough
-    education that made cruelty learned as protection feel natural.'
+  title: Canal Orphanage
+  storyFragment: 'As a child, {name} lived through a canal orphanage, learning to compete for space, food, attention, and the right to be remembered.'
   modifiers:
   - type: 0
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_01_01
   stage: 0
-  title: Quiet Poor Family
-  storyFragment: The household that raised {name} belonged to a poor household that
-    counted every meal, and its oldest inheritance was quiet restraint.
+  title: Debtor Household
+  storyFragment: '{name} was born into a debtor household, where food, debt, and shelter were problems children learned to understand too early.'
   modifiers:
   - type: 4
     stat: 0

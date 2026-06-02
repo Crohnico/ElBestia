@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_11_06
   stage: 2
-  title: Patient Hunter Lodge
-  storyFragment: When {name} came of age, a hunter lodge that respected quiet steps
-    offered food, coin, and enough danger to give patience that waited longer than
-    fear direction.
+  title: Pelt Trader Work
+  storyFragment: 'As a young adult, {name} worked through a pelt trader work, learning tracking, patience, distance, and how predators choose angles. They enter the dojo to hunt opponents instead of tracks.'
   modifiers:
   - type: 0
     stat: 1

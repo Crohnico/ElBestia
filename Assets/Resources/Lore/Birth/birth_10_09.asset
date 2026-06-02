@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_10_09
   stage: 0
-  title: Proud Nomad Caravan
-  storyFragment: In a nomad caravan that never slept under the same roof twice, {name}'s
-    birth was not considered special until rumors of pride too stubborn to die quietly
-    began to follow it.
+  title: Festival Caravan
+  storyFragment: '{name} was born around a festival caravan, where packing quickly and reading roads mattered more than owning walls.'
   modifiers:
   - type: 2
     stat: 0

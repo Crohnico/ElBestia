@@ -15,7 +15,7 @@ MonoBehaviour:
   perkId: air_doom
   displayName: Sky Doom
   rarity: 4
-  description: 'The arena slowly becomes Wind Shear. Effect: apply 5 WindShear stacks
+  description: 'The arena slowly becomes Wind Shear. Effect: apply 3 WindShear stacks
     after each action.'
   effectType: 5
   combatStat: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   weapon: 0
   element: 6
   charge: 7
-  flatValue: 5
+  flatValue: 3
   multiplier: 1
   chance: 0
   isUnique: 0

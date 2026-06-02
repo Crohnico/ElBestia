@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_12_02
   stage: 1
-  title: Lucky Rooftop Games
-  storyFragment: '{name}''s childhood turned around rooftops where children ran above
-    adult trouble, a rough education that made uncomfortable luck feel natural.'
+  title: Tile Runner Childhood
+  storyFragment: 'As a child, {name} lived through a tile runner childhood, learning balance above danger and confidence after every fall.'
   modifiers:
   - type: 4
     stat: 0

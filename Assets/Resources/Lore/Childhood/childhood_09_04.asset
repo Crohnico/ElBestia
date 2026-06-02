@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_09_04
   stage: 1
-  title: Bright Temple Bells
-  storyFragment: The safest corner of {name}'s youth was temple bells and endless
-    chores, though even there a bright belief that tomorrow could be stolen back
-    kept knocking.
+  title: Prayer Drum Lessons
+  storyFragment: 'As a child, {name} lived through the prayer drum lessons, learning ritual calm, chores, fasting, and the value of repetition.'
   modifiers:
   - type: 0
     stat: 4

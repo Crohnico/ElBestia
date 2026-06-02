@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_07_06
   stage: 0
-  title: Patient Temple Step
-  storyFragment: The household that raised {name} belonged to the steps of a severe
-    hill temple, and its oldest inheritance was patience that waited longer than
-    fear.
+  title: Mountain Temple Birth
+  storyFragment: '{name} was born in a mountain temple birth, where bells, chores, and ritual discipline marked the first memories.'
   modifiers:
   - type: 0
     stat: 2

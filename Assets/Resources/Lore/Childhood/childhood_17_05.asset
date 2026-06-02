@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_17_05
   stage: 1
-  title: Cruel Circus Tent
-  storyFragment: When other children learned games, {name} learned the rules of a
-    circus tent full of tricks and bruises and the cost of cruelty learned as protection.
+  title: Strongman Yard
+  storyFragment: 'As a child, {name} lived through a strongman yard, learning masks, timing, falls, applause, and public courage.'
   modifiers:
   - type: 4
     stat: 0

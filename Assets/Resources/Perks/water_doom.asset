@@ -15,7 +15,7 @@ MonoBehaviour:
   perkId: water_doom
   displayName: Deep Doom
   rarity: 4
-  description: 'The arena slowly becomes Drowning. Effect: apply 5 Drowning stacks
+  description: 'The arena slowly becomes Drowning. Effect: apply 3 Drowning stacks
     after each action.'
   effectType: 5
   combatStat: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   weapon: 0
   element: 1
   charge: 3
-  flatValue: 5
+  flatValue: 3
   multiplier: 1
   chance: 0
   isUnique: 0

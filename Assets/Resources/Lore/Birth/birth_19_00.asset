@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_19_00
   stage: 0
-  title: Hard Border Farm
-  storyFragment: In a border farm where raids were part of the seasons, {name}'s
-    birth was not considered special until rumors of hard endurance began to follow
-    it.
+  title: Border Farm
+  storyFragment: '{name} was born in a border farm, where harvests, fences, raids, and militia drills shared the same seasons.'
   modifiers:
   - type: 2
     stat: 0

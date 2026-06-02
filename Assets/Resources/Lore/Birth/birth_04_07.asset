@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_04_07
   stage: 0
-  title: Restless River House
-  storyFragment: The name {name} first appeared in the records of a river house that
-    lived by floods and ferries, beside a note about restlessness that kept looking
-    for a door.
+  title: Delta Fishing Home
+  storyFragment: '{name} was born in a delta fishing home, where floods, ferries, and rope work taught respect for timing.'
   modifiers:
   - type: 2
     stat: 0

@@ -15,15 +15,15 @@ MonoBehaviour:
   perkId: earth_sentence
   displayName: Crush Sentence
   rarity: 3
-  description: 'A small curse rides every movement. Effect: apply 3 Crush stacks
-    after each action.'
+  description: 'The element keeps working after the strike. Effect: apply 2 Crush
+    stacks after each action.'
   effectType: 5
   combatStat: 0
   stat: 0
   weapon: 0
   element: 5
   charge: 6
-  flatValue: 3
+  flatValue: 2
   multiplier: 1
   chance: 0
   isUnique: 0

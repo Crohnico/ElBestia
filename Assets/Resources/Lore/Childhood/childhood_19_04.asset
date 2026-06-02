@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_19_04
   stage: 1
-  title: Bright Training Hall
-  storyFragment: The safest corner of {name}'s youth was a training hall where children
-    swept before they struck, though even there a bright belief that tomorrow could
-    be stolen back kept knocking.
+  title: Mat Sweeping Years
+  storyFragment: 'As a child, {name} lived through the mat sweeping years, learning stances, bruises, repetition, and formal violence.'
   modifiers:
   - type: 2
     stat: 0

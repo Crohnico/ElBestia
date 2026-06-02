@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_15_05
   stage: 1
-  title: Cruel Winter Road
-  storyFragment: The people of a winter road with no patience for weakness remember
-    a young {name} as someone shaped less by play than by cruelty learned as protection.
+  title: Fur Trader Road
+  storyFragment: 'As a child, {name} lived through a fur trader road, learning cold endurance and the cost of stopping too soon.'
   modifiers:
   - type: 0
     stat: 0

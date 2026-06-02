@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_06_08
   stage: 0
-  title: Broken Mercenary Camp
-  storyFragment: '{name} was born in a mercenary camp where lullabies sounded like
-    marching songs, and broken trust and careful habits shaped ordinary life there.'
+  title: Roadside Barracks
+  storyFragment: '{name} was born around the roadside barracks, where paid violence, marching boots, and camp discipline surrounded the cradle.'
   modifiers:
   - type: 4
     stat: 0

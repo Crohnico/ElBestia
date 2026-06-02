@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_19_06
   stage: 0
-  title: Patient Border Farm
-  storyFragment: '{name} entered the world in a border farm where raids were part
-    of the seasons, surrounded by people who measured children through patience that
-    waited longer than fear.'
+  title: Border Stable Family
+  storyFragment: '{name} was born in a border stable family, where harvests, fences, raids, and militia drills shared the same seasons.'
   modifiers:
   - type: 0
     stat: 4

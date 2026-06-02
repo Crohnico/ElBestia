@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_01_02
   stage: 2
-  title: Lucky Teacher Years
-  storyFragment: Among the people of years spent teaching slower hands, {name} learned
-    a trade, a stance, and the value of uncomfortable luck.
+  title: Tutor Work
+  storyFragment: 'As a young adult, {name} worked through a tutor work, turning correction, repetition, and bruised students into a sharper understanding of technique. They enter the dojo to prove their lessons survive opponents who hit back.'
   modifiers:
   - type: 2
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_06_08
   stage: 1
-  title: Broken Mine Tunnels
-  storyFragment: Childhood pulled {name} through mine tunnels where daylight became
-    a rumor; the lesson that stayed was broken trust and careful habits.
+  title: Tunnel Brace Crew
+  storyFragment: 'As a child, {name} lived through a tunnel brace crew, learning breath control, endurance, and courage in cramped darkness.'
   modifiers:
   - type: 4
     stat: 0

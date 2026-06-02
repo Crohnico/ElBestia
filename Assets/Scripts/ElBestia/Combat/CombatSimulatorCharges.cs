@@ -40,7 +40,7 @@ namespace ElBestia.Combat
                 else
                 {
                     SimChampion source = charge.source ?? actor;
-                    int damage = CalculateOutgoingAmount(source, GetIntelligence(source) * 2 * charge.amount);
+                    int damage = CalculateOutgoingAmount(source, GetIntelligence(source) * charge.amount);
                     DealDamage(source, actor, damage, ChargeEffectCatalog.GetDamageElement(charge.charge), WeaponType.None, false, false, false, time, options, rng, result);
                 }
 

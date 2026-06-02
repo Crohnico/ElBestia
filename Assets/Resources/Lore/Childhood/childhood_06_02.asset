@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_06_02
   stage: 1
-  title: Lucky Mine Tunnels
-  storyFragment: By twelve, {name} had drifted into mine tunnels where daylight became
-    a rumor, a life where uncomfortable luck mattered more than comfort.
+  title: Salt Mine Work
+  storyFragment: 'As a child, {name} lived through a salt mine work, learning breath control, endurance, and courage in cramped darkness.'
   modifiers:
   - type: 0
     stat: 1

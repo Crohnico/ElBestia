@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_16_04
   stage: 1
-  title: Bright Debt House
-  storyFragment: As a child, {name} spent long years around a debt house where promises
-    had teeth, learning to turn a bright belief that tomorrow could be stolen back
-    into a survival tool.
+  title: Debt Kitchen Work
+  storyFragment: 'As a child, {name} lived through a debt kitchen work, learning what freedom costs and why promises can become chains.'
   modifiers:
   - type: 0
     stat: 1

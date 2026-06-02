@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_15_03
   stage: 1
-  title: Hungry Winter Road
-  storyFragment: By twelve, {name} had drifted into a winter road with no patience
-    for weakness, a life where hunger that made every choice sharper mattered more
-    than comfort.
+  title: Ice Fishing Camp
+  storyFragment: 'As a child, {name} lived through an ice fishing camp, learning cold endurance and the cost of stopping too soon.'
   modifiers:
   - type: 4
     stat: 0

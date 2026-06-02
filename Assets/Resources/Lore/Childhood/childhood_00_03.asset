@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_00_03
   stage: 1
-  title: Hungry Orphanage
-  storyFragment: '{name}''s childhood turned around an overcrowded orphanage, a rough
-    education that made hunger that made every choice sharper feel natural.'
+  title: War Orphan Ward
+  storyFragment: 'As a child, {name} lived through a war orphan ward, learning to compete for space, food, attention, and the right to be remembered.'
   modifiers:
   - type: 2
     stat: 0

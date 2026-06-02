@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_06_04
   stage: 0
-  title: Bright Mercenary Camp
-  storyFragment: '{name} entered the world in a mercenary camp where lullabies sounded
-    like marching songs, surrounded by people who measured children through a bright
-    belief that tomorrow could be stolen back.'
+  title: Hired Blade Camp
+  storyFragment: '{name} was born around a hired blade camp, where paid violence, marching boots, and camp discipline surrounded the cradle.'
   modifiers:
   - type: 4
     stat: 0

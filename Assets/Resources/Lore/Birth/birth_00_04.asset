@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_00_04
   stage: 0
-  title: Bright Sword Family
-  storyFragment: '{name} entered the world in a family of sword tutors, surrounded
-    by people who measured children through a bright belief that tomorrow could be
-    stolen back.'
+  title: Retired Duelist Family
+  storyFragment: '{name} was born into a retired duelist family, where weapons, footwork, and bruised pride were part of ordinary family life.'
   modifiers:
   - type: 0
     stat: 0

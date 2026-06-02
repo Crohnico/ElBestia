@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_13_03
   stage: 1
-  title: Hungry Old Hospital
-  storyFragment: The people of an old hospital that smelled of herbs and fear remember
-    a young {name} as someone shaped less by play than by hunger that made every
-    choice sharper.
+  title: Herbalist Ward
+  storyFragment: 'As a child, {name} lived through a herbalist ward, learning pain, recovery, herbs, and the fragile mechanics of bodies.'
   modifiers:
   - type: 0
     stat: 3

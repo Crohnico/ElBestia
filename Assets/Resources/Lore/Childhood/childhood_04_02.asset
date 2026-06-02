@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_04_02
   stage: 1
-  title: Lucky Stable Work
-  storyFragment: The people of the stables behind a trading road remember a young
-    {name} as someone shaped less by play than by uncomfortable luck.
+  title: Caravan Stables
+  storyFragment: 'As a child, {name} lived through the caravan stables, building strength and balance around animals, carts, mud, and long roads.'
   modifiers:
   - type: 4
     stat: 0

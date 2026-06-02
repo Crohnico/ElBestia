@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_04_03
   stage: 2
-  title: Hungry Dock Labor
-  storyFragment: When {name} came of age, dock labor among ropes, crates, and cheap
-    fights offered food, coin, and enough danger to give hunger that made every choice
-    sharper direction.
+  title: Crate Stacker
+  storyFragment: 'As a young adult, {name} worked through a crate stacker, hardening the body through ropes, crates, cargo, and cheap fights. They enter the dojo to escape dock wages before the docks break them.'
   modifiers:
   - type: 2
     stat: 0

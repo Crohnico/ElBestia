@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_06_01
   stage: 2
-  title: Quiet Monastery Trial
-  storyFragment: Among the people of a monastery trial designed to break vanity,
-    {name} learned a trade, a stance, and the value of quiet restraint.
+  title: Fasting Trial
+  storyFragment: 'As a young adult, {name} worked through a fasting trial, stripping vanity away through fasting, chores, forms, and punishment. They enter the dojo to test discipline against bloodier truths.'
   modifiers:
   - type: 2
     stat: 0

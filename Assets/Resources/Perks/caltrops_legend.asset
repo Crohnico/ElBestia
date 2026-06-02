@@ -15,14 +15,14 @@ MonoBehaviour:
   perkId: caltrops_legend
   displayName: Iron Floor
   rarity: 4
-  description: After each action, apply 5 Caltrops stacks on enemy.
+  description: After each action, apply 4 Caltrops stacks on enemy.
   effectType: 5
   combatStat: 0
   stat: 0
   weapon: 0
   element: 0
   charge: 19
-  flatValue: 5
+  flatValue: 4
   multiplier: 1
   chance: 0
   isUnique: 0

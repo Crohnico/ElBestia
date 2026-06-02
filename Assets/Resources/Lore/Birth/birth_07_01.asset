@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_07_01
   stage: 0
-  title: Quiet Temple Step
-  storyFragment: The name {name} first appeared in the records of the steps of a
-    severe hill temple, beside a note about quiet restraint.
+  title: Bell Tower Birth
+  storyFragment: '{name} was born in a bell tower birth, where bells, chores, and ritual discipline marked the first memories.'
   modifiers:
   - type: 0
     stat: 2

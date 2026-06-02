@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_02_05
   stage: 1
-  title: Cruel Good School
-  storyFragment: '{name}''s childhood turned around a strict but generous school,
-    a rough education that made cruelty learned as protection feel natural.'
+  title: Noble Tutor Lessons
+  storyFragment: 'As a child, {name} lived through the noble tutor lessons, learning letters, rivalry, discipline, and how rules can be used as weapons.'
   modifiers:
   - type: 2
     stat: 0

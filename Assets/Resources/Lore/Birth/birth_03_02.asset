@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_03_02
   stage: 0
-  title: Lucky Mountain Clan
-  storyFragment: '{name} entered the world in a mountain clan of stubborn walkers,
-    surrounded by people who measured children through uncomfortable luck.'
+  title: Cliffside Village
+  storyFragment: '{name} was born in a cliffside village, where balance, lungs, and stubborn legs mattered before formal schooling.'
   modifiers:
   - type: 0
     stat: 3

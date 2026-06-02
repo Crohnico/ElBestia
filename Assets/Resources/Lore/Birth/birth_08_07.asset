@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_08_07
   stage: 0
-  title: Restless Fishing Village
-  storyFragment: In a humble fishing village where hunger arrived with the tide,
-    {name}'s birth was not considered special until rumors of restlessness that kept
-    looking for a door began to follow it.
+  title: Lagoon Hut
+  storyFragment: '{name} was born in a lagoon hut, where nets, boats, and empty mornings taught patience.'
   modifiers:
   - type: 2
     stat: 0

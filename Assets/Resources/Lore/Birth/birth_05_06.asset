@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_05_06
   stage: 0
-  title: Patient Dojo Lineage
-  storyFragment: '{name} was born in an old dojo lineage with more pride than money,
-    and patience that waited longer than fear shaped ordinary life there.'
+  title: Traveling Dojo Troupe
+  storyFragment: '{name} was born into a traveling dojo troupe, where old forms and old debts were treated as inheritance.'
   modifiers:
   - type: 2
     stat: 0

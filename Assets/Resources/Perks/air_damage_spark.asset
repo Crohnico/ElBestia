@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b832d71375061745af91b57a8614614, type: 3}
-  m_Name: caltrops_crown
+  m_Name: air_damage_spark
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
-  perkId: caltrops_crown
-  displayName: Caltrop Crown
-  rarity: 3
-  description: After each action, apply 4 Caltrops stacks on enemy.
-  effectType: 5
+  perkId: air_damage_spark
+  displayName: Air Damage Spark
+  rarity: 0
+  description: 'A visible natural edge in Air damage. Effect: Air Damage x1.1.'
+  effectType: 26
   combatStat: 0
   stat: 0
   weapon: 0
-  element: 0
-  charge: 19
-  flatValue: 4
-  multiplier: 1
+  element: 6
+  charge: 0
+  flatValue: 0
+  multiplier: 1.1
   chance: 0
   isUnique: 0
   uniqueGroup: 

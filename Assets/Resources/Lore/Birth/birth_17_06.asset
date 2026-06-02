@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_17_06
   stage: 0
-  title: Patient Monk Refuge
-  storyFragment: '{name} was born under the customs of a monk refuge where silence
-    was a rule, where even a cradle could carry patience that waited longer than
-    fear.'
+  title: Prayer Hall Foundling
+  storyFragment: '{name} was born in a prayer hall foundling, where silence, breath, and repeated chores were treated as survival tools.'
   modifiers:
   - type: 2
     stat: 0

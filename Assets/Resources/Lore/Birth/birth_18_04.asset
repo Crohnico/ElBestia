@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_18_04
   stage: 0
-  title: Bright Sailor Blood
-  storyFragment: '{name} was born in a sailor family with salt in every story, and
-    a bright belief that tomorrow could be stolen back shaped ordinary life there.'
+  title: Navigator Family
+  storyFragment: '{name} was born into a navigator family, where ropes, tides, and returning alive mattered more than stories about courage.'
   modifiers:
   - type: 4
     stat: 0

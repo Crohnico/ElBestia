@@ -31,13 +31,7 @@ MonoBehaviour:
     birth: {fileID: 11400000, guid: f09a6ff47f5afc34e9e446fd05e4044d, type: 2}
     childhood: {fileID: 11400000, guid: eafa9998bb97301418a129bd8191c4f8, type: 2}
     youth: {fileID: 11400000, guid: 15bdd125e229f1549b056be94e67fd63, type: 2}
-    story: David Slycrusher was born in a settlement pressed against the desert,
-      and uncomfortable luck shaped ordinary life there. The people of an old hospital
-      that smelled of herbs and fear remember a young David Slycrusher as someone
-      shaped less by play than by restlessness that kept looking for a door. When
-      David Slycrusher came of age, a scholar's job copying maps and wounds alike
-      offered food, coin, and enough danger to give restlessness that kept looking
-      for a door direction.
+    story: David Slycrusher was born in a salt flat camp, where water, shade, and distance shaped every decision. As a child, David Slycrusher lived through a surgery lamp duty, learning pain, recovery, herbs, and the fragile mechanics of bodies. As a young adult, David Slycrusher worked through a monster bestiary work, copying maps, wounds, and combat notes until patterns became weapons. They enter the dojo to test theory against pain.
   baseStats:
     life: 236
     energy: 44

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_05_00
   stage: 0
-  title: Hard Dojo Lineage
-  storyFragment: '{name} was born in an old dojo lineage with more pride than money,
-    and hard endurance shaped ordinary life there.'
+  title: Dojo Lineage
+  storyFragment: '{name} was born into a dojo lineage, where old forms and old debts were treated as inheritance.'
   modifiers:
   - type: 0
     stat: 0

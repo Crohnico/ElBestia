@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_03_04
   stage: 1
-  title: Bright Street Gang
-  storyFragment: By twelve, {name} had drifted into a street gang that rewarded quick
-    hands, a life where a bright belief that tomorrow could be stolen back mattered
-    more than comfort.
+  title: Dockside Crew
+  storyFragment: 'As a child, {name} lived through a dockside crew, learning shortcuts, loyalty, dirty angles, and the price of fear.'
   modifiers:
   - type: 2
     stat: 0

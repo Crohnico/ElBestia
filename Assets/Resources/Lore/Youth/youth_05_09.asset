@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_05_09
   stage: 2
-  title: Proud Arena Debut
-  storyFragment: The next chapter took {name} to a first arena circuit with more
-    blood than applause, a place that rewarded pride too stubborn to die quietly
-    as long as it could win fights.
+  title: Crowd Favorite Run
+  storyFragment: 'As a young adult, {name} worked through a crowd favorite run, discovering that pain becomes easier to bear when a crowd gives it a price. They enter the dojo to turn a first taste of applause into real prize money.'
   modifiers:
   - type: 4
     stat: 0

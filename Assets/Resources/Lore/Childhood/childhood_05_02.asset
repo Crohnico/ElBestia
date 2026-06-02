@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_05_02
   stage: 1
-  title: Lucky Kitchen Yard
-  storyFragment: Years in a kitchen yard full of heat, scraps, and shouted orders
-    gave {name} habits that looked strange to outsiders and useful to anyone who
-    understood uncomfortable luck.
+  title: Dockside Soup Kitchen
+  storyFragment: 'As a child, {name} lived through a dockside soup kitchen, learning timing, heat, patience, and how to watch fighters while pretending to work.'
   modifiers:
   - type: 2
     stat: 0

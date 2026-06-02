@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_10_01
   stage: 2
-  title: Quiet Blacksmith Helper
-  storyFragment: When {name} came of age, a blacksmith's shop where strength was
-    expected offered food, coin, and enough danger to give quiet restraint direction.
+  title: Armorer Apprentice
+  storyFragment: 'As a young adult, {name} worked through an armorer apprentice, hardening hands through heat, rhythm, metal, and repeated impact. They enter the dojo to repay the forge that fed them.'
   modifiers:
   - type: 2
     stat: 0

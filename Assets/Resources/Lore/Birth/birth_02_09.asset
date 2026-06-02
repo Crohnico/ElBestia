@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_02_09
   stage: 0
-  title: Proud Desert Birth
-  storyFragment: Before anyone called {name} a fighter, life in a settlement pressed
-    against the desert had already taught the family the meaning of pride too stubborn
-    to die quietly.
+  title: Scorpion Pass
+  storyFragment: '{name} was born in the scorpion pass, where water, shade, and distance shaped every decision.'
   modifiers:
   - type: 2
     stat: 0

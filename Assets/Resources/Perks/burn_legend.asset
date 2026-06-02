@@ -15,14 +15,14 @@ MonoBehaviour:
   perkId: burn_legend
   displayName: Inferno Heart
   rarity: 4
-  description: After each action, apply 5 Burn stacks on enemy.
+  description: After each action, apply 3 Burn stacks on enemy.
   effectType: 5
   combatStat: 0
   stat: 0
   weapon: 0
   element: 0
   charge: 2
-  flatValue: 5
+  flatValue: 3
   multiplier: 1
   chance: 0
   isUnique: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_10_08
   stage: 1
-  title: Broken Market Runner
-  storyFragment: As a child, {name} spent long years around market alleys where every
-    errand became a race, learning to turn broken trust and careful habits into a
-    survival tool.
+  title: Festival Errand Child
+  storyFragment: 'As a child, {name} lived through a festival errand child, learning speed through crowds and how to read danger while moving.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_15_03
   stage: 0
-  title: Hungry Street Clinic
-  storyFragment: '{name} was born in a street clinic where pain was ordinary, and
-    hunger that made every choice sharper shaped ordinary life there.'
+  title: Charity Ward Birth
+  storyFragment: '{name} was born in a charity ward birth, where blood, bandages, and unpaid favors were never far away.'
   modifiers:
   - type: 4
     stat: 0

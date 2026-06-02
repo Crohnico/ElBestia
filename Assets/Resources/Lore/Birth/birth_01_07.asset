@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_01_07
   stage: 0
-  title: Restless Poor Family
-  storyFragment: The first stories about {name} came from a poor household that counted
-    every meal, remembered locally for restlessness that kept looking for a door.
+  title: Washerwoman Family
+  storyFragment: '{name} was born into a washerwoman family, where food, debt, and shelter were problems children learned to understand too early.'
   modifiers:
   - type: 0
     stat: 1

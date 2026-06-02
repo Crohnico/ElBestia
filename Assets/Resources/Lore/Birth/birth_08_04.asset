@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_08_04
   stage: 0
-  title: Bright Fishing Village
-  storyFragment: '{name} was born under the customs of a humble fishing village where
-    hunger arrived with the tide, where even a cradle could carry a bright belief
-    that tomorrow could be stolen back.'
+  title: Tide Pool Hamlet
+  storyFragment: '{name} was born in a tide pool hamlet, where nets, boats, and empty mornings taught patience.'
   modifiers:
   - type: 0
     stat: 3

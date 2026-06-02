@@ -15,14 +15,14 @@ MonoBehaviour:
   perkId: life_hardened
   displayName: Life Hardened
   rarity: 2
-  description: 'Punishment has made the body stubborn. Effect: +35 Life.'
+  description: 'Punishment has made the body stubborn. Effect: +150 Life.'
   effectType: 2
   combatStat: 5
   stat: 0
   weapon: 0
   element: 0
   charge: 0
-  flatValue: 35
+  flatValue: 150
   multiplier: 1
   chance: 0
   isUnique: 0

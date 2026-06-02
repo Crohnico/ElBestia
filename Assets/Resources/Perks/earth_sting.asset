@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
   perkId: earth_sting
   displayName: Crush Sting
-  rarity: 1
+  rarity: 2
   description: 'Every action leaves a trace of Crush. Effect: apply 1 Crush stack
     after each action.'
   effectType: 5

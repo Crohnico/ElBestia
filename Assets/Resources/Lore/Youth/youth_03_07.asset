@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_03_07
   stage: 2
-  title: Restless Plumber Work
-  storyFragment: Youth ended when {name} joined plumber work in narrow streets and
-    flooded cellars, where duty sharpened restlessness that kept looking for a door
-    into a practical weapon.
+  title: Aqueduct Repair
+  storyFragment: 'As a young adult, {name} worked through an aqueduct repair, learning angles, pressure, balance, and ugly work beneath the streets. They enter the dojo to buy a life above the cellars.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_14_02
   stage: 1
-  title: Lucky Burned Hamlet
-  storyFragment: As a child, {name} spent long years around a burned hamlet that
-    never stopped counting losses, learning to turn uncomfortable luck into a survival
-    tool.
+  title: Rebuilt Village
+  storyFragment: 'As a child, {name} lived through a rebuilt village, learning salvage, grief, and how quickly ordinary life can vanish.'
   modifiers:
   - type: 0
     stat: 4

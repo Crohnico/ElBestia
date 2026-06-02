@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_11_06
   stage: 1
-  title: Patient Butcher Block
-  storyFragment: When other children learned games, {name} learned the rules of a
-    butcher's block where blood was just work and the cost of patience that waited
-    longer than fear.
+  title: Smokehouse Work
+  storyFragment: 'As a child, {name} lived through a smokehouse work, learning anatomy, steady hands, and why blood should not freeze the mind.'
   modifiers:
   - type: 0
     stat: 1

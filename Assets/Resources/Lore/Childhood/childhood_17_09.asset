@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_17_09
   stage: 1
-  title: Proud Circus Tent
-  storyFragment: The people of a circus tent full of tricks and bruises remember
-    a young {name} as someone shaped less by play than by pride too stubborn to die
-    quietly.
+  title: Fire Eater Lessons
+  storyFragment: 'As a child, {name} lived through the fire eater lessons, learning masks, timing, falls, applause, and public courage.'
   modifiers:
   - type: 4
     stat: 0

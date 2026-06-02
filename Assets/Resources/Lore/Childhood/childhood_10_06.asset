@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_10_06
   stage: 1
-  title: Patient Market Runner
-  storyFragment: As a child, {name} spent long years around market alleys where every
-    errand became a race, learning to turn patience that waited longer than fear
-    into a survival tool.
+  title: Medicine Delivery Child
+  storyFragment: 'As a child, {name} lived through a medicine delivery child, learning speed through crowds and how to read danger while moving.'
   modifiers:
   - type: 0
     stat: 0

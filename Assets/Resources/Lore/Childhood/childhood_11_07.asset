@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_11_07
   stage: 1
-  title: Restless Butcher Block
-  storyFragment: The safest corner of {name}'s youth was a butcher's block where
-    blood was just work, though even there restlessness that kept looking for a door
-    kept knocking.
+  title: Hide Scraper Table
+  storyFragment: 'As a child, {name} lived through a hide scraper table, learning anatomy, steady hands, and why blood should not freeze the mind.'
   modifiers:
   - type: 4
     stat: 0

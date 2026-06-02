@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_14_00
   stage: 0
-  title: Hard Woodcutters
-  storyFragment: '{name} was born under the customs of a family of woodcutters who
-    trusted axes before promises, where even a cradle could carry hard endurance.'
+  title: Woodcutter Family
+  storyFragment: '{name} was born into a woodcutter family, where axes fed the family and falling timber punished carelessness.'
   modifiers:
   - type: 4
     stat: 0

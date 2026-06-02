@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_12_05
   stage: 1
-  title: Cruel Rooftop Games
-  storyFragment: The safest corner of {name}'s youth was rooftops where children
-    ran above adult trouble, though even there cruelty learned as protection kept
-    knocking.
+  title: Rooftop Messenger Work
+  storyFragment: 'As a child, {name} lived through a rooftop messenger work, learning balance above danger and confidence after every fall.'
   modifiers:
   - type: 0
     stat: 2

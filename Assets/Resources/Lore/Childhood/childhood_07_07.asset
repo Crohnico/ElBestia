@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_07_07
   stage: 1
-  title: Restless Library Dust
-  storyFragment: Years in dusty library rooms watched by tired scholars gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood restlessness
-    that kept looking for a door.
+  title: Forbidden Shelf Chores
+  storyFragment: 'As a child, {name} lived through the forbidden shelf chores, learning memory, patterns, and the habit of studying before acting.'
   modifiers:
   - type: 4
     stat: 0

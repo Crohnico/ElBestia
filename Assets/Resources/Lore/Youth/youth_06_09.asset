@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_06_09
   stage: 2
-  title: Proud Monastery Trial
-  storyFragment: When {name} came of age, a monastery trial designed to break vanity
-    offered food, coin, and enough danger to give pride too stubborn to die quietly
-    direction.
+  title: Gatekeeper Trial
+  storyFragment: 'As a young adult, {name} worked through a gatekeeper trial, stripping vanity away through fasting, chores, forms, and punishment. They enter the dojo to test discipline against bloodier truths.'
   modifiers:
   - type: 2
     stat: 0

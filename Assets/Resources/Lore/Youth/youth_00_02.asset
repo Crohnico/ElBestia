@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_00_02
   stage: 2
-  title: Lucky Army Service
-  storyFragment: When {name} came of age, army service under officers who loved drills
-    offered food, coin, and enough danger to give uncomfortable luck direction.
+  title: Camp Guard
+  storyFragment: 'As a young adult, {name} worked through a camp guard, turning drills, fear, formation work, and orders into practical violence. They enter the dojo to win coin without taking orders.'
   modifiers:
   - type: 4
     stat: 0

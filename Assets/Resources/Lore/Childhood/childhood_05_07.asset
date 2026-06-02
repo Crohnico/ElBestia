@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_05_07
   stage: 1
-  title: Restless Kitchen Yard
-  storyFragment: When other children learned games, {name} learned the rules of a
-    kitchen yard full of heat, scraps, and shouted orders and the cost of restlessness
-    that kept looking for a door.
+  title: Butcher Kitchen Yard
+  storyFragment: 'As a child, {name} lived through a butcher kitchen yard, learning timing, heat, patience, and how to watch fighters while pretending to work.'
   modifiers:
   - type: 0
     stat: 0

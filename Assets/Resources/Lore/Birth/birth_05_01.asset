@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_05_01
   stage: 0
-  title: Quiet Dojo Lineage
-  storyFragment: '{name} entered the world in an old dojo lineage with more pride
-    than money, surrounded by people who measured children through quiet restraint.'
+  title: Dojo Owner Household
+  storyFragment: '{name} was born into a dojo owner household, where old forms and old debts were treated as inheritance.'
   modifiers:
   - type: 4
     stat: 0

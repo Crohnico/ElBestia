@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_06_05
   stage: 1
-  title: Cruel Mine Tunnels
-  storyFragment: As a child, {name} spent long years around mine tunnels where daylight
-    became a rumor, learning to turn cruelty learned as protection into a survival
-    tool.
+  title: Flooded Mine Shafts
+  storyFragment: 'As a child, {name} lived through the flooded mine shafts, learning breath control, endurance, and courage in cramped darkness.'
   modifiers:
   - type: 2
     stat: 0

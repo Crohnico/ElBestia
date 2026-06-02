@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_17_02
   stage: 1
-  title: Lucky Circus Tent
-  storyFragment: '{name}''s childhood turned around a circus tent full of tricks
-    and bruises, a rough education that made uncomfortable luck feel natural.'
+  title: Knife Thrower Assistant
+  storyFragment: 'As a child, {name} lived through a knife thrower assistant, learning masks, timing, falls, applause, and public courage.'
   modifiers:
   - type: 2
     stat: 0

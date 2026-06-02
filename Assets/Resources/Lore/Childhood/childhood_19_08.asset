@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_19_08
   stage: 1
-  title: Broken Training Hall
-  storyFragment: By twelve, {name} had drifted into a training hall where children
-    swept before they struck, a life where broken trust and careful habits mattered
-    more than comfort.
+  title: Beginner Ring Duty
+  storyFragment: 'As a child, {name} lived through a beginner ring duty, learning stances, bruises, repetition, and formal violence.'
   modifiers:
   - type: 2
     stat: 0

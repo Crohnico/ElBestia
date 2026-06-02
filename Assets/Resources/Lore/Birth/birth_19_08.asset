@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_19_08
   stage: 0
-  title: Broken Border Farm
-  storyFragment: '{name} entered the world in a border farm where raids were part
-    of the seasons, surrounded by people who measured children through broken trust
-    and careful habits.'
+  title: Signal Hill Family
+  storyFragment: '{name} was born in a signal hill family, where harvests, fences, raids, and militia drills shared the same seasons.'
   modifiers:
   - type: 2
     stat: 0

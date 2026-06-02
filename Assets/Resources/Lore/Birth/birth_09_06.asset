@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_09_06
   stage: 0
-  title: Patient Forge Quarter
-  storyFragment: Before anyone called {name} a fighter, life in a forge quarter blackened
-    by smoke and debt had already taught the family the meaning of patience that
-    waited longer than fear.
+  title: Iron Market Family
+  storyFragment: '{name} was born in an iron market family, where heat, hammer rhythm, and metalwork filled the streets.'
   modifiers:
   - type: 2
     stat: 0

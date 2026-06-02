@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_12_03
   stage: 1
-  title: Hungry Rooftop Games
-  storyFragment: As a child, {name} spent long years around rooftops where children
-    ran above adult trouble, learning to turn hunger that made every choice sharper
-    into a survival tool.
+  title: Bell Tower Races
+  storyFragment: 'As a child, {name} lived through the bell tower races, learning balance above danger and confidence after every fall.'
   modifiers:
   - type: 2
     stat: 0

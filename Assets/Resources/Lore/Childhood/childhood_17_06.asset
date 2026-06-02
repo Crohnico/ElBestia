@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_17_06
   stage: 1
-  title: Patient Circus Tent
-  storyFragment: The safest corner of {name}'s youth was a circus tent full of tricks
-    and bruises, though even there patience that waited longer than fear kept knocking.
+  title: Ticket Booth Childhood
+  storyFragment: 'As a child, {name} lived through a ticket booth childhood, learning masks, timing, falls, applause, and public courage.'
   modifiers:
   - type: 2
     stat: 0

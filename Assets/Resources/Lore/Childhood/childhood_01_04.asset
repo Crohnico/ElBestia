@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_01_04
   stage: 1
-  title: Bright Wild Child
-  storyFragment: The people of the wild edges beyond the village remember a young
-    {name} as someone shaped less by play than by a bright belief that tomorrow could
-    be stolen back.
+  title: Dump Yard Survival
+  storyFragment: 'As a child, {name} lived through a dump yard survival, learning from weather, hunger, hiding places, and mistakes nobody corrected.'
   modifiers:
   - type: 0
     stat: 1

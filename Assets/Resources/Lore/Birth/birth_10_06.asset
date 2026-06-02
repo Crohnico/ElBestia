@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_10_06
   stage: 0
-  title: Patient Nomad Caravan
-  storyFragment: Before anyone called {name} a fighter, life in a nomad caravan that
-    never slept under the same roof twice had already taught the family the meaning
-    of patience that waited longer than fear.
+  title: Salt Caravan Birth
+  storyFragment: '{name} was born around a salt caravan birth, where packing quickly and reading roads mattered more than owning walls.'
   modifiers:
   - type: 0
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_03_02
   stage: 1
-  title: Lucky Street Gang
-  storyFragment: Years in a street gang that rewarded quick hands gave {name} habits
-    that looked strange to outsiders and useful to anyone who understood uncomfortable
-    luck.
+  title: Market Thief Circle
+  storyFragment: 'As a child, {name} lived through a market thief circle, learning shortcuts, loyalty, dirty angles, and the price of fear.'
   modifiers:
   - type: 0
     stat: 3

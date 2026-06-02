@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_17_06
   stage: 2
-  title: Patient Street Performer
-  storyFragment: Among the people of street performance, applause, and thrown bottles,
-    {name} learned a trade, a stance, and the value of patience that waited longer
-    than fear.
+  title: Escape Artist Act
+  storyFragment: 'As a young adult, {name} worked through an escape artist act, turning timing, balance, masks, and public risk into survival. They enter the dojo to trade applause for prize money.'
   modifiers:
   - type: 2
     stat: 0

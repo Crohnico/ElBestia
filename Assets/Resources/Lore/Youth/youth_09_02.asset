@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_09_02
   stage: 2
-  title: Lucky Courier Route
-  storyFragment: When {name} came of age, a courier route where speed meant dinner
-    offered food, coin, and enough danger to give uncomfortable luck direction.
+  title: City Runner
+  storyFragment: 'As a young adult, {name} worked through a city runner, learning speed, timing, breath, and how to keep moving while chased. They enter the dojo to turn speed into fame instead of errands.'
   modifiers:
   - type: 2
     stat: 0

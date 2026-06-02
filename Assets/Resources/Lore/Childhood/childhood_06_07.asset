@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_06_07
   stage: 1
-  title: Restless Mine Tunnels
-  storyFragment: When other children learned games, {name} learned the rules of mine
-    tunnels where daylight became a rumor and the cost of restlessness that kept
-    looking for a door.
+  title: Ore Sorting Yard
+  storyFragment: 'As a child, {name} lived through an ore sorting yard, learning breath control, endurance, and courage in cramped darkness.'
   modifiers:
   - type: 0
     stat: 1

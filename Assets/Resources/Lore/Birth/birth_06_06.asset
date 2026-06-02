@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_06_06
   stage: 0
-  title: Patient Mercenary Camp
-  storyFragment: '{name} was born in a mercenary camp where lullabies sounded like
-    marching songs, and patience that waited longer than fear shaped ordinary life
-    there.'
+  title: Quartermaster Family
+  storyFragment: '{name} was born around a quartermaster family, where paid violence, marching boots, and camp discipline surrounded the cradle.'
   modifiers:
   - type: 0
     stat: 1

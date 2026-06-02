@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_14_06
   stage: 0
-  title: Patient Woodcutters
-  storyFragment: '{name} was born under the customs of a family of woodcutters who
-    trusted axes before promises, where even a cradle could carry patience that waited
-    longer than fear.'
+  title: Sawpit Hamlet
+  storyFragment: '{name} was born into a sawpit hamlet, where axes fed the family and falling timber punished carelessness.'
   modifiers:
   - type: 0
     stat: 4

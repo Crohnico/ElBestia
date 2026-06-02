@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_03_05
   stage: 0
-  title: Cruel Mountain Clan
-  storyFragment: '{name} was born under the customs of a mountain clan of stubborn
-    walkers, where even a cradle could carry cruelty learned as protection.'
+  title: Stone Monastery Village
+  storyFragment: '{name} was born in a stone monastery village, where balance, lungs, and stubborn legs mattered before formal schooling.'
   modifiers:
   - type: 0
     stat: 3

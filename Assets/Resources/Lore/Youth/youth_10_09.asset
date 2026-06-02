@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_10_09
   stage: 2
-  title: Proud Blacksmith Helper
-  storyFragment: In a blacksmith's shop where strength was expected, {name} learned
-    that a future could be bought with bruises, discipline, and pride too stubborn
-    to die quietly.
+  title: Shield Rivet Work
+  storyFragment: 'As a young adult, {name} worked through a shield rivet work, hardening hands through heat, rhythm, metal, and repeated impact. They enter the dojo to repay the forge that fed them.'
   modifiers:
   - type: 2
     stat: 0

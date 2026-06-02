@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_07_02
   stage: 1
-  title: Lucky Library Dust
-  storyFragment: The safest corner of {name}'s youth was dusty library rooms watched
-    by tired scholars, though even there uncomfortable luck kept knocking.
+  title: Map Room Errands
+  storyFragment: 'As a child, {name} lived through the map room errands, learning memory, patterns, and the habit of studying before acting.'
   modifiers:
   - type: 0
     stat: 2

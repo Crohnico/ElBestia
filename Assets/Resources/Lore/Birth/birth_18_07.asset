@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_18_07
   stage: 0
-  title: Restless Sailor Blood
-  storyFragment: '{name} entered the world in a sailor family with salt in every
-    story, surrounded by people who measured children through restlessness that kept
-    looking for a door.'
+  title: Smuggler Dock Birth
+  storyFragment: '{name} was born into a smuggler dock birth, where ropes, tides, and returning alive mattered more than stories about courage.'
   modifiers:
   - type: 0
     stat: 3

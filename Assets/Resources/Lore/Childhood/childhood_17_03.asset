@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_17_03
   stage: 1
-  title: Hungry Circus Tent
-  storyFragment: Childhood pulled {name} through a circus tent full of tricks and
-    bruises; the lesson that stayed was hunger that made every choice sharper.
+  title: Animal Cage Chores
+  storyFragment: 'As a child, {name} lived through the animal cage chores, learning masks, timing, falls, applause, and public courage.'
   modifiers:
   - type: 0
     stat: 2

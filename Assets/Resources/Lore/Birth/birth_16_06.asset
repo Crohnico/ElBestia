@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_16_06
   stage: 0
-  title: Patient Arena District
-  storyFragment: The household that raised {name} belonged to an arena district that
-    cheered before it pitied, and its oldest inheritance was patience that waited
-    longer than fear.
+  title: Arena Medic Family
+  storyFragment: '{name} was born in an arena medic family, where crowds cheered pain before they learned the names of fighters.'
   modifiers:
   - type: 4
     stat: 0

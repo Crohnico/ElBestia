@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_05_01
   stage: 1
-  title: Quiet Kitchen Yard
-  storyFragment: Years in a kitchen yard full of heat, scraps, and shouted orders
-    gave {name} habits that looked strange to outsiders and useful to anyone who
-    understood quiet restraint.
+  title: Noble Kitchen Yard
+  storyFragment: 'As a child, {name} lived through a noble kitchen yard, learning timing, heat, patience, and how to watch fighters while pretending to work.'
   modifiers:
   - type: 4
     stat: 0

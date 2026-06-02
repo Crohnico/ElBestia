@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_19_05
   stage: 1
-  title: Cruel Training Hall
-  storyFragment: By twelve, {name} had drifted into a training hall where children
-    swept before they struck, a life where cruelty learned as protection mattered
-    more than comfort.
+  title: Footwork Line Drills
+  storyFragment: 'As a child, {name} lived through the footwork line drills, learning stances, bruises, repetition, and formal violence.'
   modifiers:
   - type: 0
     stat: 4

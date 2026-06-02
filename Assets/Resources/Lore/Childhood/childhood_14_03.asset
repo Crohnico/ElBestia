@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_14_03
   stage: 1
-  title: Hungry Burned Hamlet
-  storyFragment: '{name}''s childhood turned around a burned hamlet that never stopped
-    counting losses, a rough education that made hunger that made every choice sharper
-    feel natural.'
+  title: Refugee Camp Years
+  storyFragment: 'As a child, {name} lived through the refugee camp years, learning salvage, grief, and how quickly ordinary life can vanish.'
   modifiers:
   - type: 0
     stat: 4

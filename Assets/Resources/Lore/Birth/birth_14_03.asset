@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_14_03
   stage: 0
-  title: Hungry Woodcutters
-  storyFragment: Before anyone called {name} a fighter, life in a family of woodcutters
-    who trusted axes before promises had already taught the family the meaning of
-    hunger that made every choice sharper.
+  title: Charcoal Kiln Household
+  storyFragment: '{name} was born into a charcoal kiln household, where axes fed the family and falling timber punished carelessness.'
   modifiers:
   - type: 0
     stat: 4

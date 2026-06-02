@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_16_05
   stage: 0
-  title: Cruel Arena District
-  storyFragment: Before anyone called {name} a fighter, life in an arena district
-    that cheered before it pitied had already taught the family the meaning of cruelty
-    learned as protection.
+  title: Prize Fighter Family
+  storyFragment: '{name} was born in a prize fighter family, where crowds cheered pain before they learned the names of fighters.'
   modifiers:
   - type: 0
     stat: 1

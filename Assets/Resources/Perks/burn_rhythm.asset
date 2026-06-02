@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
   perkId: burn_rhythm
   displayName: Cinder Rhythm
-  rarity: 1
+  rarity: 3
   description: After each action, apply 2 Burn stacks on enemy.
   effectType: 5
   combatStat: 0

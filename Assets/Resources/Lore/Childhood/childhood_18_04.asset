@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_18_04
   stage: 1
-  title: Bright Hidden Valley
-  storyFragment: The safest corner of {name}'s youth was a hidden valley that distrusted
-    outsiders, though even there a bright belief that tomorrow could be stolen back
-    kept knocking.
+  title: Valley Watch Duty
+  storyFragment: 'As a child, {name} lived through a valley watch duty, learning caution, secrecy, and suspicion of outsiders.'
   modifiers:
   - type: 4
     stat: 0

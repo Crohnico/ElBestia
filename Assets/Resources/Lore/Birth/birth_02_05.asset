@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_02_05
   stage: 0
-  title: Cruel Desert Birth
-  storyFragment: The first stories about {name} came from a settlement pressed against
-    the desert, remembered locally for cruelty learned as protection.
+  title: Canyon Settlement
+  storyFragment: '{name} was born in a canyon settlement, where water, shade, and distance shaped every decision.'
   modifiers:
   - type: 2
     stat: 0

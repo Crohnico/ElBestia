@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_18_04
   stage: 2
-  title: Bright Bodyguard Work
-  storyFragment: At adulthood, {name} entered bodyguard work for people worth less
-    than their enemies claimed, trading old fears for work, violence, and a bright
-    belief that tomorrow could be stolen back.
+  title: Stage Performer Guard
+  storyFragment: 'As a young adult, {name} worked through a stage performer guard, reading doorways, hands, threats, and the cowardice of richer people. They enter the dojo to stop bleeding for someone else''s purse.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_03_00
   stage: 2
-  title: Hard Plumber Work
-  storyFragment: The work at plumber work in narrow streets and flooded cellars did
-    not make {name} gentle; it made hard endurance easier to justify.
+  title: Plumber Work
+  storyFragment: 'As a young adult, {name} worked through a plumber work, learning angles, pressure, balance, and ugly work beneath the streets. They enter the dojo to buy a life above the cellars.'
   modifiers:
   - type: 2
     stat: 0

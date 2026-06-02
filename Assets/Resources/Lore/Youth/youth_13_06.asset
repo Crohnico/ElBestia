@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_13_06
   stage: 2
-  title: Patient Field Medic
-  storyFragment: The next chapter took {name} to field medic work beside screaming
-    fighters, a place that rewarded patience that waited longer than fear as long
-    as it could win fights.
+  title: Plague Cart Medic
+  storyFragment: 'As a young adult, {name} worked through a plague cart medic, learning where bodies fail and how panic moves through a fight. They enter the dojo to pay for medicine, debts, or mercy.'
   modifiers:
   - type: 2
     stat: 0

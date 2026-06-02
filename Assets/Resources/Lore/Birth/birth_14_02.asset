@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_14_02
   stage: 0
-  title: Lucky Woodcutters
-  storyFragment: '{name} entered the world in a family of woodcutters who trusted
-    axes before promises, surrounded by people who measured children through uncomfortable
-    luck.'
+  title: Timber Camp Family
+  storyFragment: '{name} was born into a timber camp family, where axes fed the family and falling timber punished carelessness.'
   modifiers:
   - type: 0
     stat: 4

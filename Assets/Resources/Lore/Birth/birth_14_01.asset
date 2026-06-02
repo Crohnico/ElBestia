@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_14_01
   stage: 0
-  title: Quiet Woodcutters
-  storyFragment: In a family of woodcutters who trusted axes before promises, {name}'s
-    birth was not considered special until rumors of quiet restraint began to follow
-    it.
+  title: Forest Cabin Birth
+  storyFragment: '{name} was born into a forest cabin birth, where axes fed the family and falling timber punished carelessness.'
   modifiers:
   - type: 2
     stat: 0

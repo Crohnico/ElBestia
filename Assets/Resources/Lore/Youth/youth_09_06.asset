@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_09_06
   stage: 2
-  title: Patient Courier Route
-  storyFragment: By the end of youth, {name} had passed through a courier route where
-    speed meant dinner and carried patience that waited longer than fear like a second
-    name.
+  title: Border Dispatch Work
+  storyFragment: 'As a young adult, {name} worked through a border dispatch work, learning speed, timing, breath, and how to keep moving while chased. They enter the dojo to turn speed into fame instead of errands.'
   modifiers:
   - type: 2
     stat: 0

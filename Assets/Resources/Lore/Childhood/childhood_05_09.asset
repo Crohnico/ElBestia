@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_05_09
   stage: 1
-  title: Proud Kitchen Yard
-  storyFragment: By twelve, {name} had drifted into a kitchen yard full of heat,
-    scraps, and shouted orders, a life where pride too stubborn to die quietly mattered
-    more than comfort.
+  title: Orphanage Kitchen
+  storyFragment: 'As a child, {name} lived through an orphanage kitchen, learning timing, heat, patience, and how to watch fighters while pretending to work.'
   modifiers:
   - type: 4
     stat: 0

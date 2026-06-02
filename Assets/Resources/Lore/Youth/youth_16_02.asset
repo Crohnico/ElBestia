@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_16_02
   stage: 2
-  title: Lucky Scholar Job
-  storyFragment: Youth ended when {name} joined a scholar's job copying maps and
-    wounds alike, where duty sharpened uncomfortable luck into a practical weapon.
+  title: Anatomy Assistant
+  storyFragment: 'As a young adult, {name} worked through an anatomy assistant, copying maps, wounds, and combat notes until patterns became weapons. They enter the dojo to test theory against pain.'
   modifiers:
   - type: 4
     stat: 0

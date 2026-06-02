@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_12_05
   stage: 2
-  title: Cruel Sailor Contract
-  storyFragment: Youth ended when {name} joined a sailor contract signed for food
-    and distance, where duty sharpened cruelty learned as protection into a practical
-    weapon.
+  title: Pearl Boat Work
+  storyFragment: 'As a young adult, {name} worked through a pearl boat work, trading comfort for balance, rope-burned hands, and distance from shore. They enter the dojo to choose the arena before the sea chooses for them.'
   modifiers:
   - type: 0
     stat: 2

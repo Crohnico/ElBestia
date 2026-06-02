@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_08_01
   stage: 2
-  title: Quiet Merchant Guard
-  storyFragment: The work at a merchant guard escorting caravans through bad roads
-    did not make {name} gentle; it made quiet restraint easier to justify.
+  title: Caravan Escort
+  storyFragment: 'As a young adult, {name} worked through a caravan escort, turning caravan routes and roadside fights into a working education. They enter the dojo to earn more than a season of escort work.'
   modifiers:
   - type: 0
     stat: 3

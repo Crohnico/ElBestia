@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_07_08
   stage: 0
-  title: Broken Temple Step
-  storyFragment: The household that raised {name} belonged to the steps of a severe
-    hill temple, and its oldest inheritance was broken trust and careful habits.
+  title: Temple Kitchen Family
+  storyFragment: '{name} was born in a temple kitchen family, where bells, chores, and ritual discipline marked the first memories.'
   modifiers:
   - type: 2
     stat: 0

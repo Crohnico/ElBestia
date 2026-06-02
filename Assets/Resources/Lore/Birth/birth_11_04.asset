@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_11_04
   stage: 0
-  title: Bright Noble House
-  storyFragment: The household that raised {name} belonged to a noble house full
-    of manners and hidden knives, and its oldest inheritance was a bright belief
-    that tomorrow could be stolen back.
+  title: Exiled Noble Family
+  storyFragment: '{name} was born into an exiled noble family, where manners, inheritance, and hidden rivalries carried their own kind of danger.'
   modifiers:
   - type: 2
     stat: 0

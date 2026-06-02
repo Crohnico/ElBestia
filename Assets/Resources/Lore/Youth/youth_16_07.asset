@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_16_07
   stage: 2
-  title: Restless Scholar Job
-  storyFragment: When {name} came of age, a scholar's job copying maps and wounds
-    alike offered food, coin, and enough danger to give restlessness that kept looking
-    for a door direction.
+  title: Monster Bestiary Work
+  storyFragment: 'As a young adult, {name} worked through a monster bestiary work, copying maps, wounds, and combat notes until patterns became weapons. They enter the dojo to test theory against pain.'
   modifiers:
   - type: 2
     stat: 0

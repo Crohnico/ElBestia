@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_12_06
   stage: 2
-  title: Patient Sailor Contract
-  storyFragment: The work at a sailor contract signed for food and distance did not
-    make {name} gentle; it made patience that waited longer than fear easier to justify.
+  title: Ship Cook Duty
+  storyFragment: 'As a young adult, {name} worked through a ship cook duty, trading comfort for balance, rope-burned hands, and distance from shore. They enter the dojo to choose the arena before the sea chooses for them.'
   modifiers:
   - type: 4
     stat: 0

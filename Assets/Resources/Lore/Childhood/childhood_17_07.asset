@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_17_07
   stage: 1
-  title: Restless Circus Tent
-  storyFragment: As a child, {name} spent long years around a circus tent full of
-    tricks and bruises, learning to turn restlessness that kept looking for a door
-    into a survival tool.
+  title: Mask Painter Table
+  storyFragment: 'As a child, {name} lived through a mask painter table, learning masks, timing, falls, applause, and public courage.'
   modifiers:
   - type: 0
     stat: 2

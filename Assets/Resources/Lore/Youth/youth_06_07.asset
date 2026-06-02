@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_06_07
   stage: 2
-  title: Restless Monastery Trial
-  storyFragment: Youth ended when {name} joined a monastery trial designed to break
-    vanity, where duty sharpened restlessness that kept looking for a door into a
-    practical weapon.
+  title: Scripture Combat Test
+  storyFragment: 'As a young adult, {name} worked through a scripture combat test, stripping vanity away through fasting, chores, forms, and punishment. They enter the dojo to test discipline against bloodier truths.'
   modifiers:
   - type: 0
     stat: 1

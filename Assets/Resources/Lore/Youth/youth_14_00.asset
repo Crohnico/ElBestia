@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_14_00
   stage: 2
-  title: Hard Quarry Crew
-  storyFragment: Among the people of a quarry crew that turned stone into punishment,
-    {name} learned a trade, a stance, and the value of hard endurance.
+  title: Quarry Crew
+  storyFragment: 'As a young adult, {name} worked through a quarry crew, turning stone dust, repetition, and impact into stubborn strength. They enter the dojo to escape the quarry with tournament coin.'
   modifiers:
   - type: 4
     stat: 0

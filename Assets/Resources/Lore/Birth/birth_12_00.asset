@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_12_00
   stage: 0
-  title: Hard Prison Town
-  storyFragment: '{name} was born in a prison town built around locked gates, and
-    hard endurance shaped ordinary life there.'
+  title: Prison Town
+  storyFragment: '{name} was born in a prison town, where locks, guards, and suspicion were part of the local weather.'
   modifiers:
   - type: 0
     stat: 2

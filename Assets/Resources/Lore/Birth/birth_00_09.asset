@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_00_09
   stage: 0
-  title: Proud Sword Family
-  storyFragment: The first stories about {name} came from a family of sword tutors,
-    remembered locally for pride too stubborn to die quietly.
+  title: Pit Fighter Bloodline
+  storyFragment: '{name} was born into a pit fighter bloodline, where weapons, footwork, and bruised pride were part of ordinary family life.'
   modifiers:
   - type: 0
     stat: 0

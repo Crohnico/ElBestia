@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_09_07
   stage: 0
-  title: Restless Forge Quarter
-  storyFragment: '{name} was born in a forge quarter blackened by smoke and debt,
-    and restlessness that kept looking for a door shaped ordinary life there.'
+  title: Smelter Alley
+  storyFragment: '{name} was born in a smelter alley, where heat, hammer rhythm, and metalwork filled the streets.'
   modifiers:
   - type: 0
     stat: 4

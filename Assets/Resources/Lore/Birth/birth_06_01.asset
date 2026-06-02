@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_06_01
   stage: 0
-  title: Quiet Mercenary Camp
-  storyFragment: In a mercenary camp where lullabies sounded like marching songs,
-    {name}'s birth was not considered special until rumors of quiet restraint began
-    to follow it.
+  title: Warband Nursery
+  storyFragment: '{name} was born around a warband nursery, where paid violence, marching boots, and camp discipline surrounded the cradle.'
   modifiers:
   - type: 2
     stat: 0

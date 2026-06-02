@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_18_01
   stage: 0
-  title: Quiet Sailor Blood
-  storyFragment: '{name} was born in a sailor family with salt in every story, and
-    quiet restraint shaped ordinary life there.'
+  title: Harbor Sailor Family
+  storyFragment: '{name} was born into a harbor sailor family, where ropes, tides, and returning alive mattered more than stories about courage.'
   modifiers:
   - type: 2
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_11_07
   stage: 0
-  title: Restless Noble House
-  storyFragment: The first stories about {name} came from a noble house full of manners
-    and hidden knives, remembered locally for restlessness that kept looking for
-    a door.
+  title: Tutor Wing Birth
+  storyFragment: '{name} was born into a tutor wing birth, where manners, inheritance, and hidden rivalries carried their own kind of danger.'
   modifiers:
   - type: 4
     stat: 0

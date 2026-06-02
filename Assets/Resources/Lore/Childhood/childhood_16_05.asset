@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_16_05
   stage: 1
-  title: Cruel Debt House
-  storyFragment: Years in a debt house where promises had teeth gave {name} habits
-    that looked strange to outsiders and useful to anyone who understood cruelty
-    learned as protection.
+  title: Hostage Ward
+  storyFragment: 'As a child, {name} lived through a hostage ward, learning what freedom costs and why promises can become chains.'
   modifiers:
   - type: 0
     stat: 1

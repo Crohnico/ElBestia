@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_07_09
   stage: 2
-  title: Proud Bandit Season
-  storyFragment: The next chapter took {name} to a bandit season where trust was
-    expensive, a place that rewarded pride too stubborn to die quietly as long as
-    it could win fights.
+  title: Outlaw Camp Years
+  storyFragment: 'As a young adult, {name} worked through the outlaw camp years, learning ambushes, bad roads, guilt, and the cost of trusting desperate people. They enter the dojo to buy distance from old crimes.'
   modifiers:
   - type: 0
     stat: 2

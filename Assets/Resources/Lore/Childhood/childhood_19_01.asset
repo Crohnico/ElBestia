@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_19_01
   stage: 1
-  title: Quiet Training Hall
-  storyFragment: Childhood pulled {name} through a training hall where children swept
-    before they struck; the lesson that stayed was quiet restraint.
+  title: Dojo Floor Chores
+  storyFragment: 'As a child, {name} lived through the dojo floor chores, learning stances, bruises, repetition, and formal violence.'
   modifiers:
   - type: 0
     stat: 4

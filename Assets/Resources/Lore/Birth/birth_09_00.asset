@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_09_00
   stage: 0
-  title: Hard Forge Quarter
-  storyFragment: '{name} was born under the customs of a forge quarter blackened
-    by smoke and debt, where even a cradle could carry hard endurance.'
+  title: Forge Quarter
+  storyFragment: '{name} was born in a forge quarter, where heat, hammer rhythm, and metalwork filled the streets.'
   modifiers:
   - type: 0
     stat: 4

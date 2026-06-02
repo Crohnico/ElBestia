@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_10_07
   stage: 2
-  title: Restless Blacksmith Helper
-  storyFragment: Youth ended when {name} joined a blacksmith's shop where strength
-    was expected, where duty sharpened restlessness that kept looking for a door
-    into a practical weapon.
+  title: Foundry Assistant
+  storyFragment: 'As a young adult, {name} worked through a foundry assistant, hardening hands through heat, rhythm, metal, and repeated impact. They enter the dojo to repay the forge that fed them.'
   modifiers:
   - type: 0
     stat: 0

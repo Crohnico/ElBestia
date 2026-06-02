@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_01_02
   stage: 1
-  title: Lucky Wild Child
-  storyFragment: '{name}''s childhood turned around the wild edges beyond the village,
-    a rough education that made uncomfortable luck feel natural.'
+  title: Cave Shelter Years
+  storyFragment: 'As a child, {name} lived through the cave shelter years, learning from weather, hunger, hiding places, and mistakes nobody corrected.'
   modifiers:
   - type: 2
     stat: 0

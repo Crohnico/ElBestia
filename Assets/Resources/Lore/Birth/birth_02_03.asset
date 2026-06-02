@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_02_03
   stage: 0
-  title: Hungry Desert Birth
-  storyFragment: '{name} entered the world in a settlement pressed against the desert,
-    surrounded by people who measured children through hunger that made every choice
-    sharper.'
+  title: Caravanserai
+  storyFragment: '{name} was born in a caravanserai, where water, shade, and distance shaped every decision.'
   modifiers:
   - type: 0
     stat: 2

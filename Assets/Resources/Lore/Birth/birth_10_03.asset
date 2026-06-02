@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_10_03
   stage: 0
-  title: Hungry Nomad Caravan
-  storyFragment: '{name} was born under the customs of a nomad caravan that never
-    slept under the same roof twice, where even a cradle could carry hunger that
-    made every choice sharper.'
+  title: Road Clan
+  storyFragment: '{name} was born around a road clan, where packing quickly and reading roads mattered more than owning walls.'
   modifiers:
   - type: 0
     stat: 0

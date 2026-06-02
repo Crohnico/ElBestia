@@ -9,6 +9,11 @@ namespace ElBestia.Combat
     {
         public static CombatSimulationResult Run(ChampionSO leftChampion, ChampionSO rightChampion, CombatSimulationOptions options)
         {
+            return Run(leftChampion != null ? leftChampion.ToData() : null, rightChampion != null ? rightChampion.ToData() : null, options);
+        }
+
+        public static CombatSimulationResult Run(ChampionData leftChampion, ChampionData rightChampion, CombatSimulationOptions options)
+        {
             options ??= new CombatSimulationOptions();
             var rng = new System.Random(options.seed);
             var result = new CombatSimulationResult { seed = options.seed };

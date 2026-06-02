@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_15_06
   stage: 0
-  title: Patient Street Clinic
-  storyFragment: '{name} was born in a street clinic where pain was ordinary, and
-    patience that waited longer than fear shaped ordinary life there.'
+  title: Bone Setter Household
+  storyFragment: '{name} was born in a bone setter household, where blood, bandages, and unpaid favors were never far away.'
   modifiers:
   - type: 0
     stat: 0

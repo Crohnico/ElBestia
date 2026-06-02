@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_05_05
   stage: 0
-  title: Cruel Dojo Lineage
-  storyFragment: Before anyone called {name} a fighter, life in an old dojo lineage
-    with more pride than money had already taught the family the meaning of cruelty
-    learned as protection.
+  title: Debt-Ridden Dojo
+  storyFragment: '{name} was born into a debt-ridden dojo, where old forms and old debts were treated as inheritance.'
   modifiers:
   - type: 4
     stat: 0

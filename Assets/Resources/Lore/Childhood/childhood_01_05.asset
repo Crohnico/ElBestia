@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_01_05
   stage: 1
-  title: Cruel Wild Child
-  storyFragment: The safest corner of {name}'s youth was the wild edges beyond the
-    village, though even there cruelty learned as protection kept knocking.
+  title: Abandoned Farm Years
+  storyFragment: 'As a child, {name} lived through the abandoned farm years, learning from weather, hunger, hiding places, and mistakes nobody corrected.'
   modifiers:
   - type: 4
     stat: 0

@@ -10,7 +10,7 @@ namespace ElBestia.Combat
         private sealed class SimChampion
         {
             public readonly CombatSimulationSide Side;
-            public readonly ChampionSO Champion;
+            public readonly ChampionData Champion;
             public readonly ChampionStats Stats;
             public readonly int MaxHealth;
             public readonly float[] SkillReadyAt = new float[4];
@@ -22,7 +22,7 @@ namespace ElBestia.Combat
             public float BaseActionTime;
             public float NextActionTime;
 
-            public SimChampion(CombatSimulationSide side, ChampionSO champion)
+            public SimChampion(CombatSimulationSide side, ChampionData champion)
             {
                 Side = side;
                 Champion = champion;

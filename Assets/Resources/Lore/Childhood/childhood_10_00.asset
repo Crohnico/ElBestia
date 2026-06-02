@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_10_00
   stage: 1
-  title: Hard Market Runner
-  storyFragment: As a child, {name} spent long years around market alleys where every
-    errand became a race, learning to turn hard endurance into a survival tool.
+  title: Market Runner
+  storyFragment: 'As a child, {name} lived through a market runner, learning speed through crowds and how to read danger while moving.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_11_09
   stage: 0
-  title: Proud Noble House
-  storyFragment: Before anyone called {name} a fighter, life in a noble house full
-    of manners and hidden knives had already taught the family the meaning of pride
-    too stubborn to die quietly.
+  title: Inheritance Dispute Birth
+  storyFragment: '{name} was born into an inheritance dispute birth, where manners, inheritance, and hidden rivalries carried their own kind of danger.'
   modifiers:
   - type: 0
     stat: 1

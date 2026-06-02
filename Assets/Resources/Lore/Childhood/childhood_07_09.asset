@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_07_09
   stage: 1
-  title: Proud Library Dust
-  storyFragment: When other children learned games, {name} learned the rules of dusty
-    library rooms watched by tired scholars and the cost of pride too stubborn to
-    die quietly.
+  title: Scholar House Lessons
+  storyFragment: 'As a child, {name} lived through the scholar house lessons, learning memory, patterns, and the habit of studying before acting.'
   modifiers:
   - type: 0
     stat: 2

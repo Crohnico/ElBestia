@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_00_08
   stage: 2
-  title: Broken Army Service
-  storyFragment: Youth ended when {name} joined army service under officers who loved
-    drills, where duty sharpened broken trust and careful habits into a practical
-    weapon.
+  title: Border Patrol
+  storyFragment: 'As a young adult, {name} worked through a border patrol, turning drills, fear, formation work, and orders into practical violence. They enter the dojo to win coin without taking orders.'
   modifiers:
   - type: 0
     stat: 0

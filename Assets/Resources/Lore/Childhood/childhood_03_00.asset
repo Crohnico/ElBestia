@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_03_00
   stage: 1
-  title: Hard Street Gang
-  storyFragment: When other children learned games, {name} learned the rules of a
-    street gang that rewarded quick hands and the cost of hard endurance.
+  title: Pickpocket Crew
+  storyFragment: 'As a child, {name} lived through a pickpocket crew, learning shortcuts, loyalty, dirty angles, and the price of fear.'
   modifiers:
   - type: 2
     stat: 0

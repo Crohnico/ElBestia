@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_04_02
   stage: 0
-  title: Lucky River House
-  storyFragment: '{name} was born under the customs of a river house that lived by
-    floods and ferries, where even a cradle could carry uncomfortable luck.'
+  title: Floodplain Hamlet
+  storyFragment: '{name} was born in a floodplain hamlet, where floods, ferries, and rope work taught respect for timing.'
   modifiers:
   - type: 4
     stat: 0

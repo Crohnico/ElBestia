@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_06_04
   stage: 1
-  title: Bright Mine Tunnels
-  storyFragment: Years in mine tunnels where daylight became a rumor gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood a
-    bright belief that tomorrow could be stolen back.
+  title: Quarry Cart Runs
+  storyFragment: 'As a child, {name} lived through the quarry cart runs, learning breath control, endurance, and courage in cramped darkness.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_02_08
   stage: 0
-  title: Broken Desert Birth
-  storyFragment: '{name} entered the world in a settlement pressed against the desert,
-    surrounded by people who measured children through broken trust and careful habits.'
+  title: Sunken Well Hamlet
+  storyFragment: '{name} was born in a sunken well hamlet, where water, shade, and distance shaped every decision.'
   modifiers:
   - type: 4
     stat: 0

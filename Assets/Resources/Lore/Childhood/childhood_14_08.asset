@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_14_08
   stage: 1
-  title: Broken Burned Hamlet
-  storyFragment: The people of a burned hamlet that never stopped counting losses
-    remember a young {name} as someone shaped less by play than by broken trust and
-    careful habits.
+  title: Charcoal Ruins
+  storyFragment: 'As a child, {name} lived through the charcoal ruins, learning salvage, grief, and how quickly ordinary life can vanish.'
   modifiers:
   - type: 4
     stat: 0

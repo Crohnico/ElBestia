@@ -15,14 +15,14 @@ MonoBehaviour:
   perkId: life_perfected
   displayName: Life Perfected
   rarity: 3
-  description: 'A serious reserve of blood and breath. Effect: +55 Life.'
+  description: 'A serious reserve of blood and breath. Effect: +200 Life.'
   effectType: 2
   combatStat: 5
   stat: 0
   weapon: 0
   element: 0
   charge: 0
-  flatValue: 55
+  flatValue: 200
   multiplier: 1
   chance: 0
   isUnique: 0

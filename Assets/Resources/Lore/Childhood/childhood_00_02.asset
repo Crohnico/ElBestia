@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_00_02
   stage: 1
-  title: Lucky Orphanage
-  storyFragment: Childhood pulled {name} through an overcrowded orphanage; the lesson
-    that stayed was uncomfortable luck.
+  title: Workhouse Dormitory
+  storyFragment: 'As a child, {name} lived through a workhouse dormitory, learning to compete for space, food, attention, and the right to be remembered.'
   modifiers:
   - type: 4
     stat: 0

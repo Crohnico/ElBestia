@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_09_04
   stage: 0
-  title: Bright Forge Quarter
-  storyFragment: In a forge quarter blackened by smoke and debt, {name}'s birth was
-    not considered special until rumors of a bright belief that tomorrow could be
-    stolen back began to follow it.
+  title: Armorer Household
+  storyFragment: '{name} was born in an armorer household, where heat, hammer rhythm, and metalwork filled the streets.'
   modifiers:
   - type: 0
     stat: 4

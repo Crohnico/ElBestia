@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_05_02
   stage: 0
-  title: Lucky Dojo Lineage
-  storyFragment: '{name} entered the world in an old dojo lineage with more pride
-    than money, surrounded by people who measured children through uncomfortable
-    luck.'
+  title: Tournament Dojo Family
+  storyFragment: '{name} was born into a tournament dojo family, where old forms and old debts were treated as inheritance.'
   modifiers:
   - type: 2
     stat: 0

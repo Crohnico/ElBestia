@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_16_09
   stage: 1
-  title: Proud Debt House
-  storyFragment: The safest corner of {name}'s youth was a debt house where promises
-    had teeth, though even there pride too stubborn to die quietly kept knocking.
+  title: Indenture House
+  storyFragment: 'As a child, {name} lived through an indenture house, learning what freedom costs and why promises can become chains.'
   modifiers:
   - type: 0
     stat: 1

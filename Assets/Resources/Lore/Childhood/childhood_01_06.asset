@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_01_06
   stage: 1
-  title: Patient Wild Child
-  storyFragment: As a child, {name} spent long years around the wild edges beyond
-    the village, learning to turn patience that waited longer than fear into a survival
-    tool.
+  title: Mountain Foraging
+  storyFragment: 'As a child, {name} lived through a mountain foraging, learning from weather, hunger, hiding places, and mistakes nobody corrected.'
   modifiers:
   - type: 2
     stat: 0

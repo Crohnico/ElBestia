@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_03_06
   stage: 1
-  title: Patient Street Gang
-  storyFragment: When other children learned games, {name} learned the rules of a
-    street gang that rewarded quick hands and the cost of patience that waited longer
-    than fear.
+  title: Rooftop Lookout Crew
+  storyFragment: 'As a child, {name} lived through a rooftop lookout crew, learning shortcuts, loyalty, dirty angles, and the price of fear.'
   modifiers:
   - type: 0
     stat: 3

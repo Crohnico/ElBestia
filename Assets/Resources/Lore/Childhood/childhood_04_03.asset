@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_04_03
   stage: 1
-  title: Hungry Stable Work
-  storyFragment: Childhood pulled {name} through the stables behind a trading road;
-    the lesson that stayed was hunger that made every choice sharper.
+  title: Racehorse Yard
+  storyFragment: 'As a child, {name} lived through a racehorse yard, building strength and balance around animals, carts, mud, and long roads.'
   modifiers:
   - type: 2
     stat: 0

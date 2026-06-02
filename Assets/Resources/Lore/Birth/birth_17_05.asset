@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_17_05
   stage: 0
-  title: Cruel Monk Refuge
-  storyFragment: The household that raised {name} belonged to a monk refuge where
-    silence was a rule, and its oldest inheritance was cruelty learned as protection.
+  title: Scriptorium Household
+  storyFragment: '{name} was born in a scriptorium household, where silence, breath, and repeated chores were treated as survival tools.'
   modifiers:
   - type: 4
     stat: 0

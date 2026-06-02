@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_07_00
   stage: 2
-  title: Hard Bandit Season
-  storyFragment: When {name} came of age, a bandit season where trust was expensive
-    offered food, coin, and enough danger to give hard endurance direction.
+  title: Bandit Season
+  storyFragment: 'As a young adult, {name} worked through a bandit season, learning ambushes, bad roads, guilt, and the cost of trusting desperate people. They enter the dojo to buy distance from old crimes.'
   modifiers:
   - type: 2
     stat: 0

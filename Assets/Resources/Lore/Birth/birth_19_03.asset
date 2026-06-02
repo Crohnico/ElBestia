@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_19_03
   stage: 0
-  title: Hungry Border Farm
-  storyFragment: In a border farm where raids were part of the seasons, {name}'s
-    birth was not considered special until rumors of hunger that made every choice
-    sharper began to follow it.
+  title: Raided Orchard Birth
+  storyFragment: '{name} was born in a raided orchard birth, where harvests, fences, raids, and militia drills shared the same seasons.'
   modifiers:
   - type: 4
     stat: 0

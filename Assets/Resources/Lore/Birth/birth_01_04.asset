@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_01_04
   stage: 0
-  title: Bright Poor Family
-  storyFragment: The household that raised {name} belonged to a poor household that
-    counted every meal, and its oldest inheritance was a bright belief that tomorrow
-    could be stolen back.
+  title: Market Shack Family
+  storyFragment: '{name} was born into a market shack family, where food, debt, and shelter were problems children learned to understand too early.'
   modifiers:
   - type: 0
     stat: 1

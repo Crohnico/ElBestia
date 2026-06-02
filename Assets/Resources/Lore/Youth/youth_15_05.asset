@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_15_05
   stage: 2
-  title: Cruel Duelist Circle
-  storyFragment: Youth ended when {name} joined a duelist circle where pride had
-    witnesses, where duty sharpened cruelty learned as protection into a practical
-    weapon.
+  title: Blade Witness Work
+  storyFragment: 'As a young adult, {name} worked through a blade witness work, learning distance, witnesses, pride, and the price of public mistakes. They enter the dojo to make their name public.'
   modifiers:
   - type: 0
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_18_09
   stage: 0
-  title: Proud Sailor Blood
-  storyFragment: '{name} was born under the customs of a sailor family with salt
-    in every story, where even a cradle could carry pride too stubborn to die quietly.'
+  title: Far Harbor Birth
+  storyFragment: '{name} was born into a far harbor birth, where ropes, tides, and returning alive mattered more than stories about courage.'
   modifiers:
   - type: 2
     stat: 0

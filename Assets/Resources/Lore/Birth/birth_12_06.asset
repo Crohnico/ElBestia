@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_12_06
   stage: 0
-  title: Patient Prison Town
-  storyFragment: '{name} was born in a prison town built around locked gates, and
-    patience that waited longer than fear shaped ordinary life there.'
+  title: Execution Square Alley
+  storyFragment: '{name} was born in an execution square alley, where locks, guards, and suspicion were part of the local weather.'
   modifiers:
   - type: 4
     stat: 0

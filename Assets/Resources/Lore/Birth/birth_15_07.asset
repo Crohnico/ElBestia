@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_15_07
   stage: 0
-  title: Restless Street Clinic
-  storyFragment: Before anyone called {name} a fighter, life in a street clinic where
-    pain was ordinary had already taught the family the meaning of restlessness that
-    kept looking for a door.
+  title: Doctor Debt Family
+  storyFragment: '{name} was born in a doctor debt family, where blood, bandages, and unpaid favors were never far away.'
   modifiers:
   - type: 4
     stat: 0

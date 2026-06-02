@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_19_00
   stage: 1
-  title: Hard Training Hall
-  storyFragment: Years in a training hall where children swept before they struck
-    gave {name} habits that looked strange to outsiders and useful to anyone who
-    understood hard endurance.
+  title: Training Hall
+  storyFragment: 'As a child, {name} lived through a training hall, learning stances, bruises, repetition, and formal violence.'
   modifiers:
   - type: 2
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_02_07
   stage: 0
-  title: Restless Desert Birth
-  storyFragment: In a settlement pressed against the desert, {name}'s birth was not
-    considered special until rumors of restlessness that kept looking for a door
-    began to follow it.
+  title: Nomad Tent Circle
+  storyFragment: '{name} was born in a nomad tent circle, where water, shade, and distance shaped every decision.'
   modifiers:
   - type: 0
     stat: 2

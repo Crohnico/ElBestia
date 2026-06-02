@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
   perkId: poison_sting
   displayName: Venom Sting
-  rarity: 1
+  rarity: 2
   description: 'Every action leaves a trace of Venom. Effect: apply 1 Poison stack
     after each action.'
   effectType: 5

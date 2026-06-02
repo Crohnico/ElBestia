@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_13_01
   stage: 1
-  title: Quiet Old Hospital
-  storyFragment: As a child, {name} spent long years around an old hospital that
-    smelled of herbs and fear, learning to turn quiet restraint into a survival tool.
+  title: Charity Ward
+  storyFragment: 'As a child, {name} lived through a charity ward, learning pain, recovery, herbs, and the fragile mechanics of bodies.'
   modifiers:
   - type: 4
     stat: 0

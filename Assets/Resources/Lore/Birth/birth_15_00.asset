@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_15_00
   stage: 0
-  title: Hard Street Clinic
-  storyFragment: '{name} was born in a street clinic where pain was ordinary, and
-    hard endurance shaped ordinary life there.'
+  title: Street Clinic
+  storyFragment: '{name} was born in a street clinic, where blood, bandages, and unpaid favors were never far away.'
   modifiers:
   - type: 2
     stat: 0

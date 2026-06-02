@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_08_00
   stage: 1
-  title: Hard Fisher Nets
-  storyFragment: Years in fisher nets, cold mornings, and torn palms gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood hard
-    endurance.
+  title: Fisher Nets
+  storyFragment: 'As a child, {name} lived through the fisher nets, learning balance, cold patience, and hand strength before sunrise.'
   modifiers:
   - type: 0
     stat: 3

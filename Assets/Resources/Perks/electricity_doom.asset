@@ -15,7 +15,7 @@ MonoBehaviour:
   perkId: electricity_doom
   displayName: Storm Doom
   rarity: 4
-  description: 'The arena slowly becomes Shock. Effect: apply 5 Shock stacks after
+  description: 'The arena slowly becomes Shock. Effect: apply 3 Shock stacks after
     each action.'
   effectType: 5
   combatStat: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   weapon: 0
   element: 2
   charge: 4
-  flatValue: 5
+  flatValue: 3
   multiplier: 1
   chance: 0
   isUnique: 0

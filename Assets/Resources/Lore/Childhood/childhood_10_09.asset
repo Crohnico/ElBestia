@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_10_09
   stage: 1
-  title: Proud Market Runner
-  storyFragment: By twelve, {name} had drifted into market alleys where every errand
-    became a race, a life where pride too stubborn to die quietly mattered more than
-    comfort.
+  title: Street Vendor Helper
+  storyFragment: 'As a child, {name} lived through a street vendor helper, learning speed through crowds and how to read danger while moving.'
   modifiers:
   - type: 2
     stat: 0

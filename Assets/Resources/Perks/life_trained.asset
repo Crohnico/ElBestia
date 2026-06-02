@@ -15,7 +15,7 @@ MonoBehaviour:
   perkId: life_trained
   displayName: Life Trained
   rarity: 1
-  description: 'Regular conditioning makes the champion harder to drop. Effect: +20
+  description: 'Regular conditioning makes the champion harder to drop. Effect: +100
     Life.'
   effectType: 2
   combatStat: 5
@@ -23,7 +23,7 @@ MonoBehaviour:
   weapon: 0
   element: 0
   charge: 0
-  flatValue: 20
+  flatValue: 100
   multiplier: 1
   chance: 0
   isUnique: 0

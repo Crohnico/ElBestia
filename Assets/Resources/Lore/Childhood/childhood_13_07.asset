@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_13_07
   stage: 1
-  title: Restless Old Hospital
-  storyFragment: The people of an old hospital that smelled of herbs and fear remember
-    a young {name} as someone shaped less by play than by restlessness that kept
-    looking for a door.
+  title: Surgery Lamp Duty
+  storyFragment: 'As a child, {name} lived through a surgery lamp duty, learning pain, recovery, herbs, and the fragile mechanics of bodies.'
   modifiers:
   - type: 0
     stat: 3

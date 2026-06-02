@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_11_00
   stage: 0
-  title: Hard Noble House
-  storyFragment: The first stories about {name} came from a noble house full of manners
-    and hidden knives, remembered locally for hard endurance.
+  title: Noble House
+  storyFragment: '{name} was born into a noble house, where manners, inheritance, and hidden rivalries carried their own kind of danger.'
   modifiers:
   - type: 2
     stat: 0

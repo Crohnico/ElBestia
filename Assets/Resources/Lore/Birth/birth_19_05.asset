@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_19_05
   stage: 0
-  title: Cruel Border Farm
-  storyFragment: '{name} entered the world in a border farm where raids were part
-    of the seasons, surrounded by people who measured children through cruelty learned
-    as protection.'
+  title: Frontier Wheat Farm
+  storyFragment: '{name} was born in a frontier wheat farm, where harvests, fences, raids, and militia drills shared the same seasons.'
   modifiers:
   - type: 0
     stat: 4

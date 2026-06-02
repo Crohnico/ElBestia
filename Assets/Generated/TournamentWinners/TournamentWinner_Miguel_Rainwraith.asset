@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4967c85aea6a19141a4313e739382e72, type: 3}
+  m_Name: TournamentWinner_Miguel_Rainwraith
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Champions.ChampionSO
+  nameGenerator: {fileID: 0}
+  level: 1
+  totalBaseStatPoints: 50
+  seed: 1372889973
+  championId: 7QKIL9-SCLEOX-51P9ZP-R87KRD
+  championName: Miguel Rainwraith
+  playerNickname: 
+  appearance:
+    sex: 0
+    hair: -1
+    head: -1
+    torso: -1
+    arms: -1
+    legs: -1
+    feet: -1
+  lore:
+    birth: {fileID: 11400000, guid: b26f7ca2a3288a04fa03bdded86c2a17, type: 2}
+    childhood: {fileID: 11400000, guid: 6ad5e09f97421e64fab03671705ab5b0, type: 2}
+    youth: {fileID: 11400000, guid: 997904a2de16ea44391f77c86d79557a, type: 2}
+    storyCombinationKey: 1754658
+    storyCombinationId: birth_04_03__childhood_17_03__youth_05_08
+    story: Miguel Rainwraith was born in a canal boat family, where floods, ferries,
+      and rope work taught respect for timing. As a child, Miguel Rainwraith lived
+      through the animal cage chores, learning masks, timing, falls, applause, and
+      public courage. As a young adult, Miguel Rainwraith worked through a blood
+      sport contract, discovering that pain becomes easier to bear when a crowd gives
+      it a price. They enter the dojo to turn a first taste of applause into real
+      prize money.
+  baseStats:
+    life: 169
+    energy: 80
+    strength: 12
+    agility: 7
+    constitution: 8
+    intelligence: 10
+    endurance: 13
+    dodge: 3
+    block: 7
+    critical: 3
+    hit: 4
+    recovery: 6
+    speed: 13
+    experienceGain: 0
+    fatalInjuryResistance: 0
+    injurySeverityReduction: 0
+    fireResistance: 4
+    waterResistance: 4
+    electricityResistance: 3
+    poisonResistance: 4
+    earthResistance: 5
+    airResistance: 3
+    woodResistance: 4
+    fireDamage: 0
+    waterDamage: 0
+    electricityDamage: 0
+    poisonDamage: 0
+    earthDamage: 0
+    airDamage: 0
+    woodDamage: 0
+    fireDamageMultiplier: 1
+    waterDamageMultiplier: 1
+    electricityDamageMultiplier: 1
+    poisonDamageMultiplier: 1
+    earthDamageMultiplier: 1
+    airDamageMultiplier: 1
+    woodDamageMultiplier: 1
+    fistsProficiency: 0
+    swordProficiency: 0
+    axeProficiency: 0
+    spearProficiency: 0
+    staffProficiency: 0
+    bowProficiency: 0
+  stats:
+    life: 179
+    energy: 80
+    strength: 17
+    agility: 7
+    constitution: 9
+    intelligence: 10
+    endurance: 13
+    dodge: 3
+    block: 8
+    critical: 4
+    hit: 9
+    recovery: 6
+    speed: 13
+    experienceGain: 0
+    fatalInjuryResistance: 0
+    injurySeverityReduction: 0
+    fireResistance: 4
+    waterResistance: 4
+    electricityResistance: 3
+    poisonResistance: 4
+    earthResistance: 6
+    airResistance: 3
+    woodResistance: 4
+    fireDamage: 0
+    waterDamage: 0
+    electricityDamage: 0
+    poisonDamage: 5
+    earthDamage: 0
+    airDamage: 0
+    woodDamage: 0
+    fireDamageMultiplier: 1
+    waterDamageMultiplier: 1
+    electricityDamageMultiplier: 1
+    poisonDamageMultiplier: 1
+    earthDamageMultiplier: 1
+    airDamageMultiplier: 1
+    woodDamageMultiplier: 1
+    fistsProficiency: 0
+    swordProficiency: 0
+    axeProficiency: 0
+    spearProficiency: 0
+    staffProficiency: 2
+    bowProficiency: 2
+  growth:
+    strength: 0
+    agility: 0
+    constitution: 0
+    intelligence: 2
+    endurance: 0
+  currentExperience: 0
+  experienceToNextLevel: 114
+  equippedWeapon: 4
+  perks:
+  - {fileID: 11400000, guid: 4c0e2f7ff4ba5774bb9d25be95a02ef7, type: 2}
+  - {fileID: 11400000, guid: 5313b39f79ffaaa4ea7ef63755a8e95d, type: 2}
+  baseSkill:
+    skillName: Base Spear Thrust
+    skillNameId: skill_name.base.spear_thrust
+    description: 'The user thrusts with the spear.
+
+      - Cooldown: 0s
+
+      -
+      Damage: 12
+
+      - Effects: action: Enemy: DoDamage x12'
+    isBaseSkill: 1
+    quality: 0
+    level: 1
+    cooldownSeconds: 0
+    element: 0
+    energyCost: 0
+    range: 2
+    weapons: 04000000
+    statScaling:
+    - stat: 1
+      scaling: 0
+      usesGradeScaling: 0
+    - stat: 0
+      scaling: 0
+      usesGradeScaling: 0
+    preCast: []
+    cast:
+    - target: 1
+      action: 0
+      charge: 0
+      amount: 12
+    postCast: []
+    iconSeed: 1869210855
+  skills:
+  - skillName: Fire Thrust of Crushing
+    skillNameId: skill_name.fire_thrust.crushing
+    description: 'The user executes a piercing spear thrust, leaving lingering pressure
+      on the enemy.
+
+      - Cooldown: 4,2s
+
+      - Effects: post: Enemy: ApplyCharges
+      Crush x3'
+    isBaseSkill: 0
+    quality: 0
+    level: 1
+    cooldownSeconds: 4.2
+    element: 3
+    energyCost: 7
+    range: 3.7
+    weapons: 04000000
+    statScaling:
+    - stat: 1
+      scaling: 0
+      usesGradeScaling: 1
+    preCast: []
+    cast: []
+    postCast:
+    - target: 1
+      action: 4
+      charge: 6
+      amount: 3
+    iconSeed: 1961536641

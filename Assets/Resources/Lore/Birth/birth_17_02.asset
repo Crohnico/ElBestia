@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_17_02
   stage: 0
-  title: Lucky Monk Refuge
-  storyFragment: '{name} entered the world in a monk refuge where silence was a rule,
-    surrounded by people who measured children through uncomfortable luck.'
+  title: Pilgrim Refuge Family
+  storyFragment: '{name} was born in a pilgrim refuge family, where silence, breath, and repeated chores were treated as survival tools.'
   modifiers:
   - type: 2
     stat: 0

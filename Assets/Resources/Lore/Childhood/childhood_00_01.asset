@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_00_01
   stage: 1
-  title: Quiet Orphanage
-  storyFragment: The safest corner of {name}'s youth was an overcrowded orphanage,
-    though even there quiet restraint kept knocking.
+  title: Temple Orphanage
+  storyFragment: 'As a child, {name} lived through a temple orphanage, learning to compete for space, food, attention, and the right to be remembered.'
   modifiers:
   - type: 0
     stat: 0

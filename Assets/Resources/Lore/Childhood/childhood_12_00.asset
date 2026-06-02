@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_12_00
   stage: 1
-  title: Hard Rooftop Games
-  storyFragment: As a child, {name} spent long years around rooftops where children
-    ran above adult trouble, learning to turn hard endurance into a survival tool.
+  title: Rooftop Games
+  storyFragment: 'As a child, {name} lived through the rooftop games, learning balance above danger and confidence after every fall.'
   modifiers:
   - type: 0
     stat: 2

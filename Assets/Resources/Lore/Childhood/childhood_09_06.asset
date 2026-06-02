@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_09_06
   stage: 1
-  title: Patient Temple Bells
-  storyFragment: By twelve, {name} had drifted into temple bells and endless chores,
-    a life where patience that waited longer than fear mattered more than comfort.
+  title: Temple Laundry
+  storyFragment: 'As a child, {name} lived through a temple laundry, learning ritual calm, chores, fasting, and the value of repetition.'
   modifiers:
   - type: 2
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_08_05
   stage: 0
-  title: Cruel Fishing Village
-  storyFragment: The first stories about {name} came from a humble fishing village
-    where hunger arrived with the tide, remembered locally for cruelty learned as
-    protection.
+  title: Crab Boat Family
+  storyFragment: '{name} was born in a crab boat family, where nets, boats, and empty mornings taught patience.'
   modifiers:
   - type: 0
     stat: 3

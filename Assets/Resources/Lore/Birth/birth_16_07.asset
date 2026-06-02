@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_16_07
   stage: 0
-  title: Restless Arena District
-  storyFragment: Before anyone called {name} a fighter, life in an arena district
-    that cheered before it pitied had already taught the family the meaning of restlessness
-    that kept looking for a door.
+  title: Training Yard Birth
+  storyFragment: '{name} was born in a training yard birth, where crowds cheered pain before they learned the names of fighters.'
   modifiers:
   - type: 2
     stat: 0

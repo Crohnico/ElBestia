@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_13_02
   stage: 1
-  title: Lucky Old Hospital
-  storyFragment: As a child, {name} spent long years around an old hospital that
-    smelled of herbs and fear, learning to turn uncomfortable luck into a survival
-    tool.
+  title: Sickroom Helper
+  storyFragment: 'As a child, {name} lived through a sickroom helper, learning pain, recovery, herbs, and the fragile mechanics of bodies.'
   modifiers:
   - type: 2
     stat: 0

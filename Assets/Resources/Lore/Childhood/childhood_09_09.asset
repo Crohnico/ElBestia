@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_09_09
   stage: 1
-  title: Proud Temple Bells
-  storyFragment: As a child, {name} spent long years around temple bells and endless
-    chores, learning to turn pride too stubborn to die quietly into a survival tool.
+  title: Festival Bell Duty
+  storyFragment: 'As a child, {name} lived through a festival bell duty, learning ritual calm, chores, fasting, and the value of repetition.'
   modifiers:
   - type: 4
     stat: 0

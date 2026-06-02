@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_12_09
   stage: 1
-  title: Proud Rooftop Games
-  storyFragment: Years in rooftops where children ran above adult trouble gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood pride
-    too stubborn to die quietly.
+  title: Moonlit Roof Races
+  storyFragment: 'As a child, {name} lived through the moonlit roof races, learning balance above danger and confidence after every fall.'
   modifiers:
   - type: 0
     stat: 2

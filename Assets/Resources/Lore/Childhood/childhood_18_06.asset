@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_18_06
   stage: 1
-  title: Patient Hidden Valley
-  storyFragment: '{name}''s childhood turned around a hidden valley that distrusted
-    outsiders, a rough education that made patience that waited longer than fear
-    feel natural.'
+  title: Sealed Pass Hamlet
+  storyFragment: 'As a child, {name} lived through a sealed pass hamlet, learning caution, secrecy, and suspicion of outsiders.'
   modifiers:
   - type: 0
     stat: 3

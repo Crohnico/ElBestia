@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_13_05
   stage: 1
-  title: Cruel Old Hospital
-  storyFragment: By twelve, {name} had drifted into an old hospital that smelled
-    of herbs and fear, a life where cruelty learned as protection mattered more than
-    comfort.
+  title: Plague Ward Errands
+  storyFragment: 'As a child, {name} lived through the plague ward errands, learning pain, recovery, herbs, and the fragile mechanics of bodies.'
   modifiers:
   - type: 4
     stat: 0

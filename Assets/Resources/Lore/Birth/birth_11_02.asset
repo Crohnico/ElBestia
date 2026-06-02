@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_11_02
   stage: 0
-  title: Lucky Noble House
-  storyFragment: The household that raised {name} belonged to a noble house full
-    of manners and hidden knives, and its oldest inheritance was uncomfortable luck.
+  title: Estate Servant Birth
+  storyFragment: '{name} was born into an estate servant birth, where manners, inheritance, and hidden rivalries carried their own kind of danger.'
   modifiers:
   - type: 0
     stat: 1

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
   perkId: poison_rhythm
   displayName: Venom Rhythm
-  rarity: 1
+  rarity: 3
   description: After each action, apply 2 Poison stacks on enemy.
   effectType: 5
   combatStat: 0

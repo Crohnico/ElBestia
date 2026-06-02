@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
   perkId: air_sting
   displayName: Wind Shear Sting
-  rarity: 1
+  rarity: 2
   description: 'Every action leaves a trace of Wind Shear. Effect: apply 1 WindShear
     stack after each action.'
   effectType: 5

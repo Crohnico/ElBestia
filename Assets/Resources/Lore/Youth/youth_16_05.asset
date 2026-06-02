@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_16_05
   stage: 2
-  title: Cruel Scholar Job
-  storyFragment: At adulthood, {name} entered a scholar's job copying maps and wounds
-    alike, trading old fears for work, violence, and cruelty learned as protection.
+  title: Library Guard
+  storyFragment: 'As a young adult, {name} worked through a library guard, copying maps, wounds, and combat notes until patterns became weapons. They enter the dojo to test theory against pain.'
   modifiers:
   - type: 0
     stat: 1

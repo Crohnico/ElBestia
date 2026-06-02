@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_02_05
   stage: 2
-  title: Cruel Mechanic Shop
-  storyFragment: The work at a mechanic shop that fixed wheels, hinges, and sometimes
-    bones did not make {name} gentle; it made cruelty learned as protection easier
-    to justify.
+  title: Rail Depot Repairs
+  storyFragment: 'As a young adult, {name} worked through the rail depot repairs, turning leverage, pressure, and heavy tools into a private fighting sense. They enter the dojo to save the workshop that gave them a trade.'
   modifiers:
   - type: 2
     stat: 0

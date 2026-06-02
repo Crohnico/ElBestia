@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_05_05
   stage: 1
-  title: Cruel Kitchen Yard
-  storyFragment: As a child, {name} spent long years around a kitchen yard full of
-    heat, scraps, and shouted orders, learning to turn cruelty learned as protection
-    into a survival tool.
+  title: Temple Kitchen Chores
+  storyFragment: 'As a child, {name} lived through the temple kitchen chores, learning timing, heat, patience, and how to watch fighters while pretending to work.'
   modifiers:
   - type: 4
     stat: 0

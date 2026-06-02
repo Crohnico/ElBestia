@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_03_05
   stage: 2
-  title: Cruel Plumber Work
-  storyFragment: The next chapter took {name} to plumber work in narrow streets and
-    flooded cellars, a place that rewarded cruelty learned as protection as long
-    as it could win fights.
+  title: Flood Drain Work
+  storyFragment: 'As a young adult, {name} worked through a flood drain work, learning angles, pressure, balance, and ugly work beneath the streets. They enter the dojo to buy a life above the cellars.'
   modifiers:
   - type: 0
     stat: 3

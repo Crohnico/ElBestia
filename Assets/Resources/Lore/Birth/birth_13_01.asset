@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_13_01
   stage: 0
-  title: Quiet Storm Coast
-  storyFragment: '{name} entered the world in a storm coast that taught children
-    to fear the sky, surrounded by people who measured children through quiet restraint.'
+  title: Lighthouse Family
+  storyFragment: '{name} was born in a lighthouse family, where wind, waves, and rescue bells taught people to move before panic.'
   modifiers:
   - type: 4
     stat: 0

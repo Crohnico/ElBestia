@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_18_07
   stage: 1
-  title: Restless Hidden Valley
-  storyFragment: By twelve, {name} had drifted into a hidden valley that distrusted
-    outsiders, a life where restlessness that kept looking for a door mattered more
-    than comfort.
+  title: Hidden River Camp
+  storyFragment: 'As a child, {name} lived through a hidden river camp, learning caution, secrecy, and suspicion of outsiders.'
   modifiers:
   - type: 0
     stat: 3

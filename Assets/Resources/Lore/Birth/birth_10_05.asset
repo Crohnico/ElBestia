@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_10_05
   stage: 0
-  title: Cruel Nomad Caravan
-  storyFragment: The household that raised {name} belonged to a nomad caravan that
-    never slept under the same roof twice, and its oldest inheritance was cruelty
-    learned as protection.
+  title: Horse Trader Caravan
+  storyFragment: '{name} was born around a horse trader caravan, where packing quickly and reading roads mattered more than owning walls.'
   modifiers:
   - type: 2
     stat: 0

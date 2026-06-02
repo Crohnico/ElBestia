@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_11_09
   stage: 1
-  title: Proud Butcher Block
-  storyFragment: '{name}''s childhood turned around a butcher''s block where blood
-    was just work, a rough education that made pride too stubborn to die quietly
-    feel natural.'
+  title: Blood Drain Yard
+  storyFragment: 'As a child, {name} lived through a blood drain yard, learning anatomy, steady hands, and why blood should not freeze the mind.'
   modifiers:
   - type: 0
     stat: 1

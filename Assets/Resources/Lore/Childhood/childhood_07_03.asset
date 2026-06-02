@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_07_03
   stage: 1
-  title: Hungry Library Dust
-  storyFragment: '{name}''s childhood turned around dusty library rooms watched by
-    tired scholars, a rough education that made hunger that made every choice sharper
-    feel natural.'
+  title: Scribe Hall
+  storyFragment: 'As a child, {name} lived through a scribe hall, learning memory, patterns, and the habit of studying before acting.'
   modifiers:
   - type: 4
     stat: 0

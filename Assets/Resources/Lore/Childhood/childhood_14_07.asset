@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_14_07
   stage: 1
-  title: Restless Burned Hamlet
-  storyFragment: '{name}''s childhood turned around a burned hamlet that never stopped
-    counting losses, a rough education that made restlessness that kept looking for
-    a door feel natural.'
+  title: Firebreak Camp
+  storyFragment: 'As a child, {name} lived through a firebreak camp, learning salvage, grief, and how quickly ordinary life can vanish.'
   modifiers:
   - type: 0
     stat: 4

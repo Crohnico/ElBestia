@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_14_05
   stage: 1
-  title: Cruel Burned Hamlet
-  storyFragment: By twelve, {name} had drifted into a burned hamlet that never stopped
-    counting losses, a life where cruelty learned as protection mattered more than
-    comfort.
+  title: Scavenger Field Work
+  storyFragment: 'As a child, {name} lived through a scavenger field work, learning salvage, grief, and how quickly ordinary life can vanish.'
   modifiers:
   - type: 2
     stat: 0

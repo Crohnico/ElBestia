@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_02_04
   stage: 0
-  title: Bright Desert Birth
-  storyFragment: '{name} was born in a settlement pressed against the desert, and
-    a bright belief that tomorrow could be stolen back shaped ordinary life there.'
+  title: Dry River Village
+  storyFragment: '{name} was born in a dry river village, where water, shade, and distance shaped every decision.'
   modifiers:
   - type: 4
     stat: 0

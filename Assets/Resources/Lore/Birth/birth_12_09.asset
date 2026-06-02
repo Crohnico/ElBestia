@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_12_09
   stage: 0
-  title: Proud Prison Town
-  storyFragment: The name {name} first appeared in the records of a prison town built
-    around locked gates, beside a note about pride too stubborn to die quietly.
+  title: Parole Camp Birth
+  storyFragment: '{name} was born in a parole camp birth, where locks, guards, and suspicion were part of the local weather.'
   modifiers:
   - type: 0
     stat: 2

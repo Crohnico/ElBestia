@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_07_02
   stage: 0
-  title: Lucky Temple Step
-  storyFragment: The name {name} first appeared in the records of the steps of a
-    severe hill temple, beside a note about uncomfortable luck.
+  title: Shrine Keeper Family
+  storyFragment: '{name} was born in a shrine keeper family, where bells, chores, and ritual discipline marked the first memories.'
   modifiers:
   - type: 0
     stat: 2

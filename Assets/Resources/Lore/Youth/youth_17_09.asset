@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_17_09
   stage: 2
-  title: Proud Street Performer
-  storyFragment: The next chapter took {name} to street performance, applause, and
-    thrown bottles, a place that rewarded pride too stubborn to die quietly as long
-    as it could win fights.
+  title: Traveling Troupe
+  storyFragment: 'As a young adult, {name} worked through a traveling troupe, turning timing, balance, masks, and public risk into survival. They enter the dojo to trade applause for prize money.'
   modifiers:
   - type: 4
     stat: 0

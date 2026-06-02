@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_08_01
   stage: 1
-  title: Quiet Fisher Nets
-  storyFragment: When other children learned games, {name} learned the rules of fisher
-    nets, cold mornings, and torn palms and the cost of quiet restraint.
+  title: Crab Pot Work
+  storyFragment: 'As a child, {name} lived through a crab pot work, learning balance, cold patience, and hand strength before sunrise.'
   modifiers:
   - type: 0
     stat: 3

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_16_06
   stage: 1
-  title: Patient Debt House
-  storyFragment: The people of a debt house where promises had teeth remember a young
-    {name} as someone shaped less by play than by patience that waited longer than
-    fear.
+  title: Contract Copying
+  storyFragment: 'As a child, {name} lived through a contract copying, learning what freedom costs and why promises can become chains.'
   modifiers:
   - type: 4
     stat: 0

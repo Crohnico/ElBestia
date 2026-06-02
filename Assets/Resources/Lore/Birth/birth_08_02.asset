@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_08_02
   stage: 0
-  title: Lucky Fishing Village
-  storyFragment: '{name} was born under the customs of a humble fishing village where
-    hunger arrived with the tide, where even a cradle could carry uncomfortable luck.'
+  title: Net Maker Household
+  storyFragment: '{name} was born in a net maker household, where nets, boats, and empty mornings taught patience.'
   modifiers:
   - type: 4
     stat: 0

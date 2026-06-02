@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_18_09
   stage: 1
-  title: Proud Hidden Valley
-  storyFragment: When other children learned games, {name} learned the rules of a
-    hidden valley that distrusted outsiders and the cost of pride too stubborn to
-    die quietly.
+  title: Forbidden Valley School
+  storyFragment: 'As a child, {name} lived through a forbidden valley school, learning caution, secrecy, and suspicion of outsiders.'
   modifiers:
   - type: 2
     stat: 0

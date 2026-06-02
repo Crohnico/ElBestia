@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_17_01
   stage: 0
-  title: Quiet Monk Refuge
-  storyFragment: In a monk refuge where silence was a rule, {name}'s birth was not
-    considered special until rumors of quiet restraint began to follow it.
+  title: Silent Cloister Birth
+  storyFragment: '{name} was born in a silent cloister birth, where silence, breath, and repeated chores were treated as survival tools.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_13_09
   stage: 2
-  title: Proud Field Medic
-  storyFragment: Among the people of field medic work beside screaming fighters,
-    {name} learned a trade, a stance, and the value of pride too stubborn to die
-    quietly.
+  title: Recovery Ward Job
+  storyFragment: 'As a young adult, {name} worked through a recovery ward job, learning where bodies fail and how panic moves through a fight. They enter the dojo to pay for medicine, debts, or mercy.'
   modifiers:
   - type: 4
     stat: 0

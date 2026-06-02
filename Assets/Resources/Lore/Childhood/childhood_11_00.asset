@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_11_00
   stage: 1
-  title: Hard Butcher Block
-  storyFragment: When other children learned games, {name} learned the rules of a
-    butcher's block where blood was just work and the cost of hard endurance.
+  title: Butcher Block
+  storyFragment: 'As a child, {name} lived through a butcher block, learning anatomy, steady hands, and why blood should not freeze the mind.'
   modifiers:
   - type: 2
     stat: 0

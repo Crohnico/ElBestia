@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_11_03
   stage: 0
-  title: Hungry Noble House
-  storyFragment: The first stories about {name} came from a noble house full of manners
-    and hidden knives, remembered locally for hunger that made every choice sharper.
+  title: Courtier Household
+  storyFragment: '{name} was born into a courtier household, where manners, inheritance, and hidden rivalries carried their own kind of danger.'
   modifiers:
   - type: 4
     stat: 0

@@ -19,6 +19,8 @@ namespace ElBestia.Lore
                 birth = birth,
                 childhood = childhood,
                 youth = youth,
+                storyCombinationKey = LoreHybridStoryComposer.GetCombinationKey(birth, childhood, youth),
+                storyCombinationId = LoreHybridStoryComposer.GetCombinationId(birth, childhood, youth),
                 story = BuildStory(championName, birth, childhood, youth)
             };
         }
@@ -79,14 +81,10 @@ namespace ElBestia.Lore
         private static ChampionLoreEntrySO CreateFallback(ChampionLoreStage stage, System.Random rng)
         {
             string[] anchors = GetFallbackAnchors(stage);
-            string[] tones = { "Hard", "Quiet", "Lucky", "Hungry", "Bright", "Cruel", "Patient", "Restless", "Broken", "Proud" };
             int anchorIndex = rng.Next(0, anchors.Length);
-            int toneIndex = rng.Next(0, tones.Length);
             string anchor = anchors[anchorIndex];
-            string tone = tones[toneIndex];
-            string id = $"fallback_{stage.ToString().ToLowerInvariant()}_{anchorIndex:00}_{toneIndex:00}";
-            string title = $"{tone} {anchor}";
-            return ChampionLoreEntrySO.CreateRuntime(id, stage, title, BuildFallbackFragment(stage, anchor, tone), BuildFallbackModifiers(anchorIndex, toneIndex));
+            string id = $"fallback_{stage.ToString().ToLowerInvariant()}_{anchorIndex:00}_00";
+            return ChampionLoreEntrySO.CreateRuntime(id, stage, anchor, BuildFallbackFragment(stage, anchor), BuildFallbackModifiers(anchorIndex, 0));
         }
 
         private static string[] GetFallbackAnchors(ChampionLoreStage stage)
@@ -94,24 +92,24 @@ namespace ElBestia.Lore
             switch (stage)
             {
                 case ChampionLoreStage.Birth:
-                    return new[] { "Sword Family", "Poor Family", "Desert Birth", "Mountain Clan", "River House", "Dojo Lineage", "Mercenary Camp", "Temple Step", "Fishing Village", "Forge Quarter", "Nomad Caravan", "Noble House", "Prison Town", "Storm Coast", "Woodcutters", "Street Clinic", "Arena District", "Monk Refuge", "Sailor Blood", "Border Farm" };
+                    return new[] { "Sword Tutor Family", "Tenement Family", "Desert Oasis", "Mountain Clan", "River House", "Dojo Lineage", "Mercenary Camp", "Temple Steps", "Fishing Village", "Forge Quarter", "Nomad Caravan", "Noble House", "Prison Town", "Storm Coast", "Woodcutter Family", "Street Clinic", "Arena District", "Monk Refuge", "Sailor Family", "Border Farm" };
                 case ChampionLoreStage.Childhood:
-                    return new[] { "Orphanage", "Wild Child", "Good School", "Street Gang", "Stable Work", "Kitchen Yard", "Mine Tunnels", "Library Dust", "Fisher Nets", "Temple Bells", "Market Runner", "Butcher Block", "Rooftop Games", "Old Hospital", "Burned Hamlet", "Winter Road", "Debt House", "Circus Tent", "Hidden Valley", "Training Hall" };
+                    return new[] { "City Orphanage", "Forest Survival", "Charity School", "Pickpocket Crew", "Trade Road Stables", "Monastery Kitchen", "Mine Tunnels", "Temple Library", "Fisher Nets", "Temple Bell Chores", "Market Runner", "Butcher Block", "Rooftop Games", "Old Hospital", "Burned Hamlet", "Winter Road", "Debt House", "Circus Tent", "Hidden Valley", "Training Hall" };
                 default:
-                    return new[] { "Army Service", "Teacher Years", "Mechanic Shop", "Plumber Work", "Dock Labor", "Arena Debut", "Monastery Trial", "Bandit Season", "Merchant Guard", "Courier Route", "Blacksmith Helper", "Hunter Lodge", "Sailor Contract", "Field Medic", "Quarry Crew", "Duelist Circle", "Scholar Job", "Street Performer", "Bodyguard Work", "Dojo Assistant" };
+                    return new[] { "Army Recruit", "Village Teacher", "Mechanic Shop", "Plumber Work", "Dock Labor", "Arena Debut", "Monastery Trial", "Bandit Season", "Merchant Guard", "Courier Route", "Blacksmith Helper", "Hunter Lodge", "Sailor Contract", "Field Medic", "Quarry Crew", "Duelist Circle", "Scholar Job", "Street Performer", "Bodyguard Work", "Dojo Assistant" };
             }
         }
 
-        private static string BuildFallbackFragment(ChampionLoreStage stage, string anchor, string tone)
+        private static string BuildFallbackFragment(ChampionLoreStage stage, string anchor)
         {
             switch (stage)
             {
                 case ChampionLoreStage.Birth:
-                    return $"{{name}} was born around {Readable(anchor)}, and the household was shaped by {TonePhrase(tone)}.";
+                    return $"{{name}} was born around {Readable(anchor)}, where survival became the first lesson.";
                 case ChampionLoreStage.Childhood:
-                    return $"As a child, {{name}} passed through {Readable(anchor)}, learning to survive through {TonePhrase(tone)}.";
+                    return $"As a child, {{name}} passed through {Readable(anchor)}, learning habits that could survive a fight.";
                 default:
-                    return $"When youth came, {{name}} found work in {Readable(anchor)}, and violence gave {TonePhrase(tone)} a purpose.";
+                    return $"When youth came, {{name}} found work in {Readable(anchor)} and entered the dojo to turn that life into prize money.";
             }
         }
 
@@ -152,8 +150,7 @@ namespace ElBestia.Lore
 
         private static string BuildStory(string championName, ChampionLoreEntrySO birth, ChampionLoreEntrySO childhood, ChampionLoreEntrySO youth)
         {
-            string name = string.IsNullOrEmpty(championName) ? "This champion" : championName;
-            return $"{Fragment(birth, name)} {Fragment(childhood, name)} {Fragment(youth, name)}";
+            return LoreHybridStoryComposer.BuildStory(championName, birth, childhood, youth);
         }
 
         private static string Fragment(ChampionLoreEntrySO entry, string championName)

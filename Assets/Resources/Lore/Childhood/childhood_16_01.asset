@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_16_01
   stage: 1
-  title: Quiet Debt House
-  storyFragment: As a child, {name} spent long years around a debt house where promises
-    had teeth, learning to turn quiet restraint into a survival tool.
+  title: Pawnshop Childhood
+  storyFragment: 'As a child, {name} lived through a pawnshop childhood, learning what freedom costs and why promises can become chains.'
   modifiers:
   - type: 0
     stat: 1

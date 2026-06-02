@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_10_04
   stage: 2
-  title: Bright Blacksmith Helper
-  storyFragment: When {name} came of age, a blacksmith's shop where strength was
-    expected offered food, coin, and enough danger to give a bright belief that tomorrow
-    could be stolen back direction.
+  title: Blade Polishing Work
+  storyFragment: 'As a young adult, {name} worked through a blade polishing work, hardening hands through heat, rhythm, metal, and repeated impact. They enter the dojo to repay the forge that fed them.'
   modifiers:
   - type: 4
     stat: 0

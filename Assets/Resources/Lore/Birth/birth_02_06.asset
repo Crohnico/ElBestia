@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_02_06
   stage: 0
-  title: Patient Desert Birth
-  storyFragment: In a settlement pressed against the desert, {name}'s birth was not
-    considered special until rumors of patience that waited longer than fear began
-    to follow it.
+  title: Glass Desert Outpost
+  storyFragment: '{name} was born in a glass desert outpost, where water, shade, and distance shaped every decision.'
   modifiers:
   - type: 0
     stat: 2

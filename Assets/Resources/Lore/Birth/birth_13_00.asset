@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_13_00
   stage: 0
-  title: Hard Storm Coast
-  storyFragment: '{name} was born under the customs of a storm coast that taught
-    children to fear the sky, where even a cradle could carry hard endurance.'
+  title: Storm Coast
+  storyFragment: '{name} was born in a storm coast, where wind, waves, and rescue bells taught people to move before panic.'
   modifiers:
   - type: 0
     stat: 3

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_04_03
   stage: 0
-  title: Hungry River House
-  storyFragment: '{name} entered the world in a river house that lived by floods
-    and ferries, surrounded by people who measured children through hunger that made
-    every choice sharper.'
+  title: Canal Boat Family
+  storyFragment: '{name} was born in a canal boat family, where floods, ferries, and rope work taught respect for timing.'
   modifiers:
   - type: 2
     stat: 0

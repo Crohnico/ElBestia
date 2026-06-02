@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_11_05
   stage: 1
-  title: Cruel Butcher Block
-  storyFragment: The safest corner of {name}'s youth was a butcher's block where
-    blood was just work, though even there cruelty learned as protection kept knocking.
+  title: Bone Cart Duty
+  storyFragment: 'As a child, {name} lived through a bone cart duty, learning anatomy, steady hands, and why blood should not freeze the mind.'
   modifiers:
   - type: 0
     stat: 1

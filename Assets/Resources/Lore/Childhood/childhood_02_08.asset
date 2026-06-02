@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_02_08
   stage: 1
-  title: Broken Good School
-  storyFragment: Years in a strict but generous school gave {name} habits that looked
-    strange to outsiders and useful to anyone who understood broken trust and careful
-    habits.
+  title: Doctor Apprentice Lessons
+  storyFragment: 'As a child, {name} lived through the doctor apprentice lessons, learning letters, rivalry, discipline, and how rules can be used as weapons.'
   modifiers:
   - type: 4
     stat: 0

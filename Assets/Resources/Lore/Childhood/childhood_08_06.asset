@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_08_06
   stage: 1
-  title: Patient Fisher Nets
-  storyFragment: Years in fisher nets, cold mornings, and torn palms gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood patience
-    that waited longer than fear.
+  title: Salt Fish Drying
+  storyFragment: 'As a child, {name} lived through a salt fish drying, learning balance, cold patience, and hand strength before sunrise.'
   modifiers:
   - type: 4
     stat: 0

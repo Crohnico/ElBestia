@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_06_05
   stage: 0
-  title: Cruel Mercenary Camp
-  storyFragment: '{name} was born under the customs of a mercenary camp where lullabies
-    sounded like marching songs, where even a cradle could carry cruelty learned
-    as protection.'
+  title: Camp Surgeon Tent
+  storyFragment: '{name} was born around a camp surgeon tent, where paid violence, marching boots, and camp discipline surrounded the cradle.'
   modifiers:
   - type: 2
     stat: 0

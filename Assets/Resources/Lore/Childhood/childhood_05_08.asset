@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_05_08
   stage: 1
-  title: Broken Kitchen Yard
-  storyFragment: The safest corner of {name}'s youth was a kitchen yard full of heat,
-    scraps, and shouted orders, though even there broken trust and careful habits
-    kept knocking.
+  title: Festival Cook Crew
+  storyFragment: 'As a child, {name} lived through a festival cook crew, learning timing, heat, patience, and how to watch fighters while pretending to work.'
   modifiers:
   - type: 0
     stat: 0

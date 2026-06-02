@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_16_02
   stage: 1
-  title: Lucky Debt House
-  storyFragment: As a child, {name} spent long years around a debt house where promises
-    had teeth, learning to turn uncomfortable luck into a survival tool.
+  title: Collector Errands
+  storyFragment: 'As a child, {name} lived through the collector errands, learning what freedom costs and why promises can become chains.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_02_01
   stage: 1
-  title: Quiet Good School
-  storyFragment: When other children learned games, {name} learned the rules of a
-    strict but generous school and the cost of quiet restraint.
+  title: Guild School
+  storyFragment: 'As a child, {name} lived through a guild school, learning letters, rivalry, discipline, and how rules can be used as weapons.'
   modifiers:
   - type: 2
     stat: 0

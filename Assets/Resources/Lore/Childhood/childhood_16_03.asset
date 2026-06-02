@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_16_03
   stage: 1
-  title: Hungry Debt House
-  storyFragment: '{name}''s childhood turned around a debt house where promises had
-    teeth, a rough education that made hunger that made every choice sharper feel
-    natural.'
+  title: Ledger Room Chores
+  storyFragment: 'As a child, {name} lived through the ledger room chores, learning what freedom costs and why promises can become chains.'
   modifiers:
   - type: 2
     stat: 0

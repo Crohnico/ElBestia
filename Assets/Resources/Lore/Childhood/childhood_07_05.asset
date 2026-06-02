@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_07_05
   stage: 1
-  title: Cruel Library Dust
-  storyFragment: The people of dusty library rooms watched by tired scholars remember
-    a young {name} as someone shaped less by play than by cruelty learned as protection.
+  title: Dojo Records Room
+  storyFragment: 'As a child, {name} lived through a dojo records room, learning memory, patterns, and the habit of studying before acting.'
   modifiers:
   - type: 0
     stat: 2

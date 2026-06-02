@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_13_04
   stage: 1
-  title: Bright Old Hospital
-  storyFragment: As a child, {name} spent long years around an old hospital that
-    smelled of herbs and fear, learning to turn a bright belief that tomorrow could
-    be stolen back into a survival tool.
+  title: Bone Setter Room
+  storyFragment: 'As a child, {name} lived through a bone setter room, learning pain, recovery, herbs, and the fragile mechanics of bodies.'
   modifiers:
   - type: 0
     stat: 3

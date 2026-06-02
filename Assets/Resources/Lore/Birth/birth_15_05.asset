@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_15_05
   stage: 0
-  title: Cruel Street Clinic
-  storyFragment: '{name} was born under the customs of a street clinic where pain
-    was ordinary, where even a cradle could carry cruelty learned as protection.'
+  title: Plague Cart Birth
+  storyFragment: '{name} was born in a plague cart birth, where blood, bandages, and unpaid favors were never far away.'
   modifiers:
   - type: 0
     stat: 0

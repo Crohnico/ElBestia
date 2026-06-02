@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_13_02
   stage: 2
-  title: Lucky Field Medic
-  storyFragment: At adulthood, {name} entered field medic work beside screaming fighters,
-    trading old fears for work, violence, and uncomfortable luck.
+  title: Herbalist Assistant
+  storyFragment: 'As a young adult, {name} worked through a herbalist assistant, learning where bodies fail and how panic moves through a fight. They enter the dojo to pay for medicine, debts, or mercy.'
   modifiers:
   - type: 2
     stat: 0

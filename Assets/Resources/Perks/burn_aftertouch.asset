@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
   perkId: burn_aftertouch
   displayName: Cinder Aftertouch
-  rarity: 0
+  rarity: 2
   description: After each action, apply 1 Burn stack on enemy.
   effectType: 5
   combatStat: 0

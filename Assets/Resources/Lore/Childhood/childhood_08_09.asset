@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_08_09
   stage: 1
-  title: Proud Fisher Nets
-  storyFragment: Childhood pulled {name} through fisher nets, cold mornings, and
-    torn palms; the lesson that stayed was pride too stubborn to die quietly.
+  title: Night Fishing Runs
+  storyFragment: 'As a child, {name} lived through the night fishing runs, learning balance, cold patience, and hand strength before sunrise.'
   modifiers:
   - type: 0
     stat: 3

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_00_07
   stage: 1
-  title: Restless Orphanage
-  storyFragment: By twelve, {name} had drifted into an overcrowded orphanage, a life
-    where restlessness that kept looking for a door mattered more than comfort.
+  title: Barracks Fosterage
+  storyFragment: 'As a child, {name} lived through a barracks fosterage, learning to compete for space, food, attention, and the right to be remembered.'
   modifiers:
   - type: 2
     stat: 0

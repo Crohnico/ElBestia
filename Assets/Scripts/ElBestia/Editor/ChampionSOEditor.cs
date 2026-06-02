@@ -71,6 +71,8 @@ namespace ElBestia.Editor
                 DrawLoreLine("Birth", champion.Lore.birth);
                 DrawLoreLine("Childhood", champion.Lore.childhood);
                 DrawLoreLine("Youth", champion.Lore.youth);
+                EditorGUILayout.LabelField("Story Key", champion.Lore.storyCombinationKey.ToString());
+                EditorGUILayout.LabelField("Story ID", champion.Lore.storyCombinationId, EditorStyles.miniLabel);
 
                 if (!string.IsNullOrEmpty(champion.Lore.story))
                 {

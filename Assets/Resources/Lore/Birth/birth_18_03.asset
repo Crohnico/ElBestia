@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_18_03
   stage: 0
-  title: Hungry Sailor Blood
-  storyFragment: In a sailor family with salt in every story, {name}'s birth was
-    not considered special until rumors of hunger that made every choice sharper
-    began to follow it.
+  title: Deckhand Household
+  storyFragment: '{name} was born into a deckhand household, where ropes, tides, and returning alive mattered more than stories about courage.'
   modifiers:
   - type: 0
     stat: 3

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_12_02
   stage: 0
-  title: Lucky Prison Town
-  storyFragment: '{name} entered the world in a prison town built around locked gates,
-    surrounded by people who measured children through uncomfortable luck.'
+  title: Convict Quarter Birth
+  storyFragment: '{name} was born in a convict quarter birth, where locks, guards, and suspicion were part of the local weather.'
   modifiers:
   - type: 4
     stat: 0

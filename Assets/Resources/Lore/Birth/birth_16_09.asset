@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_16_09
   stage: 0
-  title: Proud Arena District
-  storyFragment: '{name} entered the world in an arena district that cheered before
-    it pitied, surrounded by people who measured children through pride too stubborn
-    to die quietly.'
+  title: Blood Sand Quarter
+  storyFragment: '{name} was born in a blood sand quarter, where crowds cheered pain before they learned the names of fighters.'
   modifiers:
   - type: 0
     stat: 1

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_18_06
   stage: 0
-  title: Patient Sailor Blood
-  storyFragment: '{name} entered the world in a sailor family with salt in every
-    story, surrounded by people who measured children through patience that waited
-    longer than fear.'
+  title: Pearl Boat Family
+  storyFragment: '{name} was born into a pearl boat family, where ropes, tides, and returning alive mattered more than stories about courage.'
   modifiers:
   - type: 0
     stat: 3

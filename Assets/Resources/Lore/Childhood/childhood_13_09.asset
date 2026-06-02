@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_13_09
   stage: 1
-  title: Proud Old Hospital
-  storyFragment: Childhood pulled {name} through an old hospital that smelled of
-    herbs and fear; the lesson that stayed was pride too stubborn to die quietly.
+  title: Ward Porter Job
+  storyFragment: 'As a child, {name} lived through a ward porter job, learning pain, recovery, herbs, and the fragile mechanics of bodies.'
   modifiers:
   - type: 4
     stat: 0

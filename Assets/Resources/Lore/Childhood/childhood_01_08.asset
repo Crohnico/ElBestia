@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_01_08
   stage: 1
-  title: Broken Wild Child
-  storyFragment: As a child, {name} spent long years around the wild edges beyond
-    the village, learning to turn broken trust and careful habits into a survival
-    tool.
+  title: Marsh Hut Childhood
+  storyFragment: 'As a child, {name} lived through a marsh hut childhood, learning from weather, hunger, hiding places, and mistakes nobody corrected.'
   modifiers:
   - type: 0
     stat: 1

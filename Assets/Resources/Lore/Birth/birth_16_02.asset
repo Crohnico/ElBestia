@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_16_02
   stage: 0
-  title: Lucky Arena District
-  storyFragment: The first stories about {name} came from an arena district that
-    cheered before it pitied, remembered locally for uncomfortable luck.
+  title: Ticket Seller Family
+  storyFragment: '{name} was born in a ticket seller family, where crowds cheered pain before they learned the names of fighters.'
   modifiers:
   - type: 4
     stat: 0

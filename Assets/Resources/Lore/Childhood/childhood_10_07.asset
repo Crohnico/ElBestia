@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_10_07
   stage: 1
-  title: Restless Market Runner
-  storyFragment: Childhood pulled {name} through market alleys where every errand
-    became a race; the lesson that stayed was restlessness that kept looking for
-    a door.
+  title: Gate Toll Runner
+  storyFragment: 'As a child, {name} lived through a gate toll runner, learning speed through crowds and how to read danger while moving.'
   modifiers:
   - type: 0
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_08_09
   stage: 0
-  title: Proud Fishing Village
-  storyFragment: '{name} was born in a humble fishing village where hunger arrived
-    with the tide, and pride too stubborn to die quietly shaped ordinary life there.'
+  title: Storm Net Village
+  storyFragment: '{name} was born in a storm net village, where nets, boats, and empty mornings taught patience.'
   modifiers:
   - type: 0
     stat: 3

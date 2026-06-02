@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_08_00
   stage: 0
-  title: Hard Fishing Village
-  storyFragment: The first stories about {name} came from a humble fishing village
-    where hunger arrived with the tide, remembered locally for hard endurance.
+  title: Fishing Village
+  storyFragment: '{name} was born in a fishing village, where nets, boats, and empty mornings taught patience.'
   modifiers:
   - type: 0
     stat: 3

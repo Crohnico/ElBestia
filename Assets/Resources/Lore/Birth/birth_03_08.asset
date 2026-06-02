@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_03_08
   stage: 0
-  title: Broken Mountain Clan
-  storyFragment: '{name} was born in a mountain clan of stubborn walkers, and broken
-    trust and careful habits shaped ordinary life there.'
+  title: Miner Family Camp
+  storyFragment: '{name} was born in a miner family camp, where balance, lungs, and stubborn legs mattered before formal schooling.'
   modifiers:
   - type: 2
     stat: 0

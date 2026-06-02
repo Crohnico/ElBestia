@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_03_07
   stage: 0
-  title: Restless Mountain Clan
-  storyFragment: Before anyone called {name} a fighter, life in a mountain clan of
-    stubborn walkers had already taught the family the meaning of restlessness that
-    kept looking for a door.
+  title: Peak Watchtower
+  storyFragment: '{name} was born in a peak watchtower, where balance, lungs, and stubborn legs mattered before formal schooling.'
   modifiers:
   - type: 4
     stat: 0

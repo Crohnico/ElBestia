@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_13_05
   stage: 0
-  title: Cruel Storm Coast
-  storyFragment: The household that raised {name} belonged to a storm coast that
-    taught children to fear the sky, and its oldest inheritance was cruelty learned
-    as protection.
+  title: Sea Wall Household
+  storyFragment: '{name} was born in a sea wall household, where wind, waves, and rescue bells taught people to move before panic.'
   modifiers:
   - type: 4
     stat: 0

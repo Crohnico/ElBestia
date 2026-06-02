@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
   perkId: water_sting
   displayName: Drowning Sting
-  rarity: 1
+  rarity: 2
   description: 'Every action leaves a trace of Drowning. Effect: apply 1 Drowning
     stack after each action.'
   effectType: 5

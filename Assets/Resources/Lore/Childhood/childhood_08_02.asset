@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_08_02
   stage: 1
-  title: Lucky Fisher Nets
-  storyFragment: When other children learned games, {name} learned the rules of fisher
-    nets, cold mornings, and torn palms and the cost of uncomfortable luck.
+  title: Pearl Diving Lessons
+  storyFragment: 'As a child, {name} lived through the pearl diving lessons, learning balance, cold patience, and hand strength before sunrise.'
   modifiers:
   - type: 4
     stat: 0

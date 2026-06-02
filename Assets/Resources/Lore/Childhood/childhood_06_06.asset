@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_06_06
   stage: 1
-  title: Patient Mine Tunnels
-  storyFragment: Childhood pulled {name} through mine tunnels where daylight became
-    a rumor; the lesson that stayed was patience that waited longer than fear.
+  title: Lantern Boy Work
+  storyFragment: 'As a child, {name} lived through a lantern boy work, learning breath control, endurance, and courage in cramped darkness.'
   modifiers:
   - type: 0
     stat: 1

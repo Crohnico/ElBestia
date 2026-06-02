@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_13_07
   stage: 2
-  title: Restless Field Medic
-  storyFragment: The work at field medic work beside screaming fighters did not make
-    {name} gentle; it made restlessness that kept looking for a door easier to justify.
+  title: Tournament Medic Work
+  storyFragment: 'As a young adult, {name} worked through a tournament medic work, learning where bodies fail and how panic moves through a fight. They enter the dojo to pay for medicine, debts, or mercy.'
   modifiers:
   - type: 0
     stat: 3

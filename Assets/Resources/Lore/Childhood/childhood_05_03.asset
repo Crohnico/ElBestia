@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_05_03
   stage: 1
-  title: Hungry Kitchen Yard
-  storyFragment: Childhood pulled {name} through a kitchen yard full of heat, scraps,
-    and shouted orders; the lesson that stayed was hunger that made every choice
-    sharper.
+  title: Army Mess Tent
+  storyFragment: 'As a child, {name} lived through an army mess tent, learning timing, heat, patience, and how to watch fighters while pretending to work.'
   modifiers:
   - type: 0
     stat: 0

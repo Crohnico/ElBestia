@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_13_08
   stage: 0
-  title: Broken Storm Coast
-  storyFragment: Before anyone called {name} a fighter, life in a storm coast that
-    taught children to fear the sky had already taught the family the meaning of
-    broken trust and careful habits.
+  title: Storm Shrine Village
+  storyFragment: '{name} was born in a storm shrine village, where wind, waves, and rescue bells taught people to move before panic.'
   modifiers:
   - type: 0
     stat: 3

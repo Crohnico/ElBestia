@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_08_06
   stage: 0
-  title: Patient Fishing Village
-  storyFragment: The first stories about {name} came from a humble fishing village
-    where hunger arrived with the tide, remembered locally for patience that waited
-    longer than fear.
+  title: Whaler Dock Family
+  storyFragment: '{name} was born in a whaler dock family, where nets, boats, and empty mornings taught patience.'
   modifiers:
   - type: 4
     stat: 0

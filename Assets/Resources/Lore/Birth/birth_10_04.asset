@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_10_04
   stage: 0
-  title: Bright Nomad Caravan
-  storyFragment: In a nomad caravan that never slept under the same roof twice, {name}'s
-    birth was not considered special until rumors of a bright belief that tomorrow
-    could be stolen back began to follow it.
+  title: Map Seller Family
+  storyFragment: '{name} was born around a map seller family, where packing quickly and reading roads mattered more than owning walls.'
   modifiers:
   - type: 4
     stat: 0

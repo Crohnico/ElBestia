@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_09_01
   stage: 0
-  title: Quiet Forge Quarter
-  storyFragment: '{name} entered the world in a forge quarter blackened by smoke
-    and debt, surrounded by people who measured children through quiet restraint.'
+  title: Blacksmith Family
+  storyFragment: '{name} was born in a blacksmith family, where heat, hammer rhythm, and metalwork filled the streets.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_12_07
   stage: 1
-  title: Restless Rooftop Games
-  storyFragment: The safest corner of {name}'s youth was rooftops where children
-    ran above adult trouble, though even there restlessness that kept looking for
-    a door kept knocking.
+  title: Pigeon Loft Chases
+  storyFragment: 'As a child, {name} lived through the pigeon loft chases, learning balance above danger and confidence after every fall.'
   modifiers:
   - type: 2
     stat: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
   perkId: electricity_sting
   displayName: Shock Sting
-  rarity: 1
+  rarity: 2
   description: 'Every action leaves a trace of Shock. Effect: apply 1 Shock stack
     after each action.'
   effectType: 5

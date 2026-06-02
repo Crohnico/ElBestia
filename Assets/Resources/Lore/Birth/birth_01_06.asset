@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_01_06
   stage: 0
-  title: Patient Poor Family
-  storyFragment: The name {name} first appeared in the records of a poor household
-    that counted every meal, beside a note about patience that waited longer than
-    fear.
+  title: Street Beggar Family
+  storyFragment: '{name} was born into a street beggar family, where food, debt, and shelter were problems children learned to understand too early.'
   modifiers:
   - type: 2
     stat: 0

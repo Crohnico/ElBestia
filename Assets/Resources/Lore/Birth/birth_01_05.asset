@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_01_05
   stage: 0
-  title: Cruel Poor Family
-  storyFragment: '{name} entered the world in a poor household that counted every
-    meal, surrounded by people who measured children through cruelty learned as protection.'
+  title: Farmhand Cottage
+  storyFragment: '{name} was born into a farmhand cottage, where food, debt, and shelter were problems children learned to understand too early.'
   modifiers:
   - type: 4
     stat: 0

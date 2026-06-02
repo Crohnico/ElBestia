@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_00_00
   stage: 0
-  title: Hard Sword Family
-  storyFragment: '{name} was born in a family of sword tutors, and hard endurance
-    shaped ordinary life there.'
+  title: Sword Tutor Family
+  storyFragment: '{name} was born into a sword tutor family, where weapons, footwork, and bruised pride were part of ordinary family life.'
   modifiers:
   - type: 0
     stat: 0

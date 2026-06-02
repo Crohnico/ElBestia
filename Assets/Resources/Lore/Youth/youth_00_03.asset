@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_00_03
   stage: 2
-  title: Hungry Army Service
-  storyFragment: Youth ended when {name} joined army service under officers who loved
-    drills, where duty sharpened hunger that made every choice sharper into a practical
-    weapon.
+  title: Shield Line Soldier
+  storyFragment: 'As a young adult, {name} worked through a shield line soldier, turning drills, fear, formation work, and orders into practical violence. They enter the dojo to win coin without taking orders.'
   modifiers:
   - type: 2
     stat: 0

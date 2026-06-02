@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: birth_10_01
   stage: 0
-  title: Quiet Nomad Caravan
-  storyFragment: '{name} entered the world in a nomad caravan that never slept under
-    the same roof twice, surrounded by people who measured children through quiet
-    restraint.'
+  title: Camel Train Family
+  storyFragment: '{name} was born around a camel train family, where packing quickly and reading roads mattered more than owning walls.'
   modifiers:
   - type: 2
     stat: 0

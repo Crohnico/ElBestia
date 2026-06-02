@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4967c85aea6a19141a4313e739382e72, type: 3}
+  m_Name: TournamentWinner_Leif_Viperclap
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Champions.ChampionSO
+  nameGenerator: {fileID: 0}
+  level: 1
+  totalBaseStatPoints: 50
+  seed: 1856469121
+  championId: JFHJTX-VYF1MI-1EHY3K-A5E7HG
+  championName: Leif Viperclap
+  playerNickname: 
+  appearance:
+    sex: 1
+    hair: -1
+    head: -1
+    torso: -1
+    arms: -1
+    legs: -1
+    feet: -1
+  lore:
+    birth: {fileID: 11400000, guid: a6746c5a5ead81846847112c987eb2e9, type: 2}
+    childhood: {fileID: 11400000, guid: 374c6c99f1bf7304eb46c7d6c57285e0, type: 2}
+    youth: {fileID: 11400000, guid: c4d845bc69c81ca4b903051df6356f7e, type: 2}
+    storyCombinationKey: 6068689
+    storyCombinationId: birth_15_01__childhood_14_03__youth_08_09
+    story: Leif Viperclap was born in a midwife alley birth, where blood, bandages,
+      and unpaid favors were never far away. As a child, Leif Viperclap lived through
+      the refugee camp years, learning salvage, grief, and how quickly ordinary life
+      can vanish. As a young adult, Leif Viperclap worked through a counting house
+      guard, turning caravan routes and roadside fights into a working education.
+      They enter the dojo to earn more than a season of escort work.
+  baseStats:
+    life: 173
+    energy: 68
+    strength: 10
+    agility: 12
+    constitution: 9
+    intelligence: 8
+    endurance: 11
+    dodge: 6
+    block: 5
+    critical: 5
+    hit: 6
+    recovery: 5
+    speed: 17
+    experienceGain: 0
+    fatalInjuryResistance: 0
+    injurySeverityReduction: 0
+    fireResistance: 4
+    waterResistance: 4
+    electricityResistance: 4
+    poisonResistance: 3
+    earthResistance: 4
+    airResistance: 4
+    woodResistance: 3
+    fireDamage: 0
+    waterDamage: 0
+    electricityDamage: 0
+    poisonDamage: 0
+    earthDamage: 0
+    airDamage: 0
+    woodDamage: 0
+    fireDamageMultiplier: 1
+    waterDamageMultiplier: 1
+    electricityDamageMultiplier: 1
+    poisonDamageMultiplier: 1
+    earthDamageMultiplier: 1
+    airDamageMultiplier: 1
+    woodDamageMultiplier: 1
+    fistsProficiency: 0
+    swordProficiency: 0
+    axeProficiency: 0
+    spearProficiency: 0
+    staffProficiency: 0
+    bowProficiency: 0
+  stats:
+    life: 182
+    energy: 74
+    strength: 12
+    agility: 12
+    constitution: 9
+    intelligence: 9
+    endurance: 14
+    dodge: 6
+    block: 7
+    critical: 11
+    hit: 6
+    recovery: 6
+    speed: 18
+    experienceGain: 0
+    fatalInjuryResistance: 0
+    injurySeverityReduction: 0
+    fireResistance: 4
+    waterResistance: 4
+    electricityResistance: 4
+    poisonResistance: 4
+    earthResistance: 5
+    airResistance: 4
+    woodResistance: 4
+    fireDamage: 0
+    waterDamage: 0
+    electricityDamage: 0
+    poisonDamage: 0
+    earthDamage: 0
+    airDamage: 0
+    woodDamage: 0
+    fireDamageMultiplier: 1
+    waterDamageMultiplier: 1
+    electricityDamageMultiplier: 1
+    poisonDamageMultiplier: 1
+    earthDamageMultiplier: 1
+    airDamageMultiplier: 1
+    woodDamageMultiplier: 1
+    fistsProficiency: 0
+    swordProficiency: 0
+    axeProficiency: 0
+    spearProficiency: 3
+    staffProficiency: 0
+    bowProficiency: 0
+  growth:
+    strength: 1
+    agility: 1
+    constitution: 0
+    intelligence: 0
+    endurance: 0
+  currentExperience: 0
+  experienceToNextLevel: 114
+  equippedWeapon: 4
+  perks:
+  - {fileID: 11400000, guid: d49d419f019f36440a950912aea7b2c2, type: 2}
+  baseSkill:
+    skillName: Base Spear Thrust
+    skillNameId: skill_name.base.spear_thrust
+    description: 'The user thrusts with the spear.
+
+      - Cooldown: 0s
+
+      -
+      Damage: 12
+
+      - Effects: action: Enemy: DoDamage x12'
+    isBaseSkill: 1
+    quality: 0
+    level: 1
+    cooldownSeconds: 0
+    element: 0
+    energyCost: 0
+    range: 2
+    weapons: 04000000
+    statScaling:
+    - stat: 1
+      scaling: 0
+      usesGradeScaling: 0
+    - stat: 0
+      scaling: 0
+      usesGradeScaling: 0
+    preCast: []
+    cast:
+    - target: 1
+      action: 0
+      charge: 0
+      amount: 12
+    postCast: []
+    iconSeed: 1872735624
+  skills: []

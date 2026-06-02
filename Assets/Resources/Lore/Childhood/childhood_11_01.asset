@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_11_01
   stage: 1
-  title: Quiet Butcher Block
-  storyFragment: Years in a butcher's block where blood was just work gave {name}
-    habits that looked strange to outsiders and useful to anyone who understood quiet
-    restraint.
+  title: Slaughter Yard Work
+  storyFragment: 'As a child, {name} lived through a slaughter yard work, learning anatomy, steady hands, and why blood should not freeze the mind.'
   modifiers:
   - type: 0
     stat: 1

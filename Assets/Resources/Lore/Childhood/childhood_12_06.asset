@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: childhood_12_06
   stage: 1
-  title: Patient Rooftop Games
-  storyFragment: As a child, {name} spent long years around rooftops where children
-    ran above adult trouble, learning to turn patience that waited longer than fear
-    into a survival tool.
+  title: Gutter Path Games
+  storyFragment: 'As a child, {name} lived through the gutter path games, learning balance above danger and confidence after every fall.'
   modifiers:
   - type: 4
     stat: 0

@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_05_02
   stage: 2
-  title: Lucky Arena Debut
-  storyFragment: The work at a first arena circuit with more blood than applause
-    did not make {name} gentle; it made uncomfortable luck easier to justify.
+  title: Opening Bout Work
+  storyFragment: 'As a young adult, {name} worked through an opening bout work, discovering that pain becomes easier to bear when a crowd gives it a price. They enter the dojo to turn a first taste of applause into real prize money.'
   modifiers:
   - type: 2
     stat: 0

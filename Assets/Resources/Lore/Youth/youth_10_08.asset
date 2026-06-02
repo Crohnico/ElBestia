@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_10_08
   stage: 2
-  title: Broken Blacksmith Helper
-  storyFragment: By the end of youth, {name} had passed through a blacksmith's shop
-    where strength was expected and carried broken trust and careful habits like
-    a second name.
+  title: Toolmaker Shop
+  storyFragment: 'As a young adult, {name} worked through a toolmaker shop, hardening hands through heat, rhythm, metal, and repeated impact. They enter the dojo to repay the forge that fed them.'
   modifiers:
   - type: 4
     stat: 0
