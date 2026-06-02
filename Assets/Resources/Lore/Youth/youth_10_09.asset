@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852754d59eb174447ab0269eec71b0a4, type: 3}
+  m_Name: youth_10_09
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
+  entryId: youth_10_09
+  stage: 2
+  title: Proud Blacksmith Helper
+  storyFragment: In a blacksmith's shop where strength was expected, {name} learned
+    that a future could be bought with bruises, discipline, and pride too stubborn
+    to die quietly.
+  modifiers:
+  - type: 2
+    stat: 0
+    combatStat: 3
+    weapon: 0
+    element: 0
+    value: 3
+    multiplier: 1
+  - type: 3
+    stat: 0
+    combatStat: 0
+    weapon: 5
+    element: 0
+    value: 2
+    multiplier: 1

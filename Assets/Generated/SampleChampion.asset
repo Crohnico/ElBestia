@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4967c85aea6a19141a4313e739382e72, type: 3}
+  m_Name: SampleChampion
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Champions.ChampionSO
+  nameGenerator: {fileID: 0}
+  level: 1
+  totalBaseStatPoints: 50
+  seed: 602955964
+  championId: NHBNF5-8L9LBE-DVQCAA-IRGB0Z
+  championName: David Slycrusher
+  playerNickname: 
+  appearance:
+    sex: 1
+    hair: -1
+    head: -1
+    torso: -1
+    arms: -1
+    legs: -1
+    feet: -1
+  lore:
+    birth: {fileID: 11400000, guid: f09a6ff47f5afc34e9e446fd05e4044d, type: 2}
+    childhood: {fileID: 11400000, guid: eafa9998bb97301418a129bd8191c4f8, type: 2}
+    youth: {fileID: 11400000, guid: 15bdd125e229f1549b056be94e67fd63, type: 2}
+    story: David Slycrusher was born in a settlement pressed against the desert,
+      and uncomfortable luck shaped ordinary life there. The people of an old hospital
+      that smelled of herbs and fear remember a young David Slycrusher as someone
+      shaped less by play than by restlessness that kept looking for a door. When
+      David Slycrusher came of age, a scholar's job copying maps and wounds alike
+      offered food, coin, and enough danger to give restlessness that kept looking
+      for a door direction.
+  baseStats:
+    life: 236
+    energy: 44
+    strength: 9
+    agility: 10
+    constitution: 15
+    intelligence: 4
+    endurance: 12
+    dodge: 5
+    block: 6
+    critical: 3
+    hit: 4
+    recovery: 6
+    experienceGain: 0
+    fatalInjuryResistance: 0
+    injurySeverityReduction: 0
+    fireResistance: 5
+    waterResistance: 5
+    electricityResistance: 5
+    poisonResistance: 5
+    earthResistance: 7
+    airResistance: 6
+    woodResistance: 5
+    fistsProficiency: 0
+    swordProficiency: 0
+    axeProficiency: 0
+    spearProficiency: 0
+    staffProficiency: 0
+    bowProficiency: 0
+  stats:
+    life: 266
+    energy: 56
+    strength: 9
+    agility: 10
+    constitution: 18
+    intelligence: 6
+    endurance: 12
+    dodge: 12
+    block: 6
+    critical: 3
+    hit: 4
+    recovery: 8
+    experienceGain: 0
+    fatalInjuryResistance: 0
+    injurySeverityReduction: 0
+    fireResistance: 5
+    waterResistance: 5
+    electricityResistance: 5
+    poisonResistance: 5
+    earthResistance: 7
+    airResistance: 6
+    woodResistance: 5
+    fistsProficiency: 0
+    swordProficiency: 3
+    axeProficiency: 4
+    spearProficiency: 0
+    staffProficiency: 2
+    bowProficiency: 0
+  growth:
+    strength: 0
+    agility: 1
+    constitution: 0
+    intelligence: 0
+    endurance: 0
+  currentExperience: 0
+  experienceToNextLevel: 114
+  equippedWeapon: 3
+  perks:
+  - {fileID: 11400000, guid: 3031220e1f118ab40a933c62ecb67f58, type: 2}
+  - {fileID: 11400000, guid: 3b414e2a07db6db4493d67c94d814427, type: 2}
+  baseSkill:
+    skillName: Base Axe Cleave
+    skillNameId: skill_name.base.axe_cleave
+    description: 'The user swings the axe in a simple heavy blow.
+
+      - Cooldown:
+      0s
+
+      - Damage: 14
+
+      - Effects: action: Enemy: DoDamage x14'
+    isBaseSkill: 1
+    quality: 0
+    level: 1
+    cooldownSeconds: 0
+    element: 0
+    energyCost: 0
+    range: 1
+    weapons: 03000000
+    statScaling:
+    - stat: 0
+      scaling: 0
+      usesGradeScaling: 0
+    preCast: []
+    cast:
+    - target: 1
+      action: 0
+      charge: 0
+      amount: 14
+    postCast: []
+    iconSeed: 1494230753
+  skills: []

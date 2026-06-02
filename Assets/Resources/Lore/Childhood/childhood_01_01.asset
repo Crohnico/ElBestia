@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852754d59eb174447ab0269eec71b0a4, type: 3}
+  m_Name: childhood_01_01
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
+  entryId: childhood_01_01
+  stage: 1
+  title: Quiet Wild Child
+  storyFragment: '{name}''s childhood turned around the wild edges beyond the village,
+    a rough education that made quiet restraint feel natural.'
+  modifiers:
+  - type: 4
+    stat: 0
+    combatStat: 0
+    weapon: 0
+    element: 2
+    value: 4
+    multiplier: 1
+  - type: 0
+    stat: 1
+    combatStat: 0
+    weapon: 0
+    element: 0
+    value: 2
+    multiplier: 1

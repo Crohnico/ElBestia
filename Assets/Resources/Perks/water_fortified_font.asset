@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b832d71375061745af91b57a8614614, type: 3}
+  m_Name: water_fortified_font
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
+  perkId: water_fortified_font
+  displayName: Water Guard Font
+  rarity: 3
+  description: 'The element loses bite on contact. Effect: start combat with 4 Water
+    Fortified stacks.'
+  effectType: 8
+  combatStat: 0
+  stat: 0
+  weapon: 0
+  element: 1
+  charge: 22
+  flatValue: 4
+  multiplier: 1
+  chance: 0
+  isUnique: 0
+  uniqueGroup: 

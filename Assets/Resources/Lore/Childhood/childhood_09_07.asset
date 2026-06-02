@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852754d59eb174447ab0269eec71b0a4, type: 3}
+  m_Name: childhood_09_07
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
+  entryId: childhood_09_07
+  stage: 1
+  title: Restless Temple Bells
+  storyFragment: The people of temple bells and endless chores remember a young {name}
+    as someone shaped less by play than by restlessness that kept looking for a door.
+  modifiers:
+  - type: 0
+    stat: 4
+    combatStat: 0
+    weapon: 0
+    element: 0
+    value: 2
+    multiplier: 1
+  - type: 3
+    stat: 0
+    combatStat: 0
+    weapon: 4
+    element: 0
+    value: 3
+    multiplier: 1

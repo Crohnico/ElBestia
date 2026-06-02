@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852754d59eb174447ab0269eec71b0a4, type: 3}
+  m_Name: youth_01_08
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
+  entryId: youth_01_08
+  stage: 2
+  title: Broken Teacher Years
+  storyFragment: The next chapter took {name} to years spent teaching slower hands,
+    a place that rewarded broken trust and careful habits as long as it could win
+    fights.
+  modifiers:
+  - type: 0
+    stat: 1
+    combatStat: 0
+    weapon: 0
+    element: 0
+    value: 3
+    multiplier: 1
+  - type: 0
+    stat: 1
+    combatStat: 0
+    weapon: 0
+    element: 0
+    value: 2
+    multiplier: 1

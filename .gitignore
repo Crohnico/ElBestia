@@ -1,0 +1,53 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Unity generated files
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+sysinfo.txt
+
+# Crash/report artifacts
+*.stackdump
+crashlytics-build.properties
+
+# IDE/editor caches
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Rider
+.idea/
+*.DotSettings.user
+
+# Visual Studio Code local settings
+.history/
+
+# Unity asset store tools sometimes create local-only backups
+AssetStoreTools*
+
+# Imported marketplace/package archives. Keep the imported Assets instead.
+Assets/Stylized_Fighting_Arenas/*.zip
+*.unitypackage

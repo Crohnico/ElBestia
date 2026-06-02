@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b832d71375061745af91b57a8614614, type: 3}
+  m_Name: poison_self_curse
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
+  perkId: poison_self_curse
+  displayName: Rot Garden
+  rarity: 3
+  description: 'A dangerous school that hurts both sides. Effect: after each action,
+    apply 1 Poison stack to both champions.'
+  effectType: 17
+  combatStat: 0
+  stat: 0
+  weapon: 0
+  element: 4
+  charge: 1
+  flatValue: 1
+  multiplier: 1
+  chance: 0
+  isUnique: 0
+  uniqueGroup: 

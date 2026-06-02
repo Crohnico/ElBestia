@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b832d71375061745af91b57a8614614, type: 3}
+  m_Name: ghost_strike
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
+  perkId: ghost_strike
+  displayName: Ghost Strike
+  rarity: 4
+  description: When dodged, instantly repeats the attack at 50% power, minimum 5
+    damage. This can repeat until the reduced hit also fails at 5 damage.
+  effectType: 13
+  combatStat: 0
+  stat: 0
+  weapon: 0
+  element: 0
+  charge: 0
+  flatValue: 50
+  multiplier: 1
+  chance: 1
+  isUnique: 0
+  uniqueGroup: 

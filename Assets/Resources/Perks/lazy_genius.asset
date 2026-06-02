@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b832d71375061745af91b57a8614614, type: 3}
+  m_Name: lazy_genius
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Perks.PerkSO
+  perkId: lazy_genius
+  displayName: Lazy Genius
+  rarity: 4
+  description: 'Starts half-asleep, then becomes terrifying when hurt. Effect: starts
+    with all base stats -50%; below 50% Life, remove the penalty and multiply all
+    base stats x1.5.'
+  effectType: 19
+  combatStat: 0
+  stat: 0
+  weapon: 0
+  element: 0
+  charge: 0
+  flatValue: 0
+  multiplier: 1.5
+  chance: 0
+  isUnique: 0
+  uniqueGroup: 

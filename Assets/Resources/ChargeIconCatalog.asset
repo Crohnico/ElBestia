@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55e8ed60ff342e48acc1865cf9ee1fd, type: 3}
+  m_Name: ChargeIconCatalog
+  m_EditorClassIdentifier: 
+  entries:
+  - charge: 1
+    icon: {fileID: 21300000, guid: 62b0121e10b6a574eb1a0fb54e062c57, type: 3}
+  - charge: 2
+    icon: {fileID: 21300000, guid: 8a8ad01af465c9a4eb2596d9d8203015, type: 3}
+  - charge: 3
+    icon: {fileID: 21300000, guid: 590024f9c4d6ffa4daae2d7d94cb0a04, type: 3}
+  - charge: 4
+    icon: {fileID: 21300000, guid: b65124fedc73bc14784b7be01054a6b0, type: 3}
+  - charge: 5
+    icon: {fileID: 21300000, guid: ded526b23e8dc594d97fc8d9eae19ada, type: 3}
+  - charge: 6
+    icon: {fileID: 21300000, guid: b43a450d952eccd41a707b39564ee555, type: 3}
+  - charge: 7
+    icon: {fileID: 21300000, guid: a6a37cbca3d6d0541b6dec271b729e9d, type: 3}
+  - charge: 8
+    icon: {fileID: 21300000, guid: 69b17f3411be5bf45aa0ee9995610d7c, type: 3}
+  - charge: 9
+    icon: {fileID: 21300000, guid: 5b2cd3be80f62b049a8146bf7587c1c8, type: 3}
+  - charge: 10
+    icon: {fileID: 21300000, guid: e20a380a3beef86479086d1a8e15e573, type: 3}
+  - charge: 11
+    icon: {fileID: 21300000, guid: b8a111f2a72f52e408e7bf32e9ed2146, type: 3}
+  - charge: 12
+    icon: {fileID: 21300000, guid: 358af2a82c3ae1947bdeec19759114cc, type: 3}
+  - charge: 13
+    icon: {fileID: 21300000, guid: 7863856297a0bc44c9f527dc227e54dc, type: 3}
+  - charge: 14
+    icon: {fileID: 21300000, guid: 00f21782a57fe2c4aa15e9de15b7dba5, type: 3}
+  - charge: 15
+    icon: {fileID: 21300000, guid: c9f065b8ea0076e4da53c0482a1a02a1, type: 3}
+  - charge: 16
+    icon: {fileID: 21300000, guid: 5254cb6afad00024887b4867c7bbf1be, type: 3}
+  - charge: 17
+    icon: {fileID: 21300000, guid: ed143652ac945ec408b20316d0b3b825, type: 3}
+  - charge: 18
+    icon: {fileID: 21300000, guid: 990e44057be608a4f8e796e323677bcc, type: 3}
+  - charge: 19
+    icon: {fileID: 21300000, guid: f7ee9e51761d2234f9e1b9df2789eed9, type: 3}
+  - charge: 20
+    icon: {fileID: 21300000, guid: df9892dc3803e07459c203368062cbc8, type: 3}
+  - charge: 21
+    icon: {fileID: 21300000, guid: 13447797980fdd24396c3a7f3ad4409a, type: 3}
+  - charge: 22
+    icon: {fileID: 21300000, guid: 8f6e85e9b28a95444b665820bc560648, type: 3}
+  - charge: 23
+    icon: {fileID: 21300000, guid: 3782689bc372e4a448710e97aba3419c, type: 3}
+  - charge: 24
+    icon: {fileID: 21300000, guid: fac2442c540ebeb45a45976e7dda58a0, type: 3}
+  - charge: 25
+    icon: {fileID: 21300000, guid: e886b5c12820e904e846b77a2bd22cf8, type: 3}
+  - charge: 26
+    icon: {fileID: 21300000, guid: 415bbd812b798484ba87a081cb85a98a, type: 3}
+  - charge: 27
+    icon: {fileID: 21300000, guid: 41119c636486cea4fa36f66c6c4a270b, type: 3}
+  - charge: 28
+    icon: {fileID: 21300000, guid: 1c8aef8bfbec1374a9e8232f6a87cfb9, type: 3}

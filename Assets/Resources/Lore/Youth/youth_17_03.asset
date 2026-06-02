@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852754d59eb174447ab0269eec71b0a4, type: 3}
+  m_Name: youth_17_03
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
+  entryId: youth_17_03
+  stage: 2
+  title: Hungry Street Performer
+  storyFragment: In street performance, applause, and thrown bottles, {name} learned
+    that a future could be bought with bruises, discipline, and hunger that made
+    every choice sharper.
+  modifiers:
+  - type: 0
+    stat: 2
+    combatStat: 0
+    weapon: 0
+    element: 0
+    value: 1
+    multiplier: 1
+  - type: 3
+    stat: 0
+    combatStat: 0
+    weapon: 6
+    element: 0
+    value: 2
+    multiplier: 1
