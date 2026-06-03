@@ -17,6 +17,12 @@ namespace ElBestia.Editor
         private SerializedProperty minRadius;
         private SerializedProperty useCustomStartMinRadius;
         private SerializedProperty customStartMinRadius;
+        private SerializedProperty useCustomStartMaxRadius;
+        private SerializedProperty customStartMaxRadius;
+        private SerializedProperty useCustomEndMinRadius;
+        private SerializedProperty customEndMinRadius;
+        private SerializedProperty useCustomEndMaxRadius;
+        private SerializedProperty customEndMaxRadius;
         private SerializedProperty maxRadius;
         private SerializedProperty maxRadiusDelta;
         private SerializedProperty smoothRadii;
@@ -34,6 +40,12 @@ namespace ElBestia.Editor
             minRadius = serializedObject.FindProperty("minRadius");
             useCustomStartMinRadius = serializedObject.FindProperty("useCustomStartMinRadius");
             customStartMinRadius = serializedObject.FindProperty("customStartMinRadius");
+            useCustomStartMaxRadius = serializedObject.FindProperty("useCustomStartMaxRadius");
+            customStartMaxRadius = serializedObject.FindProperty("customStartMaxRadius");
+            useCustomEndMinRadius = serializedObject.FindProperty("useCustomEndMinRadius");
+            customEndMinRadius = serializedObject.FindProperty("customEndMinRadius");
+            useCustomEndMaxRadius = serializedObject.FindProperty("useCustomEndMaxRadius");
+            customEndMaxRadius = serializedObject.FindProperty("customEndMaxRadius");
             maxRadius = serializedObject.FindProperty("maxRadius");
             maxRadiusDelta = serializedObject.FindProperty("maxRadiusDelta");
             smoothRadii = serializedObject.FindProperty("smoothRadii");
@@ -42,6 +54,11 @@ namespace ElBestia.Editor
 
         public override void OnInspectorGUI()
         {
+            if (target == null)
+            {
+                return;
+            }
+
             serializedObject.Update();
 
             EditorGUILayout.PropertyField(startJoint, new GUIContent("Articulacion Inicio"));
@@ -57,6 +74,21 @@ namespace ElBestia.Editor
             if (useCustomStartMinRadius.boolValue)
             {
                 EditorGUILayout.PropertyField(customStartMinRadius, new GUIContent("Radio Minimo Inicio"));
+            }
+            EditorGUILayout.PropertyField(useCustomStartMaxRadius, new GUIContent("Custom Max Inicio"));
+            if (useCustomStartMaxRadius.boolValue)
+            {
+                EditorGUILayout.PropertyField(customStartMaxRadius, new GUIContent("Radio Maximo Inicio"));
+            }
+            EditorGUILayout.PropertyField(useCustomEndMinRadius, new GUIContent("Custom Min Fin"));
+            if (useCustomEndMinRadius.boolValue)
+            {
+                EditorGUILayout.PropertyField(customEndMinRadius, new GUIContent("Radio Minimo Fin"));
+            }
+            EditorGUILayout.PropertyField(useCustomEndMaxRadius, new GUIContent("Custom Max Fin"));
+            if (useCustomEndMaxRadius.boolValue)
+            {
+                EditorGUILayout.PropertyField(customEndMaxRadius, new GUIContent("Radio Maximo Fin"));
             }
             EditorGUILayout.PropertyField(maxRadius, new GUIContent("Radio Maximo"));
             EditorGUILayout.PropertyField(maxRadiusDelta, new GUIContent("Diferencia Maxima"));
@@ -74,7 +106,7 @@ namespace ElBestia.Editor
                 {
                     float value = segment.GetSectionRadius(i);
                     EditorGUI.BeginChangeCheck();
-                    value = EditorGUILayout.Slider($"Particion {i + 1}", value, segment.GetSectionMinRadius(i), segment.MaxRadius);
+                    value = EditorGUILayout.Slider($"Particion {i + 1}", value, segment.GetSectionMinRadius(i), segment.GetSectionMaxRadius(i));
                     if (EditorGUI.EndChangeCheck())
                     {
                         Undo.RecordObject(segment, "Change Stickman Segment Radius");

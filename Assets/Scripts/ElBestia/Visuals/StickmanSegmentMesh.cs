@@ -26,6 +26,12 @@ namespace ElBestia.Visuals
         [SerializeField, Range(0.001f, 1f)] private float minRadius = 0.02f;
         [SerializeField] private bool useCustomStartMinRadius;
         [SerializeField, Range(0.001f, 1f)] private float customStartMinRadius = 0.02f;
+        [SerializeField] private bool useCustomStartMaxRadius;
+        [SerializeField, Range(0.001f, 1f)] private float customStartMaxRadius = 0.35f;
+        [SerializeField] private bool useCustomEndMinRadius;
+        [SerializeField, Range(0.001f, 1f)] private float customEndMinRadius = 0.02f;
+        [SerializeField] private bool useCustomEndMaxRadius;
+        [SerializeField, Range(0.001f, 1f)] private float customEndMaxRadius = 0.35f;
         [SerializeField, Range(0.005f, 1f)] private float maxRadius = 0.35f;
         [SerializeField, Range(0.001f, 1f)] private float maxRadiusDelta = 0.3f;
         [SerializeField] private bool smoothRadii = true;
@@ -39,7 +45,37 @@ namespace ElBestia.Visuals
 
         public int SectionCount => sectionCount;
         public float MaxRadius => maxRadius;
-        public float GetSectionMinRadius(int index) => index == 0 && useCustomStartMinRadius ? customStartMinRadius : minRadius;
+
+        public float GetSectionMinRadius(int index)
+        {
+            if (index == 0 && useCustomStartMinRadius)
+            {
+                return customStartMinRadius;
+            }
+
+            if (index == sectionCount - 1 && useCustomEndMinRadius)
+            {
+                return customEndMinRadius;
+            }
+
+            return minRadius;
+        }
+
+        public float GetSectionMaxRadius(int index)
+        {
+            float sectionMin = GetSectionMinRadius(index);
+            if (index == 0 && useCustomStartMaxRadius)
+            {
+                return Mathf.Max(customStartMaxRadius, sectionMin);
+            }
+
+            if (index == sectionCount - 1 && useCustomEndMaxRadius)
+            {
+                return Mathf.Max(customEndMaxRadius, sectionMin);
+            }
+
+            return Mathf.Max(maxRadius, sectionMin);
+        }
 
         public float GetSectionRadius(int index)
         {
@@ -62,7 +98,7 @@ namespace ElBestia.Visuals
                 return;
             }
 
-            sectionRadii[index] = Mathf.Clamp(radius, GetSectionMinRadius(index), maxRadius);
+            sectionRadii[index] = Mathf.Clamp(radius, GetSectionMinRadius(index), GetSectionMaxRadius(index));
             ApplyRadiusConstraints(index);
             Rebuild();
         }
@@ -136,6 +172,9 @@ namespace ElBestia.Visuals
             endInsetFactor = Mathf.Clamp01(endInsetFactor);
             minRadius = Mathf.Max(0.001f, minRadius);
             customStartMinRadius = Mathf.Max(0.001f, customStartMinRadius);
+            customStartMaxRadius = Mathf.Max(0.001f, customStartMaxRadius);
+            customEndMinRadius = Mathf.Max(0.001f, customEndMinRadius);
+            customEndMaxRadius = Mathf.Max(0.001f, customEndMaxRadius);
             maxRadius = Mathf.Max(minRadius, maxRadius);
             maxRadiusDelta = Mathf.Max(0.001f, maxRadiusDelta);
             EnsureRadiusCount();
@@ -202,7 +241,7 @@ namespace ElBestia.Visuals
 
             for (int i = 0; i < sectionRadii.Count; i++)
             {
-                sectionRadii[i] = Mathf.Clamp(sectionRadii[i], GetSectionMinRadius(i), maxRadius);
+                sectionRadii[i] = Mathf.Clamp(sectionRadii[i], GetSectionMinRadius(i), GetSectionMaxRadius(i));
             }
 
             ApplyRadiusConstraints(-1);
@@ -220,13 +259,13 @@ namespace ElBestia.Visuals
                 for (int i = editedIndex - 1; i >= 0; i--)
                 {
                     sectionRadii[i] = Mathf.Clamp(sectionRadii[i], sectionRadii[i + 1] - maxRadiusDelta, sectionRadii[i + 1] + maxRadiusDelta);
-                    sectionRadii[i] = Mathf.Clamp(sectionRadii[i], GetSectionMinRadius(i), maxRadius);
+                    sectionRadii[i] = Mathf.Clamp(sectionRadii[i], GetSectionMinRadius(i), GetSectionMaxRadius(i));
                 }
 
                 for (int i = editedIndex + 1; i < sectionRadii.Count; i++)
                 {
                     sectionRadii[i] = Mathf.Clamp(sectionRadii[i], sectionRadii[i - 1] - maxRadiusDelta, sectionRadii[i - 1] + maxRadiusDelta);
-                    sectionRadii[i] = Mathf.Clamp(sectionRadii[i], GetSectionMinRadius(i), maxRadius);
+                    sectionRadii[i] = Mathf.Clamp(sectionRadii[i], GetSectionMinRadius(i), GetSectionMaxRadius(i));
                 }
 
                 return;
@@ -235,7 +274,7 @@ namespace ElBestia.Visuals
             for (int i = 1; i < sectionRadii.Count; i++)
             {
                 sectionRadii[i] = Mathf.Clamp(sectionRadii[i], sectionRadii[i - 1] - maxRadiusDelta, sectionRadii[i - 1] + maxRadiusDelta);
-                sectionRadii[i] = Mathf.Clamp(sectionRadii[i], GetSectionMinRadius(i), maxRadius);
+                sectionRadii[i] = Mathf.Clamp(sectionRadii[i], GetSectionMinRadius(i), GetSectionMaxRadius(i));
             }
         }
 

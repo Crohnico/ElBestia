@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4967c85aea6a19141a4313e739382e72, type: 3}
-  m_Name: TournamentWinner_Leif_Viperclap
+  m_Name: TournamentWinner_Thomas_Spiritkeeper
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Champions.ChampionSO
   nameGenerator: {fileID: 0}
   level: 1
   totalBaseStatPoints: 50
-  seed: 1856469121
-  championId: JFHJTX-VYF1MI-1EHY3K-A5E7HG
-  championName: Leif Viperclap
+  seed: 1086932304
+  championId: 56D3Y9-UXLOBE-PSFBFZ-UYSCYN
+  championName: Thomas Spiritkeeper
   playerNickname: 
   appearance:
     sex: 1
@@ -28,41 +28,42 @@ MonoBehaviour:
     legs: -1
     feet: -1
   lore:
-    birth: {fileID: 11400000, guid: a6746c5a5ead81846847112c987eb2e9, type: 2}
-    childhood: {fileID: 11400000, guid: 374c6c99f1bf7304eb46c7d6c57285e0, type: 2}
-    youth: {fileID: 11400000, guid: c4d845bc69c81ca4b903051df6356f7e, type: 2}
-    storyCombinationKey: 6068689
-    storyCombinationId: birth_15_01__childhood_14_03__youth_08_09
-    story: Leif Viperclap was born in a midwife alley birth, where blood, bandages,
-      and unpaid favors were never far away. As a child, Leif Viperclap lived through
-      the refugee camp years, learning salvage, grief, and how quickly ordinary life
-      can vanish. As a young adult, Leif Viperclap worked through a counting house
-      guard, turning caravan routes and roadside fights into a working education.
-      They enter the dojo to earn more than a season of escort work.
+    birth: {fileID: 11400000, guid: 6b7c1ed57798d1b41a599540eb89ac8e, type: 2}
+    childhood: {fileID: 11400000, guid: 803681d18fcc94a49ab13e096c32bc4a, type: 2}
+    youth: {fileID: 11400000, guid: 2007c9dc8026ae74587f0512ed4a3e5c, type: 2}
+    storyCombinationKey: 2766474
+    storyCombinationId: birth_06_09__childhood_03_02__youth_07_04
+    story: Thomas Spiritkeeper was born around a spoils camp, where paid violence,
+      marching boots, and camp discipline surrounded the cradle. As a child, Thomas
+      Spiritkeeper lived through a market thief circle, learning shortcuts, loyalty,
+      dirty angles, and the price of fear. As a young adult, Thomas Spiritkeeper
+      worked through a toll bridge gang, learning ambushes, bad roads, guilt, and
+      the cost of trusting desperate people. They enter the dojo to buy distance
+      from old crimes.
   baseStats:
-    life: 173
-    energy: 68
-    strength: 10
-    agility: 12
-    constitution: 9
-    intelligence: 8
-    endurance: 11
-    dodge: 6
-    block: 5
-    critical: 5
+    life: 191
+    energy: 110
+    strength: 7
+    agility: 9
+    constitution: 12
+    intelligence: 15
+    endurance: 7
+    dodge: 4
+    block: 3
+    critical: 3
     hit: 6
-    recovery: 5
-    speed: 17
+    recovery: 6
+    speed: 15
     experienceGain: 0
     fatalInjuryResistance: 0
     injurySeverityReduction: 0
     fireResistance: 4
     waterResistance: 4
     electricityResistance: 4
-    poisonResistance: 3
-    earthResistance: 4
-    airResistance: 4
-    woodResistance: 3
+    poisonResistance: 4
+    earthResistance: 3
+    airResistance: 3
+    woodResistance: 4
     fireDamage: 0
     waterDamage: 0
     electricityDamage: 0
@@ -84,29 +85,29 @@ MonoBehaviour:
     staffProficiency: 0
     bowProficiency: 0
   stats:
-    life: 182
-    energy: 74
-    strength: 12
-    agility: 12
-    constitution: 9
-    intelligence: 9
-    endurance: 14
+    life: 211
+    energy: 128
+    strength: 7
+    agility: 9
+    constitution: 14
+    intelligence: 18
+    endurance: 7
     dodge: 6
-    block: 7
-    critical: 11
-    hit: 6
-    recovery: 6
+    block: 3
+    critical: 6
+    hit: 7
+    recovery: 9
     speed: 18
     experienceGain: 0
     fatalInjuryResistance: 0
     injurySeverityReduction: 0
-    fireResistance: 4
-    waterResistance: 4
-    electricityResistance: 4
-    poisonResistance: 4
-    earthResistance: 5
-    airResistance: 4
-    woodResistance: 4
+    fireResistance: 5
+    waterResistance: 5
+    electricityResistance: 5
+    poisonResistance: 5
+    earthResistance: 3
+    airResistance: 3
+    woodResistance: 5
     fireDamage: 0
     waterDamage: 0
     electricityDamage: 0
@@ -121,15 +122,15 @@ MonoBehaviour:
     earthDamageMultiplier: 1
     airDamageMultiplier: 1
     woodDamageMultiplier: 1
-    fistsProficiency: 0
-    swordProficiency: 0
+    fistsProficiency: 1
+    swordProficiency: 2
     axeProficiency: 0
-    spearProficiency: 3
+    spearProficiency: 0
     staffProficiency: 0
     bowProficiency: 0
   growth:
-    strength: 1
-    agility: 1
+    strength: 0
+    agility: 0
     constitution: 0
     intelligence: 0
     endurance: 0
@@ -137,7 +138,7 @@ MonoBehaviour:
   experienceToNextLevel: 114
   equippedWeapon: 4
   perks:
-  - {fileID: 11400000, guid: d49d419f019f36440a950912aea7b2c2, type: 2}
+  - {fileID: 11400000, guid: dd8619a550764724a936944ce03d7ed0, type: 2}
   baseSkill:
     skillName: Base Spear Thrust
     skillNameId: skill_name.base.spear_thrust
@@ -171,5 +172,34 @@ MonoBehaviour:
       charge: 0
       amount: 12
     postCast: []
-    iconSeed: 1872735624
-  skills: []
+    iconSeed: 2041123553
+  skills:
+  - skillName: Fire Thrust of Shocking
+    skillNameId: skill_name.fire_thrust.shocking
+    description: 'The user executes a piercing spear thrust, leaving lingering pressure
+      on the enemy.
+
+      - Cooldown: 4,2s
+
+      - Effects: post: Enemy: ApplyCharges
+      Shock x3'
+    isBaseSkill: 0
+    quality: 0
+    level: 1
+    cooldownSeconds: 4.2
+    element: 3
+    energyCost: 16
+    range: 2.9
+    weapons: 04000000
+    statScaling:
+    - stat: 3
+      scaling: 0
+      usesGradeScaling: 1
+    preCast: []
+    cast: []
+    postCast:
+    - target: 1
+      action: 4
+      charge: 4
+      amount: 3
+    iconSeed: 1475152781

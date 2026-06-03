@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4967c85aea6a19141a4313e739382e72, type: 3}
-  m_Name: TournamentWinner_Jerry_Sandcaller
+  m_Name: TournamentWinner_Ana_Wildcock
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Champions.ChampionSO
   nameGenerator: {fileID: 0}
   level: 1
   totalBaseStatPoints: 50
-  seed: 1726925810
-  championId: L729OF-NQ889M-EC9UBQ-CD772N
-  championName: Jerry Sandcaller
+  seed: 1544714887
+  championId: VYIA8N-IVQU6K-HI9WP4-Y1DJQK
+  championName: Ana Wildcock
   playerNickname: 
   appearance:
-    sex: 0
+    sex: 1
     hair: -1
     head: -1
     torso: -1
@@ -28,35 +28,40 @@ MonoBehaviour:
     legs: -1
     feet: -1
   lore:
-    birth: {fileID: 11400000, guid: 6ca35573265107a4d86c25aab2901eca, type: 2}
-    childhood: {fileID: 11400000, guid: f40f975638ca19b43b1aa05b09a83388, type: 2}
-    youth: {fileID: 11400000, guid: e9df2453009106f43af5c2e0d2d90608, type: 2}
-    storyCombinationKey: 248321
-    storyCombinationId: birth_00_06__childhood_04_01__youth_12_01
-    story: Jerry Sandcaller was born into a village militia family, where weapons, footwork, and bruised pride were part of ordinary family life. As a child, Jerry Sandcaller lived through the noble stables, building strength and balance around animals, carts, mud, and long roads. As a young adult, Jerry Sandcaller worked through a deckhand work, trading comfort for balance, rope-burned hands, and distance from shore. They enter the dojo to choose the arena before the sea chooses for them.
+    birth: {fileID: 11400000, guid: b78b00b9032b4cc4e8e3a0b75338d2f3, type: 2}
+    childhood: {fileID: 11400000, guid: a60587caa08573f4cb5a830843f3c66f, type: 2}
+    youth: {fileID: 11400000, guid: d19f47c30a0d81f4393b856bca25d06f, type: 2}
+    storyCombinationKey: 2859803
+    storyCombinationId: birth_07_01__childhood_09_09__youth_00_03
+    story: Ana Wildcock was born in a bell tower birth, where bells, chores, and
+      ritual discipline marked the first memories. As a child, Ana Wildcock lived
+      through a festival bell duty, learning ritual calm, chores, fasting, and the
+      value of repetition. As a young adult, Ana Wildcock worked through a shield
+      line soldier, turning drills, fear, formation work, and orders into practical
+      violence. They enter the dojo to win coin without taking orders.
   baseStats:
-    life: 184
-    energy: 80
-    strength: 11
-    agility: 10
-    constitution: 11
-    intelligence: 10
-    endurance: 8
-    dodge: 5
+    life: 233
+    energy: 62
+    strength: 4
+    agility: 13
+    constitution: 15
+    intelligence: 7
+    endurance: 11
+    dodge: 6
     block: 4
-    critical: 4
+    critical: 3
     hit: 5
-    recovery: 5
-    speed: 15
+    recovery: 6
+    speed: 19
     experienceGain: 0
     fatalInjuryResistance: 0
     injurySeverityReduction: 0
-    fireResistance: 4
-    waterResistance: 4
+    fireResistance: 5
+    waterResistance: 5
     electricityResistance: 5
     poisonResistance: 4
     earthResistance: 5
-    airResistance: 5
+    airResistance: 6
     woodResistance: 4
     fireDamage: 0
     waterDamage: 0
@@ -79,29 +84,29 @@ MonoBehaviour:
     staffProficiency: 0
     bowProficiency: 0
   stats:
-    life: 270
-    energy: 80
-    strength: 13
-    agility: 10
-    constitution: 14
-    intelligence: 10
-    endurance: 10
-    dodge: 5
-    block: 6
-    critical: 4
-    hit: 5
-    recovery: 6
-    speed: 16
+    life: 259
+    energy: 62
+    strength: 4
+    agility: 13
+    constitution: 17
+    intelligence: 7
+    endurance: 13
+    dodge: 8
+    block: 5
+    critical: 3
+    hit: 10
+    recovery: 8
+    speed: 21
     experienceGain: 0
     fatalInjuryResistance: 0
     injurySeverityReduction: 0
     fireResistance: 5
     waterResistance: 5
     electricityResistance: 5
-    poisonResistance: 4
-    earthResistance: 5
-    airResistance: 5
-    woodResistance: 9
+    poisonResistance: 5
+    earthResistance: 10
+    airResistance: 6
+    woodResistance: 5
     fireDamage: 0
     waterDamage: 0
     electricityDamage: 0
@@ -116,44 +121,47 @@ MonoBehaviour:
     earthDamageMultiplier: 1
     airDamageMultiplier: 1
     woodDamageMultiplier: 1
-    fistsProficiency: 0
-    swordProficiency: 0
+    fistsProficiency: 1
+    swordProficiency: 3
     axeProficiency: 0
     spearProficiency: 0
     staffProficiency: 0
     bowProficiency: 0
   growth:
     strength: 0
-    agility: 0
-    constitution: 0
+    agility: 1
+    constitution: 1
     intelligence: 0
     endurance: 0
   currentExperience: 0
   experienceToNextLevel: 114
-  equippedWeapon: 6
+  equippedWeapon: 4
   perks:
-  - {fileID: 11400000, guid: e5400f0648c184548a411629a626c26b, type: 2}
+  - {fileID: 11400000, guid: 3c2c2d2e1474b084cab49d247c09a325, type: 2}
   baseSkill:
-    skillName: Base Bow Shot
-    skillNameId: skill_name.base.bow_shot
-    description: 'The user fires a simple arrow.
+    skillName: Base Spear Thrust
+    skillNameId: skill_name.base.spear_thrust
+    description: 'The user thrusts with the spear.
 
       - Cooldown: 0s
 
-      - Damage:
-      10
+      -
+      Damage: 12
 
-      - Effects: action: Enemy: DoDamage x10'
+      - Effects: action: Enemy: DoDamage x12'
     isBaseSkill: 1
     quality: 0
     level: 1
     cooldownSeconds: 0
     element: 0
     energyCost: 0
-    range: 4
-    weapons: 06000000
+    range: 2
+    weapons: 04000000
     statScaling:
     - stat: 1
+      scaling: 0
+      usesGradeScaling: 0
+    - stat: 0
       scaling: 0
       usesGradeScaling: 0
     preCast: []
@@ -161,39 +169,36 @@ MonoBehaviour:
     - target: 1
       action: 0
       charge: 0
-      amount: 10
+      amount: 12
     postCast: []
-    iconSeed: 1965660655
+    iconSeed: 2108534152
   skills:
-  - skillName: Wind Shot of Burning
-    skillNameId: skill_name.wind_shot.burning
-    description: 'The user executes a focused bow shot, leaving lingering pressure
+  - skillName: Wind Thrust of Venomous
+    skillNameId: skill_name.wind_thrust.venomous
+    description: 'The user executes a piercing spear thrust, leaving lingering pressure
       on the enemy.
 
       - Cooldown: 4,2s
 
       - Effects: post: Enemy: ApplyCharges
-      Burn x3'
+      Poison x3'
     isBaseSkill: 0
     quality: 0
     level: 1
     cooldownSeconds: 4.2
     element: 6
-    energyCost: 20
-    range: 0.5
-    weapons: 06000000
+    energyCost: 6
+    range: 0.6
+    weapons: 04000000
     statScaling:
-    - stat: 4
+    - stat: 2
       scaling: 0
-      usesGradeScaling: 1
-    - stat: 0
-      scaling: 2
       usesGradeScaling: 1
     preCast: []
     cast: []
     postCast:
     - target: 1
       action: 4
-      charge: 2
+      charge: 1
       amount: 3
-    iconSeed: 332304031
+    iconSeed: 1346257473
