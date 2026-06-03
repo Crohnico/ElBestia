@@ -27,6 +27,7 @@ namespace ElBestia.Generation
             ChampionLoreProfile lore = ChampionLoreGenerator.CreateRandom(championName, rng);
             ChampionGrowthProfile growth = ChampionGrowthProfile.CreateRandom(rng);
             WeaponType equippedWeapon = RollStartingWeapon(rng);
+            appearance.RollWeaponPart(rng, equippedWeapon);
             PerkSO[] perks = PerkGenerator.RollStartingPerks(rng);
 
             var data = new ChampionData

@@ -18,7 +18,8 @@ namespace ElBestia.Combat
         [SerializeField] private GameplayCanvas gameplayCanvas;
         [SerializeField] private CombatCrono crono;
         [SerializeField] private ActionTimeLine actionTimeLine;
-        [SerializeField] private float spawnY = 1f;
+        [SerializeField] private float championScale = 1.67f;
+        [SerializeField] private float championYawOffset = 32f;
 
         [Header("Debug Match")]
         [SerializeField] private float matchDurationSeconds = 60f;
@@ -111,8 +112,8 @@ namespace ElBestia.Combat
 
             remainingSeconds = Mathf.Max(0f, matchDurationSeconds);
 
-            SpawnDebugChampion(ref leftInstance, spawnLeft, "Left Champion");
-            SpawnDebugChampion(ref rightInstance, spawnRight, "Right Champion");
+            SpawnDebugChampion(ref leftInstance, spawnLeft, "Left Champion", false);
+            SpawnDebugChampion(ref rightInstance, spawnRight, "Right Champion", true);
             ConfigureStickman(leftInstance, leftChampion);
             ConfigureStickman(rightInstance, rightChampion);
             leftBehaviour = PrepareBehaviour(leftInstance, leftChampion, spawnLeft, crono);
@@ -299,7 +300,7 @@ namespace ElBestia.Combat
                 debugCharges);
         }
 
-        private void SpawnDebugChampion(ref GameObject instance, Transform spawnPoint, string fallbackName)
+        private void SpawnDebugChampion(ref GameObject instance, Transform spawnPoint, string fallbackName, bool faceLeft)
         {
             if (spawnPoint == null)
             {
@@ -312,11 +313,14 @@ namespace ElBestia.Combat
             }
 
             Vector3 position = spawnPoint.position;
-            position.y = spawnY;
+            position.y = 0f;
+            float yaw = faceLeft ? 180f + championYawOffset : championYawOffset;
+            Quaternion rotation = Quaternion.Euler(0f, yaw, 0f);
             instance = debugChampionPrefab != null
-                ? Instantiate(debugChampionPrefab, position, spawnPoint.rotation)
+                ? Instantiate(debugChampionPrefab, position, rotation)
                 : GameObject.CreatePrimitive(PrimitiveType.Capsule);
-            instance.transform.SetPositionAndRotation(position, spawnPoint.rotation);
+            instance.transform.SetPositionAndRotation(position, rotation);
+            instance.transform.localScale = Vector3.one * Mathf.Max(0.001f, championScale);
             instance.name = fallbackName;
         }
 

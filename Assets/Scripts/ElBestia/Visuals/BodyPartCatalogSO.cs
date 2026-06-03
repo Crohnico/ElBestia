@@ -11,23 +11,43 @@ namespace ElBestia.Visuals
         [SerializeField] private List<GameObject> both = new List<GameObject>();
         [SerializeField] private bool includeEmptyOption = true;
 
-        public GameObject GetRandomPrefab(ChampionSex sex)
+        public int RollId(System.Random rng, ChampionSex sex)
         {
             List<GameObject> pool = BuildPool(sex);
             int extraEmptyOption = includeEmptyOption ? 1 : 0;
             int rollCount = pool.Count + extraEmptyOption;
             if (rollCount <= 0)
             {
-                return null;
+                return -1;
             }
 
-            int index = Random.Range(0, rollCount);
-            if (includeEmptyOption && index == 0)
+            return rng.Next(0, rollCount);
+        }
+
+        public GameObject GetPrefab(ChampionSex sex, int id)
+        {
+            if (id < 0)
             {
                 return null;
             }
 
-            return pool[index - extraEmptyOption];
+            List<GameObject> pool = BuildPool(sex);
+            if (includeEmptyOption)
+            {
+                if (id == 0)
+                {
+                    return null;
+                }
+
+                id--;
+            }
+
+            return id >= 0 && id < pool.Count ? pool[id] : null;
+        }
+
+        public GameObject GetRandomPrefab(ChampionSex sex)
+        {
+            return GetPrefab(sex, RollId(new System.Random(), sex));
         }
 
         public int GetAmount()

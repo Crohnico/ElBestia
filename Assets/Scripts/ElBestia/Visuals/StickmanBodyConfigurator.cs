@@ -21,6 +21,10 @@ namespace ElBestia.Visuals
         [Header("Colors")]
         [SerializeField] private Renderer[] bodyRenderers = Array.Empty<Renderer>();
 
+        private static readonly int BaseColorId = Shader.PropertyToID("_BaseColor");
+        private static readonly int ColorId = Shader.PropertyToID("_Color");
+        private static MaterialPropertyBlock colorBlock;
+
         public int GroupCount => groups != null ? groups.Count : 0;
         public StickmanGluteScaler GluteScaler { get => gluteScaler; set => gluteScaler = value; }
 
@@ -116,8 +120,10 @@ namespace ElBestia.Visuals
             else if (LooksLikeLegacyAppearance(appearance))
             {
                 appearance = ChampionAppearance.CreateRandom(new System.Random());
+                appearance.RollWeaponPart(new System.Random(), weaponType);
             }
 
+            applyContinuously = false;
             ClearAttachmentChildren();
             SetNormalizedRadius("Pecho", 3, appearance.chest);
             SetNormalizedRadius("Barriga", 3, appearance.belly);
@@ -134,10 +140,10 @@ namespace ElBestia.Visuals
             Color bodyColor = GetUsableColor(appearance.bodyColor, new Color(0.72f, 0.49f, 0.36f, 1f));
             Color hairColor = GetUsableColor(appearance.hairColor, new Color(0.18f, 0.11f, 0.07f, 1f));
             ApplyColorToBody(bodyColor);
-            InstantiateCatalogPart(HairSO.Instance, appearance.sex, headAttachment, bodyColor, hairColor);
-            InstantiateCatalogPart(BeardSO.Instance, appearance.sex, beardAttachment, bodyColor, hairColor);
-            InstantiateCatalogPart(EarSO.Instance, appearance.sex, earAttachment, bodyColor, hairColor);
-            InstantiateWeapon(weaponType, bodyColor, hairColor);
+            InstantiateCatalogPart(HairSO.Instance, appearance.sex, appearance.hairAsset, headAttachment, bodyColor, hairColor);
+            InstantiateCatalogPart(BeardSO.Instance, appearance.sex, appearance.beardAsset, beardAttachment, bodyColor, hairColor);
+            InstantiateCatalogPart(EarSO.Instance, appearance.sex, appearance.earAsset, earAttachment, bodyColor, hairColor);
+            InstantiateWeapon(weaponType, appearance.weaponAsset, bodyColor, hairColor);
             FreezeGeneratedMeshes();
         }
 
@@ -167,6 +173,8 @@ namespace ElBestia.Visuals
                 segments[i].Rebuild();
                 segments[i].RebuildContinuously = false;
             }
+
+            applyContinuously = false;
         }
 
         public void ApplyDefaultVisibilityRules()
@@ -218,7 +226,7 @@ namespace ElBestia.Visuals
             return null;
         }
 
-        private void InstantiateWeapon(WeaponType weaponType, Color bodyColor, Color hairColor)
+        private void InstantiateWeapon(WeaponType weaponType, int assetId, Color bodyColor, Color hairColor)
         {
             if (weaponType == WeaponType.None || weaponType == WeaponType.Fists)
             {
@@ -232,17 +240,17 @@ namespace ElBestia.Visuals
             }
 
             Transform parent = rightHandAttachment != null ? rightHandAttachment : leftHandAttachment;
-            InstantiateCatalogPart(catalog, ChampionSex.H, parent, bodyColor, hairColor);
+            InstantiateCatalogPart(catalog, ChampionSex.H, assetId, parent, bodyColor, hairColor);
         }
 
-        private static void InstantiateCatalogPart(BodyPartCatalogSO catalog, ChampionSex sex, Transform parent, Color bodyColor, Color hairColor)
+        private static void InstantiateCatalogPart(BodyPartCatalogSO catalog, ChampionSex sex, int assetId, Transform parent, Color bodyColor, Color hairColor)
         {
             if (catalog == null || parent == null)
             {
                 return;
             }
 
-            GameObject prefab = catalog.GetRandomPrefab(sex);
+            GameObject prefab = catalog.GetPrefab(sex, assetId);
             if (prefab == null)
             {
                 return;
@@ -251,7 +259,7 @@ namespace ElBestia.Visuals
             GameObject instance = Instantiate(prefab, parent);
             instance.transform.localPosition = Vector3.zero;
             instance.transform.localRotation = Quaternion.identity;
-            TintInstance(instance, bodyColor, hairColor);
+            TintInstance(instance, prefab.name, bodyColor, hairColor);
         }
 
         private void ClearAttachmentChildren()
@@ -284,22 +292,25 @@ namespace ElBestia.Visuals
             }
         }
 
-        private static void TintInstance(GameObject instance, Color bodyColor, Color hairColor)
+        private static void TintInstance(GameObject instance, string sourceAssetName, Color bodyColor, Color hairColor)
         {
             Renderer[] renderers = instance.GetComponentsInChildren<Renderer>(true);
             for (int i = 0; i < renderers.Length; i++)
             {
                 Renderer targetRenderer = renderers[i];
-                Color targetColor = IsHairRenderer(targetRenderer) ? hairColor : bodyColor;
+                Color targetColor = IsHairRenderer(targetRenderer, sourceAssetName) ? hairColor : bodyColor;
                 ApplyColor(targetRenderer, targetColor);
             }
         }
 
-        private static bool IsHairRenderer(Renderer targetRenderer)
+        private static bool IsHairRenderer(Renderer targetRenderer, string sourceAssetName)
         {
             string objectName = targetRenderer != null ? targetRenderer.gameObject.name : string.Empty;
             return objectName.IndexOf("Hair", StringComparison.OrdinalIgnoreCase) >= 0
-                || objectName.IndexOf("Beard", StringComparison.OrdinalIgnoreCase) >= 0;
+                || objectName.IndexOf("Beard", StringComparison.OrdinalIgnoreCase) >= 0
+                || (!string.IsNullOrEmpty(sourceAssetName)
+                    && (sourceAssetName.IndexOf("Hair", StringComparison.OrdinalIgnoreCase) >= 0
+                        || sourceAssetName.IndexOf("Beard", StringComparison.OrdinalIgnoreCase) >= 0));
         }
 
         private static void ApplyColor(Renderer targetRenderer, Color color)
@@ -309,24 +320,14 @@ namespace ElBestia.Visuals
                 return;
             }
 
-            Material[] materials = targetRenderer.materials;
-            for (int i = 0; i < materials.Length; i++)
+            if (colorBlock == null)
             {
-                Material material = materials[i];
-                if (material == null)
-                {
-                    continue;
-                }
-
-                if (material.HasProperty("_BaseColor"))
-                {
-                    material.SetColor("_BaseColor", color);
-                }
-                else if (material.HasProperty("_Color"))
-                {
-                    material.SetColor("_Color", color);
-                }
+                colorBlock = new MaterialPropertyBlock();
             }
+            targetRenderer.GetPropertyBlock(colorBlock);
+            colorBlock.SetColor(BaseColorId, color);
+            colorBlock.SetColor(ColorId, color);
+            targetRenderer.SetPropertyBlock(colorBlock);
         }
 
         private static Color GetUsableColor(Color color, Color fallback)
