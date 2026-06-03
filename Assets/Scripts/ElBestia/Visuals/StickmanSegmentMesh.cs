@@ -45,6 +45,7 @@ namespace ElBestia.Visuals
 
         public int SectionCount => sectionCount;
         public float MaxRadius => maxRadius;
+        public bool RebuildContinuously { get => rebuildContinuously; set => rebuildContinuously = value; }
 
         public float GetSectionMinRadius(int index)
         {

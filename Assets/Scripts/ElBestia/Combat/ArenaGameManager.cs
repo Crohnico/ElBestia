@@ -1,5 +1,6 @@
 using ElBestia.Champions;
 using ElBestia.UI;
+using ElBestia.Visuals;
 using UnityEngine;
 
 namespace ElBestia.Combat
@@ -112,6 +113,8 @@ namespace ElBestia.Combat
 
             SpawnDebugChampion(ref leftInstance, spawnLeft, "Left Champion");
             SpawnDebugChampion(ref rightInstance, spawnRight, "Right Champion");
+            ConfigureStickman(leftInstance, leftChampion);
+            ConfigureStickman(rightInstance, rightChampion);
             leftBehaviour = PrepareBehaviour(leftInstance, leftChampion, spawnLeft, crono);
             rightBehaviour = PrepareBehaviour(rightInstance, rightChampion, spawnRight, crono);
 
@@ -332,6 +335,20 @@ namespace ElBestia.Combat
 
             behaviour.Initialize(champion, home, null, crono);
             return behaviour;
+        }
+
+        private static void ConfigureStickman(GameObject instance, ChampionSO champion)
+        {
+            if (instance == null)
+            {
+                return;
+            }
+
+            StickmanBodyConfigurator configurator = instance.GetComponentInChildren<StickmanBodyConfigurator>(true);
+            if (configurator != null)
+            {
+                configurator.ConfigureFromChampion(champion);
+            }
         }
 
         private void OnSkillExecuted(ChampionBehaviour behaviour, int skillIndex)

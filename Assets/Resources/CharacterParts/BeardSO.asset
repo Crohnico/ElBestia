@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aab1c7a97d748b4b824bd8af370d7c8, type: 3}
+  m_Name: BeardSO
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Visuals.BeardSO
+  male:
+  - {fileID: 8112450406578129388, guid: 992ecf43170c24842983aac99f4c6db3, type: 3}
+  - {fileID: 2604379635990107038, guid: 32060bbce140def40a22974cba6df56d, type: 3}
+  - {fileID: 2883942571336718818, guid: 0fe0fa599101886409d3647707ee1124, type: 3}
+  - {fileID: 8509473313096366545, guid: e03580a8a6074684f83c8c048d184cfb, type: 3}
+  - {fileID: 6211486769550012040, guid: e0a333a508d14bb4fae66b4c0bdd122b, type: 3}
+  - {fileID: 3519706981713416803, guid: 45d0c7c7015a5404697ea6a32a16751c, type: 3}
+  - {fileID: 7744307305023095364, guid: b375d4f525df8dc43ad24121dd21eab0, type: 3}
+  - {fileID: 7474755822568876683, guid: 9398c7dc2f21de745826cab454526afc, type: 3}
+  - {fileID: 41282939122304167, guid: 88698e0d99c1bcb44ae233fc7619b002, type: 3}
+  - {fileID: 6355932856171126305, guid: 0303664fb3651cc4b8b8be3496f61617, type: 3}
+  - {fileID: 6463373651631254240, guid: f2bd5bd3848a016419f6eb10b7981c23, type: 3}
+  - {fileID: 6708181149366122321, guid: ea98a618d3e75b941ae6e3863859ab10, type: 3}
+  - {fileID: 6389093319435931802, guid: 304b1bc2e36239047bd180f3cd84154f, type: 3}
+  - {fileID: 7794675582272742162, guid: 37c36565f1ac25345bf80c4b38707b4f, type: 3}
+  female: []
+  both: []
+  includeEmptyOption: 1

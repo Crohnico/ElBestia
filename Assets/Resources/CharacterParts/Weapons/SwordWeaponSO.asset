@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67823c57af5ed284dbe174d0274aba27, type: 3}
-  m_Name: FeetSO
-  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Visuals.FeetSO
-  resources: []
+  m_Script: {fileID: 11500000, guid: d526c8ff58b44620bb37db90051c81d6, type: 3}
+  m_Name: SwordWeaponSO
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Visuals.WeaponPartCatalogSO
+  male: []
+  female: []
+  both: []
+  includeEmptyOption: 1
+  weaponType: 2

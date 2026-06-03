@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using ElBestia.Champions;
+using ElBestia.Skills;
 using UnityEngine;
 
 namespace ElBestia.Visuals
@@ -10,6 +12,14 @@ namespace ElBestia.Visuals
         [SerializeField] private List<StickmanBodyPartGroup> groups = new List<StickmanBodyPartGroup>();
         [SerializeField] private bool applyContinuously;
         [SerializeField] private StickmanGluteScaler gluteScaler;
+        [Header("Attachments")]
+        [SerializeField] private Transform headAttachment;
+        [SerializeField] private Transform beardAttachment;
+        [SerializeField] private Transform earAttachment;
+        [SerializeField] private Transform leftHandAttachment;
+        [SerializeField] private Transform rightHandAttachment;
+        [Header("Colors")]
+        [SerializeField] private Renderer[] bodyRenderers = Array.Empty<Renderer>();
 
         public int GroupCount => groups != null ? groups.Count : 0;
         public StickmanGluteScaler GluteScaler { get => gluteScaler; set => gluteScaler = value; }
@@ -91,6 +101,74 @@ namespace ElBestia.Visuals
             }
         }
 
+        public void ConfigureFromChampion(ChampionSO champion)
+        {
+            ChampionAppearance appearance = champion != null ? champion.Appearance : ChampionAppearance.CreateRandom(new System.Random());
+            ConfigureFromAppearance(appearance, champion != null ? champion.EquippedWeapon : WeaponType.Fists);
+        }
+
+        public void ConfigureFromAppearance(ChampionAppearance appearance, WeaponType weaponType)
+        {
+            if (appearance == null)
+            {
+                appearance = ChampionAppearance.CreateRandom(new System.Random());
+            }
+            else if (LooksLikeLegacyAppearance(appearance))
+            {
+                appearance = ChampionAppearance.CreateRandom(new System.Random());
+            }
+
+            ClearAttachmentChildren();
+            SetNormalizedRadius("Pecho", 3, appearance.chest);
+            SetNormalizedRadius("Barriga", 3, appearance.belly);
+            SetNormalizedRadius("Brazos", 2, appearance.arms);
+            SetNormalizedRadius("AnteBrazos", 2, appearance.forearms);
+            SetNormalizedRadius("PiernaSuperior", 2, appearance.upperLegs);
+            SetNormalizedRadius("PiernaInferior", 2, appearance.lowerLegs);
+
+            if (gluteScaler != null)
+            {
+                gluteScaler.Size = appearance.glutes;
+            }
+
+            Color bodyColor = GetUsableColor(appearance.bodyColor, new Color(0.72f, 0.49f, 0.36f, 1f));
+            Color hairColor = GetUsableColor(appearance.hairColor, new Color(0.18f, 0.11f, 0.07f, 1f));
+            ApplyColorToBody(bodyColor);
+            InstantiateCatalogPart(HairSO.Instance, appearance.sex, headAttachment, bodyColor, hairColor);
+            InstantiateCatalogPart(BeardSO.Instance, appearance.sex, beardAttachment, bodyColor, hairColor);
+            InstantiateCatalogPart(EarSO.Instance, appearance.sex, earAttachment, bodyColor, hairColor);
+            InstantiateWeapon(weaponType, bodyColor, hairColor);
+            FreezeGeneratedMeshes();
+        }
+
+        public void ApplyColorToBody(Color color)
+        {
+            if (bodyRenderers == null)
+            {
+                return;
+            }
+
+            for (int i = 0; i < bodyRenderers.Length; i++)
+            {
+                ApplyColor(bodyRenderers[i], color);
+            }
+        }
+
+        public void FreezeGeneratedMeshes()
+        {
+            StickmanSegmentMesh[] segments = GetComponentsInChildren<StickmanSegmentMesh>(true);
+            for (int i = 0; i < segments.Length; i++)
+            {
+                if (segments[i] == null)
+                {
+                    continue;
+                }
+
+                segments[i].Rebuild();
+                segments[i].RebuildContinuously = false;
+            }
+        }
+
         public void ApplyDefaultVisibilityRules()
         {
             EnsureDefaultGroups();
@@ -110,6 +188,168 @@ namespace ElBestia.Visuals
             }
 
             return changed;
+        }
+
+        private void SetNormalizedRadius(string groupName, int sectionIndex, float normalized)
+        {
+            StickmanBodyPartGroup group = FindGroup(groupName);
+            if (group == null || sectionIndex < 0 || sectionIndex >= group.SectionCount)
+            {
+                return;
+            }
+
+            float min = group.GetMinRadius(sectionIndex);
+            float max = group.GetMaxRadius(sectionIndex);
+            group.SetRadius(sectionIndex, Mathf.Lerp(min, max, Mathf.Clamp01(normalized)));
+        }
+
+        private StickmanBodyPartGroup FindGroup(string groupName)
+        {
+            string normalizedGroupName = NormalizeGroupName(groupName);
+            for (int i = 0; i < GroupCount; i++)
+            {
+                StickmanBodyPartGroup group = groups[i];
+                if (group != null && NormalizeGroupName(group.DisplayName) == normalizedGroupName)
+                {
+                    return group;
+                }
+            }
+
+            return null;
+        }
+
+        private void InstantiateWeapon(WeaponType weaponType, Color bodyColor, Color hairColor)
+        {
+            if (weaponType == WeaponType.None || weaponType == WeaponType.Fists)
+            {
+                return;
+            }
+
+            WeaponPartCatalogSO catalog = WeaponPartCatalogSO.GetCatalog(weaponType);
+            if (catalog == null)
+            {
+                return;
+            }
+
+            Transform parent = rightHandAttachment != null ? rightHandAttachment : leftHandAttachment;
+            InstantiateCatalogPart(catalog, ChampionSex.H, parent, bodyColor, hairColor);
+        }
+
+        private static void InstantiateCatalogPart(BodyPartCatalogSO catalog, ChampionSex sex, Transform parent, Color bodyColor, Color hairColor)
+        {
+            if (catalog == null || parent == null)
+            {
+                return;
+            }
+
+            GameObject prefab = catalog.GetRandomPrefab(sex);
+            if (prefab == null)
+            {
+                return;
+            }
+
+            GameObject instance = Instantiate(prefab, parent);
+            instance.transform.localPosition = Vector3.zero;
+            instance.transform.localRotation = Quaternion.identity;
+            TintInstance(instance, bodyColor, hairColor);
+        }
+
+        private void ClearAttachmentChildren()
+        {
+            ClearChildren(headAttachment);
+            ClearChildren(beardAttachment);
+            ClearChildren(earAttachment);
+            ClearChildren(leftHandAttachment);
+            ClearChildren(rightHandAttachment);
+        }
+
+        private static void ClearChildren(Transform parent)
+        {
+            if (parent == null)
+            {
+                return;
+            }
+
+            for (int i = parent.childCount - 1; i >= 0; i--)
+            {
+                GameObject child = parent.GetChild(i).gameObject;
+                if (Application.isPlaying)
+                {
+                    Destroy(child);
+                }
+                else
+                {
+                    DestroyImmediate(child);
+                }
+            }
+        }
+
+        private static void TintInstance(GameObject instance, Color bodyColor, Color hairColor)
+        {
+            Renderer[] renderers = instance.GetComponentsInChildren<Renderer>(true);
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                Renderer targetRenderer = renderers[i];
+                Color targetColor = IsHairRenderer(targetRenderer) ? hairColor : bodyColor;
+                ApplyColor(targetRenderer, targetColor);
+            }
+        }
+
+        private static bool IsHairRenderer(Renderer targetRenderer)
+        {
+            string objectName = targetRenderer != null ? targetRenderer.gameObject.name : string.Empty;
+            return objectName.IndexOf("Hair", StringComparison.OrdinalIgnoreCase) >= 0
+                || objectName.IndexOf("Beard", StringComparison.OrdinalIgnoreCase) >= 0;
+        }
+
+        private static void ApplyColor(Renderer targetRenderer, Color color)
+        {
+            if (targetRenderer == null)
+            {
+                return;
+            }
+
+            Material[] materials = targetRenderer.materials;
+            for (int i = 0; i < materials.Length; i++)
+            {
+                Material material = materials[i];
+                if (material == null)
+                {
+                    continue;
+                }
+
+                if (material.HasProperty("_BaseColor"))
+                {
+                    material.SetColor("_BaseColor", color);
+                }
+                else if (material.HasProperty("_Color"))
+                {
+                    material.SetColor("_Color", color);
+                }
+            }
+        }
+
+        private static Color GetUsableColor(Color color, Color fallback)
+        {
+            return color.a > 0.001f ? color : fallback;
+        }
+
+        private static bool LooksLikeLegacyAppearance(ChampionAppearance appearance)
+        {
+            return appearance.bodyColor.a <= 0.001f
+                && appearance.hairColor.a <= 0.001f
+                && Mathf.Approximately(appearance.chest, 0f)
+                && Mathf.Approximately(appearance.belly, 0f)
+                && Mathf.Approximately(appearance.arms, 0f)
+                && Mathf.Approximately(appearance.forearms, 0f)
+                && Mathf.Approximately(appearance.upperLegs, 0f)
+                && Mathf.Approximately(appearance.lowerLegs, 0f)
+                && Mathf.Approximately(appearance.glutes, 0f);
+        }
+
+        private static string NormalizeGroupName(string value)
+        {
+            return string.IsNullOrEmpty(value) ? string.Empty : value.Replace(" ", string.Empty).ToLowerInvariant();
         }
 
         private void Reset()

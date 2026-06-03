@@ -17,12 +17,7 @@ namespace ElBestia.Editor
         public static void CreateDefaultDataAssets()
         {
             EnsureAsset<NameGeneratorSO>("Assets/Resources/Generators/ChampionNameGenerator.asset");
-            EnsureAsset<HairSO>("Assets/Resources/CharacterParts/HairSO.asset");
-            EnsureAsset<HeadSO>("Assets/Resources/CharacterParts/HeadSO.asset");
-            EnsureAsset<TorsoSO>("Assets/Resources/CharacterParts/TorsoSO.asset");
-            EnsureAsset<ArmsSO>("Assets/Resources/CharacterParts/ArmsSO.asset");
-            EnsureAsset<LegsSO>("Assets/Resources/CharacterParts/LegsSO.asset");
-            EnsureAsset<FeetSO>("Assets/Resources/CharacterParts/FeetSO.asset");
+            CharacterPartCatalogBuilder.RebuildCharacterPartCatalogs();
             EnsureDefaultPerks();
             EnsureDefaultLoreEntries();
 

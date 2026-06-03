@@ -15,46 +15,71 @@ MonoBehaviour:
   nameGenerator: {fileID: 0}
   level: 1
   totalBaseStatPoints: 50
-  seed: 602955964
-  championId: NHBNF5-8L9LBE-DVQCAA-IRGB0Z
-  championName: David Slycrusher
+  seed: 483509162
+  championId: L7TYE2-PP0ZGO-AD7P5I-255Z6I
+  championName: Marie Ghostshard
   playerNickname: 
   appearance:
     sex: 1
-    hair: -1
-    head: -1
-    torso: -1
-    arms: -1
-    legs: -1
-    feet: -1
+    bodyColor: {r: 0.82977766, g: 0.70658255, b: 0.52636915, a: 1}
+    hairColor: {r: 0.32498434, g: 0.17622599, b: 0.14085576, a: 1}
+    chest: 0.6174275
+    belly: 0.01476412
+    arms: 0.73517644
+    forearms: 0.20140545
+    upperLegs: 0.24870938
+    lowerLegs: 0.60626215
+    glutes: 0.05990995
   lore:
-    birth: {fileID: 11400000, guid: f09a6ff47f5afc34e9e446fd05e4044d, type: 2}
-    childhood: {fileID: 11400000, guid: eafa9998bb97301418a129bd8191c4f8, type: 2}
-    youth: {fileID: 11400000, guid: 15bdd125e229f1549b056be94e67fd63, type: 2}
-    story: David Slycrusher was born in a salt flat camp, where water, shade, and distance shaped every decision. As a child, David Slycrusher lived through a surgery lamp duty, learning pain, recovery, herbs, and the fragile mechanics of bodies. As a young adult, David Slycrusher worked through a monster bestiary work, copying maps, wounds, and combat notes until patterns became weapons. They enter the dojo to test theory against pain.
+    birth: {fileID: 11400000, guid: b4494ae3b415d5b4bb0ede0f900e4d79, type: 2}
+    childhood: {fileID: 11400000, guid: 6ae665e9394cf06439ec84219de849f9, type: 2}
+    youth: {fileID: 11400000, guid: ddabe311ba19b6d44b1bd5b4befd1060, type: 2}
+    storyCombinationKey: 2314484
+    storyCombinationId: birth_05_07__childhood_17_02__youth_08_04
+    story: Marie Ghostshard was born into an old master household, where old forms
+      and old debts were treated as inheritance. As a child, Marie Ghostshard lived
+      through a knife thrower assistant, learning masks, timing, falls, applause,
+      and public courage. As a young adult, Marie Ghostshard worked through a bank
+      wagon escort, turning caravan routes and roadside fights into a working education.
+      They enter the dojo to earn more than a season of escort work.
   baseStats:
-    life: 236
-    energy: 44
-    strength: 9
+    life: 118
+    energy: 104
+    strength: 8
     agility: 10
-    constitution: 15
-    intelligence: 4
-    endurance: 12
+    constitution: 2
+    intelligence: 14
+    endurance: 16
     dodge: 5
-    block: 6
+    block: 7
     critical: 3
-    hit: 4
+    hit: 6
     recovery: 6
+    speed: 16
     experienceGain: 0
     fatalInjuryResistance: 0
     injurySeverityReduction: 0
-    fireResistance: 5
-    waterResistance: 5
-    electricityResistance: 5
-    poisonResistance: 5
-    earthResistance: 7
-    airResistance: 6
-    woodResistance: 5
+    fireResistance: 4
+    waterResistance: 4
+    electricityResistance: 3
+    poisonResistance: 3
+    earthResistance: 5
+    airResistance: 4
+    woodResistance: 3
+    fireDamage: 0
+    waterDamage: 0
+    electricityDamage: 0
+    poisonDamage: 0
+    earthDamage: 0
+    airDamage: 0
+    woodDamage: 0
+    fireDamageMultiplier: 1
+    waterDamageMultiplier: 1
+    electricityDamageMultiplier: 1
+    poisonDamageMultiplier: 1
+    earthDamageMultiplier: 1
+    airDamageMultiplier: 1
+    woodDamageMultiplier: 1
     fistsProficiency: 0
     swordProficiency: 0
     axeProficiency: 0
@@ -62,67 +87,81 @@ MonoBehaviour:
     staffProficiency: 0
     bowProficiency: 0
   stats:
-    life: 266
-    energy: 56
-    strength: 9
+    life: 118
+    energy: 116
+    strength: 10
     agility: 10
-    constitution: 18
-    intelligence: 6
-    endurance: 12
-    dodge: 12
-    block: 6
-    critical: 3
-    hit: 4
-    recovery: 8
+    constitution: 2
+    intelligence: 16
+    endurance: 16
+    dodge: 5
+    block: 7
+    critical: 8
+    hit: 7
+    recovery: 9
+    speed: 19
     experienceGain: 0
     fatalInjuryResistance: 0
     injurySeverityReduction: 0
     fireResistance: 5
     waterResistance: 5
-    electricityResistance: 5
-    poisonResistance: 5
-    earthResistance: 7
-    airResistance: 6
-    woodResistance: 5
+    electricityResistance: 4
+    poisonResistance: 4
+    earthResistance: 5
+    airResistance: 4
+    woodResistance: 4
+    fireDamage: 0
+    waterDamage: 0
+    electricityDamage: 0
+    poisonDamage: 0
+    earthDamage: 0
+    airDamage: 0
+    woodDamage: 0
+    fireDamageMultiplier: 1
+    waterDamageMultiplier: 1
+    electricityDamageMultiplier: 1
+    poisonDamageMultiplier: 1
+    earthDamageMultiplier: 1
+    airDamageMultiplier: 1
+    woodDamageMultiplier: 1
     fistsProficiency: 0
-    swordProficiency: 3
-    axeProficiency: 4
+    swordProficiency: 0
+    axeProficiency: 3
     spearProficiency: 0
-    staffProficiency: 2
-    bowProficiency: 0
+    staffProficiency: 0
+    bowProficiency: 6
   growth:
     strength: 0
-    agility: 1
-    constitution: 0
-    intelligence: 0
+    agility: 0
+    constitution: 1
+    intelligence: 1
     endurance: 0
   currentExperience: 0
   experienceToNextLevel: 114
-  equippedWeapon: 3
+  equippedWeapon: 6
   perks:
-  - {fileID: 11400000, guid: 3031220e1f118ab40a933c62ecb67f58, type: 2}
-  - {fileID: 11400000, guid: 3b414e2a07db6db4493d67c94d814427, type: 2}
+  - {fileID: 11400000, guid: 9200423956692f34da253fa2a83a6c7e, type: 2}
   baseSkill:
-    skillName: Base Axe Cleave
-    skillNameId: skill_name.base.axe_cleave
-    description: 'The user swings the axe in a simple heavy blow.
+    skillName: Base Bow Shot
+    skillNameId: skill_name.base.bow_shot
+    description: 'The user fires a simple arrow.
 
-      - Cooldown:
-      0s
+      - Cooldown: 0s
 
-      - Damage: 14
+      - Damage:
+      10
 
-      - Effects: action: Enemy: DoDamage x14'
+      - Effects: action: Enemy: DoDamage x10'
     isBaseSkill: 1
     quality: 0
     level: 1
     cooldownSeconds: 0
     element: 0
     energyCost: 0
-    range: 1
-    weapons: 03000000
+    range: 4
+    weapons: 06000000
     statScaling:
-    - stat: 0
+    - stat: 1
       scaling: 0
       usesGradeScaling: 0
     preCast: []
@@ -130,7 +169,7 @@ MonoBehaviour:
     - target: 1
       action: 0
       charge: 0
-      amount: 14
+      amount: 10
     postCast: []
-    iconSeed: 1494230753
+    iconSeed: 638946303
   skills: []

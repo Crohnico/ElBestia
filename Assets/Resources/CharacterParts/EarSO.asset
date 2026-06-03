@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e9442c4b87f4dbb9d7cd69c4d75ca29, type: 3}
+  m_Name: EarSO
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Visuals.EarSO
+  male: []
+  female: []
+  both:
+  - {fileID: 2865640535472698610, guid: 3595d67e25f332f4c88af3d484f9e084, type: 3}
+  - {fileID: 6511777956931986069, guid: 2cd528290a3268446886504fbb8df68b, type: 3}
+  - {fileID: 8689521976753768096, guid: 70f138c50e1366346979fe502960f4d9, type: 3}
+  includeEmptyOption: 1

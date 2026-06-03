@@ -23,6 +23,16 @@ namespace ElBestia.Editor
                 EditorUtility.SetDirty(configurator);
             }
 
+            serializedObject.Update();
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("headAttachment"), new GUIContent("HeadAttachment"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("beardAttachment"), new GUIContent("BeardAttachment"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("earAttachment"), new GUIContent("EarAttachment"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("leftHandAttachment"), new GUIContent("LeftHandAttachment"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("rightHandAttachment"), new GUIContent("RightHandAttachment"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("bodyRenderers"), new GUIContent("Body Renderers"), true);
+            serializedObject.ApplyModifiedProperties();
+            EditorGUILayout.Space(6);
+
             DrawGluteReference(configurator);
             EditorGUILayout.Space(6);
             DrawNormalizedSlider(configurator, "Pecho", "Pecho", 3);

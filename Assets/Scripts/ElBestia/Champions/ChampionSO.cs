@@ -39,6 +39,7 @@ namespace ElBestia.Champions
         public int ExperienceToNextLevel => experienceToNextLevel;
         public ChampionStats BaseStats => baseStats;
         public ChampionStats Stats => stats;
+        public ChampionAppearance Appearance => appearance;
         public ChampionGrowthProfile Growth => growth;
         public ChampionLoreProfile Lore => lore;
         public GrowthGrade OverallGrowthGrade => growth != null ? growth.GetOverallGrade() : GrowthGrade.F;

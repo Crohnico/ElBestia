@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2b3343d830f5374b8e60e80751f063f, type: 3}
-  m_Name: HeadSO
-  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Visuals.HeadSO
-  resources: []
+  m_Script: {fileID: 11500000, guid: d526c8ff58b44620bb37db90051c81d6, type: 3}
+  m_Name: StaffWeaponSO
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Visuals.WeaponPartCatalogSO
+  male: []
+  female: []
+  both: []
+  includeEmptyOption: 1
+  weaponType: 5
