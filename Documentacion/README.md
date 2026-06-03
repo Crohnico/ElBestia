@@ -9,6 +9,8 @@ Esta carpeta recoge la definicion del proyecto: vision, alcance, sensacion de ju
 - [Habilidades.md](./Habilidades.md): estructura de skills, acciones, cargas, rareza/calidad y escalado.
 - [Combate.md](./Combate.md): manager de combate, flujo de prueba, cronometro, turnos y reglas de fin.
 - [Probabilidades.md](./Probabilidades.md): reglas Pareto para crecimiento, rarezas y cantidades.
+- [DireccionVisual2DEn3D.md](./DireccionVisual2DEn3D.md): direccion visual para conseguir apariencia 2D manteniendo escena 3D.
+- [StickmansProcedurales.md](./StickmansProcedurales.md): propuesta de cuerpos stickman procedurales, editor de presets y generacion de meshes.
 
 ## Forma de trabajo
 
