@@ -3431,7 +3431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Combat.ArenaGameManager
   leftChampion: {fileID: 11400000, guid: 8c9b9924dc91ec948a4a9497c4cb9d1c, type: 2}
   rightChampion: {fileID: 11400000, guid: fd837ca378cf5e64c8f795bffcbeb344, type: 2}
-  debugChampionPrefab: {fileID: 2130984480415893671, guid: 210e9583e4249a240b3ed093295dfe3d, type: 3}
+  debugChampionPrefab: {fileID: 4025696831640362794, guid: 1c1219f22862974468ab9b5bd5f5e3b5, type: 3}
   spawnLeft: {fileID: 1662829572}
   spawnRight: {fileID: 274571425}
   gameplayCanvas: {fileID: 1570385387}

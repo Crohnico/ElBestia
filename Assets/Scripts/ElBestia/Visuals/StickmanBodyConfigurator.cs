@@ -9,8 +9,10 @@ namespace ElBestia.Visuals
     {
         [SerializeField] private List<StickmanBodyPartGroup> groups = new List<StickmanBodyPartGroup>();
         [SerializeField] private bool applyContinuously;
+        [SerializeField] private StickmanGluteScaler gluteScaler;
 
         public int GroupCount => groups != null ? groups.Count : 0;
+        public StickmanGluteScaler GluteScaler { get => gluteScaler; set => gluteScaler = value; }
 
         public StickmanBodyPartGroup GetGroup(int index)
         {
