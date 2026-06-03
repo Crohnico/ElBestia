@@ -98,6 +98,18 @@ namespace ElBestia.Visuals
             }
         }
 
+        public bool PruneMissingSegments()
+        {
+            EnsureDefaultGroups();
+            bool changed = false;
+            foreach (StickmanBodyPartGroup group in groups)
+            {
+                changed |= group.PruneMissingSegments();
+            }
+
+            return changed;
+        }
+
         private void Reset()
         {
             ResetDefaultGroups();
@@ -291,8 +303,30 @@ namespace ElBestia.Visuals
             }
         }
 
+        public bool PruneMissingSegments()
+        {
+            if (segments == null)
+            {
+                segments = new List<StickmanSegmentMesh>();
+                return true;
+            }
+
+            bool changed = false;
+            for (int i = segments.Count - 1; i >= 0; i--)
+            {
+                if (segments[i] == null)
+                {
+                    segments.RemoveAt(i);
+                    changed = true;
+                }
+            }
+
+            return changed;
+        }
+
         public void CaptureCurrentRadii()
         {
+            PruneMissingSegments();
             int targetSectionCount = GetLargestSectionCount();
             if (targetSectionCount <= 0)
             {
@@ -327,6 +361,7 @@ namespace ElBestia.Visuals
 
         public void Apply()
         {
+            PruneMissingSegments();
             EnsureRadiusCount();
 
             if (segments == null)

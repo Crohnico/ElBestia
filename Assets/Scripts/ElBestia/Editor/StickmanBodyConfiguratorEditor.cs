@@ -7,6 +7,9 @@ namespace ElBestia.Editor
     [CustomEditor(typeof(StickmanBodyConfigurator))]
     public sealed class StickmanBodyConfiguratorEditor : UnityEditor.Editor
     {
+        private const float LabelWidth = 120f;
+        private const float EdgeLabelWidth = 16f;
+
         public override void OnInspectorGUI()
         {
             if (target == null)
@@ -14,110 +17,107 @@ namespace ElBestia.Editor
                 return;
             }
 
-            serializedObject.Update();
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("applyContinuously"), new GUIContent("Aplicar Continuamente"));
-            serializedObject.ApplyModifiedProperties();
-
             var configurator = (StickmanBodyConfigurator)target;
-
-            using (new EditorGUILayout.HorizontalScope())
+            if (configurator.PruneMissingSegments())
             {
-                if (GUILayout.Button("Crear Grupos Base"))
-                {
-                    Undo.RecordObject(configurator, "Reset Stickman Body Groups");
-                    configurator.ResetDefaultGroups();
-                    configurator.CollectSegments();
-                    configurator.CaptureCurrentRadii();
-                    EditorUtility.SetDirty(configurator);
-                }
-
-                if (GUILayout.Button("Buscar Segmentos"))
-                {
-                    Undo.RecordObject(configurator, "Collect Stickman Segments");
-                    configurator.CollectSegments();
-                    configurator.CaptureCurrentRadii();
-                    EditorUtility.SetDirty(configurator);
-                }
-            }
-
-            using (new EditorGUILayout.HorizontalScope())
-            {
-                if (GUILayout.Button("Capturar Actual"))
-                {
-                    Undo.RecordObject(configurator, "Capture Stickman Body Radii");
-                    configurator.CaptureCurrentRadii();
-                    EditorUtility.SetDirty(configurator);
-                }
-
-                if (GUILayout.Button("Aplicar Todo"))
-                {
-                    Undo.RecordObject(configurator, "Apply Stickman Body Config");
-                    configurator.ApplyAll();
-                    EditorUtility.SetDirty(configurator);
-                }
-            }
-
-            if (GUILayout.Button("Aplicar Visibilidad Base"))
-            {
-                Undo.RecordObject(configurator, "Apply Stickman Body Visibility Rules");
-                configurator.ApplyDefaultVisibilityRules();
                 EditorUtility.SetDirty(configurator);
             }
 
-            EditorGUILayout.Space(8);
-            for (int i = 0; i < configurator.GroupCount; i++)
-            {
-                DrawGroup(configurator, i);
-            }
+            DrawNormalizedSlider(configurator, "Pecho", "Pecho", 3);
+            DrawNormalizedSlider(configurator, "Barriga", "Barriga", 3);
+            DrawNormalizedSlider(configurator, "Brazos", "Brazos", 2);
+            DrawNormalizedSlider(configurator, "AnteBrazos", "AnteBrazos", 2);
+            DrawNormalizedSlider(configurator, "Pierna Superior", "PiernaSuperior", 2);
+            DrawNormalizedSlider(configurator, "Pierna Inferior", "PiernaInferior", 2);
         }
 
-        private static void DrawGroup(StickmanBodyConfigurator configurator, int groupIndex)
+        private static void DrawNormalizedSlider(
+            StickmanBodyConfigurator configurator,
+            string label,
+            string groupName,
+            int sectionIndex)
         {
-            StickmanBodyPartGroup group = configurator.GetGroup(groupIndex);
+            StickmanBodyPartGroup group = FindGroup(configurator, groupName);
+            bool hasSection = group != null && sectionIndex >= 0 && sectionIndex < group.SectionCount;
 
-            using (new EditorGUILayout.VerticalScope(EditorStyles.helpBox))
+            using (new EditorGUILayout.HorizontalScope())
             {
-                string title = $"{group.DisplayName} ({group.SegmentCount})";
-                group.Expanded = EditorGUILayout.Foldout(group.Expanded, title, true);
-                if (!group.Expanded)
-                {
-                    return;
-                }
+                EditorGUILayout.LabelField($"{label}:", GUILayout.Width(LabelWidth));
+                EditorGUILayout.LabelField("0", GUILayout.Width(EdgeLabelWidth));
 
-                using (new EditorGUI.DisabledScope(true))
+                using (new EditorGUI.DisabledScope(!hasSection))
                 {
-                    for (int i = 0; i < group.SegmentCount; i++)
+                    float normalized = 0f;
+                    float min = 0f;
+                    float max = 1f;
+
+                    if (hasSection)
                     {
-                        StickmanSegmentMesh segment = group.GetSegment(i);
-                        if (segment != null)
-                        {
-                            EditorGUILayout.ObjectField(segment, typeof(StickmanSegmentMesh), true);
-                        }
+                        min = group.GetMinRadius(sectionIndex);
+                        max = group.GetMaxRadius(sectionIndex);
+                        float value = group.GetRadius(sectionIndex);
+                        normalized = max > min ? Mathf.InverseLerp(min, max, value) : 0f;
                     }
-                }
-
-                EditorGUILayout.Space(4);
-                for (int sectionIndex = 0; sectionIndex < group.SectionCount; sectionIndex++)
-                {
-                    if (!group.IsSectionVisible(sectionIndex))
-                    {
-                        continue;
-                    }
-
-                    float min = group.GetMinRadius(sectionIndex);
-                    float max = group.GetMaxRadius(sectionIndex);
-                    float value = group.GetRadius(sectionIndex);
 
                     EditorGUI.BeginChangeCheck();
-                    value = EditorGUILayout.Slider($"Particion {sectionIndex + 1}", value, min, max);
+                    normalized = GUILayout.HorizontalSlider(normalized, 0f, 1f);
                     if (EditorGUI.EndChangeCheck())
                     {
                         Undo.RecordObject(configurator, "Change Stickman Body Part Radius");
+                        RecordGroupSegments(group);
+                        float value = Mathf.Lerp(min, max, normalized);
                         group.SetRadius(sectionIndex, value);
                         EditorUtility.SetDirty(configurator);
+                        SetGroupSegmentsDirty(group);
                     }
                 }
+
+                EditorGUILayout.LabelField("1", GUILayout.Width(EdgeLabelWidth));
             }
+        }
+
+        private static StickmanBodyPartGroup FindGroup(StickmanBodyConfigurator configurator, string groupName)
+        {
+            string normalizedGroupName = NormalizeGroupName(groupName);
+            for (int i = 0; i < configurator.GroupCount; i++)
+            {
+                StickmanBodyPartGroup group = configurator.GetGroup(i);
+                if (group != null && NormalizeGroupName(group.DisplayName) == normalizedGroupName)
+                {
+                    return group;
+                }
+            }
+
+            return null;
+        }
+
+        private static void RecordGroupSegments(StickmanBodyPartGroup group)
+        {
+            for (int i = 0; i < group.SegmentCount; i++)
+            {
+                StickmanSegmentMesh segment = group.GetSegment(i);
+                if (segment != null)
+                {
+                    Undo.RecordObject(segment, "Change Stickman Body Part Radius");
+                }
+            }
+        }
+
+        private static void SetGroupSegmentsDirty(StickmanBodyPartGroup group)
+        {
+            for (int i = 0; i < group.SegmentCount; i++)
+            {
+                StickmanSegmentMesh segment = group.GetSegment(i);
+                if (segment != null)
+                {
+                    EditorUtility.SetDirty(segment);
+                }
+            }
+        }
+
+        private static string NormalizeGroupName(string value)
+        {
+            return string.IsNullOrEmpty(value) ? string.Empty : value.Replace(" ", string.Empty).ToLowerInvariant();
         }
     }
 }

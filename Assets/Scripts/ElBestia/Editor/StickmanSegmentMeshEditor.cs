@@ -30,6 +30,11 @@ namespace ElBestia.Editor
 
         private void OnEnable()
         {
+            if (target == null)
+            {
+                return;
+            }
+
             startJoint = serializedObject.FindProperty("startJoint");
             endJoint = serializedObject.FindProperty("endJoint");
             sectionCount = serializedObject.FindProperty("sectionCount");
@@ -59,6 +64,7 @@ namespace ElBestia.Editor
                 return;
             }
 
+            EnsureProperties();
             serializedObject.Update();
 
             EditorGUILayout.PropertyField(startJoint, new GUIContent("Articulacion Inicio"));
@@ -124,6 +130,35 @@ namespace ElBestia.Editor
                 segment.Rebuild();
                 EditorUtility.SetDirty(segment);
             }
+        }
+
+        private void EnsureProperties()
+        {
+            if (startJoint != null)
+            {
+                return;
+            }
+
+            startJoint = serializedObject.FindProperty("startJoint");
+            endJoint = serializedObject.FindProperty("endJoint");
+            sectionCount = serializedObject.FindProperty("sectionCount");
+            radialSegments = serializedObject.FindProperty("radialSegments");
+            ringsPerSection = serializedObject.FindProperty("ringsPerSection");
+            capHeightFactor = serializedObject.FindProperty("capHeightFactor");
+            endInsetFactor = serializedObject.FindProperty("endInsetFactor");
+            minRadius = serializedObject.FindProperty("minRadius");
+            useCustomStartMinRadius = serializedObject.FindProperty("useCustomStartMinRadius");
+            customStartMinRadius = serializedObject.FindProperty("customStartMinRadius");
+            useCustomStartMaxRadius = serializedObject.FindProperty("useCustomStartMaxRadius");
+            customStartMaxRadius = serializedObject.FindProperty("customStartMaxRadius");
+            useCustomEndMinRadius = serializedObject.FindProperty("useCustomEndMinRadius");
+            customEndMinRadius = serializedObject.FindProperty("customEndMinRadius");
+            useCustomEndMaxRadius = serializedObject.FindProperty("useCustomEndMaxRadius");
+            customEndMaxRadius = serializedObject.FindProperty("customEndMaxRadius");
+            maxRadius = serializedObject.FindProperty("maxRadius");
+            maxRadiusDelta = serializedObject.FindProperty("maxRadiusDelta");
+            smoothRadii = serializedObject.FindProperty("smoothRadii");
+            rebuildContinuously = serializedObject.FindProperty("rebuildContinuously");
         }
     }
 }
