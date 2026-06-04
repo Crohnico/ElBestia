@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 783e725653c225d4dbd6f1983841248d
+timeCreated: 1580695559
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43669729835661404
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Wep_Naginata_02_Convex.asset
+  uploadId: 915408

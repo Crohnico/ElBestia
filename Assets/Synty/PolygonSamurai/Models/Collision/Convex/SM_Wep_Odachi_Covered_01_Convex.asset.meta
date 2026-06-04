@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: da188c37bbdedbb408645684bd7640cd
+timeCreated: 1580695558
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43284197803639944
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Wep_Odachi_Covered_01_Convex.asset
+  uploadId: 915408

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bd5920bac9542c443b01e46fe563659f
+timeCreated: 1580695250
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43791702663357680
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_StoneCircle_01_Convex.asset
+  uploadId: 915408

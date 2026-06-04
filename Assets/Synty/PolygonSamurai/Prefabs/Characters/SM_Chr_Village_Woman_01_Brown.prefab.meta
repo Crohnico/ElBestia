@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4e75ae9099e9df246a58c6fd3c7a54f2
+timeCreated: 1545008027
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Prefabs/Characters/SM_Chr_Village_Woman_01_Brown.prefab
+  uploadId: 915408

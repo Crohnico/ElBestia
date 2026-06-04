@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Visuals.WeaponPartCatalogSO
   male: []
   female: []
-  both: []
-  includeEmptyOption: 1
+  both:
+  - {fileID: 3666132596405927920, guid: a533a289c864e2b428f11a8ee93fc6a9, type: 3}
+  - {fileID: 5262338322875921285, guid: 6e1a11aa0953bb14d8b2a99acea141b3, type: 3}
+  includeEmptyOption: 0
   weaponType: 2

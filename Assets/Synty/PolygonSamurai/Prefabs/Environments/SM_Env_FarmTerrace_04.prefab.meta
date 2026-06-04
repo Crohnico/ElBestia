@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4c0e698d1b8b92f47b69e9eaa595c9bf
+timeCreated: 1493262289
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Prefabs/Environments/SM_Env_FarmTerrace_04.prefab
+  uploadId: 915408

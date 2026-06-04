@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4bf4e90955d6c78418ad91bdd2bb4d9d
+timeCreated: 1580781912
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43047210918397516
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Snow_Statue_Lion_02_Convex.asset
+  uploadId: 915408

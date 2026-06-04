@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1791948436d363242a5c10b63817d1fe
+timeCreated: 1580783047
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43472328428792728
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Snow_Flag_01_Convex.asset
+  uploadId: 915408

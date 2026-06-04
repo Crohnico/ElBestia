@@ -10,8 +10,8 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
 AssetOrigin:
   serializedVersion: 1
-  productId: 143468
-  packageName: POLYGON - Modular Fantasy Hero Characters Pack - Art by Synty
-  packageVersion: 1.4.0
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
   assetPath: Assets/Synty/PolygonGeneric/Shaders/Skybox_Generic.shadergraph
-  uploadId: 923598
+  uploadId: 915408

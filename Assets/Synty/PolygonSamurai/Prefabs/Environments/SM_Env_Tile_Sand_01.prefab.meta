@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 63bc7f5bb5dbc6145884ef96eb005370
+timeCreated: 1493086155
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Prefabs/Environments/SM_Env_Tile_Sand_01.prefab
+  uploadId: 915408

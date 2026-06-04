@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 35ae632b3487f364bbaf100094aad13c
+timeCreated: 1580782776
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43264829240033366
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Snow_Stone_Lantern_01_Convex.asset
+  uploadId: 915408

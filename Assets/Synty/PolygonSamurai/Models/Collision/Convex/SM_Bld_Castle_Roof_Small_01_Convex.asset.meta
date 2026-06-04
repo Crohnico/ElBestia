@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ed6fa99ea06b98f4b9dbd177394a1a23
+timeCreated: 1580702027
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43183721855001148
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Bld_Castle_Roof_Small_01_Convex.asset
+  uploadId: 915408

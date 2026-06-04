@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: eaea326550b88e249ba4f2340bc718ed
+timeCreated: 1580782596
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43323836752488742
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Snow_Zen_Lantern_01_Convex.asset
+  uploadId: 915408

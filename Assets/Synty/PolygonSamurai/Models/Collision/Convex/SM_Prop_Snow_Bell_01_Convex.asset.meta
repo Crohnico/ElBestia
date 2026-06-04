@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c4b0ec3db08b3864f894d2738a585a99
+timeCreated: 1580782599
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43251207100765672
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Snow_Bell_01_Convex.asset
+  uploadId: 915408

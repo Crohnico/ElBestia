@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f586f08344436d648b6c0e2d40f44161
+timeCreated: 1545008008
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Prefabs/Characters/SM_Chr_Samurai_Grunt_01_Black.prefab
+  uploadId: 915408

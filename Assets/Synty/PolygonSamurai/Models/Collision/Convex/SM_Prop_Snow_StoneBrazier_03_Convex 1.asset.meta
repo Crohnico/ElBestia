@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2eaee295c9780384f8d78a990256a00a
+timeCreated: 1580782780
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43313053149661636
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Snow_StoneBrazier_03_Convex
+    1.asset
+  uploadId: 915408

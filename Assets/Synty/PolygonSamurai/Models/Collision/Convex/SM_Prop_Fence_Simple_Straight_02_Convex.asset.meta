@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 630a895471fe70d438b5ea81e2a42929
+timeCreated: 1580695498
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43056359788614804
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Fence_Simple_Straight_02_Convex.asset
+  uploadId: 915408

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d5dfa18fb7b34e044bf859ea8dc67cd2
+timeCreated: 1580702066
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43841390161780774
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Bld_Temple_Roof_Large_01_Convex.asset
+  uploadId: 915408

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 11cebe5678d7a294b8a98760ca9625b2
+timeCreated: 1493253602
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Prefabs/FX/FX_Petals_Small_01.prefab
+  uploadId: 915408

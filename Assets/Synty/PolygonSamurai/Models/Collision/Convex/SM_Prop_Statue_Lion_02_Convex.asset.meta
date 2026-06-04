@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 894b97c763ce2974786142fa63ac8514
+timeCreated: 1580695256
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43516254862577696
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Statue_Lion_02_Convex.asset
+  uploadId: 915408

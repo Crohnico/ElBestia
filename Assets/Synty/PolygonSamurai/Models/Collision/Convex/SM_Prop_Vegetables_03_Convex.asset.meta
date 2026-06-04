@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e6443f05a437f7c44984a2b6ec41097e
+timeCreated: 1580695059
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43093521275181692
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Vegetables_03_Convex.asset
+  uploadId: 915408

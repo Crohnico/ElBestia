@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c4b8d9406ab859d44ad63bf61611b0e3
+timeCreated: 1580695555
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43517955707716358
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Wep_Tanto_Covered_01_Convex.asset
+  uploadId: 915408

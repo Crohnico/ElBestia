@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fce21d78c935cb94398126a3ac77cee2
+timeCreated: 1493348173
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Prefabs/Environments/SM_Env_Cloud_01.prefab
+  uploadId: 915408

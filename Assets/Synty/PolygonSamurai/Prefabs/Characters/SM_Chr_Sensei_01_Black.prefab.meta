@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3dcfd1a458396ff4a9c358b2e90576b2
+timeCreated: 1545008011
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Prefabs/Characters/SM_Chr_Sensei_01_Black.prefab
+  uploadId: 915408

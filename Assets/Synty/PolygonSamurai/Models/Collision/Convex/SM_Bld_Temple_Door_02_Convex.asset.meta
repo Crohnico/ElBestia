@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 22e1d8849c093004580bb2c764da3051
+timeCreated: 1580703174
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43151732638186602
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Bld_Temple_Door_02_Convex.asset
+  uploadId: 915408

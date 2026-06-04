@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2bcece8916555ed44856226161273761
+timeCreated: 1580782873
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43072783872483130
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Snow_Tent_01_Convex
+    1.asset
+  uploadId: 915408

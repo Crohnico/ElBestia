@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0e653be0d77c2d54c960c9bf3d2bdfb1
+timeCreated: 1580695239
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43951283383922852
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Fence_Bamboo_02_Convex.asset
+  uploadId: 915408

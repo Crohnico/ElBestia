@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0501a63ad6c32f24896d297cf58db405
+timeCreated: 1580702218
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43007905225225748
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Bld_House_Roof_Thatch_01_Convex
+    1.asset
+  uploadId: 915408

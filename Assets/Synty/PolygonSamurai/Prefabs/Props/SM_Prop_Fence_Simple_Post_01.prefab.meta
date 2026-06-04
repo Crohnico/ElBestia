@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8554f55ca1abf6c49a1ad0563de06c40
+timeCreated: 1493086169
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Prefabs/Props/SM_Prop_Fence_Simple_Post_01.prefab
+  uploadId: 915408

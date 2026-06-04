@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 096e54d973d88c24e8bd62f3da648c7a
+timeCreated: 1580783007
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43841143672330234
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Prop_Snow_Bamboo_Pole_02_Convex.asset
+  uploadId: 915408

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3defcd1493e27224689e2b0f776b45e0
+timeCreated: 1580699475
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43131893348116714
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Env_Fuji_01_Convex.asset
+  uploadId: 915408

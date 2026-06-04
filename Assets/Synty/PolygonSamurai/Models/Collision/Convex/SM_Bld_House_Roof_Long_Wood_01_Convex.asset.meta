@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 45b5c6a98789f0d47a8045745fd10ac7
+timeCreated: 1580702210
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43478073425117830
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Bld_House_Roof_Long_Wood_01_Convex.asset
+  uploadId: 915408

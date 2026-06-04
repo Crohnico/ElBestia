@@ -15,61 +15,61 @@ MonoBehaviour:
   nameGenerator: {fileID: 0}
   level: 1
   totalBaseStatPoints: 50
-  seed: 169268259
-  championId: 451AKJ-DBFNTC-YQIPIB-SX0TI9
-  championName: Klaus Goldgaze
+  seed: 989725971
+  championId: 33BC1L-R0CAO-CTAAU3-A4AM2C
+  championName: Daniel Drunkwound
   playerNickname: 
   appearance:
     sex: 0
-    bodyColor: {r: 0.9647519, g: 0.29827213, b: 0.9382402, a: 1}
-    hairColor: {r: 0.06088932, g: 0.25283644, b: 0.21352135, a: 1}
-    chest: 0.37902686
-    belly: 0.5124403
-    arms: 0.13261545
-    forearms: 0.042047717
-    upperLegs: 0.85508144
-    lowerLegs: 0.82031745
-    glutes: 0.66699106
-    hairAsset: 32
-    beardAsset: 9
+    bodyColor: {r: 0.7597248, g: 0.040253714, b: 0.7630442, a: 1}
+    hairColor: {r: 0.13913757, g: 0.46416575, b: 0.31551427, a: 1}
+    chest: 0.79648095
+    belly: 0.371083
+    arms: 0.00507195
+    forearms: 0.45742658
+    upperLegs: 0.5242074
+    lowerLegs: 0.72820723
+    glutes: 0.9834582
+    hairAsset: 3
+    beardAsset: 7
     earAsset: 1
     weaponAsset: 0
   lore:
-    birth: {fileID: 11400000, guid: 595effdeb54400e46a5a3cb75538dd71, type: 2}
-    childhood: {fileID: 11400000, guid: bdad3bd1f1bad6d4cb74b679af9f575c, type: 2}
-    youth: {fileID: 11400000, guid: e5a3be32082cee841b64ca6a95f1a165, type: 2}
-    storyCombinationKey: 5277002
-    storyCombinationId: birth_13_01__childhood_18_05__youth_00_02
-    story: Klaus Goldgaze was born in a lighthouse family, where wind, waves, and
-      rescue bells taught people to move before panic. As a child, Klaus Goldgaze
-      lived through a cave garden childhood, learning caution, secrecy, and suspicion
-      of outsiders. As a young adult, Klaus Goldgaze worked through a camp guard,
+    birth: {fileID: 11400000, guid: f97aed5a75d56aa48ba18f25dd0318ac, type: 2}
+    childhood: {fileID: 11400000, guid: 0bab0a9ab706b2d42825f9415d421866, type: 2}
+    youth: {fileID: 11400000, guid: d19f47c30a0d81f4393b856bca25d06f, type: 2}
+    storyCombinationKey: 844603
+    storyCombinationId: birth_02_01__childhood_02_03__youth_00_03
+    story: Daniel Drunkwound was born in a dune camp, where water, shade, and distance
+      shaped every decision. As a child, Daniel Drunkwound lived through a merchant
+      school, learning letters, rivalry, discipline, and how rules can be used as
+      weapons. As a young adult, Daniel Drunkwound worked through a shield line soldier,
       turning drills, fear, formation work, and orders into practical violence. They
       enter the dojo to win coin without taking orders.
   baseStats:
-    life: 180
-    energy: 104
-    strength: 5
-    agility: 11
-    constitution: 10
-    intelligence: 14
+    life: 150
+    energy: 74
+    strength: 9
+    agility: 15
+    constitution: 7
+    intelligence: 9
     endurance: 10
-    dodge: 5
-    block: 4
-    critical: 3
-    hit: 6
-    recovery: 6
-    speed: 17
+    dodge: 7
+    block: 5
+    critical: 4
+    hit: 7
+    recovery: 4
+    speed: 19
     experienceGain: 0
     fatalInjuryResistance: 0
     injurySeverityReduction: 0
-    fireResistance: 5
-    waterResistance: 5
+    fireResistance: 4
+    waterResistance: 4
     electricityResistance: 5
-    poisonResistance: 4
+    poisonResistance: 3
     earthResistance: 4
     airResistance: 5
-    woodResistance: 4
+    woodResistance: 3
     fireDamage: 0
     waterDamage: 0
     electricityDamage: 0
@@ -91,29 +91,29 @@ MonoBehaviour:
     staffProficiency: 0
     bowProficiency: 0
   stats:
-    life: 183
-    energy: 116
-    strength: 6
-    agility: 11
-    constitution: 10
-    intelligence: 16
+    life: 170
+    energy: 74
+    strength: 9
+    agility: 15
+    constitution: 9
+    intelligence: 9
     endurance: 10
-    dodge: 7
-    block: 4
-    critical: 8
-    hit: 7
-    recovery: 6
-    speed: 17
+    dodge: 9
+    block: 8
+    critical: 4
+    hit: 12
+    recovery: 5
+    speed: 20
     experienceGain: 0
     fatalInjuryResistance: 0
     injurySeverityReduction: 0
-    fireResistance: 10
-    waterResistance: 6
-    electricityResistance: 11
-    poisonResistance: 5
-    earthResistance: 4
+    fireResistance: 4
+    waterResistance: 4
+    electricityResistance: 5
+    poisonResistance: 3
+    earthResistance: 12
     airResistance: 5
-    woodResistance: 5
+    woodResistance: 3
     fireDamage: 0
     waterDamage: 0
     electricityDamage: 0
@@ -130,26 +130,26 @@ MonoBehaviour:
     woodDamageMultiplier: 1
     fistsProficiency: 1
     swordProficiency: 0
-    axeProficiency: 0
+    axeProficiency: 3
     spearProficiency: 0
     staffProficiency: 0
     bowProficiency: 0
   growth:
-    strength: 1
-    agility: 1
-    constitution: 1
-    intelligence: 1
-    endurance: 0
+    strength: 0
+    agility: 2
+    constitution: 0
+    intelligence: 0
+    endurance: 2
   currentExperience: 0
   experienceToNextLevel: 114
-  equippedWeapon: 2
+  equippedWeapon: 1
   perks:
-  - {fileID: 11400000, guid: 7d42328c8af166c4da44213be0ad4020, type: 2}
-  - {fileID: 11400000, guid: 74573d505337fa24ea4f23b99ebd6ddd, type: 2}
+  - {fileID: 11400000, guid: dd8619a550764724a936944ce03d7ed0, type: 2}
+  - {fileID: 11400000, guid: ba26d565c2593d24196bf3763415e7c1, type: 2}
   baseSkill:
-    skillName: Base Sword Slash
-    skillNameId: skill_name.base.sword_slash
-    description: 'The user cuts with a simple sword slash.
+    skillName: Base Punch
+    skillNameId: skill_name.base.punch
+    description: 'The user throws a simple punch.
 
       - Cooldown: 0s
 
@@ -164,12 +164,9 @@ MonoBehaviour:
     element: 0
     energyCost: 0
     range: 1
-    weapons: 02000000
+    weapons: 01000000
     statScaling:
     - stat: 0
-      scaling: 0
-      usesGradeScaling: 0
-    - stat: 1
       scaling: 0
       usesGradeScaling: 0
     preCast: []
@@ -179,5 +176,35 @@ MonoBehaviour:
       charge: 0
       amount: 8
     postCast: []
-    iconSeed: 1864121919
-  skills: []
+    iconSeed: 1879752140
+  skills:
+  - skillName: Strike
+    skillNameId: skill_name.strike
+    description: 'The user executes a bare-knuckle strike.
+
+      - Cooldown: 3,8s
+
+      -
+      Damage: 16
+
+      - Effects: action: Enemy: DoDamage x16'
+    isBaseSkill: 0
+    quality: 0
+    level: 1
+    cooldownSeconds: 3.8
+    element: 0
+    energyCost: 19
+    range: 0.9
+    weapons: 01000000
+    statScaling:
+    - stat: 4
+      scaling: 0
+      usesGradeScaling: 1
+    preCast: []
+    cast:
+    - target: 1
+      action: 0
+      charge: 0
+      amount: 16
+    postCast: []
+    iconSeed: 1187934730

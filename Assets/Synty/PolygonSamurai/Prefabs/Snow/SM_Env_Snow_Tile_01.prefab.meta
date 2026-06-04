@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5ec4ed7ba5ce9cf46b01569966de3bda
+timeCreated: 1493674828
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Prefabs/Snow/SM_Env_Snow_Tile_01.prefab
+  uploadId: 915408

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c458ef46109af9b4b843ee2d75b4ab27
+timeCreated: 1580782209
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43422740186474042
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Env_Snow_Rock_01_Convex.asset
+  uploadId: 915408

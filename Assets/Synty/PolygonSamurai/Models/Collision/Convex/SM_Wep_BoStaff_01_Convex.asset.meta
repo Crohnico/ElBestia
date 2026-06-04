@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 60fcbdd9c00345e48abb22e3b81263d9
+timeCreated: 1580695562
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43963372815074744
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Wep_BoStaff_01_Convex.asset
+  uploadId: 915408

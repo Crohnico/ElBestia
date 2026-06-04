@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2a47d0bd64cd05d488d7ec1a627d4e9d
+timeCreated: 1493086158
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Prefabs/Environments/SM_Env_RicePlant_02.prefab
+  uploadId: 915408

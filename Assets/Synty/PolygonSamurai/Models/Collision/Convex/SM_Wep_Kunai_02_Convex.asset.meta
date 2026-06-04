@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2de1d8f289659ba40a20a3828a8dcbf8
+timeCreated: 1580695561
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43680274508009314
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Wep_Kunai_02_Convex.asset
+  uploadId: 915408

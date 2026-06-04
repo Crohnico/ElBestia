@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ac4ad5f29bf3ccb4eb4b00857f662422
+timeCreated: 1580695554
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43706716082338076
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Wep_Tonfa_01_Convex.asset
+  uploadId: 915408

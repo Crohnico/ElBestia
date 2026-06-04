@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7417d4a168827ff42ab608c8b57a00d5
+timeCreated: 1580782143
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43711623163762392
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Env_Snow_SteppingStone_04_Convex.asset
+  uploadId: 915408

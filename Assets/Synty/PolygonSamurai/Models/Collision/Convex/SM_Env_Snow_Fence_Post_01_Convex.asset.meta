@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 012cdfd99a253de46888dfcc31f16119
+timeCreated: 1580782906
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 43734069750603340
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Models/Collision/Convex/SM_Env_Snow_Fence_Post_01_Convex.asset
+  uploadId: 915408

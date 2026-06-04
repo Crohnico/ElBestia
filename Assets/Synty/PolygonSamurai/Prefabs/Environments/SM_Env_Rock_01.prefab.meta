@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f8624e5be3abfc240a2fe78522a9a0d2
+timeCreated: 1493086171
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89551
+  packageName: POLYGON - Samurai Pack - Art by Synty
+  packageVersion: 1.7.0
+  assetPath: Assets/Synty/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_01.prefab
+  uploadId: 915408
