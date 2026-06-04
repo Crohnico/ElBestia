@@ -144,7 +144,7 @@ namespace ElBestia.Combat
             {
                 owner.DebugCombatFlow(nameof(CounterattackResolver), "Counterattack", "In range. Base attack anim.");
                 owner.FaceTargetForCombat(attacker, Time.unscaledDeltaTime);
-                owner.PlayActionAnimationForCombat(() =>
+                owner.PlayActionAnimationForCombat(baseSkill, () =>
                 {
                     owner.DebugCombatFlow(nameof(CounterattackResolver), "Counterattack", "Base attack hit.");
                     ExecuteBaseCast(baseSkill, context, attacker);

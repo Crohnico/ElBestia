@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using ElBestia.Champions;
+using ElBestia.Combat;
 using ElBestia.Skills;
 using UnityEngine;
 
@@ -24,9 +25,11 @@ namespace ElBestia.Visuals
         private static readonly int BaseColorId = Shader.PropertyToID("_BaseColor");
         private static readonly int ColorId = Shader.PropertyToID("_Color");
         private static MaterialPropertyBlock colorBlock;
+        private WeaponSfxOrigin equippedWeaponSfxOrigin;
 
         public int GroupCount => groups != null ? groups.Count : 0;
         public StickmanGluteScaler GluteScaler { get => gluteScaler; set => gluteScaler = value; }
+        public WeaponSfxOrigin EquippedWeaponSfxOrigin => equippedWeaponSfxOrigin;
 
         public StickmanBodyPartGroup GetGroup(int index)
         {
@@ -124,6 +127,7 @@ namespace ElBestia.Visuals
             }
 
             applyContinuously = false;
+            equippedWeaponSfxOrigin = null;
             ClearAttachmentChildren();
             SetNormalizedRadius("Pecho", 3, appearance.chest);
             SetNormalizedRadius("Barriga", 3, appearance.belly);
@@ -230,6 +234,13 @@ namespace ElBestia.Visuals
         {
             if (weaponType == WeaponType.None || weaponType == WeaponType.Fists)
             {
+                Transform fallback = rightHandAttachment != null ? rightHandAttachment : leftHandAttachment;
+                equippedWeaponSfxOrigin = fallback != null ? fallback.GetComponent<WeaponSfxOrigin>() : null;
+                if (fallback != null && equippedWeaponSfxOrigin == null)
+                {
+                    equippedWeaponSfxOrigin = fallback.gameObject.AddComponent<WeaponSfxOrigin>();
+                }
+
                 return;
             }
 
@@ -240,26 +251,35 @@ namespace ElBestia.Visuals
             }
 
             Transform parent = rightHandAttachment != null ? rightHandAttachment : leftHandAttachment;
-            InstantiateCatalogPart(catalog, ChampionSex.H, assetId, parent, bodyColor, hairColor);
+            GameObject weapon = InstantiateCatalogPart(catalog, ChampionSex.H, assetId, parent, bodyColor, hairColor);
+            if (weapon != null)
+            {
+                equippedWeaponSfxOrigin = weapon.GetComponentInChildren<WeaponSfxOrigin>(true);
+                if (equippedWeaponSfxOrigin == null)
+                {
+                    equippedWeaponSfxOrigin = weapon.AddComponent<WeaponSfxOrigin>();
+                }
+            }
         }
 
-        private static void InstantiateCatalogPart(BodyPartCatalogSO catalog, ChampionSex sex, int assetId, Transform parent, Color bodyColor, Color hairColor)
+        private static GameObject InstantiateCatalogPart(BodyPartCatalogSO catalog, ChampionSex sex, int assetId, Transform parent, Color bodyColor, Color hairColor)
         {
             if (catalog == null || parent == null)
             {
-                return;
+                return null;
             }
 
             GameObject prefab = catalog.GetPrefab(sex, assetId);
             if (prefab == null)
             {
-                return;
+                return null;
             }
 
             GameObject instance = Instantiate(prefab, parent);
             instance.transform.localPosition = Vector3.zero;
             instance.transform.localRotation = Quaternion.identity;
             TintInstance(instance, prefab.name, bodyColor, hairColor);
+            return instance;
         }
 
         private void ClearAttachmentChildren()

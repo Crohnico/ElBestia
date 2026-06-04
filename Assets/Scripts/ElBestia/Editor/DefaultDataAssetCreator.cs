@@ -393,7 +393,7 @@ namespace ElBestia.Editor
                 case "Blacksmith Helper":
                     return new[] { "Blacksmith Helper", "Armorer Apprentice", "Bellows Worker", "Horseshoe Forge", "Blade Polishing Work", "Chain Maker Bench", "Anvil Striker Job", "Foundry Assistant", "Toolmaker Shop", "Shield Rivet Work" };
                 case "Hunter Lodge":
-                    return new[] { "Hunter Lodge", "Trapline Work", "Bow Hunter Crew", "Boar Hunt Escort", "Falconry Yard", "Monster Trackers", "Pelt Trader Work", "Forest Ranger Shift", "Night Watch Hunt", "Guide Work" };
+                    return new[] { "Hunter Lodge", "Trapline Work", "Hunter Crew", "Boar Hunt Escort", "Falconry Yard", "Monster Trackers", "Pelt Trader Work", "Forest Ranger Shift", "Night Watch Hunt", "Guide Work" };
                 case "Sailor Contract":
                     return new[] { "Sailor Contract", "Deckhand Work", "Navigator Assistant", "Harpoon Boat Crew", "River Barge Contract", "Pearl Boat Work", "Ship Cook Duty", "Rope Master Helper", "Storm Sail Crew", "Far Harbor Contract" };
                 case "Field Medic":
@@ -804,7 +804,6 @@ namespace ElBestia.Editor
             AddWeaponChain(specs, WeaponType.Sword, "Sword", "Swordsman", "Sword Saint");
             AddWeaponChain(specs, WeaponType.Axe, "Axe", "Axeman", "Axe Saint");
             AddWeaponChain(specs, WeaponType.Spear, "Spear", "Spearman", "Spear Saint");
-            AddWeaponChain(specs, WeaponType.Bow, "Bow", "Archer", "Hawk Saint");
             AddWeaponChain(specs, WeaponType.Staff, "Staff", "Staff Fighter", "Staff Saint");
             AddWeaponChain(specs, WeaponType.Fists, "Fists", "Brawler", "Fist Saint");
         }

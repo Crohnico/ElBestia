@@ -79,7 +79,7 @@ namespace ElBestia.Combat
             owner.DebugCombatFlow(nameof(ChampionActionFlow), "Cast", $"Start skill={SkillLabel(context.skill)} needsRange={SkillPhaseExecutor.PhaseNeedsEnemyRange(context.skill.cast)}");
             Action executeCast = () =>
             {
-                owner.PlayActionAnimationForCombat(() =>
+                owner.PlayActionAnimationForCombat(context.skill, () =>
                 {
                     owner.DebugCombatFlow(nameof(ChampionActionFlow), "Cast", "Hit moment");
                     owner.ExecuteSkillActionsForCombat(context.skill.cast, context, true);
@@ -129,7 +129,7 @@ namespace ElBestia.Combat
             owner.DebugCombatFlow(nameof(ChampionActionFlow), "EchoCast", $"Start skill={SkillLabel(context.skill)} needsRange={SkillPhaseExecutor.PhaseNeedsEnemyRange(context.skill.cast)}");
             Action executeCast = () =>
             {
-                owner.PlayActionAnimationForCombat(() =>
+                owner.PlayActionAnimationForCombat(context.skill, () =>
                 {
                     owner.DebugCombatFlow(nameof(ChampionActionFlow), "EchoCast", "Hit moment");
                     owner.ExecuteSkillActionsForCombat(context.skill.cast, context, true);

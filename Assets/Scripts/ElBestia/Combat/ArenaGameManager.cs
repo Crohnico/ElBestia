@@ -118,6 +118,8 @@ namespace ElBestia.Combat
             ConfigureStickman(rightInstance, rightChampion);
             leftBehaviour = PrepareBehaviour(leftInstance, leftChampion, spawnLeft, crono);
             rightBehaviour = PrepareBehaviour(rightInstance, rightChampion, spawnRight, crono);
+            leftBehaviour?.ConfigureCombatSide(true, championYawOffset);
+            rightBehaviour?.ConfigureCombatSide(false, championYawOffset);
 
             if (leftBehaviour != null)
             {

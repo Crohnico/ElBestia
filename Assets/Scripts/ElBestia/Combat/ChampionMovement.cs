@@ -22,6 +22,8 @@ namespace ElBestia.Combat
         private float actionAnimationEndsAt;
         private float nextPendingStateLogAt;
         private string pendingStateLabel = string.Empty;
+        private ChampionBehaviour passiveFaceTarget;
+        private float towardEnemyYaw;
 
         public ChampionMovement(
             Transform ownerTransform,
@@ -42,6 +44,9 @@ namespace ElBestia.Combat
         }
 
         public float MovementFloat => Mathf.Max(actionMovementFloat, Mathf.Max(returnHomeMovement.MovementFloat, moveToRange.MovementFloat));
+        public float TurnIntent => moveToRange.IsTurning || passiveFaceTarget != null || returnHomeMovement.IsTurningTowardEnemy
+            ? -1f
+            : returnHomeMovement.IsTurningTowardHome ? 1f : 0f;
 
         public void Initialize(
             Transform homePosition,
@@ -70,6 +75,7 @@ namespace ElBestia.Combat
 
         public void Update()
         {
+            UpdatePassiveFacing();
             UpdateActionFlow();
             returnHomeMovement.Update(crono, IsCombatMovementActive());
         }
@@ -77,6 +83,14 @@ namespace ElBestia.Combat
         public void SetCrono(CombatCrono combatCrono)
         {
             crono = combatCrono;
+        }
+
+        public void ConfigureFacing(bool isLeftSide, float cameraYawOffset)
+        {
+            towardEnemyYaw = isLeftSide ? cameraYawOffset : 180f + cameraYawOffset;
+            float towardHomeYaw = isLeftSide ? 180f + cameraYawOffset : cameraYawOffset;
+            moveToRange.ConfigureFacing(towardEnemyYaw);
+            returnHomeMovement.ConfigureFacing(towardHomeYaw, towardEnemyYaw);
         }
 
         public void MoveIntoSkillRange(SkillData skill, Action onComplete)
@@ -119,7 +133,12 @@ namespace ElBestia.Combat
                 return;
             }
 
-            FaceMovementDirection(target.transform.position - ownerTransform.position, Mathf.Max(deltaTime, 0.016f));
+            FaceYaw(towardEnemyYaw, Mathf.Max(deltaTime, 0.016f));
+        }
+
+        public void BeginFaceTarget(ChampionBehaviour target)
+        {
+            passiveFaceTarget = target;
         }
 
         public void ForceClearAsyncStep()
@@ -129,6 +148,7 @@ namespace ElBestia.Combat
             pendingStateLabel = string.Empty;
             nextPendingStateLogAt = 0f;
             actionMovementFloat = 0f;
+            passiveFaceTarget = null;
             moveToRange.ForceClear();
             Debug("Async", "Force clear");
         }
@@ -189,16 +209,29 @@ namespace ElBestia.Combat
             return isCounterattacking() || pendingAsyncComplete != null || moveToRange.HasPending || actionAnimationEndsAt > 0f;
         }
 
-        private void FaceMovementDirection(Vector3 direction, float deltaTime)
+        private void UpdatePassiveFacing()
         {
-            direction.y = 0f;
-            if (direction.sqrMagnitude <= 0.000001f)
+            if (passiveFaceTarget == null)
             {
                 return;
             }
 
-            Quaternion targetRotation = Quaternion.LookRotation(direction.normalized, Vector3.up);
+            FaceYaw(towardEnemyYaw, Mathf.Max(Time.unscaledDeltaTime, 0.001f));
+            if (IsFacingYaw(towardEnemyYaw))
+            {
+                passiveFaceTarget = null;
+            }
+        }
+
+        private void FaceYaw(float yaw, float deltaTime)
+        {
+            Quaternion targetRotation = Quaternion.Euler(0f, yaw, 0f);
             ownerTransform.rotation = Quaternion.RotateTowards(ownerTransform.rotation, targetRotation, turnSpeedDegrees * deltaTime);
+        }
+
+        private bool IsFacingYaw(float yaw)
+        {
+            return Quaternion.Angle(ownerTransform.rotation, Quaternion.Euler(0f, yaw, 0f)) <= 3f;
         }
 
         private void Debug(string step, string message)

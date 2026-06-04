@@ -19,8 +19,7 @@ namespace ElBestia.Skills
         Sword,
         Axe,
         Spear,
-        Staff,
-        Bow
+        Staff
     }
 
     public enum SkillTarget

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Lore.ChampionLoreEntrySO
   entryId: youth_11_02
   stage: 2
-  title: Bow Hunter Crew
-  storyFragment: 'As a young adult, {name} worked through a bow hunter crew, learning tracking, patience, distance, and how predators choose angles. They enter the dojo to hunt opponents instead of tracks.'
+  title: Hunter Crew
+  storyFragment: 'As a young adult, {name} worked with a hunter crew, learning tracking, patience, distance, and how predators choose angles. They enter the dojo to hunt opponents instead of tracks.'
   modifiers:
   - type: 0
     stat: 1

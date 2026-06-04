@@ -50,14 +50,6 @@ namespace ElBestia.Generation
             bool slows = AppliesCharge(skill, ChargeType.Slow);
             WeaponType weapon = GetPrimaryWeapon(skill);
 
-            if (weapon == WeaponType.Bow && skill.element == SkillElement.Fire && burns)
-            {
-                string name = poisons ? "Venomous Dragonfall" : "Dragonfall";
-                string id = poisons ? "skill_name.combo.venomous_dragonfall" : "skill_name.combo.dragonfall";
-                result = new SkillNameResult(name, id);
-                return true;
-            }
-
             if (weapon == WeaponType.Spear && skill.element == SkillElement.Electricity && slows)
             {
                 result = new SkillNameResult("Thunder Pin", "skill_name.combo.thunder_pin");
@@ -229,8 +221,6 @@ namespace ElBestia.Generation
                     return "Cleave";
                 case WeaponType.Staff:
                     return "Sweep";
-                case WeaponType.Bow:
-                    return "Shot";
                 case WeaponType.Fists:
                     return "Strike";
                 default:
@@ -255,8 +245,6 @@ namespace ElBestia.Generation
                     return "cleave";
                 case WeaponType.Staff:
                     return "sweep";
-                case WeaponType.Bow:
-                    return "shot";
                 case WeaponType.Fists:
                     return "strike";
                 default:

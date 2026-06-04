@@ -117,7 +117,7 @@ namespace ElBestia.Lore
         {
             ChampionStatType stat = (ChampionStatType)(anchorIndex % 5);
             ChampionStatType secondStat = (ChampionStatType)((anchorIndex + toneIndex + 2) % 5);
-            WeaponType weapon = (WeaponType)((anchorIndex % 6) + 1);
+            WeaponType weapon = (WeaponType)((anchorIndex % 5) + 1);
             SkillElement element = GetFallbackElement(anchorIndex + toneIndex);
             PerkCombatStatType combatStat = GetFallbackCombat(toneIndex);
             int primary = 1 + toneIndex % 3;
@@ -190,7 +190,7 @@ namespace ElBestia.Lore
                 case "Broken":
                     return "a broken beginning that never fully healed";
                 case "Proud":
-                    return "a pride that refused to bow";
+                    return "a pride that refused to bend";
                 default:
                     return $"a {tone.ToLowerInvariant()} temperament";
             }
@@ -327,9 +327,6 @@ namespace ElBestia.Lore
                     break;
                 case WeaponType.Staff:
                     stats.staffProficiency += value;
-                    break;
-                case WeaponType.Bow:
-                    stats.bowProficiency += value;
                     break;
             }
         }

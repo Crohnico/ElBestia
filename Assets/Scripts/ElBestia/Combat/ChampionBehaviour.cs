@@ -16,7 +16,7 @@ namespace ElBestia.Combat
         [SerializeField] private CombatCrono crono;
         [SerializeField] private float moveSpeed = 4.5f;
         [SerializeField] private float turnSpeedDegrees = 720f;
-        [SerializeField] private float minimumVisualRange = 0.75f;
+        [SerializeField] private float minimumVisualRange = 1.5f;
         [SerializeField] private float actionAnimationSeconds = 0.18f;
         [SerializeField] private float criticalDamageMultiplier = 2f;
         [SerializeField] private bool debugCombatFlow = true;
@@ -38,6 +38,8 @@ namespace ElBestia.Combat
         private SkillActionExecutor skillActionExecutor;
         private ChampionSkillLoadout skillLoadout;
         private ChampionTurnEffects turnEffects;
+        private ChampionCombatPresentation presentation;
+        private bool isLeftSide;
         private int debugFlowId;
         private int activeDebugFlowId;
         private System.Random rng;
@@ -69,6 +71,12 @@ namespace ElBestia.Combat
         private void Update()
         {
             movement?.Update();
+            if (presentation != null && movement != null)
+            {
+                float intent = movement.TurnIntent;
+                float right = Mathf.Approximately(intent, 0f) ? 0f : presentation.GetTurnValue(intent < 0f);
+                presentation.SetLocomotion(movement.MovementFloat, right);
+            }
         }
 
         public void Initialize(ChampionSO championData, Transform home, ChampionBehaviour rivalChampion, CombatCrono combatCrono)
@@ -94,7 +102,14 @@ namespace ElBestia.Combat
             skillLoadout = new ChampionSkillLoadout(this, () => crono);
             turnEffects = new ChampionTurnEffects(this);
             movement = CreateMovement();
-            movement.Initialize(homePosition, crono, moveSpeed, turnSpeedDegrees, minimumVisualRange, actionAnimationSeconds);
+            movement.Initialize(homePosition, crono, moveSpeed, turnSpeedDegrees, Mathf.Max(1.5f, minimumVisualRange), actionAnimationSeconds);
+            presentation = GetComponent<ChampionCombatPresentation>();
+            if (presentation == null)
+            {
+                presentation = gameObject.AddComponent<ChampionCombatPresentation>();
+            }
+
+            presentation.Initialize(this, isLeftSide);
             rng = new System.Random(Mathf.Abs((champion != null ? champion.ChampionId : name).GetHashCode()));
             chargeController.Clear();
             counterattackResolver.Clear();
@@ -131,6 +146,13 @@ namespace ElBestia.Combat
         public void SetRival(ChampionBehaviour rivalChampion)
         {
             rival = rivalChampion;
+        }
+
+        public void ConfigureCombatSide(bool leftSide, float cameraYawOffset)
+        {
+            isLeftSide = leftSide;
+            movement?.ConfigureFacing(leftSide, cameraYawOffset);
+            presentation?.Initialize(this, isLeftSide);
         }
 
         public void SetCrono(CombatCrono combatCrono)
@@ -401,14 +423,20 @@ namespace ElBestia.Combat
             movement?.CancelReturnHome();
         }
 
-        private void PlayActionAnimation(Action onComplete)
+        private void PlayActionAnimation(SkillData skill, Action onComplete)
         {
+            if (presentation != null)
+            {
+                presentation.PlayCast(skill, rival, onComplete);
+                return;
+            }
+
             movement.PlayActionAnimation(onComplete);
         }
 
-        internal void PlayActionAnimationForCombat(Action onComplete)
+        internal void PlayActionAnimationForCombat(SkillData skill, Action onComplete)
         {
-            PlayActionAnimation(onComplete);
+            PlayActionAnimation(skill, onComplete);
         }
 
         private void ForceClearAsyncStep()
@@ -454,6 +482,16 @@ namespace ElBestia.Combat
         internal void FaceTargetForCombat(ChampionBehaviour target, float deltaTime)
         {
             FaceTarget(target, deltaTime);
+        }
+
+        public void FaceRivalAtTurnStart()
+        {
+            movement?.BeginFaceTarget(rival);
+        }
+
+        internal void PlayImpactReactionForCombat()
+        {
+            presentation?.PlayImpactReaction(IsAlive);
         }
 
         private float GetRivalDistance()

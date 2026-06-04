@@ -20,6 +20,7 @@ namespace ElBestia.Combat
         private float moveSpeed;
         private float turnSpeedDegrees;
         private float minimumVisualRange;
+        private float towardEnemyYaw;
         private Action pendingComplete;
         private SkillData pendingSkill;
         private float nextPendingStateLogAt;
@@ -41,6 +42,7 @@ namespace ElBestia.Combat
         }
 
         public bool HasPending => pendingComplete != null;
+        public bool IsTurning { get; private set; }
         public float MovementFloat { get; private set; }
         public string PendingLabel => pendingSkill != null ? "MoveToRange" : string.Empty;
         public string PendingSkillName => SkillLabel(pendingSkill);
@@ -52,6 +54,11 @@ namespace ElBestia.Combat
             this.turnSpeedDegrees = turnSpeedDegrees;
             this.minimumVisualRange = minimumVisualRange;
             ForceClear();
+        }
+
+        public void ConfigureFacing(float enemyYaw)
+        {
+            towardEnemyYaw = enemyYaw;
         }
 
         public void Begin(SkillData skill, Action onComplete)
@@ -71,10 +78,24 @@ namespace ElBestia.Combat
             }
 
             ChampionBehaviour rival = getRival();
-            if (rival == null || !isOwnerAlive() || !rival.IsAlive || IsWithinSkillRange(pendingSkill))
+            if (rival == null || !isOwnerAlive() || !rival.IsAlive)
             {
                 Debug("MoveToRange", $"Complete skill={SkillLabel(pendingSkill)} distance={GetRivalDistance():0.00} range={GetExecutionRange(pendingSkill):0.00}");
                 Complete();
+                return;
+            }
+
+            if (IsWithinSkillRange(pendingSkill))
+            {
+                FaceEnemy(Mathf.Max(Time.unscaledDeltaTime, MinimumMovementDeltaTime));
+                IsTurning = !IsFacingEnemy();
+                MovementFloat = 0f;
+                if (!IsTurning)
+                {
+                    Debug("MoveToRange", $"Complete skill={SkillLabel(pendingSkill)} distance={GetRivalDistance():0.00} range={GetExecutionRange(pendingSkill):0.00}");
+                    Complete();
+                }
+
                 return;
             }
 
@@ -90,7 +111,6 @@ namespace ElBestia.Combat
             {
                 SnapTo(targetPosition);
                 Debug("MoveToRange", $"SnapComplete distanceToTarget={distanceToTarget:0.000} distance={GetRivalDistance():0.00} range={GetExecutionRange(pendingSkill):0.00}");
-                Complete();
                 return;
             }
 
@@ -103,6 +123,7 @@ namespace ElBestia.Combat
             pendingSkill = null;
             nextPendingStateLogAt = 0f;
             MovementFloat = 0f;
+            IsTurning = false;
         }
 
         public float GetRivalDistance()
@@ -152,13 +173,18 @@ namespace ElBestia.Combat
         {
             Vector3 current = ownerTransform.position;
             targetPosition.y = lockedHeight;
+            FaceEnemy(deltaTime);
+            IsTurning = !IsFacingEnemy();
+            if (IsTurning)
+            {
+                MovementFloat = 0f;
+                return;
+            }
+
             Vector3 next = Vector3.MoveTowards(current, targetPosition, moveSpeed * deltaTime);
             next.y = lockedHeight;
-
-            Vector3 direction = next - current;
-            FaceMovementDirection(direction, deltaTime);
             ownerTransform.position = next;
-            MovementFloat = direction.sqrMagnitude > 0.000001f ? 1f : 0f;
+            MovementFloat = (next - current).sqrMagnitude > 0.000001f ? 1f : 0f;
         }
 
         private void SnapTo(Vector3 targetPosition)
@@ -166,18 +192,18 @@ namespace ElBestia.Combat
             targetPosition.y = lockedHeight;
             ownerTransform.position = targetPosition;
             MovementFloat = 0f;
+            IsTurning = false;
         }
 
-        private void FaceMovementDirection(Vector3 direction, float deltaTime)
+        private void FaceEnemy(float deltaTime)
         {
-            direction.y = 0f;
-            if (direction.sqrMagnitude <= 0.000001f)
-            {
-                return;
-            }
-
-            Quaternion targetRotation = Quaternion.LookRotation(direction.normalized, Vector3.up);
+            Quaternion targetRotation = Quaternion.Euler(0f, towardEnemyYaw, 0f);
             ownerTransform.rotation = Quaternion.RotateTowards(ownerTransform.rotation, targetRotation, turnSpeedDegrees * deltaTime);
+        }
+
+        private bool IsFacingEnemy()
+        {
+            return Quaternion.Angle(ownerTransform.rotation, Quaternion.Euler(0f, towardEnemyYaw, 0f)) <= 3f;
         }
 
         private float GetExecutionRange(SkillData skill)

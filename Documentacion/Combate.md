@@ -153,6 +153,44 @@ Flujo:
 
 Si ambos campeones llegan en el mismo instante, se desempata con dado.
 
+## Flujo Implementado de una Accion
+
+Esta seccion describe el flujo actual y debe tratarse como referencia al modificar `ArenaGameManager`, `ActionTimeLine`, `ChampionBehaviour` o la presentacion visual del combate.
+
+1. `ActionTimeLine` detecta que un campeon ha alcanzado su slot.
+2. Se pausa `CombatCrono`.
+3. Ambos campeones reciben la orden visual de mirar hacia el rival.
+4. Se aplican los efectos de inicio de turno y el campeon elige skill.
+5. Se ejecuta `PreCast`.
+6. Si el `Cast` necesita alcance enemigo, el campeon gira primero y avanza hasta rango.
+7. El campeon reproduce el slash correspondiente a su arma.
+8. En el porcentaje configurado del slash se crea el proyectil o SFX.
+9. El `Cast` se resuelve cuando el proyectil impacta. Tras resolver el dano real, activa `HIT` si el rival sobrevive o `DEATH` si queda a `0`.
+10. Se resuelven contraataques pendientes, cargas de fin de turno, `PostCast`, ecos y perks posteriores.
+11. Se ordena al campeon volver al origen y la accion se marca como completada inmediatamente.
+12. `ActionTimeLine` agenda el siguiente slot del actor y reanuda `CombatCrono`.
+13. El campeon vuelve al origen en paralelo al avance normal del combate.
+14. Al llegar al origen, gira para volver a mirar al rival. Este giro tampoco bloquea el cronometro ni los siguientes turnos.
+
+Regla importante: el retorno al origen y su giro final son presentacion/movimiento posterior a la accion. Nunca se debe retrasar `FinishAction`, la reanudacion de `CombatCrono` o el siguiente slot esperando a que terminen.
+
+### Fases de Skill
+
+- `PreCast`: ocurre antes del ataque principal. Mas adelante puede tener animacion propia.
+- `Cast`: su callback de completado coincide con el impacto del proyectil/SFX, no con el inicio ni el final del slash.
+- `PostCast`: consecuencia inmediata posterior al impacto.
+
+### Orientacion Visual
+
+La arena usa un offset de camara de `32` grados:
+
+- Campeon izquierdo hacia el rival: `Y = 32`.
+- Campeon derecho hacia el rival: `Y = 180 + 32`.
+- Campeon izquierdo volviendo a casa: `Y = 180 + 32`.
+- Campeon derecho volviendo a casa: `Y = 32`.
+
+Los campeones siempre completan el giro correspondiente antes de empezar a desplazarse. `FORWARD` solo usa valores entre `0` y `1`; nunca se desplazan visualmente hacia atras.
+
 ## Flujo de Turnos
 
 Tras cargar ambos campeones y empezar el combate:
@@ -257,9 +295,9 @@ Antes de ejecutar:
 
 - Si el campeon ya esta en rango, ejecuta.
 - Si no esta en rango, se mueve al punto necesario.
-- Si durante ese movimiento llega el slot del rival, el cronometro se pausa y actua el rival.
-
-Esto permite que el posicionamiento y el tiempo creen situaciones emergentes aunque el escenario sea lateral y simple.
+- El rango visual minimo de ejecucion es `1.5u`, aunque la skill tenga un rango numerico inferior.
+- El movimiento hacia rango forma parte de la accion activa y ocurre mientras `CombatCrono` esta pausado.
+- El movimiento de vuelta ocurre despues de completar la accion, con `CombatCrono` reanudado, y puede solaparse con futuros slots.
 
 ## Condicion Base de Victoria
 

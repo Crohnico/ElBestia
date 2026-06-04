@@ -224,7 +224,6 @@ namespace ElBestia.Editor
             EnsureWeaponCatalog(WeaponType.Axe);
             EnsureWeaponCatalog(WeaponType.Spear);
             EnsureWeaponCatalog(WeaponType.Staff);
-            EnsureWeaponCatalog(WeaponType.Bow);
         }
 
         private static void EnsureWeaponCatalog(WeaponType weaponType)

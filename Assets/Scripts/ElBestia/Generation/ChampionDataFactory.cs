@@ -407,9 +407,6 @@ namespace ElBestia.Generation
                 case WeaponType.Staff:
                     championStats.staffProficiency += value;
                     break;
-                case WeaponType.Bow:
-                    championStats.bowProficiency += value;
-                    break;
             }
         }
 
@@ -421,8 +418,7 @@ namespace ElBestia.Generation
                 WeaponType.Sword,
                 WeaponType.Axe,
                 WeaponType.Spear,
-                WeaponType.Staff,
-                WeaponType.Bow
+                WeaponType.Staff
             };
 
             return weapons[rng.Next(0, weapons.Length)];

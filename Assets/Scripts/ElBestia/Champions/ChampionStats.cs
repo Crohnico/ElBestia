@@ -68,7 +68,6 @@ namespace ElBestia.Champions
         [Min(0)] public int axeProficiency;
         [Min(0)] public int spearProficiency;
         [Min(0)] public int staffProficiency;
-        [Min(0)] public int bowProficiency;
 
         public static ChampionStats CreateLevelOne(System.Random rng, int totalBasePoints)
         {
@@ -155,8 +154,7 @@ namespace ElBestia.Champions
                 swordProficiency = swordProficiency,
                 axeProficiency = axeProficiency,
                 spearProficiency = spearProficiency,
-                staffProficiency = staffProficiency,
-                bowProficiency = bowProficiency
+                staffProficiency = staffProficiency
             };
         }
 
@@ -189,7 +187,6 @@ namespace ElBestia.Champions
                 axeProficiency = 0;
                 spearProficiency = 0;
                 staffProficiency = 0;
-                bowProficiency = 0;
             }
         }
 
@@ -217,8 +214,6 @@ namespace ElBestia.Champions
                     return spearProficiency;
                 case WeaponType.Staff:
                     return staffProficiency;
-                case WeaponType.Bow:
-                    return bowProficiency;
                 default:
                     return 0;
             }

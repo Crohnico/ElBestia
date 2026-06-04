@@ -3437,7 +3437,8 @@ MonoBehaviour:
   gameplayCanvas: {fileID: 1570385387}
   crono: {fileID: 759179573}
   actionTimeLine: {fileID: 759179574}
-  spawnY: 1
+  championScale: 1.67
+  championYawOffset: 0
   matchDurationSeconds: 60
   debugDamageRange: {x: 40, y: 80}
   paintDebugs: 0

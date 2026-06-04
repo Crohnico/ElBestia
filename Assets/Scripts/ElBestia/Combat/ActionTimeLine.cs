@@ -116,6 +116,8 @@ namespace ElBestia.Combat
             DebugTimeline(champion, "ExecuteReady", $"time={crono.CurrentTime:0.00}");
             crono.Pause();
             GetMarker(champion)?.SnapTo(center);
+            leftChampion?.FaceRivalAtTurnStart();
+            rightChampion?.FaceRivalAtTurnStart();
             champion.ApplyStartTurnEffects();
             if (!champion.IsAlive)
             {

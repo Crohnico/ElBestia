@@ -13,6 +13,9 @@ namespace ElBestia.Combat
         private float lockedHeight;
         private float moveSpeed;
         private float turnSpeedDegrees;
+        private float towardHomeYaw;
+        private float towardEnemyYaw;
+        private bool reachedHome;
 
         public ChampionReturnHomeMovement(
             Transform ownerTransform,
@@ -27,6 +30,9 @@ namespace ElBestia.Combat
         }
 
         public bool IsReturning { get; private set; }
+        public bool IsTurning { get; private set; }
+        public bool IsTurningTowardHome => IsTurning && !reachedHome;
+        public bool IsTurningTowardEnemy => IsTurning && reachedHome;
         public float MovementFloat { get; private set; }
 
         public void Initialize(Vector3 homeWorldPosition, float lockedHeight, float moveSpeed, float turnSpeedDegrees)
@@ -36,18 +42,29 @@ namespace ElBestia.Combat
             this.moveSpeed = moveSpeed;
             this.turnSpeedDegrees = turnSpeedDegrees;
             IsReturning = false;
+            IsTurning = false;
+            reachedHome = false;
             MovementFloat = 0f;
+        }
+
+        public void ConfigureFacing(float homeYaw, float enemyYaw)
+        {
+            towardHomeYaw = homeYaw;
+            towardEnemyYaw = enemyYaw;
         }
 
         public void Start()
         {
-            IsReturning = FlatDistance(ownerTransform.position, homeWorldPosition) > 0.02f;
+            reachedHome = FlatDistance(ownerTransform.position, homeWorldPosition) <= 0.02f;
+            IsReturning = !reachedHome || !IsFacingYaw(towardEnemyYaw);
             Debug("ReturnHome", $"Start returning={IsReturning} distance={FlatDistance(ownerTransform.position, homeWorldPosition):0.00}");
         }
 
         public void Cancel()
         {
             IsReturning = false;
+            IsTurning = false;
+            reachedHome = false;
             MovementFloat = 0f;
             Debug("ReturnHome", "Cancel");
         }
@@ -72,15 +89,30 @@ namespace ElBestia.Combat
                 return;
             }
 
-            MoveTowards(homeWorldPosition, deltaTime);
-            if (FlatDistance(ownerTransform.position, homeWorldPosition) <= 0.02f)
+            if (!reachedHome)
             {
-                Vector3 position = homeWorldPosition;
-                position.y = lockedHeight;
-                ownerTransform.position = position;
-                IsReturning = false;
-                MovementFloat = 0f;
-                Debug("ReturnHome", "Complete");
+                MoveTowards(homeWorldPosition, deltaTime);
+                if (FlatDistance(ownerTransform.position, homeWorldPosition) <= 0.02f)
+                {
+                    Vector3 position = homeWorldPosition;
+                    position.y = lockedHeight;
+                    ownerTransform.position = position;
+                    reachedHome = true;
+                    MovementFloat = 0f;
+                    Debug("ReturnHome", "Reached origin. Turning toward rival.");
+                }
+            }
+
+            if (reachedHome)
+            {
+                FaceYaw(towardEnemyYaw, deltaTime);
+                IsTurning = !IsFacingYaw(towardEnemyYaw);
+                if (!IsTurning)
+                {
+                    IsReturning = false;
+                    reachedHome = false;
+                    Debug("ReturnHome", "Complete");
+                }
             }
         }
 
@@ -88,25 +120,29 @@ namespace ElBestia.Combat
         {
             Vector3 current = ownerTransform.position;
             targetPosition.y = lockedHeight;
-            Vector3 next = Vector3.MoveTowards(current, targetPosition, moveSpeed * deltaTime);
-            next.y = lockedHeight;
-
-            Vector3 direction = next - current;
-            FaceMovementDirection(direction, deltaTime);
-            ownerTransform.position = next;
-            MovementFloat = direction.sqrMagnitude > 0.000001f ? 1f : 0f;
-        }
-
-        private void FaceMovementDirection(Vector3 direction, float deltaTime)
-        {
-            direction.y = 0f;
-            if (direction.sqrMagnitude <= 0.000001f)
+            FaceYaw(towardHomeYaw, deltaTime);
+            IsTurning = !IsFacingYaw(towardHomeYaw);
+            if (IsTurning)
             {
+                MovementFloat = 0f;
                 return;
             }
 
-            Quaternion targetRotation = Quaternion.LookRotation(direction.normalized, Vector3.up);
+            Vector3 next = Vector3.MoveTowards(current, targetPosition, moveSpeed * deltaTime);
+            next.y = lockedHeight;
+            ownerTransform.position = next;
+            MovementFloat = (next - current).sqrMagnitude > 0.000001f ? 1f : 0f;
+        }
+
+        private void FaceYaw(float yaw, float deltaTime)
+        {
+            Quaternion targetRotation = Quaternion.Euler(0f, yaw, 0f);
             ownerTransform.rotation = Quaternion.RotateTowards(ownerTransform.rotation, targetRotation, turnSpeedDegrees * deltaTime);
+        }
+
+        private bool IsFacingYaw(float yaw)
+        {
+            return Quaternion.Angle(ownerTransform.rotation, Quaternion.Euler(0f, yaw, 0f)) <= 3f;
         }
 
         private void Debug(string step, string message)

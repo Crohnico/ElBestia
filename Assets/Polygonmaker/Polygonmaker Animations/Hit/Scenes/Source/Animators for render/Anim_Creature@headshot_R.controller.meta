@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c47b97b8139e8104fbf0ce0ff5a4c6f0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199390
+  packageName: Hit Animations
+  packageVersion: 1.1
+  assetPath: Assets/Polygonmaker/Polygonmaker Animations/Hit/Scenes/Source/Animators
+    for render/Anim_Creature@headshot_R.controller
+  uploadId: 713352

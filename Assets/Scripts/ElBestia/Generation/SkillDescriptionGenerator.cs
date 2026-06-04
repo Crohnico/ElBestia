@@ -78,8 +78,6 @@ namespace ElBestia.Generation
                     return "cuts with a simple sword slash";
                 case WeaponType.Spear:
                     return "thrusts with the spear";
-                case WeaponType.Bow:
-                    return "fires a simple arrow";
                 case WeaponType.Staff:
                     return "strikes with the staff";
                 case WeaponType.Fists:
@@ -100,8 +98,6 @@ namespace ElBestia.Generation
                     return "a sharp sword slash";
                 case WeaponType.Spear:
                     return "a piercing spear thrust";
-                case WeaponType.Bow:
-                    return "a focused bow shot";
                 case WeaponType.Staff:
                     return "a sweeping staff strike";
                 case WeaponType.Fists:

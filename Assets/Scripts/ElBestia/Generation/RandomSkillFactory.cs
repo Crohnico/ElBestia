@@ -43,7 +43,7 @@ namespace ElBestia.Generation
                 cooldownSeconds = 0f,
                 element = SkillElement.None,
                 energyCost = 0,
-                range = weapon == WeaponType.Bow ? 4f : weapon == WeaponType.Spear ? 2f : 1f,
+                range = weapon == WeaponType.Spear ? 2f : 1f,
                 weapons = new[] { weapon },
                 statScaling = CreateBaseScaling(weapon),
                 cast = new[] { CreateBaseCastAction(weapon) },
@@ -69,8 +69,6 @@ namespace ElBestia.Generation
                     return "Base Sword Slash";
                 case WeaponType.Spear:
                     return "Base Spear Thrust";
-                case WeaponType.Bow:
-                    return "Base Bow Shot";
                 case WeaponType.Staff:
                     return "Base Staff Strike";
                 case WeaponType.Fists:
@@ -90,8 +88,6 @@ namespace ElBestia.Generation
                     return "sword_slash";
                 case WeaponType.Spear:
                     return "spear_thrust";
-                case WeaponType.Bow:
-                    return "bow_shot";
                 case WeaponType.Staff:
                     return "staff_strike";
                 case WeaponType.Fists:
@@ -135,8 +131,6 @@ namespace ElBestia.Generation
             {
                 case WeaponType.Axe:
                     return new[] { new StatScaling { stat = ChampionStatType.Strength, usesGradeScaling = false } };
-                case WeaponType.Bow:
-                    return new[] { new StatScaling { stat = ChampionStatType.Agility, usesGradeScaling = false } };
                 case WeaponType.Spear:
                     return new[]
                     {
@@ -156,7 +150,7 @@ namespace ElBestia.Generation
 
         private static SkillAction CreateBaseCastAction(WeaponType weapon)
         {
-            int damage = weapon == WeaponType.Axe ? 14 : weapon == WeaponType.Bow ? 10 : weapon == WeaponType.Spear ? 12 : 8;
+            int damage = weapon == WeaponType.Axe ? 14 : weapon == WeaponType.Spear ? 12 : 8;
             return new SkillAction
             {
                 target = SkillTarget.Enemy,
@@ -203,8 +197,7 @@ namespace ElBestia.Generation
                 WeaponType.Sword,
                 WeaponType.Axe,
                 WeaponType.Spear,
-                WeaponType.Staff,
-                WeaponType.Bow
+                WeaponType.Staff
             };
 
             return weapons[rng.Next(0, weapons.Length)];
