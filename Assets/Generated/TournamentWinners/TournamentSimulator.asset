@@ -1,0 +1,1855 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b45751a3804cf4a8c079056cd3a40a, type: 3}
+  m_Name: TournamentSimulator
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Tournaments.TournamentSimulatorSO
+  participantCount: 64
+  seed: 903090894
+  randomizeSeed: 1
+  winsNeeded: 2
+  maxFightsPerMatch: 7
+  matchDurationSeconds: 60
+  championLevel: 1
+  totalBaseStatPoints: 50
+  lastResult:
+    seed: 903090894
+    playerCount: 64
+    totalMatches: 63
+    totalFights: 141
+    generationMilliseconds: 79.5501
+    simulationMilliseconds: 29.2495
+    totalMilliseconds: 108.8076
+    winnerName: Gregory Spearslayer
+    winnerId: SO1FPT-HWQOKG-NJJLW-C3P6Z2
+    winnerSlot: 39
+    winnerSeed: 1935299823
+    winnerWeapon: Spear
+    rounds:
+    - round: 1
+      entrants: 64
+      matches:
+      - round: 1
+        match: 1
+        leftName: Sergio Heartweaver
+        rightName: Gabriel Toothrider
+        winnerName: Sergio Heartweaver
+        leftSlot: 1
+        rightSlot: 2
+        winnerSlot: 1
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1676551701
+          winner: 1
+          duration: 18.470322
+          leftHealth: 162
+          rightHealth: 0
+        - fight: 2
+          seed: 1041293732
+          winner: 1
+          duration: 18.029099
+          leftHealth: 177
+          rightHealth: 0
+      - round: 1
+        match: 2
+        leftName: Alexander Golddancer
+        rightName: Gregory Axerunner
+        winnerName: Gregory Axerunner
+        leftSlot: 3
+        rightSlot: 4
+        winnerSlot: 4
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 158127325
+          winner: 2
+          duration: 41.855354
+          leftHealth: 0
+          rightHealth: 73
+        - fight: 2
+          seed: 364146060
+          winner: 2
+          duration: 35.80257
+          leftHealth: 0
+          rightHealth: 111
+      - round: 1
+        match: 3
+        leftName: Charles Slowwhip
+        rightName: Guillermo Brasswhip
+        winnerName: Charles Slowwhip
+        leftSlot: 5
+        rightSlot: 6
+        winnerSlot: 5
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1555429354
+          winner: 1
+          duration: 24.625908
+          leftHealth: 106
+          rightHealth: 0
+        - fight: 2
+          seed: 64034558
+          winner: 1
+          duration: 27.641768
+          leftHealth: 117
+          rightHealth: 0
+      - round: 1
+        match: 4
+        leftName: Ingrid Quickbreaker
+        rightName: Zhang Nightjaw
+        winnerName: Zhang Nightjaw
+        leftSlot: 7
+        rightSlot: 8
+        winnerSlot: 8
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 222485044
+          winner: 2
+          duration: 27.693344
+          leftHealth: 0
+          rightHealth: 109
+        - fight: 2
+          seed: 374189091
+          winner: 2
+          duration: 29.90137
+          leftHealth: 0
+          rightHealth: 64
+      - round: 1
+        match: 5
+        leftName: Rafael Furysword
+        rightName: Ivan Redtear
+        winnerName: Rafael Furysword
+        leftSlot: 9
+        rightSlot: 10
+        winnerSlot: 9
+        leftWins: 2
+        rightWins: 1
+        fightSummary: RLL
+        fights:
+        - fight: 1
+          seed: 1380769999
+          winner: 2
+          duration: 26.423296
+          leftHealth: 0
+          rightHealth: 63
+        - fight: 2
+          seed: 564393054
+          winner: 1
+          duration: 26.503033
+          leftHealth: 52
+          rightHealth: 0
+        - fight: 3
+          seed: 873772308
+          winner: 1
+          duration: 28.680391
+          leftHealth: 68
+          rightHealth: 0
+      - round: 1
+        match: 6
+        leftName: Michael Redwound
+        rightName: Henrique Moonhammer
+        winnerName: Henrique Moonhammer
+        leftSlot: 11
+        rightSlot: 12
+        winnerSlot: 12
+        leftWins: 1
+        rightWins: 2
+        fightSummary: RLR
+        fights:
+        - fight: 1
+          seed: 804110388
+          winner: 2
+          duration: 32.653248
+          leftHealth: 0
+          rightHealth: 26
+        - fight: 2
+          seed: 1468151648
+          winner: 1
+          duration: 23.137276
+          leftHealth: 40
+          rightHealth: 0
+        - fight: 3
+          seed: 46939004
+          winner: 2
+          duration: 30.587292
+          leftHealth: 0
+          rightHealth: 49
+      - round: 1
+        match: 7
+        leftName: Dinis Hearttongue
+        rightName: Alvaro Stoneshade
+        winnerName: Alvaro Stoneshade
+        leftSlot: 13
+        rightSlot: 14
+        winnerSlot: 14
+        leftWins: 1
+        rightWins: 2
+        fightSummary: RLR
+        fights:
+        - fight: 1
+          seed: 524639285
+          winner: 2
+          duration: 36.17871
+          leftHealth: 0
+          rightHealth: 67
+        - fight: 2
+          seed: 2106437645
+          winner: 1
+          duration: 36.057873
+          leftHealth: 7
+          rightHealth: 0
+        - fight: 3
+          seed: 144156946
+          winner: 2
+          duration: 32.822502
+          leftHealth: 0
+          rightHealth: 28
+      - round: 1
+        match: 8
+        leftName: Adrian Smokehunter
+        rightName: Andrew Shielddash
+        winnerName: Adrian Smokehunter
+        leftSlot: 15
+        rightSlot: 16
+        winnerSlot: 15
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 583776594
+          winner: 1
+          duration: 28.752954
+          leftHealth: 48
+          rightHealth: 0
+        - fight: 2
+          seed: 1246463702
+          winner: 1
+          duration: 33.711323
+          leftHealth: 40
+          rightHealth: 0
+      - round: 1
+        match: 9
+        leftName: Leonor Snakewatcher
+        rightName: Antonio Wrathnail
+        winnerName: Leonor Snakewatcher
+        leftSlot: 17
+        rightSlot: 18
+        winnerSlot: 17
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 734425103
+          winner: 1
+          duration: 23.80812
+          leftHealth: 30
+          rightHealth: 0
+        - fight: 2
+          seed: 735617507
+          winner: 1
+          duration: 26.822254
+          leftHealth: 27
+          rightHealth: 0
+      - round: 1
+        match: 10
+        leftName: Ismael Madgrin
+        rightName: Mei Ghostforce
+        winnerName: Ismael Madgrin
+        leftSlot: 19
+        rightSlot: 20
+        winnerSlot: 19
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 291267935
+          winner: 1
+          duration: 49.361977
+          leftHealth: 171
+          rightHealth: 0
+        - fight: 2
+          seed: 170618397
+          winner: 1
+          duration: 32.18099
+          leftHealth: 171
+          rightHealth: 0
+      - round: 1
+        match: 11
+        leftName: Nicolas Grimweaver
+        rightName: Steven Starcock
+        winnerName: Steven Starcock
+        leftSlot: 21
+        rightSlot: 22
+        winnerSlot: 22
+        leftWins: 1
+        rightWins: 2
+        fightSummary: RLR
+        fights:
+        - fight: 1
+          seed: 130508988
+          winner: 2
+          duration: 24.782255
+          leftHealth: 0
+          rightHealth: 34
+        - fight: 2
+          seed: 426421369
+          winner: 1
+          duration: 33.391296
+          leftHealth: 7
+          rightHealth: 0
+        - fight: 3
+          seed: 1232196974
+          winner: 2
+          duration: 30.47514
+          leftHealth: 0
+          rightHealth: 13
+      - round: 1
+        match: 12
+        leftName: Astrid Cryptzero
+        rightName: Andre Sunborn
+        winnerName: Andre Sunborn
+        leftSlot: 23
+        rightSlot: 24
+        winnerSlot: 24
+        leftWins: 1
+        rightWins: 2
+        fightSummary: LRR
+        fights:
+        - fight: 1
+          seed: 718191885
+          winner: 1
+          duration: 33.72854
+          leftHealth: 16
+          rightHealth: 0
+        - fight: 2
+          seed: 15091729
+          winner: 2
+          duration: 29.0682
+          leftHealth: 0
+          rightHealth: 56
+        - fight: 3
+          seed: 1471166776
+          winner: 2
+          duration: 31.500666
+          leftHealth: 0
+          rightHealth: 88
+      - round: 1
+        match: 13
+        leftName: Carlos Furygrip
+        rightName: Jonathan Demondancer
+        winnerName: Jonathan Demondancer
+        leftSlot: 25
+        rightSlot: 26
+        winnerSlot: 26
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 1705312840
+          winner: 2
+          duration: 58.71079
+          leftHealth: 17
+          rightHealth: 104
+        - fight: 2
+          seed: 1017075573
+          winner: 2
+          duration: 58.956924
+          leftHealth: 13
+          rightHealth: 165
+      - round: 1
+        match: 14
+        leftName: Ricardo Hammermark
+        rightName: Victor Goldwing
+        winnerName: Ricardo Hammermark
+        leftSlot: 27
+        rightSlot: 28
+        winnerSlot: 27
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1641787524
+          winner: 1
+          duration: 35.571243
+          leftHealth: 81
+          rightHealth: 0
+        - fight: 2
+          seed: 740643291
+          winner: 1
+          duration: 31.636724
+          leftHealth: 87
+          rightHealth: 0
+      - round: 1
+        match: 15
+        leftName: Alexander Chinwatcher
+        rightName: Ronald Flameeater
+        winnerName: Alexander Chinwatcher
+        leftSlot: 29
+        rightSlot: 30
+        winnerSlot: 29
+        leftWins: 2
+        rightWins: 1
+        fightSummary: LRL
+        fights:
+        - fight: 1
+          seed: 2093086753
+          winner: 1
+          duration: 31.871325
+          leftHealth: 36
+          rightHealth: 0
+        - fight: 2
+          seed: 176043178
+          winner: 2
+          duration: 40.318367
+          leftHealth: 0
+          rightHealth: 10
+        - fight: 3
+          seed: 1673765972
+          winner: 1
+          duration: 27.05797
+          leftHealth: 17
+          rightHealth: 0
+      - round: 1
+        match: 16
+        leftName: Afonso Embercoil
+        rightName: Aoi Greenfist
+        winnerName: Aoi Greenfist
+        leftSlot: 31
+        rightSlot: 32
+        winnerSlot: 32
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 95804943
+          winner: 2
+          duration: 23.799025
+          leftHealth: 0
+          rightHealth: 118
+        - fight: 2
+          seed: 462291062
+          winner: 2
+          duration: 24.535767
+          leftHealth: 0
+          rightHealth: 82
+      - round: 1
+        match: 17
+        leftName: Frank Silenthowl
+        rightName: Donald Sealess
+        winnerName: Donald Sealess
+        leftSlot: 33
+        rightSlot: 34
+        winnerSlot: 34
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 1537126513
+          winner: 2
+          duration: 46.194687
+          leftHealth: 0
+          rightHealth: 32
+        - fight: 2
+          seed: 707612204
+          winner: 2
+          duration: 46.412415
+          leftHealth: 0
+          rightHealth: 179
+      - round: 1
+        match: 18
+        leftName: Carmen Voidwhip
+        rightName: Victor Boneknuckle
+        winnerName: Carmen Voidwhip
+        leftSlot: 35
+        rightSlot: 36
+        winnerSlot: 35
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1275069177
+          winner: 1
+          duration: 17.208935
+          leftHealth: 124
+          rightHealth: 0
+        - fight: 2
+          seed: 704932223
+          winner: 1
+          duration: 16.099892
+          leftHealth: 125
+          rightHealth: 0
+      - round: 1
+        match: 19
+        leftName: Jacob Tigerslayer
+        rightName: Edward Frosttooth
+        winnerName: Edward Frosttooth
+        leftSlot: 37
+        rightSlot: 38
+        winnerSlot: 38
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 316975519
+          winner: 2
+          duration: 27.293339
+          leftHealth: 0
+          rightHealth: 124
+        - fight: 2
+          seed: 1246637514
+          winner: 2
+          duration: 25.681833
+          leftHealth: 0
+          rightHealth: 141
+      - round: 1
+        match: 20
+        leftName: Gregory Spearslayer
+        rightName: Maria Drunkbane
+        winnerName: Gregory Spearslayer
+        leftSlot: 39
+        rightSlot: 40
+        winnerSlot: 39
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 390928050
+          winner: 1
+          duration: 11.596337
+          leftHealth: 117
+          rightHealth: 0
+        - fight: 2
+          seed: 453179275
+          winner: 1
+          duration: 19.431343
+          leftHealth: 17
+          rightHealth: 0
+      - round: 1
+        match: 21
+        leftName: Afro Doomburst
+        rightName: Ismael Wolfcock
+        winnerName: Ismael Wolfcock
+        leftSlot: 41
+        rightSlot: 42
+        winnerSlot: 42
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 1527682989
+          winner: 2
+          duration: 12.67327
+          leftHealth: 0
+          rightHealth: 77
+        - fight: 2
+          seed: 1259669952
+          winner: 2
+          duration: 22.320686
+          leftHealth: 0
+          rightHealth: 42
+      - round: 1
+        match: 22
+        leftName: Nieves Clawwalker
+        rightName: Mario Fangfire
+        winnerName: Nieves Clawwalker
+        leftSlot: 43
+        rightSlot: 44
+        winnerSlot: 43
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 495595188
+          winner: 1
+          duration: 40.53467
+          leftHealth: 61
+          rightHealth: 0
+        - fight: 2
+          seed: 1027638800
+          winner: 1
+          duration: 44.847256
+          leftHealth: 58
+          rightHealth: 0
+      - round: 1
+        match: 23
+        leftName: Juan Wavechain
+        rightName: Carlos Ragespark
+        winnerName: Juan Wavechain
+        leftSlot: 45
+        rightSlot: 46
+        winnerSlot: 45
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 85830037
+          winner: 1
+          duration: 15.9442215
+          leftHealth: 115
+          rightHealth: 0
+        - fight: 2
+          seed: 164763458
+          winner: 1
+          duration: 14.59836
+          leftHealth: 122
+          rightHealth: 0
+      - round: 1
+        match: 24
+        leftName: George Cloudbringer
+        rightName: Nieves Sandclap
+        winnerName: George Cloudbringer
+        leftSlot: 47
+        rightSlot: 48
+        winnerSlot: 47
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 2090947922
+          winner: 1
+          duration: 49.62365
+          leftHealth: 133
+          rightHealth: 0
+        - fight: 2
+          seed: 1943085661
+          winner: 1
+          duration: 43.15927
+          leftHealth: 115
+          rightHealth: 0
+      - round: 1
+        match: 25
+        leftName: Ronald Brokenwhisper
+        rightName: Jose Axeeater
+        winnerName: Jose Axeeater
+        leftSlot: 49
+        rightSlot: 50
+        winnerSlot: 50
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 793741160
+          winner: 2
+          duration: 59.07897
+          leftHealth: 11
+          rightHealth: 37
+        - fight: 2
+          seed: 1385283766
+          winner: 2
+          duration: 46.01773
+          leftHealth: 0
+          rightHealth: 72
+      - round: 1
+        match: 26
+        leftName: Antonio Whiterunner
+        rightName: Thomas Greenmask
+        winnerName: Antonio Whiterunner
+        leftSlot: 51
+        rightSlot: 52
+        winnerSlot: 51
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 870675335
+          winner: 1
+          duration: 29.13803
+          leftHealth: 49
+          rightHealth: 0
+        - fight: 2
+          seed: 27618337
+          winner: 1
+          duration: 27.501299
+          leftHealth: 33
+          rightHealth: 0
+      - round: 1
+        match: 27
+        leftName: Nils Wildknuckle
+        rightName: Donald Bonewrath
+        winnerName: Nils Wildknuckle
+        leftSlot: 53
+        rightSlot: 54
+        winnerSlot: 53
+        leftWins: 2
+        rightWins: 1
+        fightSummary: RLL
+        fights:
+        - fight: 1
+          seed: 2085208338
+          winner: 2
+          duration: 37.064835
+          leftHealth: 0
+          rightHealth: 22
+        - fight: 2
+          seed: 323232380
+          winner: 1
+          duration: 35.14293
+          leftHealth: 62
+          rightHealth: 0
+        - fight: 3
+          seed: 1493326320
+          winner: 1
+          duration: 46.985855
+          leftHealth: 35
+          rightHealth: 0
+      - round: 1
+        match: 28
+        leftName: Akari Demonrush
+        rightName: Kevin Greenwatcher
+        winnerName: Akari Demonrush
+        leftSlot: 55
+        rightSlot: 56
+        winnerSlot: 55
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 207393315
+          winner: 1
+          duration: 34.642212
+          leftHealth: 126
+          rightHealth: 0
+        - fight: 2
+          seed: 1050505962
+          winner: 1
+          duration: 29.000593
+          leftHealth: 107
+          rightHealth: 0
+      - round: 1
+        match: 29
+        leftName: Brian Lightningbiter
+        rightName: Benjamin Kickbringer
+        winnerName: Benjamin Kickbringer
+        leftSlot: 57
+        rightSlot: 58
+        winnerSlot: 58
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 1822940806
+          winner: 2
+          duration: 13.46812
+          leftHealth: 0
+          rightHealth: 136
+        - fight: 2
+          seed: 1694801128
+          winner: 2
+          duration: 28.156347
+          leftHealth: 0
+          rightHealth: 93
+      - round: 1
+        match: 30
+        leftName: Aditya Hearttooth
+        rightName: Aditya Vipergrinder
+        winnerName: Aditya Hearttooth
+        leftSlot: 59
+        rightSlot: 60
+        winnerSlot: 59
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1379468431
+          winner: 1
+          duration: 29.128065
+          leftHealth: 166
+          rightHealth: 0
+        - fight: 2
+          seed: 63467097
+          winner: 1
+          duration: 35.727592
+          leftHealth: 158
+          rightHealth: 0
+      - round: 1
+        match: 31
+        leftName: Frank Smokebiter
+        rightName: Christopher Ironsplitter
+        winnerName: Frank Smokebiter
+        leftSlot: 61
+        rightSlot: 62
+        winnerSlot: 61
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1522548542
+          winner: 1
+          duration: 36.855007
+          leftHealth: 42
+          rightHealth: 0
+        - fight: 2
+          seed: 2018379473
+          winner: 1
+          duration: 34.43815
+          leftHealth: 16
+          rightHealth: 0
+      - round: 1
+        match: 32
+        leftName: Luis Wavekiller
+        rightName: Ingrid Skyrider
+        winnerName: Luis Wavekiller
+        leftSlot: 63
+        rightSlot: 64
+        winnerSlot: 63
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 998356960
+          winner: 1
+          duration: 59.003876
+          leftHealth: 125
+          rightHealth: 2
+        - fight: 2
+          seed: 2010632702
+          winner: 1
+          duration: 56.366856
+          leftHealth: 140
+          rightHealth: 0
+    - round: 2
+      entrants: 32
+      matches:
+      - round: 2
+        match: 1
+        leftName: Sergio Heartweaver
+        rightName: Gregory Axerunner
+        winnerName: Sergio Heartweaver
+        leftSlot: 1
+        rightSlot: 4
+        winnerSlot: 1
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1829349531
+          winner: 1
+          duration: 18.323296
+          leftHealth: 145
+          rightHealth: 0
+        - fight: 2
+          seed: 1194133728
+          winner: 1
+          duration: 18.457905
+          leftHealth: 144
+          rightHealth: 0
+      - round: 2
+        match: 2
+        leftName: Charles Slowwhip
+        rightName: Zhang Nightjaw
+        winnerName: Charles Slowwhip
+        leftSlot: 5
+        rightSlot: 8
+        winnerSlot: 5
+        leftWins: 2
+        rightWins: 1
+        fightSummary: RLL
+        fights:
+        - fight: 1
+          seed: 538851498
+          winner: 2
+          duration: 26.556015
+          leftHealth: 0
+          rightHealth: 17
+        - fight: 2
+          seed: 1606839573
+          winner: 1
+          duration: 24.912483
+          leftHealth: 58
+          rightHealth: 0
+        - fight: 3
+          seed: 30685284
+          winner: 1
+          duration: 20.524357
+          leftHealth: 54
+          rightHealth: 0
+      - round: 2
+        match: 3
+        leftName: Rafael Furysword
+        rightName: Henrique Moonhammer
+        winnerName: Rafael Furysword
+        leftSlot: 9
+        rightSlot: 12
+        winnerSlot: 9
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 2121776063
+          winner: 1
+          duration: 23.134363
+          leftHealth: 20
+          rightHealth: 0
+        - fight: 2
+          seed: 1071464530
+          winner: 1
+          duration: 18.521658
+          leftHealth: 74
+          rightHealth: 0
+      - round: 2
+        match: 4
+        leftName: Alvaro Stoneshade
+        rightName: Adrian Smokehunter
+        winnerName: Alvaro Stoneshade
+        leftSlot: 14
+        rightSlot: 15
+        winnerSlot: 14
+        leftWins: 2
+        rightWins: 1
+        fightSummary: RLL
+        fights:
+        - fight: 1
+          seed: 1887064585
+          winner: 2
+          duration: 16.982035
+          leftHealth: 0
+          rightHealth: 91
+        - fight: 2
+          seed: 2120725741
+          winner: 1
+          duration: 23.479273
+          leftHealth: 14
+          rightHealth: 0
+        - fight: 3
+          seed: 1851997632
+          winner: 1
+          duration: 27.389029
+          leftHealth: 7
+          rightHealth: 0
+      - round: 2
+        match: 5
+        leftName: Leonor Snakewatcher
+        rightName: Ismael Madgrin
+        winnerName: Ismael Madgrin
+        leftSlot: 17
+        rightSlot: 19
+        winnerSlot: 19
+        leftWins: 1
+        rightWins: 2
+        fightSummary: RLR
+        fights:
+        - fight: 1
+          seed: 1606005580
+          winner: 2
+          duration: 39.646584
+          leftHealth: 0
+          rightHealth: 35
+        - fight: 2
+          seed: 1666980188
+          winner: 1
+          duration: 41.70616
+          leftHealth: 26
+          rightHealth: 0
+        - fight: 3
+          seed: 443527976
+          winner: 2
+          duration: 38.325455
+          leftHealth: 0
+          rightHealth: 62
+      - round: 2
+        match: 6
+        leftName: Steven Starcock
+        rightName: Andre Sunborn
+        winnerName: Andre Sunborn
+        leftSlot: 22
+        rightSlot: 24
+        winnerSlot: 24
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 1619482803
+          winner: 2
+          duration: 34.642185
+          leftHealth: 0
+          rightHealth: 30
+        - fight: 2
+          seed: 852312115
+          winner: 2
+          duration: 25.211666
+          leftHealth: 0
+          rightHealth: 55
+      - round: 2
+        match: 7
+        leftName: Jonathan Demondancer
+        rightName: Ricardo Hammermark
+        winnerName: Jonathan Demondancer
+        leftSlot: 26
+        rightSlot: 27
+        winnerSlot: 26
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1698323249
+          winner: 1
+          duration: 58.143776
+          leftHealth: 187
+          rightHealth: 17
+        - fight: 2
+          seed: 945041277
+          winner: 1
+          duration: 59.490517
+          leftHealth: 154
+          rightHealth: 72
+      - round: 2
+        match: 8
+        leftName: Alexander Chinwatcher
+        rightName: Aoi Greenfist
+        winnerName: Aoi Greenfist
+        leftSlot: 29
+        rightSlot: 32
+        winnerSlot: 32
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 1299345593
+          winner: 2
+          duration: 25.541107
+          leftHealth: 0
+          rightHealth: 108
+        - fight: 2
+          seed: 938243059
+          winner: 2
+          duration: 19.649422
+          leftHealth: 0
+          rightHealth: 80
+      - round: 2
+        match: 9
+        leftName: Donald Sealess
+        rightName: Carmen Voidwhip
+        winnerName: Donald Sealess
+        leftSlot: 34
+        rightSlot: 35
+        winnerSlot: 34
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 803090637
+          winner: 1
+          duration: 46.455555
+          leftHealth: 56
+          rightHealth: 0
+        - fight: 2
+          seed: 68186606
+          winner: 1
+          duration: 48.961697
+          leftHealth: 89
+          rightHealth: 0
+      - round: 2
+        match: 10
+        leftName: Edward Frosttooth
+        rightName: Gregory Spearslayer
+        winnerName: Gregory Spearslayer
+        leftSlot: 38
+        rightSlot: 39
+        winnerSlot: 39
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 524566371
+          winner: 2
+          duration: 15.381525
+          leftHealth: 0
+          rightHealth: 87
+        - fight: 2
+          seed: 1213894133
+          winner: 2
+          duration: 22.852997
+          leftHealth: 0
+          rightHealth: 15
+      - round: 2
+        match: 11
+        leftName: Ismael Wolfcock
+        rightName: Nieves Clawwalker
+        winnerName: Nieves Clawwalker
+        leftSlot: 42
+        rightSlot: 43
+        winnerSlot: 43
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 1361769531
+          winner: 2
+          duration: 26.624302
+          leftHealth: 0
+          rightHealth: 82
+        - fight: 2
+          seed: 1067675862
+          winner: 2
+          duration: 28.247803
+          leftHealth: 0
+          rightHealth: 97
+      - round: 2
+        match: 12
+        leftName: Juan Wavechain
+        rightName: George Cloudbringer
+        winnerName: Juan Wavechain
+        leftSlot: 45
+        rightSlot: 47
+        winnerSlot: 45
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1801909908
+          winner: 1
+          duration: 20.44435
+          leftHealth: 90
+          rightHealth: 0
+        - fight: 2
+          seed: 641518360
+          winner: 1
+          duration: 28.822313
+          leftHealth: 15
+          rightHealth: 0
+      - round: 2
+        match: 13
+        leftName: Jose Axeeater
+        rightName: Antonio Whiterunner
+        winnerName: Antonio Whiterunner
+        leftSlot: 50
+        rightSlot: 51
+        winnerSlot: 51
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 1699320033
+          winner: 2
+          duration: 40.169636
+          leftHealth: 0
+          rightHealth: 55
+        - fight: 2
+          seed: 1158943266
+          winner: 2
+          duration: 36.175507
+          leftHealth: 0
+          rightHealth: 47
+      - round: 2
+        match: 14
+        leftName: Nils Wildknuckle
+        rightName: Akari Demonrush
+        winnerName: Akari Demonrush
+        leftSlot: 53
+        rightSlot: 55
+        winnerSlot: 55
+        leftWins: 1
+        rightWins: 2
+        fightSummary: RLR
+        fights:
+        - fight: 1
+          seed: 389712178
+          winner: 2
+          duration: 30.24862
+          leftHealth: 0
+          rightHealth: 25
+        - fight: 2
+          seed: 5134447
+          winner: 1
+          duration: 28.484392
+          leftHealth: 11
+          rightHealth: 0
+        - fight: 3
+          seed: 1388774126
+          winner: 2
+          duration: 28.982643
+          leftHealth: 0
+          rightHealth: 6
+      - round: 2
+        match: 15
+        leftName: Benjamin Kickbringer
+        rightName: Aditya Hearttooth
+        winnerName: Aditya Hearttooth
+        leftSlot: 58
+        rightSlot: 59
+        winnerSlot: 59
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 1644721875
+          winner: 2
+          duration: 19.64684
+          leftHealth: 0
+          rightHealth: 59
+        - fight: 2
+          seed: 1164489745
+          winner: 2
+          duration: 20.966072
+          leftHealth: 0
+          rightHealth: 57
+      - round: 2
+        match: 16
+        leftName: Frank Smokebiter
+        rightName: Luis Wavekiller
+        winnerName: Luis Wavekiller
+        leftSlot: 61
+        rightSlot: 63
+        winnerSlot: 63
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 403964153
+          winner: 2
+          duration: 39.619144
+          leftHealth: 0
+          rightHealth: 118
+        - fight: 2
+          seed: 1118113377
+          winner: 2
+          duration: 56.633865
+          leftHealth: 0
+          rightHealth: 119
+    - round: 3
+      entrants: 16
+      matches:
+      - round: 3
+        match: 1
+        leftName: Sergio Heartweaver
+        rightName: Charles Slowwhip
+        winnerName: Sergio Heartweaver
+        leftSlot: 1
+        rightSlot: 5
+        winnerSlot: 1
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1552096424
+          winner: 1
+          duration: 26.510235
+          leftHealth: 36
+          rightHealth: 0
+        - fight: 2
+          seed: 336246088
+          winner: 1
+          duration: 20.326927
+          leftHealth: 100
+          rightHealth: 0
+      - round: 3
+        match: 2
+        leftName: Rafael Furysword
+        rightName: Alvaro Stoneshade
+        winnerName: Rafael Furysword
+        leftSlot: 9
+        rightSlot: 14
+        winnerSlot: 9
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 763055876
+          winner: 1
+          duration: 24.348818
+          leftHealth: 34
+          rightHealth: 0
+        - fight: 2
+          seed: 1410991350
+          winner: 1
+          duration: 23.287605
+          leftHealth: 36
+          rightHealth: 0
+      - round: 3
+        match: 3
+        leftName: Ismael Madgrin
+        rightName: Andre Sunborn
+        winnerName: Ismael Madgrin
+        leftSlot: 19
+        rightSlot: 24
+        winnerSlot: 19
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1946694452
+          winner: 1
+          duration: 41.209682
+          leftHealth: 86
+          rightHealth: 0
+        - fight: 2
+          seed: 288037399
+          winner: 1
+          duration: 57.912533
+          leftHealth: 128
+          rightHealth: 0
+      - round: 3
+        match: 4
+        leftName: Jonathan Demondancer
+        rightName: Aoi Greenfist
+        winnerName: Jonathan Demondancer
+        leftSlot: 26
+        rightSlot: 32
+        winnerSlot: 26
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 2111966244
+          winner: 1
+          duration: 56.50082
+          leftHealth: 140
+          rightHealth: 0
+        - fight: 2
+          seed: 618718395
+          winner: 1
+          duration: 59.072186
+          leftHealth: 134
+          rightHealth: 68
+      - round: 3
+        match: 5
+        leftName: Donald Sealess
+        rightName: Gregory Spearslayer
+        winnerName: Gregory Spearslayer
+        leftSlot: 34
+        rightSlot: 39
+        winnerSlot: 39
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 2034804387
+          winner: 2
+          duration: 31.591093
+          leftHealth: 0
+          rightHealth: 59
+        - fight: 2
+          seed: 687896774
+          winner: 2
+          duration: 23.804356
+          leftHealth: 0
+          rightHealth: 118
+      - round: 3
+        match: 6
+        leftName: Nieves Clawwalker
+        rightName: Juan Wavechain
+        winnerName: Juan Wavechain
+        leftSlot: 43
+        rightSlot: 45
+        winnerSlot: 45
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 606977986
+          winner: 2
+          duration: 22.893902
+          leftHealth: 0
+          rightHealth: 49
+        - fight: 2
+          seed: 203458003
+          winner: 2
+          duration: 24.016188
+          leftHealth: 0
+          rightHealth: 82
+      - round: 3
+        match: 7
+        leftName: Antonio Whiterunner
+        rightName: Akari Demonrush
+        winnerName: Antonio Whiterunner
+        leftSlot: 51
+        rightSlot: 55
+        winnerSlot: 51
+        leftWins: 2
+        rightWins: 1
+        fightSummary: RLL
+        fights:
+        - fight: 1
+          seed: 842489013
+          winner: 2
+          duration: 32.913616
+          leftHealth: 0
+          rightHealth: 18
+        - fight: 2
+          seed: 1828628829
+          winner: 1
+          duration: 32.46731
+          leftHealth: 32
+          rightHealth: 0
+        - fight: 3
+          seed: 1265909467
+          winner: 1
+          duration: 30.184671
+          leftHealth: 56
+          rightHealth: 0
+      - round: 3
+        match: 8
+        leftName: Aditya Hearttooth
+        rightName: Luis Wavekiller
+        winnerName: Aditya Hearttooth
+        leftSlot: 59
+        rightSlot: 63
+        winnerSlot: 59
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 223202949
+          winner: 1
+          duration: 47.135033
+          leftHealth: 98
+          rightHealth: 0
+        - fight: 2
+          seed: 1080136414
+          winner: 1
+          duration: 59.717445
+          leftHealth: 40
+          rightHealth: 14
+    - round: 4
+      entrants: 8
+      matches:
+      - round: 4
+        match: 1
+        leftName: Sergio Heartweaver
+        rightName: Rafael Furysword
+        winnerName: Sergio Heartweaver
+        leftSlot: 1
+        rightSlot: 9
+        winnerSlot: 1
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 195266323
+          winner: 1
+          duration: 21.824097
+          leftHealth: 71
+          rightHealth: 0
+        - fight: 2
+          seed: 1942446096
+          winner: 1
+          duration: 19.057981
+          leftHealth: 116
+          rightHealth: 0
+      - round: 4
+        match: 2
+        leftName: Ismael Madgrin
+        rightName: Jonathan Demondancer
+        winnerName: Ismael Madgrin
+        leftSlot: 19
+        rightSlot: 26
+        winnerSlot: 19
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 1304783160
+          winner: 1
+          duration: 58.274117
+          leftHealth: 227
+          rightHealth: 178
+        - fight: 2
+          seed: 2127723242
+          winner: 1
+          duration: 59.70436
+          leftHealth: 227
+          rightHealth: 190
+      - round: 4
+        match: 3
+        leftName: Gregory Spearslayer
+        rightName: Juan Wavechain
+        winnerName: Gregory Spearslayer
+        leftSlot: 39
+        rightSlot: 45
+        winnerSlot: 39
+        leftWins: 2
+        rightWins: 1
+        fightSummary: RLL
+        fights:
+        - fight: 1
+          seed: 1324565614
+          winner: 2
+          duration: 14.445297
+          leftHealth: 0
+          rightHealth: 134
+        - fight: 2
+          seed: 539163711
+          winner: 1
+          duration: 14.968674
+          leftHealth: 110
+          rightHealth: 0
+        - fight: 3
+          seed: 376259023
+          winner: 1
+          duration: 15.112349
+          leftHealth: 79
+          rightHealth: 0
+      - round: 4
+        match: 4
+        leftName: Antonio Whiterunner
+        rightName: Aditya Hearttooth
+        winnerName: Aditya Hearttooth
+        leftSlot: 51
+        rightSlot: 59
+        winnerSlot: 59
+        leftWins: 0
+        rightWins: 2
+        fightSummary: RR
+        fights:
+        - fight: 1
+          seed: 1480257703
+          winner: 2
+          duration: 29.022402
+          leftHealth: 0
+          rightHealth: 15
+        - fight: 2
+          seed: 1519628144
+          winner: 2
+          duration: 31.481024
+          leftHealth: 0
+          rightHealth: 61
+    - round: 5
+      entrants: 4
+      matches:
+      - round: 5
+        match: 1
+        leftName: Sergio Heartweaver
+        rightName: Ismael Madgrin
+        winnerName: Sergio Heartweaver
+        leftSlot: 1
+        rightSlot: 19
+        winnerSlot: 1
+        leftWins: 2
+        rightWins: 0
+        fightSummary: LL
+        fights:
+        - fight: 1
+          seed: 728121319
+          winner: 1
+          duration: 24.379492
+          leftHealth: 145
+          rightHealth: 0
+        - fight: 2
+          seed: 1731013563
+          winner: 1
+          duration: 21.70988
+          leftHealth: 166
+          rightHealth: 0
+      - round: 5
+        match: 2
+        leftName: Gregory Spearslayer
+        rightName: Aditya Hearttooth
+        winnerName: Gregory Spearslayer
+        leftSlot: 39
+        rightSlot: 59
+        winnerSlot: 39
+        leftWins: 2
+        rightWins: 1
+        fightSummary: RLL
+        fights:
+        - fight: 1
+          seed: 1846863185
+          winner: 2
+          duration: 22.81357
+          leftHealth: 0
+          rightHealth: 18
+        - fight: 2
+          seed: 217231454
+          winner: 1
+          duration: 19.46759
+          leftHealth: 17
+          rightHealth: 0
+        - fight: 3
+          seed: 22258313
+          winner: 1
+          duration: 16.849895
+          leftHealth: 66
+          rightHealth: 0
+    - round: 6
+      entrants: 2
+      matches:
+      - round: 6
+        match: 1
+        leftName: Sergio Heartweaver
+        rightName: Gregory Spearslayer
+        winnerName: Gregory Spearslayer
+        leftSlot: 1
+        rightSlot: 39
+        winnerSlot: 39
+        leftWins: 1
+        rightWins: 2
+        fightSummary: LRR
+        fights:
+        - fight: 1
+          seed: 1426521878
+          winner: 1
+          duration: 16.2927
+          leftHealth: 102
+          rightHealth: 0
+        - fight: 2
+          seed: 1215518650
+          winner: 2
+          duration: 17.922325
+          leftHealth: 0
+          rightHealth: 10
+        - fight: 3
+          seed: 1881682385
+          winner: 2
+          duration: 16.151228
+          leftHealth: 0
+          rightHealth: 30
+  winnerData:
+    championId: SO1FPT-HWQOKG-NJJLW-C3P6Z2
+    championName: Gregory Spearslayer
+    playerNickname: 
+    level: 1
+    currentExperience: 0
+    experienceToNextLevel: 114
+    generationSeed: 1935299823
+    appearance:
+      sex: 0
+      bodyColor: {r: 0.83529055, g: 0.775567, b: 0.16740637, a: 1}
+      hairColor: {r: 0.2238058, g: 0.59254897, b: 0.35146028, a: 1}
+      chest: 0.03705586
+      belly: 0.15234609
+      arms: 0.9819169
+      forearms: 0.82065254
+      upperLegs: 0.086912066
+      lowerLegs: 0.90636575
+      glutes: 0.9035503
+      hairAsset: 22
+      beardAsset: 10
+      earAsset: 3
+      weaponAsset: 0
+    lore:
+      birth: {fileID: 11400000, guid: 7ff3ca3acb089a94196d15eacc8e3ae7, type: 2}
+      childhood: {fileID: 11400000, guid: e8d665c335f77594392d8beb83caca76, type: 2}
+      youth: {fileID: 11400000, guid: eddb7e90da918274aae8ce054121008f, type: 2}
+      storyCombinationKey: 1217953
+      storyCombinationId: birth_03_00__childhood_08_09__youth_15_03
+      story: Gregory Spearslayer was born in a mountain clan, where balance, lungs,
+        and stubborn legs mattered before formal schooling. As a child, Gregory Spearslayer
+        lived through the night fishing runs, learning balance, cold patience, and
+        hand strength before sunrise. As a young adult, Gregory Spearslayer worked
+        through a noble challenge work, learning distance, witnesses, pride, and
+        the price of public mistakes. They enter the dojo to make their name public.
+    baseStats:
+      life: 186
+      energy: 92
+      strength: 10
+      agility: 6
+      constitution: 10
+      intelligence: 12
+      endurance: 12
+      dodge: 3
+      block: 6
+      critical: 3
+      hit: 5
+      recovery: 7
+      speed: 13
+      experienceGain: 0
+      fatalInjuryResistance: 0
+      injurySeverityReduction: 0
+      fireResistance: 5
+      waterResistance: 5
+      electricityResistance: 4
+      poisonResistance: 5
+      earthResistance: 6
+      airResistance: 4
+      woodResistance: 5
+      fireDamage: 0
+      waterDamage: 0
+      electricityDamage: 0
+      poisonDamage: 0
+      earthDamage: 0
+      airDamage: 0
+      woodDamage: 0
+      fireDamageMultiplier: 1
+      waterDamageMultiplier: 1
+      electricityDamageMultiplier: 1
+      poisonDamageMultiplier: 1
+      earthDamageMultiplier: 1
+      airDamageMultiplier: 1
+      woodDamageMultiplier: 1
+      fistsProficiency: 0
+      swordProficiency: 0
+      axeProficiency: 0
+      spearProficiency: 0
+      staffProficiency: 0
+    stats:
+      life: 189
+      energy: 98
+      strength: 12
+      agility: 6
+      constitution: 10
+      intelligence: 13
+      endurance: 13
+      dodge: 5
+      block: 7
+      critical: 6
+      hit: 5
+      recovery: 7
+      speed: 13
+      experienceGain: 0
+      fatalInjuryResistance: 0
+      injurySeverityReduction: 0
+      fireResistance: 5
+      waterResistance: 5
+      electricityResistance: 4
+      poisonResistance: 5
+      earthResistance: 12
+      airResistance: 4
+      woodResistance: 5
+      fireDamage: 0
+      waterDamage: 0
+      electricityDamage: 0
+      poisonDamage: 0
+      earthDamage: 0
+      airDamage: 0
+      woodDamage: 0
+      fireDamageMultiplier: 1
+      waterDamageMultiplier: 1
+      electricityDamageMultiplier: 1
+      poisonDamageMultiplier: 1
+      earthDamageMultiplier: 1
+      airDamageMultiplier: 1
+      woodDamageMultiplier: 1
+      fistsProficiency: 0
+      swordProficiency: 0
+      axeProficiency: 0
+      spearProficiency: 1
+      staffProficiency: 0
+    growth:
+      strength: 0
+      agility: 0
+      constitution: 0
+      intelligence: 0
+      endurance: 0
+    equippedWeapon: 4
+    perks:
+    - {fileID: 11400000, guid: a17f6f3c9336eb74587e6231bb31f8f3, type: 2}
+    baseSkill:
+      skillName: Base Spear Thrust
+      skillNameId: skill_name.base.spear_thrust
+      description: 'The user thrusts with the spear.
+
+        - Cooldown: 0s
+
+        -
+        Damage: 12
+
+        - Effects: action: Enemy: DoDamage x12'
+      isBaseSkill: 1
+      quality: 0
+      level: 1
+      cooldownSeconds: 0
+      element: 0
+      energyCost: 0
+      range: 2
+      weapons: 04000000
+      statScaling:
+      - stat: 1
+        scaling: 0
+        usesGradeScaling: 0
+      - stat: 0
+        scaling: 0
+        usesGradeScaling: 0
+      preCast: []
+      cast:
+      - target: 1
+        action: 0
+        charge: 0
+        amount: 12
+      postCast: []
+      iconSeed: 167527274
+    skills:
+    - skillName: Thunder Thrust of Burning
+      skillNameId: skill_name.thunder_thrust.burning
+      description: 'The user executes a piercing spear thrust, leaving lingering
+        pressure on the enemy.
+
+        - Cooldown: 4,2s
+
+        - Effects: post:
+        Enemy: ApplyCharges Burn x3'
+      isBaseSkill: 0
+      quality: 0
+      level: 1
+      cooldownSeconds: 4.2
+      element: 2
+      energyCost: 14
+      range: 1.7
+      weapons: 04000000
+      statScaling:
+      - stat: 2
+        scaling: 0
+        usesGradeScaling: 1
+      - stat: 3
+        scaling: 0
+        usesGradeScaling: 1
+      preCast: []
+      cast: []
+      postCast:
+      - target: 1
+        action: 4
+        charge: 2
+        amount: 3
+      iconSeed: 938124742
+  lastError: 
+  lastSavedChampionPath: Assets/Generated/TournamentWinners/TournamentWinner_Gregory_Spearslayer.asset

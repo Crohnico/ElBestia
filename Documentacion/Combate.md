@@ -165,12 +165,14 @@ Esta seccion describe el flujo actual y debe tratarse como referencia al modific
 6. Si el `Cast` necesita alcance enemigo, el campeon gira primero y avanza hasta rango.
 7. El campeon reproduce el slash correspondiente a su arma.
 8. En el porcentaje configurado del slash se crea el proyectil o SFX.
-9. El `Cast` se resuelve cuando el proyectil impacta. Tras resolver el dano real, activa `HIT` si el rival sobrevive o `DEATH` si queda a `0`.
-10. Se resuelven contraataques pendientes, cargas de fin de turno, `PostCast`, ecos y perks posteriores.
-11. Se ordena al campeon volver al origen y la accion se marca como completada inmediatamente.
-12. `ActionTimeLine` agenda el siguiente slot del actor y reanuda `CombatCrono`.
-13. El campeon vuelve al origen en paralelo al avance normal del combate.
-14. Al llegar al origen, gira para volver a mirar al rival. Este giro tampoco bloquea el cronometro ni los siguientes turnos.
+9. Cuando el proyectil alcanza al rival, este termina primero cualquier giro necesario para mirar al atacante.
+10. El `Cast` resuelve el dano real y activa `HIT` si el rival sobrevive o `DEATH` si queda a `0`.
+11. Si el rival sobrevive, la accion espera a que termine `HIT` antes de continuar. `DEATH` se lanza sin espera porque el objetivo ya esta muerto.
+12. Se resuelven contraataques pendientes, cargas de fin de turno, `PostCast`, ecos y perks posteriores.
+13. Se ordena al campeon volver al origen y la accion se marca como completada inmediatamente.
+14. `ActionTimeLine` agenda el siguiente slot del actor y reanuda `CombatCrono`.
+15. El campeon vuelve al origen en paralelo al avance normal del combate.
+16. Al llegar al origen, gira para volver a mirar al rival. Este giro tampoco bloquea el cronometro ni los siguientes turnos.
 
 Regla importante: el retorno al origen y su giro final son presentacion/movimiento posterior a la accion. Nunca se debe retrasar `FinishAction`, la reanudacion de `CombatCrono` o el siguiente slot esperando a que terminen.
 
@@ -178,7 +180,14 @@ Regla importante: el retorno al origen y su giro final son presentacion/movimien
 
 - `PreCast`: ocurre antes del ataque principal. Mas adelante puede tener animacion propia.
 - `Cast`: su callback de completado coincide con el impacto del proyectil/SFX, no con el inicio ni el final del slash.
-- `PostCast`: consecuencia inmediata posterior al impacto.
+- `PostCast`: consecuencia del impacto. Se ejecuta en el mismo momento de impacto que `Cast` y nunca provoca un segundo movimiento hacia el rival.
+
+Para presentacion y alcance, `Cast + PostCast` forman un unico bloque de impacto:
+
+- Si cualquiera de las dos fases apunta al enemigo, el campeon entra en rango antes del slash y el proyectil viaja al rival.
+- Al impactar se ejecutan primero las acciones de `Cast` y despues las de `PostCast`.
+- Una skill puede tener `Cast` vacio y aplicar solo una consecuencia de `PostCast`, por ejemplo quemadura. Aun asi reproduce slash y proyectil porque sigue siendo un impacto enemigo.
+- Una skill que solo contiene `PreCast` no reproduce slash ni proyectil.
 
 ### Orientacion Visual
 
@@ -190,6 +199,14 @@ La arena usa un offset de camara de `32` grados:
 - Campeon derecho volviendo a casa: `Y = 32`.
 
 Los campeones siempre completan el giro correspondiente antes de empezar a desplazarse. `FORWARD` solo usa valores entre `0` y `1`; nunca se desplazan visualmente hacia atras.
+
+Tambien deben completar el giro hacia el rival antes de ejecutar o recibir una reaccion de impacto. Mientras se reproduce `HIT`, no se inicia el retorno ni continua la resolucion de la accion. `DEATH` no bloquea ninguna continuacion.
+
+La velocidad visual base de desplazamiento es `2.5u/s`. Se configura desde `ArenaGameManager > Combat Presentation > Champion Move Speed` y debe ajustarse junto a la animacion de locomocion para evitar deslizamiento de pies o una sensacion desacompasada.
+
+La entrada a `HIT` y `DEATH` usa `Animator.CrossFadeInFixedTime` para evitar saltos abruptos desde locomocion u otra animacion. La duracion se configura en `ChampionCombatPresentation > Impact Reactions > Reaction Blend Seconds`; el valor inicial es `0.12s`.
+
+`DEATH` se activa de forma centralizada cuando la vida real del campeon pasa de un valor positivo a `0`. Por tanto, tambien se reproduce al morir por DoTs elementales, veneno, quemadura, recoil, caltrops u otras fuentes indirectas. Solo debe lanzarse una vez y nunca espera a terminar para continuar el flujo.
 
 ## Flujo de Turnos
 

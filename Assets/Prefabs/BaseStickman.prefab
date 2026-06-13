@@ -2505,7 +2505,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 1c7ca2999021e6540871adda349c5f1f, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -2673,12 +2673,13 @@ MonoBehaviour:
     launchOrigin: {fileID: 0}
   - weapon: 4
     slashState: SPEAR_SLASH
-    projectileRelease: 0.4846492
+    projectileRelease: 0.3217562
     launchOrigin: {fileID: 0}
   - weapon: 5
     slashState: STAFF_SLASH
     projectileRelease: 0.463858
     launchOrigin: {fileID: 0}
+  reactionBlendSeconds: 0.12
   fallbackReleaseSeconds: 0.18
   fallbackSphereScale: 0.12
 --- !u!1 &4460344591662503906

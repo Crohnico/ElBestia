@@ -21,6 +21,9 @@ namespace ElBestia.Combat
         [SerializeField] private float championScale = 1.67f;
         [SerializeField] private float championYawOffset = 32f;
 
+        [Header("Combat Presentation")]
+        [SerializeField, Min(0.1f)] private float championMoveSpeed = 2.5f;
+
         [Header("Debug Match")]
         [SerializeField] private float matchDurationSeconds = 60f;
         [SerializeField] private Vector2Int debugDamageRange = new Vector2Int(8, 20);
@@ -116,8 +119,8 @@ namespace ElBestia.Combat
             SpawnDebugChampion(ref rightInstance, spawnRight, "Right Champion", true);
             ConfigureStickman(leftInstance, leftChampion);
             ConfigureStickman(rightInstance, rightChampion);
-            leftBehaviour = PrepareBehaviour(leftInstance, leftChampion, spawnLeft, crono);
-            rightBehaviour = PrepareBehaviour(rightInstance, rightChampion, spawnRight, crono);
+            leftBehaviour = PrepareBehaviour(leftInstance, leftChampion, spawnLeft, crono, championMoveSpeed);
+            rightBehaviour = PrepareBehaviour(rightInstance, rightChampion, spawnRight, crono, championMoveSpeed);
             leftBehaviour?.ConfigureCombatSide(true, championYawOffset);
             rightBehaviour?.ConfigureCombatSide(false, championYawOffset);
 
@@ -326,7 +329,7 @@ namespace ElBestia.Combat
             instance.name = fallbackName;
         }
 
-        private static ChampionBehaviour PrepareBehaviour(GameObject instance, ChampionSO champion, Transform home, CombatCrono crono)
+        private static ChampionBehaviour PrepareBehaviour(GameObject instance, ChampionSO champion, Transform home, CombatCrono crono, float moveSpeed)
         {
             if (instance == null)
             {
@@ -339,6 +342,7 @@ namespace ElBestia.Combat
                 behaviour = instance.AddComponent<ChampionBehaviour>();
             }
 
+            behaviour.ConfigureMoveSpeed(moveSpeed);
             behaviour.Initialize(champion, home, null, crono);
             return behaviour;
         }

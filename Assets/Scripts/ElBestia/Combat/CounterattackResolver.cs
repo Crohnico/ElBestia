@@ -148,9 +148,12 @@ namespace ElBestia.Combat
                 {
                     owner.DebugCombatFlow(nameof(CounterattackResolver), "Counterattack", "Base attack hit.");
                     ExecuteBaseCast(baseSkill, context, attacker);
-                    owner.ConsumeChargeForCombat(ChargeType.Counterattack, 1);
-                    owner.DebugCombatFlow(nameof(CounterattackResolver), "Counterattack", $"Consumed stack. Remaining={owner.GetChargeAmountForCombat(ChargeType.Counterattack)}");
-                    ResolveStackLoop(attacker, baseSkill, context, onComplete, safety - 1);
+                    attacker.PlayImpactReactionForCombat(() =>
+                    {
+                        owner.ConsumeChargeForCombat(ChargeType.Counterattack, 1);
+                        owner.DebugCombatFlow(nameof(CounterattackResolver), "Counterattack", $"Consumed stack. Remaining={owner.GetChargeAmountForCombat(ChargeType.Counterattack)}");
+                        ResolveStackLoop(attacker, baseSkill, context, onComplete, safety - 1);
+                    });
                 });
             });
         }

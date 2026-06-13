@@ -137,12 +137,13 @@ namespace ElBestia.Combat
         private void FaceYaw(float yaw, float deltaTime)
         {
             Quaternion targetRotation = Quaternion.Euler(0f, yaw, 0f);
-            ownerTransform.rotation = Quaternion.RotateTowards(ownerTransform.rotation, targetRotation, turnSpeedDegrees * deltaTime);
+            Quaternion nextRotation = Quaternion.RotateTowards(ownerTransform.rotation, targetRotation, turnSpeedDegrees * deltaTime);
+            ownerTransform.rotation = Quaternion.Euler(0f, nextRotation.eulerAngles.y, 0f);
         }
 
         private bool IsFacingYaw(float yaw)
         {
-            return Quaternion.Angle(ownerTransform.rotation, Quaternion.Euler(0f, yaw, 0f)) <= 3f;
+            return Mathf.Abs(Mathf.DeltaAngle(ownerTransform.eulerAngles.y, yaw)) <= 3f;
         }
 
         private void Debug(string step, string message)

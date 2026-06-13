@@ -23,6 +23,7 @@ namespace ElBestia.Combat
         private float nextPendingStateLogAt;
         private string pendingStateLabel = string.Empty;
         private ChampionBehaviour passiveFaceTarget;
+        private Action passiveFaceComplete;
         private float towardEnemyYaw;
 
         public ChampionMovement(
@@ -136,9 +137,10 @@ namespace ElBestia.Combat
             FaceYaw(towardEnemyYaw, Mathf.Max(deltaTime, 0.016f));
         }
 
-        public void BeginFaceTarget(ChampionBehaviour target)
+        public void BeginFaceTarget(ChampionBehaviour target, Action onComplete = null)
         {
             passiveFaceTarget = target;
+            passiveFaceComplete = onComplete;
         }
 
         public void ForceClearAsyncStep()
@@ -149,6 +151,7 @@ namespace ElBestia.Combat
             nextPendingStateLogAt = 0f;
             actionMovementFloat = 0f;
             passiveFaceTarget = null;
+            passiveFaceComplete = null;
             moveToRange.ForceClear();
             Debug("Async", "Force clear");
         }
@@ -206,7 +209,7 @@ namespace ElBestia.Combat
 
         private bool IsCombatMovementActive()
         {
-            return isCounterattacking() || pendingAsyncComplete != null || moveToRange.HasPending || actionAnimationEndsAt > 0f;
+            return isCounterattacking() || pendingAsyncComplete != null || passiveFaceTarget != null || moveToRange.HasPending || actionAnimationEndsAt > 0f;
         }
 
         private void UpdatePassiveFacing()
@@ -219,19 +222,23 @@ namespace ElBestia.Combat
             FaceYaw(towardEnemyYaw, Mathf.Max(Time.unscaledDeltaTime, 0.001f));
             if (IsFacingYaw(towardEnemyYaw))
             {
+                Action complete = passiveFaceComplete;
                 passiveFaceTarget = null;
+                passiveFaceComplete = null;
+                complete?.Invoke();
             }
         }
 
         private void FaceYaw(float yaw, float deltaTime)
         {
             Quaternion targetRotation = Quaternion.Euler(0f, yaw, 0f);
-            ownerTransform.rotation = Quaternion.RotateTowards(ownerTransform.rotation, targetRotation, turnSpeedDegrees * deltaTime);
+            Quaternion nextRotation = Quaternion.RotateTowards(ownerTransform.rotation, targetRotation, turnSpeedDegrees * deltaTime);
+            ownerTransform.rotation = Quaternion.Euler(0f, nextRotation.eulerAngles.y, 0f);
         }
 
         private bool IsFacingYaw(float yaw)
         {
-            return Quaternion.Angle(ownerTransform.rotation, Quaternion.Euler(0f, yaw, 0f)) <= 3f;
+            return Mathf.Abs(Mathf.DeltaAngle(ownerTransform.eulerAngles.y, yaw)) <= 3f;
         }
 
         private void Debug(string step, string message)

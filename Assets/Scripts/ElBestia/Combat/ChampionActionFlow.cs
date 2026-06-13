@@ -58,17 +58,13 @@ namespace ElBestia.Combat
                 {
                     owner.DebugCombatFlow(nameof(ChampionActionFlow), "Cast", "Complete. Consuming end-turn charges.");
                     owner.ConsumeEndTurnChargesForCombat();
-                    owner.DebugCombatFlow(nameof(ChampionActionFlow), "PostCast", "Start");
-                    phaseExecutor.ExecuteWithMovement(context.skill.postCast, context, false, () =>
+                    owner.DebugCombatFlow(nameof(ChampionActionFlow), "PostCast", "Already resolved at impact");
+                    ExecuteSkillEcho(context, () =>
                     {
-                        owner.DebugCombatFlow(nameof(ChampionActionFlow), "PostCast", "Complete");
-                        ExecuteSkillEcho(context, () =>
-                        {
-                            owner.DebugCombatFlow(nameof(ChampionActionFlow), "Flow", "Echo/Perks/Finish");
-                            owner.ApplyAfterActionPerksForCombat();
-                            owner.StartReturnHomeForCombat();
-                            owner.FinishActionForCombat(onComplete);
-                        });
+                        owner.DebugCombatFlow(nameof(ChampionActionFlow), "Flow", "Echo/Perks/Finish");
+                        owner.ApplyAfterActionPerksForCombat();
+                        owner.StartReturnHomeForCombat();
+                        owner.FinishActionForCombat(onComplete);
                     });
                 });
             });
@@ -76,18 +72,37 @@ namespace ElBestia.Combat
 
         private void ExecuteCastPhase(SkillExecutionContext context, Action onComplete)
         {
-            owner.DebugCombatFlow(nameof(ChampionActionFlow), "Cast", $"Start skill={SkillLabel(context.skill)} needsRange={SkillPhaseExecutor.PhaseNeedsEnemyRange(context.skill.cast)}");
+            bool needsEnemyImpact = SkillNeedsEnemyImpact(context.skill);
+            owner.DebugCombatFlow(nameof(ChampionActionFlow), "Cast", $"Start skill={SkillLabel(context.skill)} needsRange={needsEnemyImpact}");
+            if (!HasImpactActions(context.skill))
+            {
+                owner.DebugCombatFlow(nameof(ChampionActionFlow), "Cast", "No Cast/PostCast actions. Skip impact presentation.");
+                onComplete?.Invoke();
+                return;
+            }
+
             Action executeCast = () =>
             {
                 owner.PlayActionAnimationForCombat(context.skill, () =>
                 {
                     owner.DebugCombatFlow(nameof(ChampionActionFlow), "Cast", "Hit moment");
+                    ChampionBehaviour target = owner.RivalForCombat;
+                    int targetHealthBefore = target != null ? target.CurrentHealth : 0;
                     owner.ExecuteSkillActionsForCombat(context.skill.cast, context, true);
-                    owner.Counterattacks.ResolvePending(onComplete);
+                    owner.ExecuteSkillActionsForCombat(context.skill.postCast, context, false);
+                    Action resolveCounters = () => owner.Counterattacks.ResolvePending(onComplete);
+                    if (target != null && target.CurrentHealth < targetHealthBefore)
+                    {
+                        target.PlayImpactReactionForCombat(resolveCounters);
+                    }
+                    else
+                    {
+                        resolveCounters();
+                    }
                 });
             };
 
-            if (SkillPhaseExecutor.PhaseNeedsEnemyRange(context.skill.cast))
+            if (needsEnemyImpact)
             {
                 owner.DebugCombatFlow(nameof(ChampionActionFlow), "Cast", "Move to range");
                 owner.MoveIntoSkillRangeForCombat(context.skill, () =>
@@ -118,26 +133,41 @@ namespace ElBestia.Combat
                 damageMultiplier = multiplier
             };
 
-            phaseExecutor.ExecuteWithMovement(echoContext.skill.preCast, echoContext, false, () => ExecuteEchoCastPhase(echoContext, () =>
-            {
-                phaseExecutor.ExecuteWithMovement(echoContext.skill.postCast, echoContext, false, onComplete);
-            }));
+            phaseExecutor.ExecuteWithMovement(echoContext.skill.preCast, echoContext, false, () => ExecuteEchoCastPhase(echoContext, onComplete));
         }
 
         private void ExecuteEchoCastPhase(SkillExecutionContext context, Action onComplete)
         {
-            owner.DebugCombatFlow(nameof(ChampionActionFlow), "EchoCast", $"Start skill={SkillLabel(context.skill)} needsRange={SkillPhaseExecutor.PhaseNeedsEnemyRange(context.skill.cast)}");
+            bool needsEnemyImpact = SkillNeedsEnemyImpact(context.skill);
+            owner.DebugCombatFlow(nameof(ChampionActionFlow), "EchoCast", $"Start skill={SkillLabel(context.skill)} needsRange={needsEnemyImpact}");
+            if (!HasImpactActions(context.skill))
+            {
+                onComplete?.Invoke();
+                return;
+            }
+
             Action executeCast = () =>
             {
                 owner.PlayActionAnimationForCombat(context.skill, () =>
                 {
                     owner.DebugCombatFlow(nameof(ChampionActionFlow), "EchoCast", "Hit moment");
+                    ChampionBehaviour target = owner.RivalForCombat;
+                    int targetHealthBefore = target != null ? target.CurrentHealth : 0;
                     owner.ExecuteSkillActionsForCombat(context.skill.cast, context, true);
-                    owner.Counterattacks.ResolvePending(onComplete);
+                    owner.ExecuteSkillActionsForCombat(context.skill.postCast, context, false);
+                    Action resolveCounters = () => owner.Counterattacks.ResolvePending(onComplete);
+                    if (target != null && target.CurrentHealth < targetHealthBefore)
+                    {
+                        target.PlayImpactReactionForCombat(resolveCounters);
+                    }
+                    else
+                    {
+                        resolveCounters();
+                    }
                 });
             };
 
-            if (SkillPhaseExecutor.PhaseNeedsEnemyRange(context.skill.cast))
+            if (needsEnemyImpact)
             {
                 owner.DebugCombatFlow(nameof(ChampionActionFlow), "EchoCast", "Move to range");
                 owner.MoveIntoSkillRangeForCombat(context.skill, () =>
@@ -149,6 +179,20 @@ namespace ElBestia.Combat
             }
 
             executeCast();
+        }
+
+        private static bool SkillNeedsEnemyImpact(SkillData skill)
+        {
+            return skill != null
+                && (SkillPhaseExecutor.PhaseNeedsEnemyRange(skill.cast)
+                    || SkillPhaseExecutor.PhaseNeedsEnemyRange(skill.postCast));
+        }
+
+        private static bool HasImpactActions(SkillData skill)
+        {
+            return skill != null
+                && ((skill.cast != null && skill.cast.Length > 0)
+                    || (skill.postCast != null && skill.postCast.Length > 0));
         }
 
         private static string Label(ChampionBehaviour behaviour)

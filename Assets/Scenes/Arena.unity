@@ -3429,8 +3429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33e48e13962a2a45a30eae5b70dfd0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Combat.ArenaGameManager
-  leftChampion: {fileID: 11400000, guid: 8c9b9924dc91ec948a4a9497c4cb9d1c, type: 2}
-  rightChampion: {fileID: 11400000, guid: fd837ca378cf5e64c8f795bffcbeb344, type: 2}
+  leftChampion: {fileID: 11400000, guid: 282b473e1a571ed46aa9e4471662b2a8, type: 2}
+  rightChampion: {fileID: 11400000, guid: 6641bfbacb1ab9d41b53f6b016950305, type: 2}
   debugChampionPrefab: {fileID: 4025696831640362794, guid: 1c1219f22862974468ab9b5bd5f5e3b5, type: 3}
   spawnLeft: {fileID: 1662829572}
   spawnRight: {fileID: 274571425}
@@ -3439,6 +3439,7 @@ MonoBehaviour:
   actionTimeLine: {fileID: 759179574}
   championScale: 1.67
   championYawOffset: 0
+  championMoveSpeed: 4
   matchDurationSeconds: 60
   debugDamageRange: {x: 40, y: 80}
   paintDebugs: 0

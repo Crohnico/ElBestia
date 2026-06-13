@@ -198,12 +198,13 @@ namespace ElBestia.Combat
         private void FaceEnemy(float deltaTime)
         {
             Quaternion targetRotation = Quaternion.Euler(0f, towardEnemyYaw, 0f);
-            ownerTransform.rotation = Quaternion.RotateTowards(ownerTransform.rotation, targetRotation, turnSpeedDegrees * deltaTime);
+            Quaternion nextRotation = Quaternion.RotateTowards(ownerTransform.rotation, targetRotation, turnSpeedDegrees * deltaTime);
+            ownerTransform.rotation = Quaternion.Euler(0f, nextRotation.eulerAngles.y, 0f);
         }
 
         private bool IsFacingEnemy()
         {
-            return Quaternion.Angle(ownerTransform.rotation, Quaternion.Euler(0f, towardEnemyYaw, 0f)) <= 3f;
+            return Mathf.Abs(Mathf.DeltaAngle(ownerTransform.eulerAngles.y, towardEnemyYaw)) <= 3f;
         }
 
         private float GetExecutionRange(SkillData skill)

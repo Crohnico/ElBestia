@@ -32,30 +32,43 @@ namespace ElBestia.Combat
             new WeaponAnimation { weapon = WeaponType.Spear, slashState = "SPEAR_SLASH", projectileRelease = 0.8f },
             new WeaponAnimation { weapon = WeaponType.Staff, slashState = "STAFF_SLASH", projectileRelease = 0.75f }
         };
+        [Header("Impact Reactions")]
+        [SerializeField, Min(0f)] private float reactionBlendSeconds = 0.12f;
         [SerializeField, Min(0.01f)] private float fallbackReleaseSeconds = 0.18f;
         [SerializeField, Min(0.01f)] private float fallbackSphereScale = 0.12f;
 
         private ChampionBehaviour owner;
         private WeaponSfxOrigin equippedWeaponOrigin;
         private Coroutine castRoutine;
+        private Coroutine reactionRoutine;
         private bool isLeftSide;
 
         public WeaponAnimation[] WeaponAnimations => weaponAnimations;
         public Animator Animator => animator;
 
+        private void Awake()
+        {
+            EnsureAnimator();
+            DisableRootMotion();
+        }
+
+        private void OnEnable()
+        {
+            EnsureAnimator();
+            DisableRootMotion();
+        }
+
+        private void OnAnimatorMove()
+        {
+            DisableRootMotion();
+        }
+
         public void Initialize(ChampionBehaviour champion, bool leftSide)
         {
             owner = champion;
             isLeftSide = leftSide;
-            if (animator == null)
-            {
-                animator = GetComponentInChildren<Animator>(true);
-            }
-
-            if (animator != null)
-            {
-                animator.applyRootMotion = false;
-            }
+            EnsureAnimator();
+            DisableRootMotion();
 
             if (projectileCatalog == null)
             {
@@ -73,6 +86,7 @@ namespace ElBestia.Combat
                 return;
             }
 
+            DisableRootMotion();
             animator.SetFloat(ForwardId, Mathf.Clamp01(forward));
             animator.SetFloat(RightId, Mathf.Clamp(right, -1f, 1f));
         }
@@ -94,11 +108,34 @@ namespace ElBestia.Combat
             castRoutine = StartCoroutine(PlayCastRoutine(skill, target, onImpact));
         }
 
-        public void PlayImpactReaction(bool survived)
+        public void PlayImpactReaction(bool survived, Action onComplete)
         {
+            if (!survived)
+            {
+                PlayDeath();
+                onComplete?.Invoke();
+                return;
+            }
+
+            if (reactionRoutine != null)
+            {
+                StopCoroutine(reactionRoutine);
+            }
+
+            reactionRoutine = StartCoroutine(PlayImpactReactionRoutine(onComplete));
+        }
+
+        public void PlayDeath()
+        {
+            if (reactionRoutine != null)
+            {
+                StopCoroutine(reactionRoutine);
+                reactionRoutine = null;
+            }
+
             if (animator != null)
             {
-                animator.Play(survived ? HitId : DeathId, 0, 0f);
+                PlayBlendedState(DeathId);
             }
         }
 
@@ -128,10 +165,17 @@ namespace ElBestia.Combat
                 yield return null;
                 int stateHash = Animator.StringToHash(settings.slashState);
                 float timeoutAt = Time.unscaledTime + 5f;
+                bool enteredState = false;
                 while (animator != null && Time.unscaledTime < timeoutAt)
                 {
                     AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
-                    if (state.shortNameHash == stateHash && state.normalizedTime >= settings.projectileRelease)
+                    if (state.shortNameHash == stateHash)
+                    {
+                        enteredState = true;
+                    }
+
+                    if ((enteredState && state.shortNameHash != stateHash)
+                        || (state.shortNameHash == stateHash && state.normalizedTime >= settings.projectileRelease))
                     {
                         break;
                     }
@@ -145,7 +189,7 @@ namespace ElBestia.Combat
             }
 
             castRoutine = null;
-            if (target == null || !PhaseTargetsEnemy(skill != null ? skill.cast : null))
+            if (target == null || !SkillTargetsEnemy(skill))
             {
                 onImpact?.Invoke();
                 yield break;
@@ -175,9 +219,53 @@ namespace ElBestia.Combat
 
             projectile.Launch(target.transform, speed, () =>
             {
-                onImpact?.Invoke();
-                target.PlayImpactReactionForCombat();
+                target.FaceRivalBeforeImpactForCombat(onImpact);
             });
+        }
+
+        private IEnumerator PlayImpactReactionRoutine(Action onComplete)
+        {
+            if (animator == null)
+            {
+                onComplete?.Invoke();
+                yield break;
+            }
+
+            int stateHash = HitId;
+            PlayBlendedState(stateHash);
+            yield return null;
+
+            float timeoutAt = Time.unscaledTime + 5f;
+            bool enteredState = false;
+            while (animator != null && Time.unscaledTime < timeoutAt)
+            {
+                AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
+                if (state.shortNameHash == stateHash)
+                {
+                    enteredState = true;
+                }
+                else if (enteredState)
+                {
+                    break;
+                }
+
+                yield return null;
+            }
+
+            reactionRoutine = null;
+            onComplete?.Invoke();
+        }
+
+        private void PlayBlendedState(int stateHash)
+        {
+            DisableRootMotion();
+            if (reactionBlendSeconds <= 0f)
+            {
+                animator.Play(stateHash, 0, 0f);
+                return;
+            }
+
+            animator.CrossFadeInFixedTime(stateHash, reactionBlendSeconds, 0, 0f);
         }
 
         private GameObject CreateFallbackProjectile(Vector3 position)
@@ -227,6 +315,27 @@ namespace ElBestia.Combat
             }
 
             return false;
+        }
+
+        private static bool SkillTargetsEnemy(SkillData skill)
+        {
+            return skill != null && (PhaseTargetsEnemy(skill.cast) || PhaseTargetsEnemy(skill.postCast));
+        }
+
+        private void EnsureAnimator()
+        {
+            if (animator == null)
+            {
+                animator = GetComponentInChildren<Animator>(true);
+            }
+        }
+
+        private void DisableRootMotion()
+        {
+            if (animator != null && animator.applyRootMotion)
+            {
+                animator.applyRootMotion = false;
+            }
         }
     }
 }

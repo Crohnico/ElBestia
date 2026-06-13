@@ -14,7 +14,7 @@ namespace ElBestia.Combat
         [SerializeField] private Transform homePosition;
         [SerializeField] private ChampionBehaviour rival;
         [SerializeField] private CombatCrono crono;
-        [SerializeField] private float moveSpeed = 4.5f;
+        [SerializeField] private float moveSpeed = 2.5f;
         [SerializeField] private float turnSpeedDegrees = 720f;
         [SerializeField] private float minimumVisualRange = 1.5f;
         [SerializeField] private float actionAnimationSeconds = 0.18f;
@@ -40,6 +40,7 @@ namespace ElBestia.Combat
         private ChampionTurnEffects turnEffects;
         private ChampionCombatPresentation presentation;
         private bool isLeftSide;
+        private bool deathAnimationPlayed;
         private int debugFlowId;
         private int activeDebugFlowId;
         private System.Random rng;
@@ -70,7 +71,17 @@ namespace ElBestia.Combat
 
         private void Update()
         {
+            UpdatePresentationLocomotion();
+        }
+
+        private void LateUpdate()
+        {
             movement?.Update();
+            UpdatePresentationLocomotion();
+        }
+
+        private void UpdatePresentationLocomotion()
+        {
             if (presentation != null && movement != null)
             {
                 float intent = movement.TurnIntent;
@@ -91,6 +102,7 @@ namespace ElBestia.Combat
             completedActions = 0;
             maxHealth = GetMaxHealth(champion);
             currentHealth = maxHealth;
+            deathAnimationPlayed = false;
             activeCharges = Array.Empty<ActiveCharge>();
             chargeController = CreateChargeController();
             chargeApplication = new ChampionChargeApplication(this);
@@ -153,6 +165,11 @@ namespace ElBestia.Combat
             isLeftSide = leftSide;
             movement?.ConfigureFacing(leftSide, cameraYawOffset);
             presentation?.Initialize(this, isLeftSide);
+        }
+
+        public void ConfigureMoveSpeed(float value)
+        {
+            moveSpeed = Mathf.Max(0.1f, value);
         }
 
         public void SetCrono(CombatCrono combatCrono)
@@ -235,8 +252,14 @@ namespace ElBestia.Combat
                 return 0;
             }
 
+            bool wasAlive = IsAlive;
             currentHealth = Mathf.Max(0, currentHealth - finalDamage);
             HealthChanged?.Invoke(this, currentHealth, maxHealth);
+            if (wasAlive && !IsAlive)
+            {
+                PlayDeathForCombat();
+            }
+
             return finalDamage;
         }
 
@@ -489,9 +512,43 @@ namespace ElBestia.Combat
             movement?.BeginFaceTarget(rival);
         }
 
-        internal void PlayImpactReactionForCombat()
+        internal void FaceRivalBeforeImpactForCombat(Action onComplete)
         {
-            presentation?.PlayImpactReaction(IsAlive);
+            if (movement == null)
+            {
+                onComplete?.Invoke();
+                return;
+            }
+
+            movement.BeginFaceTarget(rival, onComplete);
+        }
+
+        internal void PlayImpactReactionForCombat(Action onComplete)
+        {
+            if (!IsAlive)
+            {
+                onComplete?.Invoke();
+                return;
+            }
+
+            if (presentation == null)
+            {
+                onComplete?.Invoke();
+                return;
+            }
+
+            presentation.PlayImpactReaction(IsAlive, onComplete);
+        }
+
+        private void PlayDeathForCombat()
+        {
+            if (deathAnimationPlayed)
+            {
+                return;
+            }
+
+            deathAnimationPlayed = true;
+            presentation?.PlayDeath();
         }
 
         private float GetRivalDistance()

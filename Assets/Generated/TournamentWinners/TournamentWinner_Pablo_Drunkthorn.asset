@@ -1,0 +1,181 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4967c85aea6a19141a4313e739382e72, type: 3}
+  m_Name: TournamentWinner_Pablo_Drunkthorn
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Champions.ChampionSO
+  nameGenerator: {fileID: 0}
+  level: 1
+  totalBaseStatPoints: 50
+  seed: 1371799620
+  championId: 7FKKW6-WYVKPG-HE5HGM-M9LSTA
+  championName: Pablo Drunkthorn
+  playerNickname: 
+  appearance:
+    sex: 0
+    bodyColor: {r: 0.2641263, g: 0.18816462, b: 0.8834111, a: 1}
+    hairColor: {r: 0.05455644, g: 0.2764978, b: 0.55816466, a: 1}
+    chest: 0.6932845
+    belly: 0.93602437
+    arms: 0.14246294
+    forearms: 0.39151165
+    upperLegs: 0.24780233
+    lowerLegs: 0.54795134
+    glutes: 0.24861877
+    hairAsset: 14
+    beardAsset: 12
+    earAsset: 2
+    weaponAsset: 0
+  lore:
+    birth: {fileID: 11400000, guid: e1de1a09718caac4f8212d99d0ff61f6, type: 2}
+    childhood: {fileID: 11400000, guid: b0180bb14d1ec7845b75d5e232bc54da, type: 2}
+    youth: {fileID: 11400000, guid: 7f004e87619e72b4da637c02aade5ebd, type: 2}
+    storyCombinationKey: 7111534
+    storyCombinationId: birth_17_07__childhood_15_07__youth_13_04
+    story: Pablo Drunkthorn was born in a monk farm family, where silence, breath,
+      and repeated chores were treated as survival tools. As a child, Pablo Drunkthorn
+      lived through a white road march, learning cold endurance and the cost of stopping
+      too soon. As a young adult, Pablo Drunkthorn worked through a bone setter aide,
+      learning where bodies fail and how panic moves through a fight. They enter
+      the dojo to pay for medicine, debts, or mercy.
+  baseStats:
+    life: 229
+    energy: 62
+    strength: 10
+    agility: 6
+    constitution: 14
+    intelligence: 7
+    endurance: 13
+    dodge: 3
+    block: 6
+    critical: 3
+    hit: 3
+    recovery: 7
+    speed: 13
+    experienceGain: 0
+    fatalInjuryResistance: 0
+    injurySeverityReduction: 0
+    fireResistance: 4
+    waterResistance: 4
+    electricityResistance: 3
+    poisonResistance: 4
+    earthResistance: 6
+    airResistance: 4
+    woodResistance: 4
+    fireDamage: 0
+    waterDamage: 0
+    electricityDamage: 0
+    poisonDamage: 0
+    earthDamage: 0
+    airDamage: 0
+    woodDamage: 0
+    fireDamageMultiplier: 1
+    waterDamageMultiplier: 1
+    electricityDamageMultiplier: 1
+    poisonDamageMultiplier: 1
+    earthDamageMultiplier: 1
+    airDamageMultiplier: 1
+    woodDamageMultiplier: 1
+    fistsProficiency: 0
+    swordProficiency: 0
+    axeProficiency: 0
+    spearProficiency: 0
+    staffProficiency: 0
+  stats:
+    life: 255
+    energy: 74
+    strength: 12
+    agility: 6
+    constitution: 16
+    intelligence: 9
+    endurance: 15
+    dodge: 3
+    block: 8
+    critical: 3
+    hit: 4
+    recovery: 8
+    speed: 14
+    experienceGain: 0
+    fatalInjuryResistance: 0
+    injurySeverityReduction: 0
+    fireResistance: 7
+    waterResistance: 13
+    electricityResistance: 5
+    poisonResistance: 6
+    earthResistance: 7
+    airResistance: 5
+    woodResistance: 6
+    fireDamage: 5
+    waterDamage: 0
+    electricityDamage: 0
+    poisonDamage: 0
+    earthDamage: 0
+    airDamage: 0
+    woodDamage: 0
+    fireDamageMultiplier: 1
+    waterDamageMultiplier: 1
+    electricityDamageMultiplier: 1
+    poisonDamageMultiplier: 1
+    earthDamageMultiplier: 1
+    airDamageMultiplier: 1
+    woodDamageMultiplier: 1
+    fistsProficiency: 0
+    swordProficiency: 0
+    axeProficiency: 0
+    spearProficiency: 0
+    staffProficiency: 0
+  growth:
+    strength: 0
+    agility: 2
+    constitution: 0
+    intelligence: 0
+    endurance: 1
+  currentExperience: 0
+  experienceToNextLevel: 114
+  equippedWeapon: 2
+  perks:
+  - {fileID: 11400000, guid: 2b0a1e17b16d8664f963aaf0eefc944c, type: 2}
+  - {fileID: 11400000, guid: b6cab8004fabbe84bbcd03290fc87e26, type: 2}
+  baseSkill:
+    skillName: Base Sword Slash
+    skillNameId: skill_name.base.sword_slash
+    description: 'The user cuts with a simple sword slash.
+
+      - Cooldown: 0s
+
+      -
+      Damage: 8
+
+      - Effects: action: Enemy: DoDamage x8'
+    isBaseSkill: 1
+    quality: 0
+    level: 1
+    cooldownSeconds: 0
+    element: 0
+    energyCost: 0
+    range: 1
+    weapons: 02000000
+    statScaling:
+    - stat: 0
+      scaling: 0
+      usesGradeScaling: 0
+    - stat: 1
+      scaling: 0
+      usesGradeScaling: 0
+    preCast: []
+    cast:
+    - target: 1
+      action: 0
+      charge: 0
+      amount: 8
+    postCast: []
+    iconSeed: 2010754222
+  skills: []
