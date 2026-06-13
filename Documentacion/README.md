@@ -11,6 +11,11 @@ Esta carpeta recoge la definicion del proyecto: vision, alcance, sensacion de ju
 - [Probabilidades.md](./Probabilidades.md): reglas Pareto para crecimiento, rarezas y cantidades.
 - [DireccionVisual2DEn3D.md](./DireccionVisual2DEn3D.md): direccion visual para conseguir apariencia 2D manteniendo escena 3D.
 - [StickmansProcedurales.md](./StickmansProcedurales.md): propuesta de cuerpos stickman procedurales, editor de presets y generacion de meshes.
+- [EstadosAlterados.md](./EstadosAlterados.md): tabla de estados opuestos para inversiones de buffs/debuffs.
+- [Dojo/README.md](./Dojo/README.md): dojo como institucion, capacidad de campeones y admision.
+- [Menu/README.md](./Menu/README.md): escena `Dojo` como menu principal, edificios clickeables y feedback de interaccion.
+- [Torneos/README.md](./Torneos/README.md): torneos, inscripcion, ejecucion y mapa de bracket.
+- [UI/Pantallas.md](./UI/Pantallas.md): arquitectura de ventanas/pantallas, `UIScreen`, behaviours y acciones de UI.
 
 ## Forma de trabajo
 
