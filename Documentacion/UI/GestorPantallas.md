@@ -20,7 +20,7 @@ Esto evita que edificios, botones, sistemas de gameplay o acciones de UI tengan 
 
 - Escuchar solicitudes de abrir/cerrar pantalla.
 - Saber cual es la pantalla actual.
-- Recordar la pantalla anterior para poder volver con `Esc`.
+- Volver a la pantalla inicial cuando el usuario pulsa `Esc`.
 - Cerrar la pantalla actual antes de abrir otra si corresponde.
 - Abrir la pantalla solicitada.
 - Cerrar pantallas.
@@ -44,9 +44,7 @@ public sealed class UIScreenManager : MonoBehaviour
     public UIScreenId InitialScreenId;
 
     private UIScreenId currentScreenId;
-    private UIScreenId previousScreenId;
     private bool hasCurrentScreen;
-    private bool hasPreviousScreen;
     private int lastCancelToken;
 }
 ```
@@ -57,25 +55,18 @@ public sealed class UIScreenManager : MonoBehaviour
 
 `currentScreenId` guarda la pantalla abierta actualmente.
 
-`previousScreenId` guarda la pantalla abierta antes de la actual.
-
 `hasCurrentScreen` indica si hay una pantalla abierta, sin necesitar un valor `None` en el enum de pantallas.
-
-`hasPreviousScreen` indica si existe una pantalla anterior cacheada.
 
 `lastCancelToken` invalida callbacks antiguos cuando llega una orden nueva antes de que termine una transicion.
 
-## Volver a la Pantalla Anterior
+## Volver a la Pantalla Inicial
 
-El gestor guarda la pantalla actual como pantalla anterior cada vez que abre una pantalla distinta.
-
-Si el usuario pulsa `Esc`, el gestor intenta abrir la pantalla anterior cacheada.
+Si el usuario pulsa `Esc`, el gestor intenta abrir `InitialScreenId`.
 
 Reglas:
 
-- Si no hay pantalla anterior cacheada, `Esc` no hace nada.
-- Si la pantalla anterior ya es la pantalla actual, no se relanza la apertura.
-- Al volver a la pantalla anterior, la pantalla desde la que se vuelve pasa a ser la nueva pantalla cacheada.
+- Si `InitialScreenId` ya es la pantalla actual, no se relanza la apertura.
+- `Esc` debe poder cancelar una navegacion en curso y volver a la pantalla inicial.
 - La lectura de `Esc` usa el Input System de Unity, no `UnityEngine.Input`.
 
 ## Senal de Solicitud

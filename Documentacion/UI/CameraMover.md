@@ -144,6 +144,7 @@ Direccion inicial:
 
 - Si la camara ya esta en el destino solicitado, no se mueve.
 - Si la camara ya se esta moviendo hacia el destino solicitado, no reinicia el movimiento.
+- Si la camara se esta moviendo hacia otro destino, una nueva solicitud cancela ese movimiento y redirige desde la posicion actual.
 - Si la camara debe ir a otro destino, usa el pivote como punto de control de una Bezier cuadratica.
 - Al llegar al destino, emite `CameraMoveCompletedSignal`.
 - La posicion usa una unica curva Bezier `P0 = camara actual`, `P1 = pivote`, `P2 = destino`, para que no haya frenado ni rearranque en el pivote.
@@ -184,6 +185,7 @@ Reglas:
 - El pivote evita que la camara viaje directamente de un edificio a otro con trayectorias raras.
 - El pivote no debe cortar la transicion en dos tweens, porque eso provoca frenado al llegar y aceleracion al salir.
 - Si se solicita el mismo destino mientras la camara ya esta alli o ya va hacia alli, la solicitud se ignora.
+- Si se solicita el ultimo snapshot completado mientras la camara esta viajando hacia otro destino, no se considera completado: se cancela el viaje activo y se vuelve a ese snapshot.
 
 ## Uso con Pantallas
 

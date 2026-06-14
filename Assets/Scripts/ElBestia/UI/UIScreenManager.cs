@@ -11,9 +11,7 @@ namespace ElBestia.UI
         [SerializeField] private UIScreenId initialScreenId = UIScreenId.MainMenu;
 
         private UIScreenId currentScreenId;
-        private UIScreenId previousScreenId;
         private bool hasCurrentScreen;
-        private bool hasPreviousScreen;
         private int lastCancelToken;
         private IDisposable requestSubscription;
         private IDisposable closeAllSubscription;
@@ -36,7 +34,7 @@ namespace ElBestia.UI
         {
             if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
             {
-                  ShowScreen(initialScreenId);
+                ShowScreen(initialScreenId);
             }
         }
 
@@ -77,7 +75,6 @@ namespace ElBestia.UI
             if (hasCurrentScreen)
             {
                 UIScreenId closingScreenId = currentScreenId;
-                CachePreviousScreen(closingScreenId);
                 FireToggle(closingScreenId, false, () =>
                 {
                     if (token != lastCancelToken)
@@ -96,22 +93,6 @@ namespace ElBestia.UI
             currentScreenId = screenId;
             hasCurrentScreen = true;
             FireToggle(screenId, true, null, token);
-        }
-
-        private void OpenPreviousScreen()
-        {
-            if (!hasPreviousScreen)
-            {
-                return;
-            }
-
-            ShowScreen(previousScreenId);
-        }
-
-        private void CachePreviousScreen(UIScreenId screenId)
-        {
-            previousScreenId = screenId;
-            hasPreviousScreen = true;
         }
 
         private void HideScreen(UIScreenId screenId)

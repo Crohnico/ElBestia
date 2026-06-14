@@ -75,13 +75,14 @@ namespace ElBestia.UI
                 return;
             }
 
-            if (currentSnapshotId == signal.Target || activeTargetId == signal.Target)
+            if (activeTargetId == signal.Target)
             {
-                if (currentSnapshotId == signal.Target)
-                {
-                    SignalBus.Fire(new CameraMoveCompletedSignal(signal.Target));
-                }
+                return;
+            }
 
+            if (!activeTargetId.HasValue && currentSnapshotId == signal.Target)
+            {
+                SignalBus.Fire(new CameraMoveCompletedSignal(signal.Target));
                 return;
             }
 
