@@ -250,6 +250,45 @@ Posibles modificadores futuros:
 - Perks fuerzan o bloquean ciertas acciones.
 - Estados como poca vida aumentan probabilidad de cura.
 
+## Frases de Combate
+
+Los campeones pueden mostrar frases generadas por LLM durante el combate.
+
+Tipos previstos:
+
+- Frases de inicio de combate.
+- Frases al hacer dano.
+- Frases al recibir dano.
+- Frases al ganar.
+- Frases al perder.
+
+Cantidad inicial por campeon:
+
+- 10 frases de inicio de combate.
+- 10 frases al hacer dano.
+- 10 frases al recibir dano.
+- 10 frases al ganar.
+- 10 frases al perder.
+
+Total:
+
+- 50 frases de combate guardadas en la data del campeon.
+
+Reglas de diseno:
+
+- Las frases son presentacion, no logica de combate.
+- Se generan una vez con LLM y despues se leen desde la data persistida del campeon.
+- El combate no llama a la IA durante la simulacion normal.
+- No deben pausar el combate salvo que se decida una presentacion especial para momentos importantes.
+- Deben ser cortas para no competir con la lectura de acciones, vida, cooldowns y efectos.
+- Deben elegir contexto sin cambiar resultados: por ejemplo, usar una frase de dano cuando el campeon ya ha hecho dano real.
+- Deben evitar repetirse demasiado dentro de un mismo combate.
+
+Pendiente:
+
+- Definir si las frases aparecen como bocadillo, subtitulo, log de combate o combinacion.
+- Definir si algunas frases se reservan para criticos, poca vida, muerte del rival o finales de torneo.
+
 ## Defensas y Precision
 
 El combate separa indices internos de porcentajes finales.

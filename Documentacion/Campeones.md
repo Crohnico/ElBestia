@@ -323,13 +323,27 @@ Pendiente:
 - Definir si las partes influyen en gameplay o son puramente visuales.
 - Definir fallback si un ID apunta a una parte que ya no existe tras cambios de contenido.
 
-## Lore Inicial
+## Personalidad y Lore Inicial
 
-Cada campeon genera tres piezas de historia:
+Cada campeon genera primero una personalidad y despues tres piezas de historia:
 
+- Personalidad.
 - Nacimiento.
 - Ninez.
 - Juventud.
+
+La personalidad puede salir de una tabla de rasgos como:
+
+- Alegre.
+- Egoista.
+- Honorable.
+- Cruel.
+- Cobarde.
+- Temerario.
+- Orgulloso.
+- Tranquilo.
+- Vengativo.
+- Burlon.
 
 Cada pieza sale de ScriptableObjects en `Resources/Lore`.
 
@@ -369,6 +383,108 @@ Tambien se genera un texto corto en ingles combinando las tres etapas:
 Nombre nacio ... Durante la ninez ... En su juventud ...
 ```
 
+Ese texto corto puede funcionar como fallback si el LLM no esta disponible, pero la direccion preferida es que el LLM genere una biografia mas natural a partir de la personalidad y las tres etapas.
+
+## LLM y Textos de Campeon
+
+El juego integrara un LLM local o embebido para reforzar la identidad de cada campeon.
+
+Decision de plataforma:
+
+- El juego se orienta solo a PC.
+- La razon principal es poder montar un LLM dentro del juego sin depender inicialmente de movil, consola ni limitaciones fuertes de plataforma.
+
+Decision de modelo:
+
+- Se usara un LLM local o embebido sencillo, aproximadamente entre 1B y 4B parametros.
+- No se busca un modelo enorme ni caro: el uso previsto es generar textos cortos de identidad y frases.
+- La motivacion principal es no gastar dinero en tokens por cada campeon generado.
+- El coste aceptable pasa a ser coste de rendimiento local, tamano de descarga y tiempo de generacion.
+- Como la generacion ocurre una sola vez y se guarda en la data del personaje, no hace falta que el modelo responda en tiempo real durante el combate.
+
+Usos previstos del LLM:
+
+- Generar una biografia del campeon a partir de sus datos deterministas: nombre, lore inicial, stats, perks, habilidades, apariencia y trayectoria.
+- Generar frases de inicio de combate.
+- Generar frases durante el combate.
+
+El LLM no debe decidir stats, perks, habilidades, resultados de combate ni recompensas. Su papel es narrativo y expresivo.
+
+Contenido inicial por campeon:
+
+- 1 biografia.
+- 10 frases de inicio de combate.
+- 10 frases al hacer dano.
+- 10 frases al recibir dano.
+- 10 frases al ganar.
+- 10 frases al perder.
+
+Total inicial:
+
+- 50 frases de combate por campeon.
+
+Generacion y persistencia:
+
+- La personalidad, nacimiento, ninez y juventud se generan primero como datos estructurados.
+- Despues se llama al LLM una sola vez para generar la biografia y las 50 frases.
+- El resultado se guarda en la data persistida del personaje.
+- La IA no se llama durante el combate normal.
+- Si el campeon ya tiene biografia y frases guardadas, se reutilizan.
+- La regeneracion debe ser una accion explicita de debug, prototipado o migracion de datos.
+
+Formato conceptual del prompt:
+
+```text
+Es para un videojuego.
+
+[Nombre]
+
+[Personalidad]: alegre, egoista, ...
+
+[Nacimiento]: ...
+
+[Ninez]: ...
+
+[Juventud]: ...
+
+Haz una historia pequena, de un parrafo no muy largo, con sentido, usando esa informacion.
+La historia debe explicar como se forjo este personaje y por que esta en el edificio de admision de mi Dojo.
+
+Ademas genera 50 frases cortas:
+- 10 intro de combate.
+- 10 al golpear.
+- 10 al recibir golpe.
+- 10 al ganar.
+- 10 al perder.
+```
+
+Salida esperada:
+
+- Biografia: un parrafo breve.
+- `combatIntroLines`: 10 frases.
+- `hitDealtLines`: 10 frases.
+- `hitReceivedLines`: 10 frases.
+- `victoryLines`: 10 frases.
+- `defeatLines`: 10 frases.
+
+Intencion de diseno:
+
+- Que cada campeon parezca mas vivo sin convertir el juego en una experiencia narrativa pesada.
+- Que las frases sean cortas, reutilizables y compatibles con combates rapidos.
+- Que la biografia use los datos reales del campeon, para que no contradiga su build ni su origen.
+- Que la biografia justifique por que el campeon llega al edificio de admision del Dojo.
+- Que el sistema sea factible manteniendo el LLM acotado a generacion de texto.
+- Que el sistema no tenga coste variable por tokens.
+
+Pendiente:
+
+- Definir idioma final de las bios y frases.
+- Definir filtros de tono para evitar frases demasiado largas, modernas o fuera del estilo del juego.
+- Definir el formato exacto serializado para guardar la biografia y las listas de frases.
+- Definir si la generacion ocurre al crear el candidato, al abrir admision o al contratarlo.
+- Elegir modelo concreto y formato de integracion local.
+- Definir requisitos minimos de PC y tiempo maximo aceptable de generacion.
+
 ## Implementacion Inicial en Unity
 
 Scripts creados:
@@ -391,6 +507,7 @@ El boton genera:
 - Apodo de jugador vacio.
 - Sexo y partes visuales por indice.
 - Lore inicial: nacimiento, ninez, juventud y texto de historia.
+- Personalidad y textos LLM guardados en la data del campeon: biografia, 10 frases de inicio, 10 al golpear, 10 al recibir golpe, 10 al ganar y 10 al perder.
 - Stats base.
 - Combat stats: vida, energia, dodge rating, block rating, critical rating, hit rating y proficiency.
 - Stats base puras y stats finales tras todos los modificadores, para poder comparar tirada original contra resultado real.

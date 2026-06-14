@@ -283,7 +283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -482,7 +482,6 @@ GameObject:
   - component: {fileID: 113070992}
   - component: {fileID: 113070991}
   - component: {fileID: 113070990}
-  - component: {fileID: 113070989}
   m_Layer: 0
   m_Name: Dojo
   m_TagString: Untagged
@@ -490,27 +489,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &113070989
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113070988}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &113070990
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -576,13 +554,89 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113070988}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6102, y: 1.5643, z: -2.0282}
-  m_LocalScale: {x: 3.2170684, y: 3.6158, z: 5.2909956}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 326245025}
   - {fileID: 730548866}
+  m_Father: {fileID: 212631559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &212631556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 212631559}
+  - component: {fileID: 212631558}
+  - component: {fileID: 212631557}
+  m_Layer: 0
+  m_Name: DojoBuilding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &212631557
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212631556}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &212631558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212631556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635860f70d44e9246bed756c59bfd6cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Menu.DojoBuilding
+  targetWindow: 2
+  animatedTransform: {fileID: 113070992}
+  clickShrinkScale: 0.92
+  clickGrowScale: 1.06
+  clickStepDuration: 0.08
+  clickEase: 6
+  onClickAction:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &212631559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212631556}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6102, y: 1.5643, z: -2.0282}
+  m_LocalScale: {x: 3.2170684, y: 3.6158, z: 5.2909956}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 113070992}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &267009211
@@ -636,7 +690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -733,7 +787,6 @@ GameObject:
   - component: {fileID: 326245025}
   - component: {fileID: 326245028}
   - component: {fileID: 326245027}
-  - component: {fileID: 326245026}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -756,27 +809,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 113070992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &326245026
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326245024}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &326245027
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -834,6 +866,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326245024}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &509548346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509548347}
+  - component: {fileID: 509548348}
+  m_Layer: 0
+  m_Name: ArenaBuilding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &509548347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509548346}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.31, y: 2.2436, z: -5.68}
+  m_LocalScale: {x: 3.8491, y: 4.8659754, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1695489840}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &509548348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509548346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635860f70d44e9246bed756c59bfd6cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Menu.Building
+  targetWindow: 0
+  animatedTransform: {fileID: 1695489840}
+  clickShrinkScale: 0.92
+  clickGrowScale: 1.06
+  clickStepDuration: 0.08
+  clickEase: 6
+  onClickAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &521055620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,6 +1348,82 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &982214668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 982214671}
+  - component: {fileID: 982214670}
+  - component: {fileID: 982214669}
+  m_Layer: 0
+  m_Name: AdmisionBuilding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &982214669
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982214668}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &982214670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982214668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635860f70d44e9246bed756c59bfd6cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Menu.AdmisionBuilding
+  targetWindow: 3
+  animatedTransform: {fileID: 0}
+  clickShrinkScale: 0.92
+  clickGrowScale: 1.06
+  clickStepDuration: 0.08
+  clickEase: 6
+  onClickAction:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &982214671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982214668}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.7603, y: 0.7513, z: 1.4653}
+  m_LocalScale: {x: 2.2763977, y: 1.9897747, z: 1.6136199}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1353644802}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1096769264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,7 +1475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1399,6 +1561,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096769264}
   m_CullTransparentMesh: 1
+--- !u!1 &1120591444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1120591446}
+  - component: {fileID: 1120591445}
+  m_Layer: 0
+  m_Name: CursorInteractor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1120591445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120591444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8182e8805167ad74fb5f0c4e011add24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Menu.MenuCursorInteractor
+  raycastCamera: {fileID: 1842412128}
+  maxRayDistance: 1000
+--- !u!4 &1120591446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120591444}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.94345, y: 0.25636, z: -3.86638}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1353644798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1618,6 @@ GameObject:
   - component: {fileID: 1353644802}
   - component: {fileID: 1353644801}
   - component: {fileID: 1353644800}
-  - component: {fileID: 1353644799}
   m_Layer: 0
   m_Name: Admision
   m_TagString: Untagged
@@ -1418,27 +1625,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1353644799
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353644798}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1353644800
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1504,14 +1690,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353644798}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.7603, y: 0.7513, z: 1.4653}
-  m_LocalScale: {x: 2.2763977, y: 1.9897747, z: 1.6136199}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 568538181}
   - {fileID: 28665004}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 982214671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1420321839
 GameObject:
@@ -1908,14 +2094,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555352629}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9199114, z: -0, w: 0.39212644}
-  m_LocalPosition: {x: -2.7, y: 0.7513, z: 3.19}
-  m_LocalScale: {x: 3.2170684, y: 1.9897747, z: 1.6136199}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 704728816}
   - {fileID: 521055621}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1994164410}
   m_LocalEulerAnglesHint: {x: 0, y: -133.826, z: 0}
 --- !u!1 &1693317063
 GameObject:
@@ -2101,13 +2287,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695489836}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.31, y: 2.2436, z: -5.68}
-  m_LocalScale: {x: 3.8491, y: 4.8659754, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1475103425}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 509548347}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1799194309
 GameObject:
@@ -2160,7 +2346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2496,6 +2682,60 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+--- !u!1 &1994164408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1994164410}
+  - component: {fileID: 1994164409}
+  m_Layer: 0
+  m_Name: HospitalBuilding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1994164409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994164408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635860f70d44e9246bed756c59bfd6cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElBestia.Menu.Building
+  targetWindow: 1
+  animatedTransform: {fileID: 1555352633}
+  clickShrinkScale: 0.92
+  clickGrowScale: 1.06
+  clickStepDuration: 0.08
+  clickEase: 6
+  onClickAction:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1994164410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994164408}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.9199114, z: -0, w: 0.39212644}
+  m_LocalPosition: {x: -2.7, y: 0.7513, z: 3.19}
+  m_LocalScale: {x: 3.2170696, y: 1.9897747, z: 1.6136205}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1555352633}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2134841969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2598,9 +2838,10 @@ SceneRoots:
   - {fileID: 2093113}
   - {fileID: 1907450820}
   - {fileID: 2134841972}
-  - {fileID: 113070992}
-  - {fileID: 1353644802}
-  - {fileID: 1555352633}
-  - {fileID: 1695489840}
+  - {fileID: 212631559}
+  - {fileID: 982214671}
+  - {fileID: 1994164410}
+  - {fileID: 509548347}
   - {fileID: 1693317066}
   - {fileID: 1515558010}
+  - {fileID: 1120591446}

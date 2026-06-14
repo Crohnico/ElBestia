@@ -8,6 +8,8 @@
 
 **Genero base:** Manager/idle async de luchadores con permadeath, progresion de dojo y torneos.
 
+**Plataforma objetivo:** PC.
+
 **Fantasia principal:** Dirigir un dojo de campeones impredecibles. El jugador no controla los combates directamente: contrata, observa, arriesga, invierte y crea una herencia marcial entre generaciones.
 
 **Promesa jugable:** Tus luchadores tienen vida propia. Crecen, pelean, se lesionan, ganan gloria o mueren. Tu trabajo es decidir a quien contratar, a que torneo enviarlo, cuando retirarlo y como convertir sus victorias y cicatrices en futuro para el dojo.
@@ -63,7 +65,7 @@ El jugador no conoce todos los numeros internos, pero puede desarrollar intuicio
 
 ### El Jugador Deberia Sentir
 
-- Que cada campeon tiene personalidad aunque no este escrito con dialogos.
+- Que cada campeon tiene personalidad por sus stats, apariencia, historia, comportamiento y frases de combate.
 - Que mandar a pelear a alguien importante es emocionante y peligroso.
 - Que una derrota puede doler, pero tambien abrir decisiones interesantes.
 - Que el dojo progresa como institucion incluso si sus campeones mueren.
@@ -169,6 +171,25 @@ Cada campeon recibe un origen tipo RimWorld dividido en:
 - Juventud.
 
 Cada etapa aplica pequenos modificadores iniciales y genera texto de historia. Esto permite que dos campeones con stats parecidas se sientan distintos por contexto, no solo por numeros.
+
+### LLM Local para Identidad
+
+Direccion actual:
+
+- El juego se hara solo para PC para poder integrar un LLM dentro del juego.
+- El LLM se usara para generar texto de identidad y expresion de los campeones, no para resolver reglas de combate.
+- El modelo objetivo sera pequeno, aproximadamente entre 1B y 4B parametros.
+- La motivacion es evitar gasto recurrente en tokens y no depender de una API externa para generar textos de campeon.
+- Primero se generan personalidad, nacimiento, ninez y juventud como datos estructurados.
+- Despues se llama una vez al LLM y el resultado se guarda en la data del personaje.
+- Uso previsto:
+  - Biografia breve del campeon, explicando como se forjo y por que llega al edificio de admision del Dojo.
+  - 10 frases de inicio de combate.
+  - 10 frases al golpear.
+  - 10 frases al recibir golpe.
+  - 10 frases al ganar.
+  - 10 frases al perder.
+- Esta integracion se considera factible, pero debe mantenerse acotada para no romper el determinismo de gameplay ni convertir el sistema de combate en una caja negra.
 
 ### Crecimiento Oculto
 

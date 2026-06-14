@@ -80,73 +80,54 @@ Responsabilidades:
 
 Los edificios del menu implementan `IInteractable`. El sistema de cursor del menu solo debe conocer esta interfaz, no los tipos concretos de edificio.
 
-## Implementaciones de Edificio
+## Implementacion de Edificio
 
-Cada tipo de edificio tendra su propia implementacion.
+Los edificios del menu usan una implementacion comun:
 
-Implementaciones iniciales:
+```text
+Building
+```
 
-- `ArenaBuilding`.
-- `MedicalBuilding`.
-- `DojoBuilding`.
-- `AdmisionBuilding`.
+Cada instancia configura en inspector su destino mediante un enum.
 
-Todas comparten la misma idea base:
+La idea base:
 
 - Reciben hover.
-- Muestran outline al estar seleccionadas.
 - Reciben click.
 - Reproducen animacion DOTween de confirmacion.
-- Lanzan `OpenWindow(X)` con su destino correspondiente.
+- Ejecutan acciones configurables de click si se han asignado.
+- Lanzan `OpenWindow(X)` con su destino configurado.
 
-### ArenaBuilding
+### Destinos
 
-Destino:
+El destino se configura con un enum equivalente a:
+
+```text
+Arena
+Hospital
+Dojo
+Admision
+```
+
+Ejemplos:
 
 ```text
 OpenWindow(Arena)
-```
-
-Representa la entrada a combates, torneos o seleccion de campeones para pelear.
-
-### MedicalBuilding
-
-Destino:
-
-```text
 OpenWindow(Hospital)
-```
-
-Representa hospital, tratamiento, recuperacion y gestion de campeones heridos.
-
-### DojoBuilding
-
-Destino:
-
-```text
 OpenWindow(Dojo)
-```
-
-Representa herencias, salas de entrenamiento y gestion interna del dojo.
-
-### AdmisionBuilding
-
-Destino:
-
-```text
 OpenWindow(Admision)
 ```
 
-Representa reclutamiento de nuevos campeones.
+Esto evita tener cuatro scripts identicos para cuatro edificios que solo cambian el destino.
 
 ## Feedback Tecnico de Edificio
 
 Cada edificio interactuable debe tener:
 
 - Una forma de recibir hover/click desde raycast, collider o sistema equivalente.
-- Referencia al outline o componente visual que se activa en hover.
 - Referencia al transform que se anima con DOTween al hacer click.
 - Destino de ventana asociado.
+- Acciones opcionales para anadir efectos al click desde inspector.
 
 La animacion de click debe restaurar siempre la escala original, incluso si el jugador hace click varias veces.
 
