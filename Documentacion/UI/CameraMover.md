@@ -54,6 +54,7 @@ public sealed class CameraSnapshot
 `CameraMover` contiene:
 
 - Referencia a la camara que va a mover.
+- Referencia a un pivote de camara.
 - Lista de snapshots configurada desde inspector.
 - Diccionario interno para buscar snapshots por enum.
 - Duracion del movimiento.
@@ -65,6 +66,7 @@ Concepto:
 public sealed class CameraMover : MonoBehaviour
 {
     public Camera Camera;
+    public Transform Pivot;
     public CameraSnapshot[] Snapshots;
 
     private Dictionary<CameraSnapshotId, Transform> snapshotsById;
@@ -107,7 +109,8 @@ Cuando llega la senal:
 
 1. Busca el snapshot por enum.
 2. Si existe, mueve la camara hacia la posicion/rotacion del transform.
-3. Si no existe, no hace nada o deja un warning de debug.
+3. Al terminar, lanza una senal de completado del movimiento.
+4. Si no existe, no hace nada o deja un warning de debug.
 
 Concepto:
 
@@ -124,15 +127,27 @@ public readonly struct CameraMoveSignal
 }
 ```
 
+Senal de completado:
+
+```csharp
+public readonly struct CameraMoveCompletedSignal
+{
+    public readonly CameraSnapshotId Target;
+}
+```
+
 ## Movimiento Inicial
 
 Por ahora el movimiento puede ser simple con DOTween.
 
 Direccion inicial:
 
-- Tween de posicion de A a B.
-- Tween de rotacion de A a B.
-- Misma duracion para ambos.
+- Si la camara ya esta en el destino solicitado, no se mueve.
+- Si la camara ya se esta moviendo hacia el destino solicitado, no reinicia el movimiento.
+- Si la camara debe ir a otro destino, usa el pivote como punto de control de una Bezier cuadratica.
+- Al llegar al destino, emite `CameraMoveCompletedSignal`.
+- La posicion usa una unica curva Bezier `P0 = camara actual`, `P1 = pivote`, `P2 = destino`, para que no haya frenado ni rearranque en el pivote.
+- La rotacion se interpola de forma continua hasta la rotacion del destino.
 - Ease configurable.
 
 Mas adelante se podra cambiar por:
@@ -144,6 +159,31 @@ Mas adelante se podra cambiar por:
 - Movimiento distinto por tipo de pantalla.
 
 La primera version debe ser una transicion clara, no un sistema cinematografico complejo.
+
+## Pivote
+
+El pivote es una posicion intermedia comun para las transiciones de camara del menu.
+
+Uso:
+
+```text
+CameraMove(Arena)
+    P0 camara actual, P1 pivote, P2 Arena
+    en una unica transicion continua
+
+CameraMove(Hospital)
+    P0 camara actual, P1 pivote, P2 Hospital
+    en una unica transicion continua
+```
+
+Reglas:
+
+- El pivote se configura como `Transform` en inspector.
+- El pivote no es una pantalla ni un destino de UI.
+- El pivote actua como punto de control de una Bezier cuadratica, no como punto por el que la camara tenga que pasar exactamente.
+- El pivote evita que la camara viaje directamente de un edificio a otro con trayectorias raras.
+- El pivote no debe cortar la transicion en dos tweens, porque eso provoca frenado al llegar y aceleracion al salir.
+- Si se solicita el mismo destino mientras la camara ya esta alli o ya va hacia alli, la solicitud se ignora.
 
 ## Uso con Pantallas
 
@@ -162,6 +202,7 @@ Esto permite que abrir una ventana no sea solo aparecer un panel, sino tambien m
 ## Reglas
 
 - `CameraMover` escucha senales, no depende de edificios concretos.
+- `CameraMover` pasa por el pivote antes de llegar a un nuevo destino.
 - Los snapshots se configuran como lista en inspector.
 - En `Awake`, la lista se convierte en diccionario.
 - Las pantallas o acciones lanzan `CameraMove(enum)`.

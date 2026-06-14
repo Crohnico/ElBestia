@@ -14,43 +14,13 @@ El resto de sistemas no abren ni cierran ventanas directamente. Solo solicitan a
 
 Esto evita que edificios, botones, sistemas de gameplay o acciones de UI tengan referencias directas a pantallas concretas.
 
-## UISectionId
-
-Necesitamos identificar a que conjunto de pantallas pertenece una solicitud.
-
-Nombre propuesto:
-
-```text
-UISectionId
-```
-
-`UISectionId` representa el ambito o seccion de UI que debe procesar la peticion.
-
-Ejemplos:
-
-```text
-MainMenu
-Admision
-Hospital
-Dojo
-Arena
-```
-
-La idea es que pueda existir mas de un `UIScreenManager` en el proyecto, pero cada uno gestiona solo su seccion.
-
-Ejemplo:
-
-- El menu principal tiene un `UIScreenManager` para pantallas generales del Dojo.
-- Admision puede tener su propio `UIScreenManager` mas pequeno para pantallas internas de reclutamiento.
-- Hospital puede tener otro gestor para sus subpantallas.
-
 ## Responsabilidad del UIScreenManager
 
 `UIScreenManager` se encarga de:
 
 - Escuchar solicitudes de abrir/cerrar pantalla.
-- Filtrar solicitudes por `UISectionId`.
-- Saber cual es la pantalla actual de su seccion.
+- Saber cual es la pantalla actual.
+- Recordar la pantalla anterior para poder volver con `Esc`.
 - Cerrar la pantalla actual antes de abrir otra si corresponde.
 - Abrir la pantalla solicitada.
 - Cerrar pantallas.
@@ -70,21 +40,43 @@ Datos conceptuales:
 ```csharp
 public sealed class UIScreenManager : MonoBehaviour
 {
-    public UISectionId SectionId;
+    public bool OpenInitialScreen;
     public UIScreenId InitialScreenId;
 
     private UIScreenId currentScreenId;
+    private UIScreenId previousScreenId;
+    private bool hasCurrentScreen;
+    private bool hasPreviousScreen;
     private int lastCancelToken;
 }
 ```
 
-`SectionId` define que conjunto gestiona.
+`OpenInitialScreen` decide si se abre una pantalla al arrancar.
 
-`InitialScreenId` permite abrir una pantalla inicial al arrancar si hace falta.
+`InitialScreenId` permite elegir esa pantalla inicial cuando `OpenInitialScreen` esta activo.
 
-`currentScreenId` guarda la pantalla abierta actualmente dentro de esa seccion.
+`currentScreenId` guarda la pantalla abierta actualmente.
+
+`previousScreenId` guarda la pantalla abierta antes de la actual.
+
+`hasCurrentScreen` indica si hay una pantalla abierta, sin necesitar un valor `None` en el enum de pantallas.
+
+`hasPreviousScreen` indica si existe una pantalla anterior cacheada.
 
 `lastCancelToken` invalida callbacks antiguos cuando llega una orden nueva antes de que termine una transicion.
+
+## Volver a la Pantalla Anterior
+
+El gestor guarda la pantalla actual como pantalla anterior cada vez que abre una pantalla distinta.
+
+Si el usuario pulsa `Esc`, el gestor intenta abrir la pantalla anterior cacheada.
+
+Reglas:
+
+- Si no hay pantalla anterior cacheada, `Esc` no hace nada.
+- Si la pantalla anterior ya es la pantalla actual, no se relanza la apertura.
+- Al volver a la pantalla anterior, la pantalla desde la que se vuelve pasa a ser la nueva pantalla cacheada.
+- La lectura de `Esc` usa el Input System de Unity, no `UnityEngine.Input`.
 
 ## Senal de Solicitud
 
@@ -101,7 +93,6 @@ Datos:
 ```csharp
 public readonly struct RequestUIScreenSignal
 {
-    public readonly UISectionId SectionId;
     public readonly UIScreenId ScreenId;
     public readonly bool Show;
 }
@@ -111,15 +102,22 @@ Regla:
 
 - Si `Show == true`, el gestor intenta abrir la pantalla.
 - Si `Show == false`, el gestor intenta cerrar la pantalla.
-- Si `SectionId` no coincide con el gestor, el gestor ignora la senal.
 
 Ejemplos:
 
 ```text
-RequestUIScreen(MainMenu, Admision, true)
-RequestUIScreen(MainMenu, Hospital, true)
-RequestUIScreen(Admision, CandidateList, true)
-RequestUIScreen(Admision, CandidateDetails, true)
+RequestUIScreen(Admision, true)
+RequestUIScreen(Hospital, true)
+```
+
+IDs iniciales de pantalla:
+
+```text
+MainMenu
+Arena
+Dojo
+Hospital
+Admision
 ```
 
 ## Sin AIEvent
@@ -156,7 +154,7 @@ private void ShowScreen(UIScreenId id)
 {
     int token = ++lastCancelToken;
 
-    if (currentScreenId != id && currentScreenId != UIScreenId.None)
+    if (hasCurrentScreen && currentScreenId != id)
     {
         CloseCurrent(() =>
         {
@@ -200,9 +198,9 @@ private void HideScreen(UIScreenId id)
             return;
         }
 
-        if (currentScreenId == id)
+    if (hasCurrentScreen && currentScreenId == id)
         {
-            currentScreenId = UIScreenId.None;
+            hasCurrentScreen = false;
         }
     }, token);
 }
@@ -221,7 +219,6 @@ Datos:
 ```csharp
 public readonly struct UIScreenToggleSignal
 {
-    public readonly UISectionId SectionId;
     public readonly UIScreenId ScreenId;
     public readonly bool Show;
     public readonly Action OnComplete;
@@ -231,7 +228,6 @@ public readonly struct UIScreenToggleSignal
 
 `UIScreen` escucha esta senal y solo responde si:
 
-- Coincide su `SectionId`.
 - Coincide su `ScreenId`.
 
 Cuando termina su `OpenBehaviour` o `CloseBehaviour`, llama a `OnComplete`.
@@ -249,11 +245,10 @@ Datos:
 ```csharp
 public readonly struct UICloseAllScreensSignal
 {
-    public readonly UISectionId SectionId;
 }
 ```
 
-El gestor solo cierra todas las pantallas de su seccion.
+El gestor cierra su pantalla actual.
 
 Uso:
 
@@ -277,8 +272,8 @@ Flujo esperado:
 Ejemplo:
 
 ```text
-AdmisionBuilding.OnClick
-    RequestUIScreen(MainMenu, Admision, true)
+Building.OnClick
+    RequestUIScreen(Admision, true)
 
 UIScreenManager(MainMenu)
     Cierra pantalla actual
@@ -290,32 +285,10 @@ Pantalla Admision
         UIMoveAction(Panel, Hidden -> Visible)
 ```
 
-## Gestores Anidados por Seccion
-
-Puede haber un gestor principal y gestores secundarios.
-
-Ejemplo:
-
-```text
-MainMenu UIScreenManager
-    Gestiona: Arena, Hospital, Dojo, Admision
-
-Admision UIScreenManager
-    Gestiona: CandidateList, CandidateDetails, RecruitConfirm
-```
-
-El gestor principal abre la seccion Admision.
-
-Dentro de Admision, otro gestor se encarga de las subpantallas de reclutamiento.
-
-La separacion evita que el gestor principal conozca todos los detalles internos de cada edificio.
-
 ## Reglas
 
 - Solo `UIScreenManager` puede abrir y cerrar pantallas.
 - Otros sistemas solo solicitan cambios mediante senales.
-- Cada gestor filtra por `UISectionId`.
-- Puede haber varios gestores, uno por conjunto de UI.
 - `AIEventSignal` queda fuera del sistema.
 - `lastCancelToken` evita que callbacks viejos reabran o cierren pantallas cuando ya llego otra orden.
 - `UIScreenToggleSignal` es la orden concreta que reciben las pantallas.

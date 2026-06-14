@@ -229,8 +229,9 @@ Datos:
 
 Direccion inicial:
 
-- Para el primer prototipo, puede lanzar la senal y devolver `true`.
-- Si necesitamos encadenar animaciones despues de que termine la camara, se anadira confirmacion de completado desde `CameraMover`.
+- Lanza la senal de movimiento y devuelve `false` mientras la camara se mueve.
+- El `CameraMover` emite una senal de completado al terminar el movimiento.
+- La accion devuelve `true` cuando recibe la confirmacion del snapshot solicitado.
 
 Concepto:
 
@@ -238,7 +239,7 @@ Concepto:
 public bool Execute()
 {
     SignalBus.Fire(new CameraMoveSignal(targetSnapshot));
-    return ExecuteChildActions();
+    return cameraMoveCompleted;
 }
 ```
 

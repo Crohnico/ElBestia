@@ -1,5 +1,6 @@
 using DG.Tweening;
 using ElBestia.Core;
+using ElBestia.UI;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -38,6 +39,7 @@ namespace ElBestia.Menu
             PlayClickFeedback();
             onClickAction?.Invoke();
             SignalBus.Fire(new OpenMenuWindowSignal(targetWindow));
+            SignalBus.Fire(new RequestUIScreenSignal(ToUIScreenId(targetWindow), true));
         }
 
         private void PlayClickFeedback()
@@ -59,6 +61,23 @@ namespace ElBestia.Menu
             if (animatedTransform != null)
             {
                 animatedTransform.localScale = originalScale;
+            }
+        }
+
+        private static UIScreenId ToUIScreenId(MenuWindowId windowId)
+        {
+            switch (windowId)
+            {
+                case MenuWindowId.Arena:
+                    return UIScreenId.Arena;
+                case MenuWindowId.Hospital:
+                    return UIScreenId.Hospital;
+                case MenuWindowId.Dojo:
+                    return UIScreenId.Dojo;
+                case MenuWindowId.Admision:
+                    return UIScreenId.Admision;
+                default:
+                    return UIScreenId.MainMenu;
             }
         }
     }
