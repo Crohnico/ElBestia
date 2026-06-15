@@ -97,6 +97,85 @@ Por ahora, lo importante es conservar:
 - Peana del campeon seleccionado.
 - Botones de decision.
 
+### Lista Scrollable
+
+La lista de nombres se montara como un `ScrollView` vertical.
+
+Estructura inicial en escena:
+
+```text
+SelectionTable
+    Canvas
+        Background
+            ScrollView
+                Viewport
+                    GridLayout
+                        Botones de candidatos
+```
+
+Reglas:
+
+- El `ScrollView` ocupa el mismo sitio y tamano que tenia el `GridLayout`.
+- El `GridLayout` es el `Content` del `ScrollRect`.
+- El scroll horizontal esta desactivado.
+- El scroll vertical esta activado.
+- Los botones de candidatos se popularan dentro del `GridLayout`.
+- El `GridLayout` queda anclado arriba para que los candidatos se rellenen de arriba abajo.
+- Al abrir la lista o repoblarla, el scroll debe volver arriba para mostrar primero el candidato `0`.
+- Si hay mas candidatos de los que caben en pantalla, el jugador hace scroll hacia abajo para ver los nuevos.
+- Al abrirse, la lista selecciona el primer candidato visible.
+- Solo puede haber un candidato seleccionado a la vez.
+- El boton seleccionado usa el color `#727780`.
+- Los botones no seleccionados usan el color `#41444A`.
+
+### Componentes Iniciales
+
+La primera version runtime de Admision usa varios componentes:
+
+- `ChampionAdmisionList`: singleton de candidatos del dia.
+- `AdmisionScrollView`: pinta la lista visual dentro del `ScrollView`.
+- `AdmisionButton`: boton de candidato con referencia a su texto y a su `ChampionData`.
+- `ChampionShowcase`: escaparate visual del campeon seleccionado.
+
+`ChampionAdmisionList`:
+
+- Tiene un `payload` publico.
+- Tiene una lista publica de `ChampionData`.
+- En `Start` llama a `CreateList`.
+- `CreateList` limpia primero la lista y despues genera `payload` campeones nuevos.
+
+`AdmisionScrollView`:
+
+- Tiene una referencia al boton plantilla `AdmisionButton`.
+- Tiene una referencia al `content` del `ScrollView`.
+- Crea un boton por cada campeon existente en `ChampionAdmisionList`.
+- Asigna al texto del boton el nombre guardado en el `ChampionData`.
+- Gestiona que solo haya un boton seleccionado.
+- Actualiza los colores selected/unselected de los botones.
+- Avisa al `ChampionShowcase` cuando cambia el candidato seleccionado.
+- Resetea el scroll arriba al repoblar.
+
+`AdmisionButton`:
+
+- Guarda la referencia al `TMP_Text` del boton.
+- Guarda el `ChampionData` que representa.
+- Expone un metodo `Bind(ChampionData)` para recibir el campeon y actualizar el texto.
+
+`ChampionShowcase`:
+
+- Tiene una referencia al `BaseStickman` de Admision.
+- Al recibir un `ChampionData`, carga su aspecto visual en el stickman.
+- Usa el sistema visual existente de stickman para aplicar `ChampionData.Appearance`.
+- Antes de configurar el aspecto, el root animado del stickman debe estar a escala `1,1,1` para que las mallas procedurales se reconstruyan bien.
+- En la primera carga, despues de configurar el primer campeon, el root animado puede volver a `0,0,0` para que las `UIAction` de apertura hagan el pop desde cero.
+
+`ChampionShowcaseDragRotator`:
+
+- Vive en el `StickmanParent` o en el objeto que tenga el `CapsuleCollider` de interaccion.
+- Al hacer click izquierdo sobre la capsula empieza a rotar el showcase.
+- Mientras el click izquierdo siga pulsado, usa el delta horizontal del raton para rotar de forma continua.
+- Al soltar el click izquierdo deja de rotar.
+
 ## Seleccion de Candidato
 
 Al seleccionar un nombre de la lista:

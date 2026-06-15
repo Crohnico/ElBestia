@@ -2,8 +2,15 @@ using UnityEngine;
 
 namespace ElBestia.UI
 {
+    public enum UIActionCompletionMode
+    {
+        WaitForCompletion,
+        FireAndForget
+    }
+
     public class UIActionBase : MonoBehaviour, UIAction
     {
+        [SerializeField] private UIActionCompletionMode completionMode = UIActionCompletionMode.WaitForCompletion;
         [SerializeField] private UIActionBase[] onCompleteActions = new UIActionBase[0];
 
         private bool ownActionCompleted;
@@ -14,6 +21,11 @@ namespace ElBestia.UI
             if (!ownActionCompleted)
             {
                 ownActionCompleted = ExecuteOwnAction();
+                if (completionMode == UIActionCompletionMode.FireAndForget)
+                {
+                    ownActionCompleted = true;
+                }
+
                 if (!ownActionCompleted)
                 {
                     return false;

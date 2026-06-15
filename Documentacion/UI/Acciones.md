@@ -63,6 +63,7 @@ Estructura conceptual:
 ```csharp
 public abstract class UIActionBase : MonoBehaviour, UIAction
 {
+    public UIActionCompletionMode CompletionMode;
     public UIActionBase[] OnCompleteActions;
 
     public abstract bool Execute();
@@ -75,6 +76,63 @@ Regla:
 - Una accion puede tener acciones hijas.
 - Las acciones hijas se ejecutan cuando la accion principal termina.
 - La accion principal no devuelve `true` hasta que sus hijas hayan terminado tambien.
+
+## Modo de Completado
+
+Cada `UIAction` debe poder decidir si el behaviour espera a que termine o si se lanza como fire and forget.
+
+Usaremos un enum, no un bool, para que el inspector sea claro y el sistema pueda crecer sin cambiar el contrato.
+
+Nombre propuesto:
+
+```csharp
+public enum UIActionCompletionMode
+{
+    WaitForCompletion,
+    FireAndForget
+}
+```
+
+### WaitForCompletion
+
+Es el comportamiento normal.
+
+La accion devuelve `false` mientras su efecto propio no ha terminado.
+
+Cuando el efecto propio termina:
+
+- Ejecuta acciones hijas si existen.
+- Devuelve `true` solo cuando sus hijas tambien han terminado.
+
+Uso:
+
+- Animaciones de apertura que deben terminar antes de continuar.
+- Movimiento de camara cuando la UI depende de llegar al destino.
+- Cualquier accion que sea parte de una secuencia estricta.
+
+### FireAndForget
+
+La accion dispara su efecto propio y se considera completada inmediatamente para el behaviour que la contiene.
+
+Regla:
+
+- La accion arranca su efecto.
+- No espera a que termine.
+- Permite que el flujo continue.
+- Si tiene acciones hijas, se ejecutan despues de disparar la accion, no despues de que el tween real termine.
+
+Uso:
+
+- Efectos decorativos.
+- Animaciones que pueden vivir en paralelo.
+- Feedback visual que no debe bloquear la apertura/cierre de una pantalla.
+
+Ejemplo:
+
+```text
+FireAndForget: hacer pulse decorativo en un icono
+WaitForCompletion: mover panel hasta posicion visible
+```
 
 ## Flujo de Accion Compuesta
 
@@ -91,6 +149,11 @@ public bool Execute()
     if (!ownActionCompleted)
     {
         ownActionCompleted = ExecuteOwnAction();
+        if (CompletionMode == UIActionCompletionMode.FireAndForget)
+        {
+            ownActionCompleted = true;
+        }
+
         return false;
     }
 
@@ -128,22 +191,36 @@ UIScaleAction
 Responsabilidad:
 
 - Escalar un `Transform` desde una escala inicial hasta una escala final.
+- Permitir modo de entrada con pop visual.
+- Permitir modo de salida de 1 a 0.
 - Devolver `false` mientras la animacion esta en curso.
 - Devolver `true` cuando DOTween completa la animacion y sus acciones hijas han terminado.
 
 Datos:
 
 - `target`: transform que se escala.
-- `fromScale`: escala inicial.
-- `toScale`: escala final.
-- `duration`: duracion.
+- `mode`: tipo de escala.
+- `duration`: duracion total.
 - `ease`: curva/ease de DOTween.
 - `OnCompleteActions`: acciones hijas opcionales.
 
+Modos iniciales:
+
+- `PopIn`: escala de `0` a un poco mas de `1`, baja a un poco menos de `1` y termina en `1`.
+- `ScaleOut`: escala de `1` a `0`.
+
+Valores iniciales de `PopIn`:
+
+```text
+0 -> 1.08 -> 0.96 -> 1
+```
+
+Los valores `1.08` y `0.96` son intencionados: dan sensacion de rebote sin exagerar demasiado la ventana.
+
 Comportamiento:
 
-1. Al empezar, asigna `target.localScale = fromScale`.
-2. Lanza un tween hacia `toScale`.
+1. Al empezar, asigna la escala inicial segun el modo.
+2. Lanza la secuencia DOTween correspondiente.
 3. Mientras el tween no termina, devuelve `false`.
 4. Cuando termina, ejecuta acciones hijas si existen.
 5. Cuando todo termina, devuelve `true`.
@@ -151,7 +228,7 @@ Comportamiento:
 `InstantExecute`:
 
 - Mata o ignora el tween activo.
-- Asigna `target.localScale = toScale`.
+- Asigna la escala final segun el modo.
 - Ejecuta `InstantExecute` en acciones hijas.
 
 ## Accion DoTween Move From To
@@ -286,6 +363,7 @@ UICameraMoveAction
 - `UIAction` es el contrato comun.
 - Las acciones pueden tener acciones hijas.
 - Una accion con hijas no termina hasta que sus hijas terminan.
+- Cada accion define `WaitForCompletion` o `FireAndForget`.
 - `InstantExecute` fuerza el estado final de la accion y de sus hijas.
 - `UIScaleAction` usa DOTween para escalar de `fromScale` a `toScale`.
 - `UIMoveAction` usa DOTween para mover de origen a destino.
