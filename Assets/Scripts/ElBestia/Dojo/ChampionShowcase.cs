@@ -1,4 +1,5 @@
 using ElBestia.Champions;
+using ElBestia.UI;
 using ElBestia.Visuals;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace ElBestia.Dojo
         public Transform baseStickman;
         public Transform animationRoot;
         public bool collapseAnimationRootAfterFirstShow = true;
+        public ChampionUIVisualizer championUIVisualizer;
 
         private StickmanBodyConfigurator configurator;
         private bool firstShowCompleted;
@@ -26,6 +28,11 @@ namespace ElBestia.Dojo
             }
 
             configurator.ConfigureFromAppearance(championData.Appearance, championData.EquippedWeapon);
+
+            if (championUIVisualizer != null)
+            {
+                championUIVisualizer.SetUpUI(championData);
+            }
 
             if (!firstShowCompleted && collapseAnimationRootAfterFirstShow && animationRoot != null)
             {

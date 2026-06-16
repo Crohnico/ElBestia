@@ -166,6 +166,8 @@ La primera version runtime de Admision usa varios componentes:
 - Tiene una referencia al `BaseStickman` de Admision.
 - Al recibir un `ChampionData`, carga su aspecto visual en el stickman.
 - Usa el sistema visual existente de stickman para aplicar `ChampionData.Appearance`.
+- Puede tener una referencia a `ChampionUIVisualizer`.
+- Al mostrar un campeon, tambien llama a `ChampionUIVisualizer.SetUpUI(champion)` para refrescar los datos de UI asociados.
 - Antes de configurar el aspecto, el root animado del stickman debe estar a escala `1,1,1` para que las mallas procedurales se reconstruyan bien.
 - En la primera carga, despues de configurar el primer campeon, el root animado puede volver a `0,0,0` para que las `UIAction` de apertura hagan el pop desde cero.
 
@@ -175,6 +177,84 @@ La primera version runtime de Admision usa varios componentes:
 - Al hacer click izquierdo sobre la capsula empieza a rotar el showcase.
 - Mientras el click izquierdo siga pulsado, usa el delta horizontal del raton para rotar de forma continua.
 - Al soltar el click izquierdo deja de rotar.
+
+`SkillUIVisualizer`:
+
+- Tiene tres referencias a `SkillDataVisualizer`: skill 1, skill 2 y skill 3.
+- Tiene una referencia a `SkillDataInfoContainer`.
+- Recibe un array de hasta 3 `SkillData`.
+- Si una skill existe, activa el `SkillDataVisualizer` correspondiente y lo configura.
+- Si una skill no existe, desactiva el `GameObject` del visualizador correspondiente.
+- Si alguna de las tres skills esta en hover, activa el `SkillDataInfoContainer`.
+- Si ninguna skill esta en hover, desactiva el `SkillDataInfoContainer`.
+
+`SkillDataVisualizer`:
+
+- Implementa `IInteractable`.
+- Muestra el icono procedural de una `SkillData` en un `Image`.
+- Al recibir hover, actualiza el `SkillDataInfoContainer` con titulo y descripcion de la skill.
+- `OnClick` no hace nada por ahora.
+
+`SkillDataInfoContainer`:
+
+- Tiene dos referencias a `TMP_Text`: titulo y descripcion.
+- Expone `SetTitle(string)` y `SetDescription(string)`.
+
+`ChampionUIVisualizer`:
+
+- Recibe un `ChampionData` seleccionado.
+- Expone `SetUpUI(ChampionData)` como entrada reutilizable para refrescar toda la UI del campeon.
+- Reparte la informacion del campeon entre visualizadores concretos.
+- Tiene una referencia a `SkillUIVisualizer` y le pasa las skills equipadas del campeon.
+- Tiene una referencia a `PerkUIVisualizer` y le pasa los perks del campeon.
+- Tiene una referencia a `BaseStatsUIVisualizer` y le pasa el campeon seleccionado.
+
+`BaseStatsUIVisualizer`:
+
+- Recibe un `ChampionData`.
+- Tiene una referencia a un `TMP_Text`.
+- Escribe las stats base visibles en cascada:
+  - `strength.valor`
+  - `agility.valor`
+  - `constitution.valor`
+  - `intelligence.valor`
+  - `endurance.valor`
+
+`PerkDataVisualizer`:
+
+- Implementa `IInteractable`.
+- Muestra el nombre de un perk en un `TMP_Text`.
+- Colorea su fondo segun `PerkRarity`.
+- Expone colores para comun, poco comun, raro, epico y legendario.
+- Para el enum actual, `Rare` se usa como poco comun y `VeryRare` como raro.
+- Ajusta el ancho del `RectTransform` segun la cantidad de caracteres del nombre.
+- La regla de ancho usa parametros ajustables en inspector: ancho base, caracteres por incremento, incremento de ancho y ancho maximo.
+- Valores iniciales: ancho base `0.12`, `2.5` caracteres por incremento, incremento `0.08`, ancho maximo `1`.
+- Tiene campos de prueba en inspector para nombre y rareza, mas un boton `Setup`.
+- Puede recibir un `PerkSO` y un `PerkDataInfoContainer`.
+- Al entrar en hover, envia nombre y descripcion al contenedor.
+
+`PerkDataInfoContainer`:
+
+- Tiene dos referencias a `TMP_Text`: titulo y descripcion.
+- Expone `SetTitle(string)` y `SetDescription(string)`.
+
+`PerkUIVisualizer`:
+
+- Tiene una referencia a un prefab de `PerkDataVisualizer`.
+- Tiene una referencia al transform padre donde se instancian los perks.
+- Tiene una referencia a `PerkDataInfoContainer`.
+- Recibe un array de `PerkSO`.
+- Limpia los perks anteriores y crea un visualizador por cada perk recibido.
+- Si ningun perk esta en hover, desactiva el `PerkDataInfoContainer`.
+- Si algun perk esta en hover, activa el `PerkDataInfoContainer`.
+
+`CustomFlexibleGridLayout`:
+
+- Recoloca los hijos dentro de su `RectTransform`.
+- Cuando un hijo no cabe en la fila actual, pasa a la siguiente fila.
+- No modifica el tamano de los hijos.
+- Esta pensado para convivir con perks de ancho variable.
 
 ## Seleccion de Candidato
 
