@@ -208,6 +208,8 @@ La primera version runtime de Admision usa varios componentes:
 - Tiene una referencia a `SkillUIVisualizer` y le pasa las skills equipadas del campeon.
 - Tiene una referencia a `PerkUIVisualizer` y le pasa los perks del campeon.
 - Tiene una referencia a `BaseStatsUIVisualizer` y le pasa el campeon seleccionado.
+- Tiene una referencia a `ChampionStatsVisualizer` y le pasa el campeon seleccionado.
+- Tiene una referencia a `ChampionBioVisualizer` y le pasa el campeon seleccionado.
 
 `BaseStatsUIVisualizer`:
 
@@ -219,6 +221,50 @@ La primera version runtime de Admision usa varios componentes:
   - `constitution.valor`
   - `intelligence.valor`
   - `endurance.valor`
+
+`ChampionStatsVisualizer`:
+
+- Recibe un `ChampionData`.
+- Tiene una referencia a un `TMP_Text` llamado `content`.
+- Escribe un bloque de texto con secciones `COMBAT`, `RESISTANCE` y `ELEMENT DAMAGE`.
+- Usa las stats visibles de `ChampionData.Stats`.
+- Mantiene los titulos al tamano normal y reduce las filas de datos al 80% mediante rich text de TextMesh Pro.
+- Usa texto monoespaciado en las filas de datos para mejorar la alineacion de columnas.
+- `ELEMENT DAMAGE` muestra solo multiplicadores elementales, no el bonus plano.
+- `XP Gain` no se muestra en este bloque.
+- El primer formato es de texto plano en columnas:
+
+```text
+COMBAT
+Life           118      Energy         118
+Dodge          n        Block          z
+
+RESISTANCE
+Fire           n        Water          y
+
+ELEMENT DAMAGE
+Fire           x1       Water          x1
+```
+
+`ChampionLabelStateSwitcher`:
+
+- Controla tres bloques visuales de una etiqueta/panel de campeon: `Base`, `Info` y `Bio`.
+- Tiene tres referencias a `GameObject`: `BaseObject`, `InfoObject` y `BioObject`.
+- Tiene tres referencias a `Image` para cabeceras: `BaseHeader`, `InfoHeader` y `BioHeader`.
+- Tiene dos colores configurables: `Selected` y `UnSelected`.
+- Guarda el estado actual en `CurrentState`.
+- En `Awake` fuerza el estado `Base`.
+- Expone `SetState(enum)` y `ButtonAction(enum)` para cambiar de bloque desde botones.
+- Expone tambien `SetBase()`, `SetInfo()` y `SetBio()` para poder asignarlos directamente en `Button.onClick` desde el inspector de Unity.
+- Siempre deja activo solo el `GameObject` correspondiente al enum seleccionado.
+- Cada cambio de estado actualiza el color de las cabeceras para indicar la seleccion actual.
+
+`ChampionBioVisualizer`:
+
+- Recibe un `ChampionData`.
+- Tiene una referencia a un `TMP_Text` llamado `content`.
+- Escribe la bio/historia del campeon desde `ChampionData.Lore.story`.
+- Si no hay campeon o no hay lore, limpia el texto.
 
 `PerkDataVisualizer`:
 

@@ -8,6 +8,8 @@ namespace ElBestia.UI
         public SkillUIVisualizer skillUIVisualizer;
         public PerkUIVisualizer perkUIVisualizer;
         public BaseStatsUIVisualizer baseStatsUIVisualizer;
+        public ChampionStatsVisualizer championStatsVisualizer;
+        public ChampionBioVisualizer championBioVisualizer;
 
         private ChampionData champion;
 
@@ -33,6 +35,16 @@ namespace ElBestia.UI
             if (baseStatsUIVisualizer != null)
             {
                 baseStatsUIVisualizer.SetUp(champion);
+            }
+
+            if (championStatsVisualizer != null)
+            {
+                championStatsVisualizer.SetUp(champion);
+            }
+
+            if (championBioVisualizer != null)
+            {
+                championBioVisualizer.SetUp(champion);
             }
         }
     }
